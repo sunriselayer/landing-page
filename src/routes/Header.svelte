@@ -1,14 +1,20 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/icon.svg';
 	import github from '$lib/images/github.svg';
+	import { appTitle } from '../consts';
+
+	let isEnglish = true;
+
+	function toggleLanguage() {
+		isEnglish = !isEnglish;
+	}
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+	<div class="corner flex gap-2 items-center text-2xl">
+		<img src={logo} alt="SvelteKit" />
+		<span>{appTitle}</span>
 	</div>
 
 	<nav>
@@ -17,13 +23,18 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<button on:click={toggleLanguage}>
+					{isEnglish ? 'English' : 'Japanese'}
+				</button>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
+				<a href="/learn">Learn</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/build' ? 'page' : undefined}>
+				<a href="/build">Build</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}>
+				<a href="/run-node">Run a Node</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

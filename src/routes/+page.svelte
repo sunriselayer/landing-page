@@ -1,31 +1,22 @@
-<script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
+	import Header from './Header.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>SunRise</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<div class=" h-[796px]">
+		<div class="flex flex-col gap-[140px] pt-[50px]">
+			<Header />
+			<div class="flex flex-col gap-12">
+				<p>{$_('app-description')}</p>
+			</div>
+		</div>
+	</div>
 </section>
 
 <style>

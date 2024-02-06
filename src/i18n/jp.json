@@ -1,0 +1,65 @@
+{
+  "app-description": "Sunriseは、エンターテイメント市場向けにモジューラーブロックチェーンのデータ可用性層を提供し、 高スループットのデータ要件に対応し、誰でも簡単に独自のブロックチェーンを立ち上げることができます。",
+  "sunrise-question": "Welcome to our app!",
+  "sunrise-definition": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+  "sunrise-01": {
+    "label": "Monolithic blockchains can’t keep up.",
+    "description": "A monolithic chain is a generalist blockchain that performs all tasks. Really, the monolithic approach is “do everything yourself”.  But It’s prohibitively expensive and slow to build modern applications directly on monolithic chains. There has to be a better way."
+  },
+  "sunrise-02": {
+    "label": "The modular evolution is here.",
+    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+  },
+  "sunrise-03": {
+    "label": "What will you build on Sunrise?",
+    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+  },
+  "sunrise-04": {
+    "label": "The modular evolution is here.",
+    "description": "Sunrise brings the modular foundation, so you can bring the innovation. With Sunrise, your chain can become sovereign. This means freedom to build your chain the way you want. Since Sunrise naturally supports any execution environment, you now have the power to create next-gen blockchain solutions."
+  },
+  "sunrise-features": {
+    "label": "Build better blockchains, more easily and efficiency then ever before.",
+    "description": "Building blockchains doesn’t have to be complicated. Develop intuitively with a base layer built for the future.",
+    "feature-easy": {
+      "label": "Easy to use",
+      "description": "No need to bootstrap your own validator set and easily set up on Sunrise."
+    },
+    "feature-scale": {
+      "label": "Scalable",
+      "description": "Developers focus on their goals without thinking of infrastructure."
+    },
+    "feature-flexible": {
+      "label": "Flexible",
+      "description": "Sunrise supports any blockchain execution environment, enabling devs to innovate."
+    },
+    "feature-gasfree": {
+      "label": "Any tokens as Gas fees",
+      "description": "Sunrise enables projects to pay any tokens as gas fees for using Sunrise."
+    },
+    "feature-sovereign": {
+      "label": "Sovereign Proof of Liquidity",
+      "description": "Projects can incentivize both those who participated in governance and who provided liquidity for the tokens."
+    }
+  },
+  "sunrise-products": {
+    "label": "What you can build with Sunrise",
+    "description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+    "product-validiums": {
+      "label": "Validiums",
+      "description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment that data is posted to a separate chain, such as Sunrise. They save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can pay any tokens as gas fees for AltDA."
+    },
+    "product-rollups": {
+      "label": "Sovereign Rollups",
+      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+    },
+    "product-pol": {
+      "label": "Sovereign Proof of Liquidity",
+      "description": "The LST of Sunrise and the AMM LP share of the Sovereign Rollup native tokens will be the voting power of the Sovereign Rollup Settlement Committee. In other words, LP rewards and Proof of Stake rewards are given to users for LPing and improved security. (e.g. GLU/stSR)"
+    }
+  },
+  "sunrise-vision": {
+    "label": "Vision",
+    "description": "We believe that all Layer1 blockchains will be DA Layer. So, each DA Layer will take a position. We will focus on the entertainment industry, solving the challenges in token liquidity, while creating a world where more people can enjoy entertainment."
+  }
+}
