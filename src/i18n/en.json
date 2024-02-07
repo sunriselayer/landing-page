@@ -21,23 +21,23 @@
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiency then ever before.",
     "description": "Building blockchains doesn’t have to be complicated. Develop intuitively with a base layer built for the future.",
-    "feature-easy": {
+    "feature-1": {
       "label": "Easy to use",
       "description": "No need to bootstrap your own validator set and easily set up on Sunrise."
     },
-    "feature-scale": {
+    "feature-2": {
       "label": "Scalable",
       "description": "Developers focus on their goals without thinking of infrastructure."
     },
-    "feature-flexible": {
+    "feature-3": {
       "label": "Flexible",
       "description": "Sunrise supports any blockchain execution environment, enabling devs to innovate."
     },
-    "feature-gasfree": {
+    "feature-4": {
       "label": "Any tokens as Gas fees",
       "description": "Sunrise enables projects to pay any tokens as gas fees for using Sunrise."
     },
-    "feature-sovereign": {
+    "feature-5": {
       "label": "Sovereign Proof of Liquidity",
       "description": "Projects can incentivize both those who participated in governance and who provided liquidity for the tokens."
     }

@@ -9,6 +9,7 @@
 	import modular from '../lib/images/modular.svg';
 	import build from '../lib/images/build.svg';
 	import value from '../lib/images/value.svg';
+	import Feature from '$lib/components/Feature.svelte';
 
 	let isEnglish = true;
 
@@ -97,7 +98,7 @@
 			</div>
 		</div>
 		<div
-			class="flex flex-wrap gap-x-5 gap-y-9 w-full"
+			class="flex flex-wrap gap-x-5 gap-y-9 mx-auto"
 			style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);
 mix-blend-mode: overlay;"
 		>
@@ -151,6 +152,7 @@ mix-blend-mode: overlay;"
 			text={$_('sunrise-features.description')}
 		/>
 	</div>
+	<Feature />
 </div>
 
 <style>
