@@ -4,12 +4,16 @@
 	import logo from '$lib/images/icon.svg';
 	import { appDescription } from '../consts';
 	import { appTitle } from '../consts';
+	import Feature from '$lib/components/Feature.svelte';
 	import { page } from '$app/stores';
 	import monolithic from '../lib/images/monolithic.svg';
 	import modular from '../lib/images/modular.svg';
 	import build from '../lib/images/build.svg';
 	import value from '../lib/images/value.svg';
-	import Feature from '$lib/components/Feature.svelte';
+	import validiums from '../lib/images/validiums.svg';
+	import rollups from '../lib/images/rollups.svg';
+	import pol from '../lib/images/pol.svg';
+	import union from '../lib/images/Union.svg';
 
 	let isEnglish = true;
 
@@ -153,6 +157,90 @@ mix-blend-mode: overlay;"
 		/>
 	</div>
 	<Feature />
+</div>
+<div
+	class="p-[100px] w-full"
+	style="background: linear-gradient(to bottom right, #D7E5FB 0%, #FCECCF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #D7E5FB 0%, #FCECCF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 50% 50% no-repeat;"
+>
+	<div class="text-textPrimary">
+		<Label
+			className="mx-auto text-center font-orbitron text-6xl font-extrabold tracking-wide"
+			text={$_('sunrise-products.label')}
+		/>
+		<Label
+			className="mt-12 text-center font-overpass text-2xl font-medium tracking-tighter"
+			text={$_('sunrise-products.description')}
+		/>
+	</div>
+	<div class="flex gap-[35px] text-white mt-[35px]">
+		<div
+			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
+		>
+			<Label
+				className="text-center text-[32px] font-extrabold leading-[50px]"
+				text={$_('sunrise-products.product-validiums.label')}
+			/>
+			<img class="w-[138.438px] h-[248px] mx-auto" src={validiums} alt="validiums" />
+			<Label
+				className=" text-2xl font-normal"
+				text={$_('sunrise-products.product-validiums.description')}
+			/>
+		</div>
+		<div
+			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			style="background: var(--BLUE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #3E34F9 100%)"
+		>
+			<Label
+				className="text-center text-[32px] font-extrabold leading-[50px]"
+				text={$_('sunrise-products.product-rollups.label')}
+			/>
+			<img class="w-60 h-60 mx-auto" src={rollups} alt="rollups" />
+			<Label
+				className="text-2xl font-normal"
+				text={$_('sunrise-products.product-rollups.description')}
+			/>
+		</div>
+		<div
+			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			style="background: linear-gradient(186deg, #F9348C -64.12%, #A134F9 88.98%)"
+		>
+			<Label
+				className="text-center text-[28px] font-extrabold"
+				text={$_('sunrise-products.product-pol.label')}
+			/>
+			<img class="w-60 h-60 mx-auto" src={pol} alt="pol" />
+			<Label
+				className=" text-2xl font-normal"
+				text={$_('sunrise-products.product-pol.description')}
+			/>
+		</div>
+	</div>
+</div>
+
+<div
+	class="pl-[100px] pt-[190px] text-textPrimary flex gap-60"
+	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
+>
+	<div class=" w-[688px] flex flex-col gap-6 text-white">
+		<Label
+			className="text-center font-orbitron text-6xl font-extrabold"
+			text={$_('sunrise-vision.label')}
+		/>
+		<Label
+			className="w-[688px] font-overpass text-3xl font-medium tracking-tight"
+			text={$_('sunrise-vision.description')}
+		/>
+		<div>
+			<button class="px-4 py-5 items-center rounded-md bg-yellow-300 text-textPrimary"
+				><Label
+					className="text-center font-overpass text-xl leading-5 tracking-wide"
+					text="Build with Us"
+				/></button
+			>
+		</div>
+	</div>
+	<img class="w-[427.143px] h-[427.143px]" src={union} alt="union" />
 </div>
 
 <style>
