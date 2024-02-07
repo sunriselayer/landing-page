@@ -14,6 +14,12 @@
 	import rollups from '../lib/images/rollups.svg';
 	import pol from '../lib/images/pol.svg';
 	import union from '../lib/images/Union.svg';
+	import sunrise from '../lib/images/SUNRISE.svg';
+	import discord from '../lib/images/discord.svg';
+	import twitter from '../lib/images/twitter.svg';
+	import linkedin from '../lib/images/linkedin.svg';
+	import youtube from '../lib/images/youtube.svg';
+	import linktree from '../lib/images/linktree.svg';
 
 	let isEnglish = true;
 
@@ -102,45 +108,45 @@
 			</div>
 		</div>
 		<div
-			class="flex flex-wrap gap-x-5 gap-y-9 mx-auto"
+			class="flex flex-wrap gap-y-9 mx-auto justify-between"
 			style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);
 mix-blend-mode: overlay;"
 		>
 			<div
-				class="w-[646px] flex flex-col gap-[23px] px-5 py-[30px]"
+				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] rounded-[20px]"
 				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
 			>
 				<Label className="font-orbitron text-4xl font-extrabold" text={'01'} />
 				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-01.label')} />
 				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-01.description')} />
-				<img class="w-full" src={monolithic} alt="monolithic" />
+				<img class="w-[70%] mx-auto" src={monolithic} alt="monolithic" />
 			</div>
 			<div
-				class="w-[646px] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark"
+				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark rounded-[20px]"
 				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
 			>
 				<Label className="font-orbitron text-4xl font-extrabold" text={'02'} />
 				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-02.label')} />
 				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-02.description')} />
-				<img class="w-full" src={modular} alt="modular" />
+				<img class="w-[70%] mx-auto" src={modular} alt="modular" />
 			</div>
 			<div
-				class="w-[646px] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark"
+				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark rounded-[20px]"
 				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
 			>
 				<Label className="font-orbitron text-4xl font-extrabold" text={'03'} />
 				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-03.label')} />
 				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-03.description')} />
-				<img class="w-full" src={build} alt="build" />
+				<img class="w-[70%] mx-auto" src={build} alt="build" />
 			</div>
 			<div
-				class="w-[646px] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark"
+				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark, rounded-[20px]"
 				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
 			>
 				<Label className="font-orbitron text-4xl font-extrabold" text={'04'} />
 				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-04.label')} />
 				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-04.description')} />
-				<img class="w-full" src={value} alt="value" />
+				<img class="w-[70%] mx-auto" src={value} alt="value" />
 			</div>
 		</div>
 	</div>
@@ -219,14 +225,11 @@ mix-blend-mode: overlay;"
 </div>
 
 <div
-	class="pl-[100px] pt-[190px] text-textPrimary flex gap-60"
+	class="pl-[100px] py-[190px] text-textPrimary flex gap-60"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
-	<div class=" w-[688px] flex flex-col gap-6 text-white">
-		<Label
-			className="text-center font-orbitron text-6xl font-extrabold"
-			text={$_('sunrise-vision.label')}
-		/>
+	<div class="w-[688px] flex flex-col gap-6 text-white">
+		<Label className="font-orbitron text-6xl font-extrabold" text={$_('sunrise-vision.label')} />
 		<Label
 			className="w-[688px] font-overpass text-3xl font-medium tracking-tight"
 			text={$_('sunrise-vision.description')}
@@ -241,6 +244,51 @@ mix-blend-mode: overlay;"
 		</div>
 	</div>
 	<img class="w-[427.143px] h-[427.143px]" src={union} alt="union" />
+</div>
+<div class="px-[100px] pt-[84px] pb-[326px]">
+	<div class="flex gap-44 pb-[114px]">
+		<div class="flex justify-between items-start">
+			<div class="flex gap-[7.5px]">
+				<img src={logo} alt="logo" />
+				<img src={sunrise} alt="sunrise" />
+			</div>
+		</div>
+		<div class="w-full justify-between flex font-ibm-plex-sans">
+			<div class=" flex flex-col gap-8">
+				<Label className="text-[30px] font-bold" text="Developers" />
+				<Label className="text-xl font-medium" text="Docs" />
+				<Label className="text-xl font-medium" text="GitHub" />
+			</div>
+			<div class=" flex flex-col gap-8">
+				<Label className="text-[30px] font-bold" text="Services" />
+				<Label className="text-xl font-medium" text="Portal" />
+				<Label className="text-xl font-medium" text="Explorer" />
+				<Label className="text-xl font-medium" text="Community" />
+			</div>
+			<div class=" flex flex-col gap-8">
+				<Label className="text-[30px] font-bold" text="Information" />
+				<Label className="text-xl font-medium" text="Whitepaper" />
+				<Label className="text-xl font-medium" text="Blog" />
+				<Label className="text-xl font-medium" text="Jobs" />
+				<Label className="text-xl font-medium" text="Press Kit" />
+			</div>
+			<div class=" flex flex-col gap-8">
+				<Label className="text-[30px] font-bold" text="Legal" />
+				<Label className="text-xl font-medium" text="Terms and Services" />
+				<Label className="text-xl font-medium" text="Privacy Policy" />
+			</div>
+		</div>
+	</div>
+	<div class="pt-6 flex justify-between">
+		<Label className="text-xl tracking-wider" text="Sunrise © – All rights reserved. 2024" />
+		<div class="flex gap-9">
+			<img src={discord} alt="discord" />
+			<img src={twitter} alt="twitter" />
+			<img src={linkedin} alt="linkedin" />
+			<img src={youtube} alt="youtube" />
+			<img src={linktree} alt="linktree" />
+		</div>
+	</div>
 </div>
 
 <style>

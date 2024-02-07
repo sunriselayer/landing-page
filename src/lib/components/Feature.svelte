@@ -72,7 +72,7 @@
 <div class="flex gap-5">
 	{#each items.slice($currentIndex, $currentIndex + 2) as item (item.id)}
 		<div
-			class="w-[646px] px-[30px] py-12 text-white rounded-[20px]"
+			class="w-[49.5%] px-[30px] py-12 text-white rounded-[20px]"
 			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
 		>
 			<img
