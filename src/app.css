@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* In your CSS or SCSS file */
+:root {
+	--Dark: #0a204a 100%;
+	--Sunrise: radial-gradient(360deg, #ffc75f, #4988ff);
+}

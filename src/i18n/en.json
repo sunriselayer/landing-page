@@ -1,6 +1,6 @@
 {
   "app-description": "Sunrise is a modular data availability network designed for the entertainment industry, that securely scales for high-throughput data requirements and transaction-intensive applications.",
-  "sunrise-question": "Welcome to our app!",
+  "sunrise-question": "So, What is Sunrise?",
   "sunrise-definition": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
   "sunrise-01": {
     "label": "Monolithic blockchains can’t keep up.",
@@ -8,11 +8,11 @@
   },
   "sunrise-02": {
     "label": "The modular evolution is here.",
-    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability ('DA') and consensus by offloading the responsibility of transaction execution and settlement to a different network."
   },
   "sunrise-03": {
     "label": "What will you build on Sunrise?",
-    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+    "description": "Sunrise brings the modular foundation, so you can bring the innovation. With Sunrise, your chain can become sovereign. This means freedom to build your chain the way you want. Since Sunrise naturally supports any execution environment, you now have the power to create next-gen blockchain solutions."
   },
   "sunrise-04": {
     "label": "The modular evolution is here.",

@@ -17,13 +17,10 @@
 		<span>{appTitle}</span>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
+	<nav class="items-center">
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<button on:click={toggleLanguage}>
+			<li class="flex items-center" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<button on:click={toggleLanguage} class="items-center">
 					{isEnglish ? 'English' : 'Japanese'}
 				</button>
 			</li>
@@ -37,16 +34,7 @@
 				<a href="/run-node">Run a Node</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
 </header>
 
 <style>
@@ -77,7 +65,6 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
