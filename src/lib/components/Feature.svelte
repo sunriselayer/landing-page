@@ -2,11 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { writable } from 'svelte/store';
 	import { _, locale } from 'svelte-i18n';
-	import feature1 from '$lib/images/feature1.svg';
-	import feature2 from '$lib/images/feature2.svg';
-	import feature3 from '$lib/images/feature3.svg';
-	import feature4 from '$lib/images/feature4.svg';
-	import feature5 from '$lib/images/feature5.svg';
+	import * as images from '../../consts/images';
 	import Label from './Label.svelte';
 	import { newLocale } from '../stores/i18nStore';
 
@@ -24,31 +20,31 @@
 	const items = [
 		{
 			id: 1,
-			image: feature1,
+			image: images.feature1,
 			label: 'sunrise-features.feature-1.label',
 			description: 'sunrise-features.feature-1.description'
 		},
 		{
 			id: 2,
-			image: feature2,
+			image: images.feature2,
 			label: 'sunrise-features.feature-2.label',
 			description: 'sunrise-features.feature-2.description'
 		},
 		{
 			id: 3,
-			image: feature3,
+			image: images.feature3,
 			label: 'sunrise-features.feature-3.label',
 			description: 'sunrise-features.feature-3.description'
 		},
 		{
 			id: 4,
-			image: feature4,
+			image: images.feature4,
 			label: 'sunrise-features.feature-4.label',
 			description: 'sunrise-features.feature-4.description'
 		},
 		{
 			id: 5,
-			image: feature5,
+			image: images.feature5,
 			label: 'sunrise-features.feature-5.label',
 			description: 'sunrise-features.feature-4.description'
 		}
@@ -70,10 +66,13 @@
 			/>
 			<div class="py-6 px-3 mt-[23px] bg-blue-700 bg-opacity-10">
 				<Label
-					className={'font-orbitron text-3xl font-extrabold tracking-wide'}
+					className={'font-orbitron text-3xl font-extrabold tracking-wide text-white'}
 					text={$_(item.label)}
 				/>
-				<Label className={'mt-[23px] text-2xl font-normal'} text={$_(item.description)} />
+				<Label
+					className={'mt-[23px] text-2xl font-normal text-white'}
+					text={$_(item.description)}
+				/>
 			</div>
 		</div>
 	{/each}
