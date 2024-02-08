@@ -13,5 +13,19 @@ export default {
 			}
 		}
 	},
-	plugins: [require('daisyui')]
+	plugins: [require('daisyui')],
+	extend: {
+		keyframes: {
+			'image-change': {
+				'0%, 50%': { transform: 'translateX(0%)' },
+				'70%, 100%': { transform: 'translateX(300%)' }
+			},
+			slideToLeft: {
+				'0%, 10%': { transform: 'translateX(0)' },
+				'15%, 45%': { transform: 'translateX(-100%)' },
+				'50%, 80%': { transform: 'translateX(-200%)' },
+				'85%, 100%': { transform: 'translateX(-300%)' }
+			}
+		}
+	}
 };

@@ -55,43 +55,12 @@
 	];
 
 	let currentIndex = writable(0);
-
-	function debounce<A extends unknown[], R>(
-		fn: (...args: A) => R,
-		ms: number
-	): (...args: A) => Promise<R> {
-		let timer: ReturnType<typeof setTimeout>;
-		return function (...args: A): Promise<R> {
-			return new Promise((resolve) => {
-				if (timer) clearTimeout(timer);
-				timer = setTimeout(() => resolve(fn(...args)), ms);
-			});
-		};
-	}
-
-	const debouncedNextSlide = debounce(nextSlide, 300);
-
-	// Function to handle transitioning to the next slide
-	function nextSlide() {
-		currentIndex.update((n) => (n + 2) % items.length);
-	}
-
-	let carouselContainer: HTMLElement;
-
-	onMount(() => {
-		carouselContainer.addEventListener('wheel', debouncedNextSlide, { passive: true });
-
-		// Remove event listener on destroy
-		return () => {
-			carouselContainer.removeEventListener('wheel', debouncedNextSlide);
-		};
-	});
 </script>
 
-<div class="flex gap-5" bind:this={carouselContainer}>
-	{#each items.slice($currentIndex, $currentIndex + 2) as item (item.id)}
+<div class="flex gap-5 overflow-x-auto rounded-[20px]">
+	{#each items as item (item.id)}
 		<div
-			class="w-[49.5%] px-[30px] py-12 text-white rounded-[20px]"
+			class="min-w-[646px] px-[30px] py-12 text-white rounded-[20px]"
 			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
 		>
 			<img

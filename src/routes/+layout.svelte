@@ -5,6 +5,7 @@
 	import en from '../i18n/en.json';
 	import jp from '../i18n/jp.json';
 	import { _, init, addMessages } from 'svelte-i18n';
+	import '/node_modules/flag-icons/css/flag-icons.min.css';
 
 	const defaultLocale = 'jp';
 

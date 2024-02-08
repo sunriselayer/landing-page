@@ -43,7 +43,7 @@
 <div class="flex justify-center relative" style="">
 	<img src={TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
 	<img src={TopMask} alt="TopBG" class="absolute z-0 opacity-95 h-full w-full object-cover" />
-	<div class="w-[1413px] z-10">
+	<div class="z-10">
 		<div class="flex flex-col gap-[140px] pt-[50px]">
 			<div class="flex justify-between">
 				<div class="flex gap-2 items-center text-2xl">
@@ -58,6 +58,7 @@
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
 						>
 							<button on:click={toggleLanguage} class="items-center">
+								<span class={isEnglish ? 'fi fi-jp' : 'fi fi-gb'}></span>
 								{isEnglish ? 'Japanese' : 'English'}
 							</button>
 						</li>
@@ -75,15 +76,15 @@
 			</div>
 			<div class="flex flex-col gap-12 px-[50px] items-center">
 				<Label
-					className={'w-[1076px] text-center font-orbitron text-[70px] font-normal leading-[80px] tracking-[1.4px] text-textPrimary'}
+					className={'max-w-[1076px] text-center font-orbitron text-[70px] font-normal leading-[80px] tracking-[1.4px] text-textPrimary'}
 					text={appDescription}
 				/>
 				<Label
-					className={'w-full text-center font-overpass text-[26px] font-medium text-base leading-normal tracking-tighter text-textPrimary'}
+					className={'max-w-[1076px] text-center font-overpass text-[30px] font-medium text-base tracking-wide text-textPrimary'}
 					text={$_('app-description')}
 				/>
 			</div>
-			<div class="flex gap-9 justify-center">
+			<div class="flex gap-9 justify-center pb-16">
 				<button
 					class="flex justify-center items-center px-[30px] py-5 rounded-md bg-gradient-to-b to-[#0A204A] from-[#0F1C364D]"
 					><Label
@@ -259,7 +260,7 @@
 </div>
 
 <div
-	class="pl-[100px] py-[190px] text-textPrimary flex gap-60 relative"
+	class="py-[190px] pl-32 text-textPrimary flex gap-60 relative"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
 	<img src={BodyBG} alt="BodyBG" class="absolute z-0 w-full h-full object-cover top-0 left-0" />
@@ -268,13 +269,13 @@
 		alt="BodyMask"
 		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
 	/>
-	<div class="w-[688px] flex flex-col gap-6 text-white relative">
+	<div class="max-w-[688px] flex flex-col gap-6 text-white relative">
 		<Label
 			className="font-orbitron text-6xl font-extrabold text-white"
 			text={$_('sunrise-vision.label')}
 		/>
 		<Label
-			className="w-[688px] font-overpass text-3xl font-medium tracking-tight text-white"
+			className="max-w-[688px] font-overpass text-3xl font-medium tracking-tight text-white"
 			text={$_('sunrise-vision.description')}
 		/>
 		<div>
@@ -286,9 +287,9 @@
 			>
 		</div>
 	</div>
-	<img class="w-[427.143px] h-[427.143px]" src={union} alt="union" />
+	<img class="w-[427.143px] h-[427.143px] z-30 pr-10" src={union} alt="union" />
 </div>
-<div class="px-[100px] pt-[84px] pb-[326px]">
+<div class="px-[100px] pt-[84px] pb-9">
 	<div class="flex gap-44 pb-[114px]">
 		<div class="flex justify-between items-start">
 			<div class="flex gap-[7.5px]">
