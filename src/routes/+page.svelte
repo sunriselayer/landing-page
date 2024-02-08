@@ -45,8 +45,8 @@
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
 						>
 							<button on:click={toggleLanguage} class="items-center">
-								<span class={isEnglish ? 'fi fi-jp' : 'fi fi-gb'}></span>
-								{isEnglish ? 'Japanese' : 'English'}
+								<span class={isEnglish ? 'fi fi-gb' : 'fi fi-jp'}></span>
+								{isEnglish ? 'English' : 'Japanese'}
 							</button>
 						</li>
 						<li aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
