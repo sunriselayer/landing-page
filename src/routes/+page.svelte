@@ -204,18 +204,18 @@
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
-	<div class="flex gap-[35px] text-white mt-[35px]">
+	<div class="flex gap-[35px] mt-[35px]">
 		<div
 			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
 		>
 			<Label
-				className="text-center text-[32px] font-extrabold leading-[50px]"
+				className="text-center text-[32px] font-extrabold leading-[50px] text-white"
 				text={$_('sunrise-products.product-validiums.label')}
 			/>
 			<img class="w-[138.438px] h-[248px] mx-auto" src={images.validiums} alt="validiums" />
 			<Label
-				className=" text-2xl font-normal"
+				className=" text-2xl font-normal text-white"
 				text={$_('sunrise-products.product-validiums.description')}
 			/>
 		</div>
@@ -224,12 +224,12 @@
 			style="background: var(--BLUE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #3E34F9 100%)"
 		>
 			<Label
-				className="text-center text-[32px] font-extrabold leading-[50px]"
+				className="text-center text-[32px] font-extrabold leading-[50px] text-white"
 				text={$_('sunrise-products.product-rollups.label')}
 			/>
 			<img class="w-60 h-60 mx-auto" src={images.rollups} alt="rollups" />
 			<Label
-				className="text-2xl font-normal"
+				className="text-2xl font-normal text-white"
 				text={$_('sunrise-products.product-rollups.description')}
 			/>
 		</div>
@@ -238,12 +238,12 @@
 			style="background: linear-gradient(186deg, #F9348C -64.12%, #A134F9 88.98%)"
 		>
 			<Label
-				className="text-center text-[28px] font-extrabold"
+				className="text-center text-[28px] font-extrabold text-white"
 				text={$_('sunrise-products.product-pol.label')}
 			/>
 			<img class="w-60 h-60 mx-auto" src={images.pol} alt="pol" />
 			<Label
-				className=" text-2xl font-normal"
+				className=" text-2xl font-normal text-white"
 				text={$_('sunrise-products.product-pol.description')}
 			/>
 		</div>
@@ -282,7 +282,7 @@
 			>
 		</div>
 	</div>
-	<img class="w-[427.143px] h-[427.143px] z-30 pr-10" src={images.union} alt="union" />
+	<img class="w-[427.143px] h-[427.143px] z-30 pr-10 opacity-40" src={images.union} alt="union" />
 </div>
 <div class="px-[100px] pt-[84px] pb-9">
 	<div class="flex gap-44 pb-[114px]">
