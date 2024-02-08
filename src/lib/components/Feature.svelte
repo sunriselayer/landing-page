@@ -46,7 +46,7 @@
 			id: 5,
 			image: images.feature5,
 			label: 'sunrise-features.feature-5.label',
-			description: 'sunrise-features.feature-4.description'
+			description: 'sunrise-features.feature-5.description'
 		}
 	];
 
