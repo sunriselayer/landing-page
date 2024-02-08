@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/icon.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/images/logo.svg';
+
 	import { appTitle } from '../consts';
 
 	let isEnglish = true;

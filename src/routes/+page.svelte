@@ -1,29 +1,12 @@
 <script lang="ts">
 	import { _, locale } from 'svelte-i18n';
 	import Label from '$lib/components/Label.svelte';
-	import logo from '$lib/images/icon.svg';
+
 	import { appDescription } from '../consts';
 	import { appTitle } from '../consts';
 	import Feature from '$lib/components/Feature.svelte';
 	import { page } from '$app/stores';
-	import monolithic from '../lib/images/monolithic.svg';
-	import modular from '../lib/images/modular.svg';
-	import build from '../lib/images/build.svg';
-	import value from '../lib/images/value.svg';
-	import validiums from '../lib/images/validiums.svg';
-	import rollups from '../lib/images/rollups.svg';
-	import pol from '../lib/images/pol.svg';
-	import union from '../lib/images/Union.svg';
-	import sunrise from '../lib/images/SUNRISE.svg';
-	import discord from '../lib/images/discord.svg';
-	import twitter from '../lib/images/twitter.svg';
-	import linkedin from '../lib/images/linkedin.svg';
-	import youtube from '../lib/images/youtube.svg';
-	import linktree from '../lib/images/linktree.svg';
-	import TopBG from '../lib/images/TopBG.png';
-	import TopMask from '../lib/images/TopMask.png';
-	import BodyMask from '../lib/images/Mask group.png';
-	import BodyBG from '../lib/images/Rectangle 9.png';
+	import * as images from '../consts/images';
 	import { newLocale } from '../lib/stores/i18nStore';
 
 	let isEnglish = true;
@@ -41,13 +24,17 @@
 </svelte:head>
 
 <div class="flex justify-center relative" style="">
-	<img src={TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
-	<img src={TopMask} alt="TopBG" class="absolute z-0 opacity-95 h-full w-full object-cover" />
+	<img src={images.TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
+	<img
+		src={images.TopMask}
+		alt="TopBG"
+		class="absolute z-0 opacity-95 h-full w-full object-cover"
+	/>
 	<div class="z-10">
 		<div class="flex flex-col gap-[140px] pt-[50px]">
 			<div class="flex justify-between">
 				<div class="flex gap-2 items-center text-2xl">
-					<img src={logo} alt="SvelteKit" />
+					<img src={images.logo} alt="SvelteKit" />
 					<span>{appTitle}</span>
 				</div>
 
@@ -63,13 +50,13 @@
 							</button>
 						</li>
 						<li aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
-							<a href="/learn">Learn</a>
+							<a href="/">Learn</a>
 						</li>
 						<li aria-current={$page.url.pathname === '/build' ? 'page' : undefined}>
-							<a href="/build">Build</a>
+							<a href="/">Build</a>
 						</li>
 						<li aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}>
-							<a href="/run-node">Run a Node</a>
+							<a href="/">Run a Node</a>
 						</li>
 					</ul>
 				</nav>
@@ -104,8 +91,12 @@
 	</div>
 </div>
 <div class="relative">
-	<img src={BodyBG} alt="BodyBG" class="absolute z-0 w-full h-full object-cover" />
-	<img src={BodyMask} alt="BodyMask" class="absolute z-0 opacity-50 w-full h-full object-cover" />
+	<img src={images.BodyBG} alt="BodyBG" class="absolute z-0 w-full h-full object-cover" />
+	<img
+		src={images.BodyMask}
+		alt="BodyMask"
+		class="absolute z-0 opacity-50 w-full h-full object-cover"
+	/>
 	<div class="px-[50px] w-full flex flex-col justify-center relative">
 		<div>
 			<div class="flex flex-col justify-center pt-[60px] pb-16">
@@ -136,7 +127,7 @@
 					className="font-sans text-2xl font-normal text-white"
 					text={$_('sunrise-01.description')}
 				/>
-				<img class="w-[70%] mx-auto" src={monolithic} alt="monolithic" />
+				<img class="w-[70%] mx-auto" src={images.monolithic} alt="monolithic" />
 			</div>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark rounded-[20px]"
@@ -151,7 +142,7 @@
 					className="font-sans text-2xl font-normal text-white"
 					text={$_('sunrise-02.description')}
 				/>
-				<img class="w-[70%] mx-auto" src={modular} alt="modular" />
+				<img class="w-[70%] mx-auto" src={images.modular} alt="modular" />
 			</div>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark rounded-[20px]"
@@ -166,7 +157,7 @@
 					className="font-sans text-2xl font-normal text-white"
 					text={$_('sunrise-03.description')}
 				/>
-				<img class="w-[70%] mx-auto" src={build} alt="build" />
+				<img class="w-[70%] mx-auto" src={images.build} alt="build" />
 			</div>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark, rounded-[20px]"
@@ -181,7 +172,7 @@
 					className="font-sans text-2xl font-normal text-white"
 					text={$_('sunrise-04.description')}
 				/>
-				<img class="w-[70%] mx-auto" src={value} alt="value" />
+				<img class="w-[70%] mx-auto" src={images.value} alt="value" />
 			</div>
 		</div>
 	</div>
@@ -222,7 +213,7 @@
 				className="text-center text-[32px] font-extrabold leading-[50px]"
 				text={$_('sunrise-products.product-validiums.label')}
 			/>
-			<img class="w-[138.438px] h-[248px] mx-auto" src={validiums} alt="validiums" />
+			<img class="w-[138.438px] h-[248px] mx-auto" src={images.validiums} alt="validiums" />
 			<Label
 				className=" text-2xl font-normal"
 				text={$_('sunrise-products.product-validiums.description')}
@@ -236,7 +227,7 @@
 				className="text-center text-[32px] font-extrabold leading-[50px]"
 				text={$_('sunrise-products.product-rollups.label')}
 			/>
-			<img class="w-60 h-60 mx-auto" src={rollups} alt="rollups" />
+			<img class="w-60 h-60 mx-auto" src={images.rollups} alt="rollups" />
 			<Label
 				className="text-2xl font-normal"
 				text={$_('sunrise-products.product-rollups.description')}
@@ -250,7 +241,7 @@
 				className="text-center text-[28px] font-extrabold"
 				text={$_('sunrise-products.product-pol.label')}
 			/>
-			<img class="w-60 h-60 mx-auto" src={pol} alt="pol" />
+			<img class="w-60 h-60 mx-auto" src={images.pol} alt="pol" />
 			<Label
 				className=" text-2xl font-normal"
 				text={$_('sunrise-products.product-pol.description')}
@@ -263,9 +254,13 @@
 	class="py-[190px] pl-32 text-textPrimary flex gap-60 relative"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
-	<img src={BodyBG} alt="BodyBG" class="absolute z-0 w-full h-full object-cover top-0 left-0" />
 	<img
-		src={BodyMask}
+		src={images.BodyBG}
+		alt="BodyBG"
+		class="absolute z-0 w-full h-full object-cover top-0 left-0"
+	/>
+	<img
+		src={images.BodyMask}
 		alt="BodyMask"
 		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
 	/>
@@ -287,14 +282,14 @@
 			>
 		</div>
 	</div>
-	<img class="w-[427.143px] h-[427.143px] z-30 pr-10" src={union} alt="union" />
+	<img class="w-[427.143px] h-[427.143px] z-30 pr-10" src={images.union} alt="union" />
 </div>
 <div class="px-[100px] pt-[84px] pb-9">
 	<div class="flex gap-44 pb-[114px]">
 		<div class="flex justify-between items-start">
 			<div class="flex gap-[7.5px]">
-				<img src={logo} alt="logo" />
-				<img src={sunrise} alt="sunrise" />
+				<img src={images.logo} alt="logo" />
+				<img src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
 		<div class="w-full justify-between flex font-ibm-plex-sans">
@@ -326,11 +321,11 @@
 	<div class="pt-6 flex justify-between">
 		<Label className="text-xl tracking-wider" text="Sunrise © – All rights reserved. 2024" />
 		<div class="flex gap-9">
-			<img src={discord} alt="discord" />
-			<img src={twitter} alt="twitter" />
-			<img src={linkedin} alt="linkedin" />
-			<img src={youtube} alt="youtube" />
-			<img src={linktree} alt="linktree" />
+			<img src={images.discord} alt="discord" />
+			<img src={images.twitter} alt="twitter" />
+			<img src={images.linkedin} alt="linkedin" />
+			<img src={images.youtube} alt="youtube" />
+			<img src={images.linktree} alt="linktree" />
 		</div>
 	</div>
 </div>
