@@ -1,5 +1,5 @@
 {
-  "app-description": "Sunrise is a modular data availability network designed for the entertainment industry, that securely scales for high-throughput data requirements and transaction-intensive applications.",
+  "app-description": "Sunrise is a modular data availability layer, that enhances liquidity and sovereignty for developers.",
   "sunrise-question": "So, What is Sunrise?",
   "sunrise-definition": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
   "sunrise-01": {
@@ -16,7 +16,7 @@
   },
   "sunrise-04": {
     "label": "The modular evolution is here.",
-    "description": "Sunrise brings the modular foundation, so you can bring the innovation. With Sunrise, your chain can become sovereign. This means freedom to build your chain the way you want. Since Sunrise naturally supports any execution environment, you now have the power to create next-gen blockchain solutions."
+    "description": "Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable blockchain in entertainment industry. Sunrise brings the modular foundation, so you can bring the innovation. Sovereign rollups with “Proof of Liquidity”, you can incentivize both those who participated in governance and those who provided liquidity for the tokens. And also with functions of “Accepting any tokens as gas fees for AltDA”, Sunrise guaranteed to lock in a long term while generating a yield."
   },
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiency then ever before.",
@@ -58,8 +58,8 @@
       "description": "The LST of Sunrise and the AMM LP share of the Sovereign Rollup native tokens will be the voting power of the Sovereign Rollup Settlement Committee. In other words, LP rewards and Proof of Stake rewards are given to users for LPing and improved security. (e.g. GLU/stSR)"
     }
   },
-  "sunrise-vision": {
-    "label": "Vision",
+  "sunrise-mission": {
+    "label": "Mission",
     "description": "We believe that all Layer1 blockchains will be DA Layer. So, each DA Layer will take a position. We will focus on the entertainment industry, solving the challenges in token liquidity, while creating a world where more people can enjoy entertainment."
   }
 }

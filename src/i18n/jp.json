@@ -1,5 +1,5 @@
 {
-  "app-description": "Sunriseは、エンターテイメント市場向けにモジューラーブロックチェーンのデータ可用性層を提供し、 高スループットのデータ要件に対応し、誰でも簡単に独自のブロックチェーンを立ち上げることができます。",
+  "app-description": "Sunriseは、モジューラーブロックチェーンのデータ可用性層を提供し、 開発者に対してさらなる流動性と主権を与える。",
   "sunrise-question": "Sunriseとは何か",
   "sunrise-definition": "Sunriseは、最新のブロックチェーン開発で直面する問題を解決する包括的なソリューションです。",
   "sunrise-01": {
@@ -16,7 +16,7 @@
   },
   "sunrise-04": {
     "label": "Sunriseの価値",
-    "description": "Sunriseは、エンターテインメント市場で持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。 Sunriseがモジュール式の基盤を提供するので、お客様はイノベーションを実現できます。 Sovereign Proof of Liquidityによるソブリン・ロールアップは、ガバナンスに参加した人とトークンに流動性を提供した人の両方にインセンティブを与えることができます。 また、「あらゆるトークンをAltDAのガスフィーとして受け入れる」機能により、サンライズは長期的な利回りを生み出すことを保証します。"
+    "description": "Sunriseは、持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。 Sovereign Proof of Liquidityにより、ガバナンスに参加した人とトークンに流動性を提供した人の両方にインセンティブを与えることができます。 また、あらゆるトークンをAltDAのgas feeとして受け入れます。 Sunriseの独自価値により、開発者にさらなる流動性と主権を得ることができます。"
   },
   "sunrise-features": {
     "label": "より優れたブロックチェーンを これまで以上に簡単かつ効率的に",
@@ -35,7 +35,7 @@
     },
     "feature-4": {
       "label": "Any tokens as Gas fees",
-      "description": "Sunriseでは、プロジェクトがSunriseを利用する際に、あらゆるトークンをガス代として支払うことができます。"
+      "description": "プロジェクトがSunriseを利用する際に、あらゆるトークンをガス代として支払うことができます。"
     },
     "feature-5": {
       "label": "Sovereign Proof of Liquidity",
@@ -55,11 +55,11 @@
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "SunriseのLSTとソブリンロールアップネイティブトークンのAMM LPシェアは、ソブリンロールアップの議決権となります。(例：GLU/stSR） プロジェクトのトークンに対して流動性供給した人に適切に報いることができます。"
+      "description": "SunriseのLSTとSovereign RollupネイティブトークンのAMM LPシェアは、Sovereign Rollupのvoting powerとなります。(例：GLU/stSR） プロジェクトのトークンに対して流動性供給した人に適切に報いることができます。"
     }
   },
-  "sunrise-vision": {
-    "label": "Vision",
-    "description": "我々は、Layer1のブロックチェーンはすべてDA Layerになると考えています。つまり、それぞれのDAレイヤーがポジションを取ることになります。私たちはエンターテインメント業界にフォーカスし、トークンの流動性における課題を解決しながら、より多くの人がエンターテインメントを楽しめる世界を作っていきます。"
+  "sunrise-mission": {
+    "label": "Mission",
+    "description": "我々は、開発者にさらなる流動性と主権を与えることで、次世代のウェブアプリケーションを実現します。"
   }
 }

@@ -267,11 +267,11 @@
 	<div class="max-w-[688px] flex flex-col gap-6 text-white relative">
 		<Label
 			className="font-orbitron text-6xl font-extrabold text-white"
-			text={$_('sunrise-vision.label')}
+			text={$_('sunrise-mission.label')}
 		/>
 		<Label
 			className="max-w-[688px] font-overpass text-3xl font-medium tracking-tight text-white"
-			text={$_('sunrise-vision.description')}
+			text={$_('sunrise-mission.description')}
 		/>
 		<div>
 			<button class="px-4 py-5 items-center rounded-md bg-yellow-300 text-textPrimary"
