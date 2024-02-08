@@ -1,65 +1,65 @@
 {
   "app-description": "Sunriseは、エンターテイメント市場向けにモジューラーブロックチェーンのデータ可用性層を提供し、 高スループットのデータ要件に対応し、誰でも簡単に独自のブロックチェーンを立ち上げることができます。",
-  "sunrise-question": "Welcome to our app!",
-  "sunrise-definition": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+  "sunrise-question": "Sunriseとは何か",
+  "sunrise-definition": "Sunriseは、最新のブロックチェーン開発で直面する問題を解決する包括的なソリューションです。",
   "sunrise-01": {
-    "label": "Monolithic blockchains can’t keep up.",
-    "description": "A monolithic chain is a generalist blockchain that performs all tasks. Really, the monolithic approach is “do everything yourself”.  But It’s prohibitively expensive and slow to build modern applications directly on monolithic chains. There has to be a better way."
+    "label": "モノリシックなブロックチェーン では追いつけない。",
+    "description": "モノリシック・チェーンとは、すべてのタスクを実行するジェネラリスト・ブロックチェーンのことだ。本当にモノリシックなアプローチは、「すべてを自分でやる」ということです。 しかし、最新のアプリケーションをモノリシックチェーン上に直接構築するのは、法外に高価で時間がかかります。"
   },
   "sunrise-02": {
-    "label": "The modular evolution is here.",
-    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+    "label": "モジュラーの進化 がここにある。",
+    "description": "モジュラー型ブロックチェーンがモノリシックチェーンと異なるのは、4つの役割のうち1つ以上を別のレイヤーにオフロードしている点です。 Sunriseは、トランザクションの実行と調停の責任を別のネットワークにオフロードすることで、データの可用性（「DA」）とコンセンサスの機能を満たすことに特化したブロックチェーンです。"
   },
   "sunrise-03": {
-    "label": "What will you build on Sunrise?",
-    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+    "label": "Sunrise上で何を作る？",
+    "description": "Sunriseはモジュールブロックチェーンの土台を提供します。 Sunriseがあれば、チェーンは主権を持つことができます。これは、思いのままにチェーンを構築できる自由を意味します。 Sunriseはどのような実行環境にも対応しているため、次世代のブロックチェーン・ソリューションを構築する力を手に入れることができます。"
   },
   "sunrise-04": {
-    "label": "The modular evolution is here.",
-    "description": "Sunrise brings the modular foundation, so you can bring the innovation. With Sunrise, your chain can become sovereign. This means freedom to build your chain the way you want. Since Sunrise naturally supports any execution environment, you now have the power to create next-gen blockchain solutions."
+    "label": "Sunriseの価値",
+    "description": "Sunriseは、エンターテインメント市場で持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。 Sunriseがモジュール式の基盤を提供するので、お客様はイノベーションを実現できます。 Sovereign Proof of Liquidityによるソブリン・ロールアップは、ガバナンスに参加した人とトークンに流動性を提供した人の両方にインセンティブを与えることができます。 また、「あらゆるトークンをAltDAのガスフィーとして受け入れる」機能により、サンライズは長期的な利回りを生み出すことを保証します。"
   },
   "sunrise-features": {
-    "label": "Build better blockchains, more easily and efficiency then ever before.",
-    "description": "Building blockchains doesn’t have to be complicated. Develop intuitively with a base layer built for the future.",
-    "feature-easy": {
+    "label": "より優れたブロックチェーンを これまで以上に簡単かつ効率的に",
+    "description": "ブロックチェーンの構築は複雑である必要はありません。 未来のために構築されたベースレイヤーで直感的に開発しましょう。",
+    "feature-1": {
       "label": "Easy to use",
-      "description": "No need to bootstrap your own validator set and easily set up on Sunrise."
+      "description": "独自のバリデーターセットをブートストラップする必要がなく、Sunriseで簡単にセットアップできます。"
     },
-    "feature-scale": {
+    "feature-2": {
       "label": "Scalable",
-      "description": "Developers focus on their goals without thinking of infrastructure."
+      "description": "開発者はインフラのことを考えずに目的に集中できます。"
     },
-    "feature-flexible": {
+    "feature-3": {
       "label": "Flexible",
-      "description": "Sunrise supports any blockchain execution environment, enabling devs to innovate."
+      "description": "Sunriseはあらゆるブロックチェーン実行環境をサポートし、開発者のイノベーションを可能にします。"
     },
-    "feature-gasfree": {
+    "feature-4": {
       "label": "Any tokens as Gas fees",
-      "description": "Sunrise enables projects to pay any tokens as gas fees for using Sunrise."
+      "description": "Sunriseでは、プロジェクトがSunriseを利用する際に、あらゆるトークンをガス代として支払うことができます。"
     },
-    "feature-sovereign": {
+    "feature-5": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "Projects can incentivize both those who participated in governance and who provided liquidity for the tokens."
+      "description": "プロジェクトは、ガバナンスに参加した人とトークンの流動性を提供した人の両方にインセンティブを与えることができます。"
     }
   },
   "sunrise-products": {
-    "label": "What you can build with Sunrise",
-    "description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+    "label": "Sunrise上で構築できるもの",
+    "description": "Sunriseは、最新のブロックチェーン開発で直面する問題を解決する包括的なソリューションです。",
     "product-validiums": {
       "label": "Validiums",
-      "description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment that data is posted to a separate chain, such as Sunrise. They save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can pay any tokens as gas fees for AltDA."
+      "description": "ゼロ・ナレッジ・ロールアップの一種で、親チェーンではなくオフチェーンにデータをポストします。オフチェーン環境では、データはSunriseなどの別のチェーンにポストされます。イーサリアムに直接データをポストするロールアップと比較すると、ガス料金を最大90%節約でき、AltDAのガス料金として任意のトークンを支払うことができます。"
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
-      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+      "description": "ソブリン・ロールアップはブロックチェーンの一種であり、そのトランザクションを他のブロックチェーンに公開します。 ソブリン・ロールアップは取引の実行と調停を担当し、DAレイヤーはコンセンサスとデータの可用性を担当します。"
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "The LST of Sunrise and the AMM LP share of the Sovereign Rollup native tokens will be the voting power of the Sovereign Rollup Settlement Committee. In other words, LP rewards and Proof of Stake rewards are given to users for LPing and improved security. (e.g. GLU/stSR)"
+      "description": "SunriseのLSTとソブリンロールアップネイティブトークンのAMM LPシェアは、ソブリンロールアップの議決権となります。(例：GLU/stSR） プロジェクトのトークンに対して流動性供給した人に適切に報いることができます。"
     }
   },
   "sunrise-vision": {
     "label": "Vision",
-    "description": "We believe that all Layer1 blockchains will be DA Layer. So, each DA Layer will take a position. We will focus on the entertainment industry, solving the challenges in token liquidity, while creating a world where more people can enjoy entertainment."
+    "description": "我々は、Layer1のブロックチェーンはすべてDA Layerになると考えています。つまり、それぞれのDAレイヤーがポジションを取ることになります。私たちはエンターテインメント業界にフォーカスし、トークンの流動性における課題を解決しながら、より多くの人がエンターテインメントを楽しめる世界を作っていきます。"
   }
 }

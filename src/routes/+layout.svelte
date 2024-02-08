@@ -6,7 +6,7 @@
 	import jp from '../i18n/jp.json';
 	import { _, init, addMessages } from 'svelte-i18n';
 
-	const defaultLocale = 'en';
+	const defaultLocale = 'jp';
 
 	addMessages('en', en);
 	addMessages('jp', jp);

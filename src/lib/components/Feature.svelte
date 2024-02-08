@@ -1,14 +1,25 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 	import { writable } from 'svelte/store';
-	import { _ } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 	import feature1 from '$lib/images/feature1.svg';
 	import feature2 from '$lib/images/feature2.svg';
 	import feature3 from '$lib/images/feature3.svg';
 	import feature4 from '$lib/images/feature4.svg';
 	import feature5 from '$lib/images/feature5.svg';
 	import Label from './Label.svelte';
+	import { newLocale } from '../stores/i18nStore';
 
+	let localeInfo: string;
+
+	// Subscribe to the newLocale store
+	const unsubscribe = newLocale.subscribe((value: string) => {
+		localeInfo = value;
+		locale.set(localeInfo);
+	});
+
+	// Unsubscribe when the component is destroyed
+	onDestroy(unsubscribe);
 	// Define your carousel items
 	const items = [
 		{
@@ -45,31 +56,39 @@
 
 	let currentIndex = writable(0);
 
-	let timer: any;
+	function debounce<A extends unknown[], R>(
+		fn: (...args: A) => R,
+		ms: number
+	): (...args: A) => Promise<R> {
+		let timer: ReturnType<typeof setTimeout>;
+		return function (...args: A): Promise<R> {
+			return new Promise((resolve) => {
+				if (timer) clearTimeout(timer);
+				timer = setTimeout(() => resolve(fn(...args)), ms);
+			});
+		};
+	}
+
+	const debouncedNextSlide = debounce(nextSlide, 300);
 
 	// Function to handle transitioning to the next slide
 	function nextSlide() {
 		currentIndex.update((n) => (n + 2) % items.length);
 	}
 
-	// Function to start autoplay
-	function startAutoplay() {
-		timer = setInterval(nextSlide, 3000);
-	}
+	let carouselContainer: HTMLElement;
 
-	// Function to stop autoplay
-	function stopAutoplay() {
-		clearInterval(timer);
-	}
+	onMount(() => {
+		carouselContainer.addEventListener('wheel', debouncedNextSlide, { passive: true });
 
-	// Lifecycle hook to start autoplay when the component mounts
-	onMount(startAutoplay);
-
-	// Lifecycle hook to stop autoplay when the component is destroyed
-	onDestroy(stopAutoplay);
+		// Remove event listener on destroy
+		return () => {
+			carouselContainer.removeEventListener('wheel', debouncedNextSlide);
+		};
+	});
 </script>
 
-<div class="flex gap-5">
+<div class="flex gap-5" bind:this={carouselContainer}>
 	{#each items.slice($currentIndex, $currentIndex + 2) as item (item.id)}
 		<div
 			class="w-[49.5%] px-[30px] py-12 text-white rounded-[20px]"

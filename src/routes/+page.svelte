@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 	import Label from '$lib/components/Label.svelte';
 	import logo from '$lib/images/icon.svg';
 	import { appDescription } from '../consts';
@@ -20,11 +20,18 @@
 	import linkedin from '../lib/images/linkedin.svg';
 	import youtube from '../lib/images/youtube.svg';
 	import linktree from '../lib/images/linktree.svg';
+	import TopBG from '../lib/images/TopBG.png';
+	import TopMask from '../lib/images/TopMask.png';
+	import BodyMask from '../lib/images/Mask group.png';
+	import BodyBG from '../lib/images/Rectangle 9.png';
+	import { newLocale } from '../lib/stores/i18nStore';
 
 	let isEnglish = true;
 
 	function toggleLanguage() {
 		isEnglish = !isEnglish;
+		newLocale.set(isEnglish ? 'en' : 'jp');
+		locale.set(isEnglish ? 'en' : 'jp');
 	}
 </script>
 
@@ -33,8 +40,10 @@
 	<meta name="description" content="SunRise" />
 </svelte:head>
 
-<div class="flex justify-center">
-	<div class="w-[1413px]">
+<div class="flex justify-center relative" style="">
+	<img src={TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
+	<img src={TopMask} alt="TopBG" class="absolute z-0 opacity-95 h-full w-full object-cover" />
+	<div class="w-[1413px] z-10">
 		<div class="flex flex-col gap-[140px] pt-[50px]">
 			<div class="flex justify-between">
 				<div class="flex gap-2 items-center text-2xl">
@@ -49,7 +58,7 @@
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
 						>
 							<button on:click={toggleLanguage} class="items-center">
-								{isEnglish ? 'English' : 'Japanese'}
+								{isEnglish ? 'Japanese' : 'English'}
 							</button>
 						</li>
 						<li aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
@@ -93,59 +102,84 @@
 		</div>
 	</div>
 </div>
-<div>
-	<div class="px-[50px] text-white w-full flex flex-col justify-center">
+<div class="relative">
+	<img src={BodyBG} alt="BodyBG" class="absolute z-0 w-full h-full object-cover" />
+	<img src={BodyMask} alt="BodyMask" class="absolute z-0 opacity-50 w-full h-full object-cover" />
+	<div class="px-[50px] w-full flex flex-col justify-center relative">
 		<div>
 			<div class="flex flex-col justify-center pt-[60px] pb-16">
 				<Label
-					className="text-center font-orbitron text-6xl font-bold leading-[80px] tracking-wide"
+					className="text-center text-white font-orbitron text-6xl font-bold leading-[80px] tracking-wide"
 					text={$_('sunrise-question')}
 				/>
 				<Label
-					className="text-center font-overpass text-2xl font-medium tracking-tighter"
+					className="text-center text-white font-overpass text-2xl font-medium tracking-tighter"
 					text={$_('sunrise-definition')}
 				/>
 			</div>
 		</div>
 		<div
-			class="flex flex-wrap gap-y-9 mx-auto justify-between"
-			style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);
-mix-blend-mode: overlay;"
+			class="flex flex-wrap gap-y-9 mx-auto justify-between pb-16"
+			style="bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat)"
 		>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] rounded-[20px]"
-				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
+				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 			>
-				<Label className="font-orbitron text-4xl font-extrabold" text={'01'} />
-				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-01.label')} />
-				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-01.description')} />
+				<Label className="font-orbitron text-4xl font-extrabold text-white" text={'01'} />
+				<Label
+					className="font-orbitron text-4xl font-extrabold text-white"
+					text={$_('sunrise-01.label')}
+				/>
+				<Label
+					className="font-sans text-2xl font-normal text-white"
+					text={$_('sunrise-01.description')}
+				/>
 				<img class="w-[70%] mx-auto" src={monolithic} alt="monolithic" />
 			</div>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark rounded-[20px]"
-				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
+				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 			>
-				<Label className="font-orbitron text-4xl font-extrabold" text={'02'} />
-				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-02.label')} />
-				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-02.description')} />
+				<Label className="font-orbitron text-4xl font-extrabold text-white" text={'02'} />
+				<Label
+					className="font-orbitron text-4xl font-extrabold text-white"
+					text={$_('sunrise-02.label')}
+				/>
+				<Label
+					className="font-sans text-2xl font-normal text-white"
+					text={$_('sunrise-02.description')}
+				/>
 				<img class="w-[70%] mx-auto" src={modular} alt="modular" />
 			</div>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark rounded-[20px]"
-				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
+				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 			>
-				<Label className="font-orbitron text-4xl font-extrabold" text={'03'} />
-				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-03.label')} />
-				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-03.description')} />
+				<Label className="font-orbitron text-4xl font-extrabold text-white" text={'03'} />
+				<Label
+					className="font-orbitron text-4xl font-extrabold text-white"
+					text={$_('sunrise-03.label')}
+				/>
+				<Label
+					className="font-sans text-2xl font-normal text-white"
+					text={$_('sunrise-03.description')}
+				/>
 				<img class="w-[70%] mx-auto" src={build} alt="build" />
 			</div>
 			<div
 				class="w-[49.5%] flex flex-col gap-[23px] px-5 py-[30px] bg-gradient-to-b from-[rgba(15,28,54,0.30)] to-Blue-dark, rounded-[20px]"
 				style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%));"
 			>
-				<Label className="font-orbitron text-4xl font-extrabold" text={'04'} />
-				<Label className="font-orbitron text-4xl font-extrabold" text={$_('sunrise-04.label')} />
-				<Label className="font-sans text-2xl font-normal" text={$_('sunrise-04.description')} />
+				<Label className="font-orbitron text-4xl font-extrabold text-white" text={'04'} />
+				<Label
+					className="font-orbitron text-4xl font-extrabold text-white"
+					text={$_('sunrise-04.label')}
+				/>
+				<Label
+					className="font-sans text-2xl font-normal text-white"
+					text={$_('sunrise-04.description')}
+				/>
 				<img class="w-[70%] mx-auto" src={value} alt="value" />
 			</div>
 		</div>
@@ -225,19 +259,28 @@ mix-blend-mode: overlay;"
 </div>
 
 <div
-	class="pl-[100px] py-[190px] text-textPrimary flex gap-60"
+	class="pl-[100px] py-[190px] text-textPrimary flex gap-60 relative"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
-	<div class="w-[688px] flex flex-col gap-6 text-white">
-		<Label className="font-orbitron text-6xl font-extrabold" text={$_('sunrise-vision.label')} />
+	<img src={BodyBG} alt="BodyBG" class="absolute z-0 w-full h-full object-cover top-0 left-0" />
+	<img
+		src={BodyMask}
+		alt="BodyMask"
+		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
+	/>
+	<div class="w-[688px] flex flex-col gap-6 text-white relative">
 		<Label
-			className="w-[688px] font-overpass text-3xl font-medium tracking-tight"
+			className="font-orbitron text-6xl font-extrabold text-white"
+			text={$_('sunrise-vision.label')}
+		/>
+		<Label
+			className="w-[688px] font-overpass text-3xl font-medium tracking-tight text-white"
 			text={$_('sunrise-vision.description')}
 		/>
 		<div>
 			<button class="px-4 py-5 items-center rounded-md bg-yellow-300 text-textPrimary"
 				><Label
-					className="text-center font-overpass text-xl leading-5 tracking-wide"
+					className="text-center font-overpass text-xl leading-5 tracking-wide font-bold"
 					text="Build with Us"
 				/></button
 			>

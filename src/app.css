@@ -4,7 +4,11 @@
 
 /* In your CSS or SCSS file */
 :root {
-	--Dark: #0a204a 100%;
+	--Light: (linear-gradient(to bottom right, #FCECCF 0%, #D7E5FB 50%) bottom right / 50% 50% no-repeat,
+			linear-gradient(to bottom left, #FCECCF 0%, #D7E5FB 50%) bottom left / 50% 50% no-repeat,
+			linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 50% 50% no-repeat,
+			linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 50% 50% no-repeat);
+	--Dark: linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%);
 	--Sunrise: radial-gradient(360deg, #ffc75f, #4988ff);
 	--Sunrise-Degragee: linear-gradient(180deg, #edbc64 0%, #6495ed 100%);
 	--PURPLE-LINEAR: linear-gradient(174deg, #71AFFB 0%, #A134F9 100%);
