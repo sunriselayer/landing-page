@@ -119,9 +119,9 @@
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
-	<div class="flex sm:gap-[35px] sm:flex-row flex-col px-4 gap-4 mt-[35px]">
+	<div class="flex lg: justify-between sm:gap-[35px] sm:flex-row flex-col px-4 gap-4 mt-[35px]">
 		<div
-			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
 		>
 			<Label
