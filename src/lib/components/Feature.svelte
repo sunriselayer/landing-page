@@ -6,13 +6,12 @@
 	import Label from './Label.svelte';
 	import { newLocale } from '../stores/i18nStore';
 
-	let localeInfo: string;
-
 	// Subscribe to the newLocale store
 	const unsubscribe = newLocale.subscribe((value: string) => {
-		localeInfo = value;
-		locale.set(localeInfo);
+		console.log(value, 'feature value: ');
+		locale.set(value);
 	});
+	console.log(unsubscribe, 'unsubscribe: ');
 
 	// Unsubscribe when the component is destroyed
 	onDestroy(unsubscribe);
