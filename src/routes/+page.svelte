@@ -32,15 +32,15 @@
 		class="absolute z-0 opacity-95 h-full w-full object-cover"
 	/>
 	<div class="z-10">
-		<div class="flex flex-col md:gap-[140px] md:pt-[50px] sm: pt-3">
-			<div class="flex justify-between">
-				<div class="flex gap-2 items-center text-2xl">
+		<div class="flex flex-col md:gap-[140px] md:pt-[50px] sm:pt-3">
+			<div class="flex sm:flex-row flex-col gap-3 justify-between px-5 pb-5">
+				<div class="flex gap-2 items-center text-2xl pt-3">
 					<img src={images.logo} alt="SvelteKit" />
 					<span>{appTitle}</span>
 				</div>
 
 				<nav class="flex items-center">
-					<ul class="flex md:gap-8">
+					<ul class="flex sm:gap-8 gap-3 text-xl">
 						<li
 							class="flex items-center"
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
@@ -92,9 +92,9 @@
 	</div>
 </div>
 <Concept />
-<div class="p-[100px]">
+<div class=" p-4 sm:p-[100px] bg-white">
 	<Label
-		className={'text-textPrimary text-center font-orbitron text-6xl font-bold tracking-tight'}
+		className={'text-textPrimary text-center font-orbitron sm:text-6xl text-3xl font-bold tracking-tight'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center pb-[135px]">
@@ -106,7 +106,7 @@
 	<Feature />
 </div>
 <div
-	class="p-[100px] w-full"
+	class="sm:p-[100px] pb-6"
 	style="background: linear-gradient(to bottom right, #D7E5FB 0%, #FCECCF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #D7E5FB 0%, #FCECCF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 50% 50% no-repeat;"
 >
 	<div class="text-textPrimary">
@@ -119,7 +119,7 @@
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
-	<div class="flex gap-[35px] mt-[35px]">
+	<div class="flex sm:gap-[35px] sm:flex-row flex-col px-4 gap-4 mt-[35px]">
 		<div
 			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
@@ -166,7 +166,7 @@
 </div>
 
 <div
-	class="py-[190px] pl-32 text-textPrimary flex gap-60 relative"
+	class="md:py-[190px] sm:py-20 py-4 sm:pl-32 pl-10 text-textPrimary flex sm:flex-row pr-3 sm:gap-60 relative"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
 	<img
@@ -181,15 +181,15 @@
 	/>
 	<div class="max-w-[688px] flex flex-col gap-6 text-white relative">
 		<Label
-			className="font-orbitron text-6xl font-extrabold text-white"
+			className="font-orbitron text-6xl font-extrabold text-white z-30"
 			text={$_('sunrise-mission.label')}
 		/>
 		<Label
-			className="max-w-[688px] font-overpass text-3xl font-medium tracking-tight text-white"
+			className=" font-overpass text-3xl font-medium tracking-tight text-white z-30"
 			text={$_('sunrise-mission.description')}
 		/>
 		<div>
-			<button class="px-4 py-5 items-center rounded-md bg-yellow-300 text-textPrimary"
+			<button class="sm:px-4 sm:py-5 p-2 items-center rounded-md bg-yellow-300 text-textPrimary"
 				><Label
 					className="text-center font-overpass text-xl leading-5 tracking-wide font-bold"
 					text="Build with Us"
@@ -197,45 +197,52 @@
 			>
 		</div>
 	</div>
-	<img class="w-[427.143px] h-[427.143px] z-30 pr-10 opacity-40" src={images.union} alt="union" />
+	<img
+		class="sm:w-[427.143px] sm:h-[427.143px] w-20 h-20 z-30 md:pr-10 opacity-40"
+		src={images.union}
+		alt="union"
+	/>
 </div>
-<div class="px-[100px] pt-[84px] pb-9">
-	<div class="flex gap-44 pb-[114px]">
+<div class="md:px-[100px] md:pt-21 py-5 bg-white">
+	<div class="flex md:gap-44 sm:gap-32 sm:flex-row flex-col pl-5 gap-3 lg:pb-[114px] pb-5">
 		<div class="flex justify-between items-start">
-			<div class="flex gap-[7.5px]">
-				<img src={images.logo} alt="logo" />
-				<img src={images.sunrise} alt="sunrise" />
+			<div class="flex gap-[7.5px] items-center pt-3">
+				<img class="sm:w-[full] h-full" src={images.logo} alt="logo" />
+				<img class="sm:w-[full] h-full" src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
-		<div class="w-full justify-between flex font-ibm-plex-sans">
-			<div class=" flex flex-col gap-8">
+		<div class="w-full sm:justify-between flex sm:flex-row flex-col">
+			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
 				<Label className="text-[30px] font-bold" text="Developers" />
 				<Label className="text-xl font-medium" text="Docs" />
 				<Label className="text-xl font-medium" text="GitHub" />
 			</div>
-			<div class=" flex flex-col gap-8">
+			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
 				<Label className="text-[30px] font-bold" text="Services" />
 				<Label className="text-xl font-medium" text="Portal" />
 				<Label className="text-xl font-medium" text="Explorer" />
 				<Label className="text-xl font-medium" text="Community" />
 			</div>
-			<div class=" flex flex-col gap-8">
+			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
 				<Label className="text-[30px] font-bold" text="Information" />
 				<Label className="text-xl font-medium" text="Whitepaper" />
 				<Label className="text-xl font-medium" text="Blog" />
 				<Label className="text-xl font-medium" text="Jobs" />
 				<Label className="text-xl font-medium" text="Press Kit" />
 			</div>
-			<div class=" flex flex-col gap-8">
+			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
 				<Label className="text-[30px] font-bold" text="Legal" />
 				<Label className="text-xl font-medium" text="Terms and Services" />
 				<Label className="text-xl font-medium" text="Privacy Policy" />
 			</div>
 		</div>
 	</div>
-	<div class="pt-6 flex justify-between">
-		<Label className="text-xl tracking-wider" text="Sunrise © – All rights reserved. 2024" />
-		<div class="flex gap-9">
+	<div class="pt-6 px-3 flex sm:justify-between sm:flex-row flex-col gap-1">
+		<Label
+			className="text-xl sm:tracking-wider tracking-tighter"
+			text="Sunrise © – All rights reserved. 2024"
+		/>
+		<div class="flex sm:gap-9 gap-1">
 			<img src={images.discord} alt="discord" />
 			<img src={images.twitter} alt="twitter" />
 			<img src={images.linkedin} alt="linkedin" />

@@ -52,24 +52,24 @@
 	let currentIndex = writable(0);
 </script>
 
-<div class="flex gap-5 overflow-x-auto rounded-[20px]">
+<div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px]">
 	{#each items as item (item.id)}
 		<div
-			class="min-w-[646px] px-[30px] py-12 text-white rounded-[20px]"
+			class="sm:min-w-[646px] sm:px-[30px] px-5 min-w-[200px] sm:py-12 py-3 text-white rounded-[20px]"
 			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
 		>
 			<img
-				class="w-[382px] h-[353px] mx-auto"
+				class="w-[382px] sm:h-[353px] mx-auto"
 				src={item.image}
 				alt={$_(`Image of ${item.label}`)}
 			/>
-			<div class="py-6 px-3 mt-[23px] bg-blue-700 bg-opacity-10">
+			<div class="py-6 sm:px-3 mt-[23px] bg-blue-700 bg-opacity-10">
 				<Label
-					className={'font-orbitron text-3xl font-extrabold tracking-wide text-white'}
+					className={'px-2 font-orbitron sm:text-3xl text-xl font-extrabold tracking-wide text-white'}
 					text={$_(item.label)}
 				/>
 				<Label
-					className={'mt-[23px] text-2xl font-normal text-white'}
+					className={'px-2 mt-[23px] sm:text-2xl text-lg font-normal text-white'}
 					text={$_(item.description)}
 				/>
 			</div>
