@@ -4,5 +4,5 @@
 </script>
 
 <div class={className}>
-	<span class="select-none text-inherit">{text}</span>
+	<span class="text-inherit">{text}</span>
 </div>
