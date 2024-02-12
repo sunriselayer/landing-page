@@ -50,9 +50,9 @@
 		alt="BodyMask"
 		class="absolute z-0 opacity-50 w-full h-full object-cover"
 	/>
-	<div class="px-4 sm:px-20 w-full flex flex-col justify-center relative">
+	<div class="lg:px-20 px-4 w-full flex flex-col justify-center relative">
 		<div>
-			<div class="flex flex-col justify-center pt-4 sm:pt-[60px] pb-16">
+			<div class="flex flex-col justify-center pt-4 sm:pt-[60px] pb-16 gap-3">
 				<Label
 					className="text-center text-white font-orbitron sm:text-4xl text-2xl font-bold md:leading-[80px] sm:leading-5 tracking-wide"
 					text={$_('sunrise-question')}

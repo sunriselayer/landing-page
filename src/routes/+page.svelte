@@ -24,7 +24,7 @@
 	<meta name="description" content="SunRise" />
 </svelte:head>
 
-<div class="flex flex-wrap justify-center relative">
+<div class="flex flex-wrap justify-center relative w-full">
 	<img src={images.TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
 	<img
 		src={images.TopMask}
@@ -32,8 +32,8 @@
 		class="absolute z-0 opacity-95 h-full w-full object-cover"
 	/>
 	<div class="z-10">
-		<div class="flex flex-col md:gap-[140px] md:pt-[50px] sm:pt-3">
-			<div class="flex sm:flex-row flex-col gap-3 justify-between px-5 pb-5">
+		<div class="flex flex-col lg:gap-[140px] gap-20 md:pt-[50px] sm:pt-3">
+			<div class="flex sm:flex-row flex-col justify-between px-5 pb-5">
 				<div class="flex gap-2 items-center text-2xl pt-3">
 					<img src={images.logo} alt="SvelteKit" />
 					<span>{appTitle}</span>
@@ -62,9 +62,9 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="flex flex-col gap-12 sm:px-[50px] px-8 items-center">
+			<div class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center">
 				<Label
-					className={'md:max-w-[1076px] text-center font-orbitron sm:text-[70px] text-4xl font-normal sm:leading-[80px] leading-10 tracking-[1.4px] text-textPrimary'}
+					className={'md:max-w-[1076px] text-center font-orbitron lg:text-[70px] text-[50px] md:text-[60px] font-normal sm:leading-[80px] leading-10 sm:tracking-[1.4px] tracking-widest text-textPrimary'}
 					text={appDescription}
 				/>
 				<Label
@@ -92,9 +92,9 @@
 	</div>
 </div>
 <Concept />
-<div class=" p-4 sm:p-[100px] bg-white">
+<div class=" p-4 lg:p-[100px] md:p-16 bg-white">
 	<Label
-		className={'text-textPrimary text-center font-orbitron sm:text-6xl text-3xl font-bold tracking-tight'}
+		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center pb-[135px]">
@@ -106,12 +106,12 @@
 	<Feature />
 </div>
 <div
-	class="sm:p-[100px] pb-6"
+	class="mx-auto pb-6 md:px-10 sm:px-6"
 	style="background: linear-gradient(to bottom right, #D7E5FB 0%, #FCECCF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #D7E5FB 0%, #FCECCF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 50% 50% no-repeat;"
 >
 	<div class="text-textPrimary">
 		<Label
-			className="mx-auto text-center font-orbitron text-6xl font-extrabold tracking-wide"
+			className="mx-auto text-center font-orbitron md:text-6xl sm:text-3xl text-2xl font-extrabold tracking-wide pt-5"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
@@ -119,23 +119,23 @@
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
-	<div class="flex lg: justify-between sm:gap-[35px] sm:flex-row flex-col px-4 gap-4 mt-[35px]">
+	<div class="flex lg:justify-between sm:gap-[35px] md:flex-row flex-col px-4 gap-4 mt-[35px]">
 		<div
-			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col sm:gap-[23px] gap-2 py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
 		>
 			<Label
-				className="text-center text-[32px] font-extrabold leading-[50px] text-white"
+				className="text-center text-[32px] text-2xl font-extrabold leading-[50px] text-white"
 				text={$_('sunrise-products.product-validiums.label')}
 			/>
 			<img class="w-[138.438px] h-[248px] mx-auto" src={images.validiums} alt="validiums" />
 			<Label
-				className=" text-2xl font-normal text-white"
+				className="text-2xl font-normal text-white"
 				text={$_('sunrise-products.product-validiums.description')}
 			/>
 		</div>
 		<div
-			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--BLUE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #3E34F9 100%)"
 		>
 			<Label
@@ -149,7 +149,7 @@
 			/>
 		</div>
 		<div
-			class="flex flex-col gap-[23px] py-5 px-3 rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: linear-gradient(186deg, #F9348C -64.12%, #A134F9 88.98%)"
 		>
 			<Label
@@ -166,7 +166,7 @@
 </div>
 
 <div
-	class="md:py-[190px] sm:py-20 py-4 sm:pl-32 pl-10 text-textPrimary flex sm:flex-row pr-3 sm:gap-60 relative"
+	class="lg:justify-between md:py-36 sm:py-20 py-4 lg:pl-32 md:pl-20 sm:pl-12 text-textPrimary flex pl-4 sm:flex-row pr-10 sm:gap-4 md:gap-40 relative"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
 	<img
@@ -179,13 +179,13 @@
 		alt="BodyMask"
 		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
 	/>
-	<div class="max-w-[688px] flex flex-col gap-6 text-white relative">
+	<div class="flex flex-col gap-6 text-white relative">
 		<Label
 			className="font-orbitron text-6xl font-extrabold text-white z-30"
 			text={$_('sunrise-mission.label')}
 		/>
 		<Label
-			className=" font-overpass text-3xl font-medium tracking-tight text-white z-30"
+			className="max-w-[500px] font-overpass text-3xl font-medium tracking-tight text-white z-30"
 			text={$_('sunrise-mission.description')}
 		/>
 		<div>
@@ -198,42 +198,44 @@
 		</div>
 	</div>
 	<img
-		class="sm:w-[427.143px] sm:h-[427.143px] w-20 h-20 z-30 md:pr-10 opacity-40"
+		class="lg:w-[427.143px] lg:h-[427.143px] md:w-60 md:h-60 w-24 h-24 z-30 opacity-40"
 		src={images.union}
 		alt="union"
 	/>
 </div>
-<div class="md:px-[100px] md:pt-21 py-5 bg-white">
-	<div class="flex md:gap-44 sm:gap-32 sm:flex-row flex-col pl-5 gap-3 lg:pb-[114px] pb-5">
+<div class="xl:px-[100px] lg:py-20 md:px-12 sm:px-3 py-5 bg-white">
+	<div
+		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 md:gap-12 flex-col gap-3 pl-5 lg:pb-[114px] pb-5 md:px-8 xl:px-12"
+	>
 		<div class="flex justify-between items-start">
-			<div class="flex gap-[7.5px] items-center pt-3">
-				<img class="sm:w-[full] h-full" src={images.logo} alt="logo" />
-				<img class="sm:w-[full] h-full" src={images.sunrise} alt="sunrise" />
+			<div class="flex gap-3 items-center">
+				<img class="md:w-full h-full" src={images.logo} alt="logo" />
+				<img class="md:w-full h-full" src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
-		<div class="w-full sm:justify-between flex sm:flex-row flex-col">
+		<div class="w-full flex sm:justify-between sm:flex-row flex-col">
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="text-[30px] font-bold" text="Developers" />
-				<Label className="text-xl font-medium" text="Docs" />
-				<Label className="text-xl font-medium" text="GitHub" />
+				<Label className="md:text-[30px] font-bold" text="Developers" />
+				<Label className="md:text-xl font-medium" text="Docs" />
+				<Label className="md:text-xl font-medium" text="GitHub" />
 			</div>
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="text-[30px] font-bold" text="Services" />
-				<Label className="text-xl font-medium" text="Portal" />
-				<Label className="text-xl font-medium" text="Explorer" />
-				<Label className="text-xl font-medium" text="Community" />
+				<Label className="md:text-[30px] font-bold" text="Services" />
+				<Label className="md:text-xl font-medium" text="Portal" />
+				<Label className="md:text-xl font-medium" text="Explorer" />
+				<Label className="md:text-xl font-medium" text="Community" />
 			</div>
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="text-[30px] font-bold" text="Information" />
-				<Label className="text-xl font-medium" text="Whitepaper" />
-				<Label className="text-xl font-medium" text="Blog" />
-				<Label className="text-xl font-medium" text="Jobs" />
-				<Label className="text-xl font-medium" text="Press Kit" />
+				<Label className="md:text-[30px] font-bold" text="Information" />
+				<Label className="md:text-xl font-medium" text="Whitepaper" />
+				<Label className="md:text-xl font-medium" text="Blog" />
+				<Label className="md:text-xl font-medium" text="Jobs" />
+				<Label className="md:text-xl font-medium" text="Press Kit" />
 			</div>
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="text-[30px] font-bold" text="Legal" />
-				<Label className="text-xl font-medium" text="Terms and Services" />
-				<Label className="text-xl font-medium" text="Privacy Policy" />
+				<Label className="md:text-[30px] font-bold" text="Legal" />
+				<Label className="md:text-xl font-medium" text="Terms and Services" />
+				<Label className="md:text-xl font-medium" text="Privacy Policy" />
 			</div>
 		</div>
 	</div>
@@ -242,7 +244,7 @@
 			className="text-xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
-		<div class="flex sm:gap-9 gap-1">
+		<div class="flex lg:gap-9 md:gap-3 gap-1">
 			<img src={images.discord} alt="discord" />
 			<img src={images.twitter} alt="twitter" />
 			<img src={images.linkedin} alt="linkedin" />

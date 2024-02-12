@@ -7,7 +7,7 @@
 	import { _, init, addMessages } from 'svelte-i18n';
 	import '/node_modules/flag-icons/css/flag-icons.min.css';
 
-	const defaultLocale = 'jp';
+	const defaultLocale = 'en';
 
 	addMessages('en', en);
 	addMessages('jp', jp);
