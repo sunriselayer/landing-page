@@ -64,7 +64,7 @@
 			</div>
 		</div>
 		<!-- <div class="flex flex-col sm:flex-row gap-y-9 sm:flex-wrap sm:justify-between pb-16"> -->
-		<div class="flex flex-col sm:flex-row gap-y-9 sm:flex-wrap pb-16">
+		<div class="flex flex-col sm:flex-row md:gap-y-9 sm:gap-y-5 sm:flex-wrap pb-16">
 			{#each features as { index, label, description, imageSrc }, i}
 				<FeatureItem {index} {label} {description} {imageSrc} />
 			{/each}

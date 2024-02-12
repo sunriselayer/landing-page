@@ -20,8 +20,8 @@
 </script>
 
 <svelte:head>
-	<title>SunRise</title>
-	<meta name="description" content="SunRise" />
+	<title>{appTitle}</title>
+	<meta name="description" content="Sunrise" />
 </svelte:head>
 
 <div class="flex justify-center relative">
@@ -93,7 +93,7 @@
 </div>
 <Concept />
 <div
-	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12"
+	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12 pt-10"
 	style="background: linear-gradient(to bottom right, #FCECCF 0%, #D7E5FB 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FCECCF 0%, #D7E5FB 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 50% 50% no-repeat"
 >
 	<Label
