@@ -24,7 +24,7 @@
 	<meta name="description" content="SunRise" />
 </svelte:head>
 
-<div class="flex flex-wrap justify-center relative w-full">
+<div class="flex justify-center relative">
 	<img src={images.TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
 	<img
 		src={images.TopMask}
@@ -64,11 +64,11 @@
 			</div>
 			<div class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center">
 				<Label
-					className={'md:max-w-[1076px] text-center font-orbitron lg:text-[70px] text-[50px] md:text-[60px] font-normal sm:leading-[80px] leading-10 sm:tracking-[1.4px] tracking-widest text-textPrimary'}
+					className={'md:max-w-[1076px] lg:max-w-full text-center font-orbitron lg:text-[70px] text-[50px] md:text-[60px] font-normal sm:leading-[80px] leading-10 sm:tracking-[1.4px] tracking-widest text-textPrimary'}
 					text={appDescription}
 				/>
 				<Label
-					className={'max-w-[1076px] text-center font-overpass sm:text-[30px] text-xl font-medium tracking-wide text-textPrimary'}
+					className={'max-w-[1076px] lg:max-w-full text-center font-overpass sm:text-[30px] text-xl font-medium tracking-wide text-textPrimary'}
 					text={$_('app-description')}
 				/>
 			</div>
@@ -115,50 +115,52 @@
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="mt-12 text-center font-overpass text-2xl font-medium tracking-tighter"
+			className="mt-12 text-center font-overpass text-2xl 2xl:text-[40px] font-medium tracking-tighter"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
-	<div class="flex lg:justify-between sm:gap-[35px] md:flex-row flex-col px-4 gap-4 mt-[35px]">
+	<div
+		class="flex justify-center 2xl:justify-between sm:gap-[35px] md:flex-row flex-col px-4 gap-4 mt-[35px]"
+	>
 		<div
-			class="flex flex-col sm:gap-[23px] gap-2 py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col sm:gap-[23px] gap-2 py-5 px-3 2xl:px-5 max-w-[700px] 2xl:max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
 		>
 			<Label
-				className="text-center text-[32px] text-2xl font-extrabold leading-[50px] text-white"
+				className="text-center text-[32px] 2xl:text-[50px] font-extrabold leading-[50px] text-white"
 				text={$_('sunrise-products.product-validiums.label')}
 			/>
 			<img class="w-[138.438px] h-[248px] mx-auto" src={images.validiums} alt="validiums" />
 			<Label
-				className="text-2xl font-normal text-white"
+				className="text-2xl 2xl:text-4xl font-normal text-white"
 				text={$_('sunrise-products.product-validiums.description')}
 			/>
 		</div>
 		<div
-			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col gap-[23px] py-5 px-3 2xl:px-5 max-w-[700px] 2xl:max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: var(--BLUE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #3E34F9 100%)"
 		>
 			<Label
-				className="text-center text-[32px] font-extrabold leading-[50px] text-white"
+				className="text-center text-[32px] 2xl:text-[50px] font-extrabold leading-[50px] text-white"
 				text={$_('sunrise-products.product-rollups.label')}
 			/>
 			<img class="w-60 h-60 mx-auto" src={images.rollups} alt="rollups" />
 			<Label
-				className="text-2xl font-normal text-white"
+				className="text-2xl 2xl:text-4xl font-normal text-white"
 				text={$_('sunrise-products.product-rollups.description')}
 			/>
 		</div>
 		<div
-			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
+			class="flex flex-col gap-[23px] py-5 px-3 max-w-[700px] 2xl:px-5 2xl:max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
 			style="background: linear-gradient(186deg, #F9348C -64.12%, #A134F9 88.98%)"
 		>
 			<Label
-				className="text-center text-[28px] font-extrabold text-white"
+				className="text-center text-[28px] 2xl:text-[50px] font-extrabold text-white"
 				text={$_('sunrise-products.product-pol.label')}
 			/>
 			<img class="w-60 h-60 mx-auto" src={images.pol} alt="pol" />
 			<Label
-				className=" text-2xl font-normal text-white"
+				className=" text-2xl 2xl:text-4xl font-normal text-white"
 				text={$_('sunrise-products.product-pol.description')}
 			/>
 		</div>
@@ -181,17 +183,17 @@
 	/>
 	<div class="flex flex-col gap-6 text-white relative">
 		<Label
-			className="font-orbitron text-6xl font-extrabold text-white z-30"
+			className="font-orbitron text-6xl 2xl:text-[70px] font-extrabold text-white z-30"
 			text={$_('sunrise-mission.label')}
 		/>
 		<Label
-			className="max-w-[500px] font-overpass text-3xl font-medium tracking-tight text-white z-30"
+			className="lg:max-w-[500px] 2xl:max-w-full font-overpass text-3xl 2xl:text-5xl font-medium tracking-tight text-white z-30"
 			text={$_('sunrise-mission.description')}
 		/>
 		<div>
 			<button class="sm:px-4 sm:py-5 p-2 items-center rounded-md bg-yellow-300 text-textPrimary"
 				><Label
-					className="text-center font-overpass text-xl leading-5 tracking-wide font-bold"
+					className="text-center font-overpass text-xl 2xl:text-3xl leading-5 tracking-wide font-bold"
 					text="Build with Us"
 				/></button
 			>
@@ -215,41 +217,41 @@
 		</div>
 		<div class="w-full flex sm:justify-between sm:flex-row flex-col">
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold" text="Developers" />
-				<Label className="md:text-xl font-medium" text="Docs" />
-				<Label className="md:text-xl font-medium" text="GitHub" />
+				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Developers" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Docs" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="GitHub" />
 			</div>
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold" text="Services" />
-				<Label className="md:text-xl font-medium" text="Portal" />
-				<Label className="md:text-xl font-medium" text="Explorer" />
-				<Label className="md:text-xl font-medium" text="Community" />
+				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Services" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Portal" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Explorer" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Community" />
 			</div>
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold" text="Information" />
-				<Label className="md:text-xl font-medium" text="Whitepaper" />
-				<Label className="md:text-xl font-medium" text="Blog" />
-				<Label className="md:text-xl font-medium" text="Jobs" />
-				<Label className="md:text-xl font-medium" text="Press Kit" />
+				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Information" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Whitepaper" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Blog" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Jobs" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Press Kit" />
 			</div>
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold" text="Legal" />
-				<Label className="md:text-xl font-medium" text="Terms and Services" />
-				<Label className="md:text-xl font-medium" text="Privacy Policy" />
+				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Legal" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Terms and Services" />
+				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Privacy Policy" />
 			</div>
 		</div>
 	</div>
 	<div class="pt-6 px-3 flex sm:justify-between sm:flex-row flex-col gap-1">
 		<Label
-			className="text-xl sm:tracking-wider tracking-tighter"
+			className="md:text-2xl 2xl:text-4xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
 		<div class="flex lg:gap-9 md:gap-3 gap-1">
-			<img src={images.discord} alt="discord" />
-			<img src={images.twitter} alt="twitter" />
-			<img src={images.linkedin} alt="linkedin" />
-			<img src={images.youtube} alt="youtube" />
-			<img src={images.linktree} alt="linktree" />
+			<img class="xl:w-full h-full" src={images.discord} alt="discord" />
+			<img class="xl:w-full h-full" src={images.twitter} alt="twitter" />
+			<img class="xl:w-full h-full" src={images.linkedin} alt="linkedin" />
+			<img class="xl:w-full h-full" src={images.youtube} alt="youtube" />
+			<img class="xl:w-full h-full" src={images.linktree} alt="linktree" />
 		</div>
 	</div>
 </div>
