@@ -33,7 +33,7 @@
 	/>
 	<div class="z-10">
 		<div class="flex flex-col lg:gap-[140px] gap-20 md:pt-[50px] sm:pt-3">
-			<div class="flex sm:flex-row flex-col justify-between px-5 pb-5">
+			<div class="flex sm:flex-row flex-col gap-3 justify-between px-5 py-5">
 				<div class="flex gap-2 items-center text-2xl pt-3">
 					<img src={images.logo} alt="SvelteKit" />
 					<span>{appTitle}</span>
@@ -64,7 +64,7 @@
 			</div>
 			<div class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center">
 				<Label
-					className={'md:max-w-[1076px] lg:max-w-full text-center font-orbitron lg:text-[70px] text-[50px] md:text-[60px] font-normal sm:leading-[80px] leading-10 sm:tracking-[1.4px] tracking-widest text-textPrimary'}
+					className={'md:max-w-[1076px] lg:max-w-full text-center font-orbitron lg:text-[70px] md:text-[60px] text-4xl font-normal sm:leading-[80px] sm:tracking-[1.4px] text-textPrimary'}
 					text={appDescription}
 				/>
 				<Label
@@ -183,11 +183,11 @@
 	/>
 	<div class="flex flex-col gap-6 text-white relative">
 		<Label
-			className="font-orbitron text-6xl 2xl:text-[70px] font-extrabold text-white z-30"
+			className="font-orbitron sm:text-6xl 2xl:text-[70px] text-2xl font-extrabold text-white z-30"
 			text={$_('sunrise-mission.label')}
 		/>
 		<Label
-			className="lg:max-w-[500px] 2xl:max-w-full font-overpass text-3xl 2xl:text-5xl font-medium tracking-tight text-white z-30"
+			className="lg:max-w-[500px] 2xl:max-w-full font-overpass md:text-3xl 2xl:text-5xl font-medium tracking-tight text-white z-30"
 			text={$_('sunrise-mission.description')}
 		/>
 		<div>
@@ -200,7 +200,7 @@
 		</div>
 	</div>
 	<img
-		class="lg:w-[427.143px] lg:h-[427.143px] md:w-60 md:h-60 w-24 h-24 z-30 opacity-40"
+		class="lg:w-[427.143px] lg:h-[427.143px] sm:w-60 sm:h-60 w-24 h-24 z-30 opacity-40"
 		src={images.union}
 		alt="union"
 	/>
