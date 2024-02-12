@@ -92,7 +92,10 @@
 	</div>
 </div>
 <Concept />
-<div class=" p-4 lg:p-[100px] md:p-16 bg-white">
+<div
+	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12"
+	style="background: linear-gradient(to bottom right, #FCECCF 0%, #D7E5FB 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FCECCF 0%, #D7E5FB 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 50% 50% no-repeat"
+>
 	<Label
 		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider'}
 		text={$_('sunrise-features.label')}
@@ -106,7 +109,7 @@
 	<Feature />
 </div>
 <div
-	class="mx-auto pb-6 md:px-10 sm:px-6"
+	class="mx-auto pb-6 md:px-10 sm:px-6 pt-5"
 	style="background: linear-gradient(to bottom right, #D7E5FB 0%, #FCECCF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #D7E5FB 0%, #FCECCF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 50% 50% no-repeat;"
 >
 	<div class="text-textPrimary">
