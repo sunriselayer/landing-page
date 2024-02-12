@@ -18,7 +18,7 @@
 </script>
 
 <div
-	class="w-full max-w-[600px] mx-auto sm:w-[47%] flex flex-col gap-3 sm:gap-[23px] px-3 sm:px-8 py-3 sm:py-[30px] rounded-[20px]"
+	class="w-full md:w-[47%] 2xl:w-[23%] sm:max-w-[300px] md:max-w-[500px] lg:max-w-[800px] xl:max-w-[2000px] mx-auto flex flex-col gap-3 sm:gap-[23px] px-3 sm:px-8 py-3 sm:py-[30px] rounded-[20px]"
 	style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 >
 	<Label

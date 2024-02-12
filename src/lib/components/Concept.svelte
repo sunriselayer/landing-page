@@ -50,7 +50,7 @@
 		alt="BodyMask"
 		class="absolute z-0 opacity-50 w-full h-full object-cover"
 	/>
-	<div class="lg:px-20 px-4 w-full flex flex-col justify-center relative">
+	<div class="lg:px-16 px-4 w-full flex flex-col justify-center relative">
 		<div>
 			<div class="flex flex-col justify-center pt-4 sm:pt-[60px] pb-16 gap-3">
 				<Label
@@ -63,7 +63,8 @@
 				/>
 			</div>
 		</div>
-		<div class="flex flex-col sm:flex-row gap-y-9 sm:flex-wrap sm:justify-between pb-16">
+		<!-- <div class="flex flex-col sm:flex-row gap-y-9 sm:flex-wrap sm:justify-between pb-16"> -->
+		<div class="flex flex-col sm:flex-row gap-y-9 sm:flex-wrap pb-16">
 			{#each features as { index, label, description, imageSrc }, i}
 				<FeatureItem {index} {label} {description} {imageSrc} />
 			{/each}

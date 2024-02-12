@@ -55,7 +55,7 @@
 <div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px]">
 	{#each items as item (item.id)}
 		<div
-			class="lg:min-w-[646px] md:min-w-[400px] sm:px-[30px] px-5 min-w-[200px] sm:py-12 py-3 text-white rounded-[20px]"
+			class="lg:min-w-[600px] md:min-w-[400px] sm:px-[30px] px-5 min-w-[300px] sm:py-12 py-3 text-white rounded-[20px]"
 			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
 		>
 			<img

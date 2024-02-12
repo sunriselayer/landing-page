@@ -33,8 +33,8 @@
 	/>
 	<div class="z-10">
 		<div class="flex flex-col lg:gap-[140px] gap-20 md:pt-[50px] sm:pt-3">
-			<div class="flex sm:flex-row flex-col gap-3 justify-between px-5 py-5">
-				<div class="flex gap-2 items-center text-2xl pt-3">
+			<div class="flex sm:flex-row flex-col justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5">
+				<div class="flex gap-2 items-center text-2xl">
 					<img src={images.logo} alt="SvelteKit" />
 					<span>{appTitle}</span>
 				</div>
@@ -171,7 +171,7 @@
 </div>
 
 <div
-	class="lg:justify-between md:py-36 sm:py-20 py-4 lg:pl-32 md:pl-20 sm:pl-12 text-textPrimary flex pl-4 sm:flex-row pr-10 sm:gap-4 md:gap-40 relative"
+	class="md:py-36 sm:py-20 py-4 lg:px-[60px] md: px-10 text-textPrimary flex sm:flex-row relative justify-between"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
 	<img
@@ -208,17 +208,17 @@
 		alt="union"
 	/>
 </div>
-<div class="xl:px-[100px] lg:py-20 md:px-12 sm:px-3 py-5 bg-white">
+<div class=" px-4 lg:py-20 py-5 bg-white">
 	<div
-		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 md:gap-12 flex-col gap-3 pl-5 lg:pb-[114px] pb-5 md:px-8 xl:px-12"
+		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 lg:pb-[114px] pb-5 md:px-8"
 	>
-		<div class="flex justify-between items-start">
+		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
 				<img class="md:w-full h-full" src={images.logo} alt="logo" />
 				<img class="md:w-full h-full" src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
-		<div class="w-full flex sm:justify-between sm:flex-row flex-col">
+		<div class="w-full flex sm:justify-between sm:flex-row flex-col pr-6">
 			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
 				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Developers" />
 				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Docs" />
@@ -244,17 +244,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="pt-6 px-3 flex sm:justify-between sm:flex-row flex-col gap-1">
+	<div class="pt-6 px-8 flex justify-between sm:flex-row flex-col gap-1">
 		<Label
 			className="md:text-2xl 2xl:text-4xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
-		<div class="flex lg:gap-9 md:gap-3 gap-1">
-			<img class="xl:w-full h-full" src={images.discord} alt="discord" />
-			<img class="xl:w-full h-full" src={images.twitter} alt="twitter" />
-			<img class="xl:w-full h-full" src={images.linkedin} alt="linkedin" />
-			<img class="xl:w-full h-full" src={images.youtube} alt="youtube" />
-			<img class="xl:w-full h-full" src={images.linktree} alt="linktree" />
+		<div class="flex lg:gap-9 md:gap-3 gap-1 pr-5">
+			<img src={images.discord} alt="discord" />
+			<img src={images.twitter} alt="twitter" />
+			<img src={images.linkedin} alt="linkedin" />
+			<img src={images.youtube} alt="youtube" />
+			<img src={images.linktree} alt="linktree" />
 		</div>
 	</div>
 </div>
