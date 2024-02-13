@@ -8,10 +8,8 @@
 
 	// Subscribe to the newLocale store
 	const unsubscribe = newLocale.subscribe((value: string) => {
-		console.log(value, 'feature value: ');
 		locale.set(value);
 	});
-	console.log(unsubscribe, 'unsubscribe: ');
 
 	// Unsubscribe when the component is destroyed
 	onDestroy(unsubscribe);
@@ -52,24 +50,24 @@
 	let currentIndex = writable(0);
 </script>
 
-<div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px]">
+<div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 2xl:max-w-[1517px] 2xl:mx-auto">
 	{#each items as item (item.id)}
 		<div
-			class="lg:min-w-[600px] md:min-w-[400px] sm:px-[30px] px-5 min-w-[300px] sm:py-12 py-3 text-white rounded-[20px]"
+			class="2xl:min-w-[500px] lg:min-w-[400px] md:min-w-[300px] sm:px-[30px] px-5 min-w-[300px] sm:py-12 py-3 text-white rounded-[20px]"
 			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
 		>
 			<img
-				class="w-[382px] lg:h-[353px] mx-auto"
+				class="md:w-[382px] 2xl:h-[353px] md:h-[180px] w-40 h-40 mx-auto"
 				src={item.image}
 				alt={$_(`Image of ${item.label}`)}
 			/>
 			<div class="py-6 sm:px-3 mt-[23px] bg-blue-700 bg-opacity-10">
 				<Label
-					className={'px-2 font-orbitron lg:text-3xl text-xl font-extrabold tracking-wider text-white'}
+					className={'px-2 font-orbitron 2xl:text-3xl md:text-2xl text-xl font-extrabold tracking-wider text-white'}
 					text={$_(item.label)}
 				/>
 				<Label
-					className={'px-2 mt-[23px] lg:text-2xl text-lg font-normal text-white'}
+					className={'px-2 mt-[23px] 2xl:text-2xl md:text-xl text-lg font-normal text-white'}
 					text={$_(item.description)}
 				/>
 			</div>

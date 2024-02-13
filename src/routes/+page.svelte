@@ -31,9 +31,11 @@
 		alt="TopBG"
 		class="absolute z-0 opacity-95 h-full w-full object-cover"
 	/>
-	<div class="z-10">
+	<div class="z-10 2xl:max-w-[1517px] 2xl:mx-auto">
 		<div class="flex flex-col lg:gap-[140px] gap-20 md:pt-[50px] sm:pt-3">
-			<div class="flex sm:flex-row flex-col justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5">
+			<div
+				class="flex sm:flex-row flex-col justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5 flex-auto"
+			>
 				<div class="flex gap-2 items-center text-2xl">
 					<img src={images.logo} alt="SvelteKit" />
 					<span>{appTitle}</span>
@@ -94,36 +96,37 @@
 <Concept />
 <div
 	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12 pt-10"
-	style="background: linear-gradient(to bottom right, #FCECCF 0%, #D7E5FB 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FCECCF 0%, #D7E5FB 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 50% 50% no-repeat"
+	style="background: linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 100% 100% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 100% 100% no-repeat;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 >
 	<Label
-		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider'}
+		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider 2xl:max-w-[1517px] 2xl:mx-auto'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center pb-[135px]">
 		<Label
-			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass text-2xl font-medium'}
+			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass text-2xl font-medium 2xl:max-w-[1517px] 2xl:mx-auto'}
 			text={$_('sunrise-features.description')}
 		/>
 	</div>
 	<Feature />
 </div>
 <div
-	class="mx-auto pb-6 md:px-10 sm:px-6 pt-5"
-	style="background: linear-gradient(to bottom right, #D7E5FB 0%, #FCECCF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #D7E5FB 0%, #FCECCF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 50% 50% no-repeat;"
+	class="mx-auto pb-6 md:pb-10 md:px-10 sm:px-6 pt-5"
+	style="background: linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 100% 100% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 100% 100% no-repeat;"
 >
-	<div class="text-textPrimary">
+	<div class="text-textPrimary 2xl:max-w-[1517px] 2xl:mx-auto">
 		<Label
 			className="mx-auto text-center font-orbitron md:text-6xl sm:text-3xl text-2xl font-extrabold tracking-wide pt-5"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="mt-12 text-center font-overpass text-2xl 2xl:text-[40px] font-medium tracking-tighter"
+			className="sm:mt-12 mt-8 text-center font-overpass text-2xl 2xl:text-[40px] font-medium tracking-tighter"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
 	<div
-		class="flex justify-center 2xl:justify-between sm:gap-[35px] md:flex-row flex-col px-4 gap-4 mt-[35px]"
+		class="flex justify-center 2xl:justify-between sm:gap-[35px] md:flex-row flex-col px-4 gap-4 mt-[35px] 2xl:max-w-[1517px] 2xl:mx-auto"
 	>
 		<div
 			class="flex flex-col sm:gap-[23px] gap-2 py-5 px-3 2xl:px-5 max-w-[700px] 2xl:max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
@@ -171,7 +174,7 @@
 </div>
 
 <div
-	class="md:py-36 sm:py-20 py-4 lg:px-[60px] md: px-10 text-textPrimary flex sm:flex-row relative justify-between"
+	class="md:py-36 sm:py-20 py-4 lg:px-[60px] md:px-10 text-textPrimary flex sm:flex-row relative justify-center"
 	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
 >
 	<img
@@ -184,33 +187,36 @@
 		alt="BodyMask"
 		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
 	/>
-	<div class="flex flex-col gap-6 text-white relative">
-		<Label
-			className="font-orbitron sm:text-6xl 2xl:text-[70px] text-2xl font-extrabold text-white z-30"
-			text={$_('sunrise-mission.label')}
-		/>
-		<Label
-			className="lg:max-w-[500px] 2xl:max-w-full font-overpass md:text-3xl 2xl:text-5xl font-medium tracking-tight text-white z-30"
-			text={$_('sunrise-mission.description')}
-		/>
-		<div>
-			<button class="sm:px-4 sm:py-5 p-2 items-center rounded-md bg-yellow-300 text-textPrimary"
-				><Label
-					className="text-center font-overpass text-xl 2xl:text-3xl leading-5 tracking-wide font-bold"
-					text="Build with Us"
-				/></button
-			>
+	<div class="flex gap-6 text-white relative px-4">
+		<div class="flex flex-col gap-4">
+			<Label
+				className="font-orbitron sm:text-6xl 2xl:text-[70px] text-2xl font-extrabold text-white z-30 xl:w-max-[1000px]"
+				text={$_('sunrise-mission.label')}
+			/>
+			<Label
+				className=" font-overpass md:text-3xl 2xl:text-5xl font-medium tracking-tight text-white z-30 xl:max-w-[1000px] xl:mx-auto"
+				text={$_('sunrise-mission.description')}
+			/>
+			<div>
+				<button class="sm:px-4 sm:py-5 p-2 items-center rounded-md bg-yellow-300 text-textPrimary"
+					><Label
+						className="text-center font-overpass text-xl 2xl:text-3xl leading-5 tracking-wide font-bold"
+						text="Build with Us"
+					/></button
+				>
+			</div>
 		</div>
+
+		<img
+			class="lg:w-[427.143px] lg:h-[427.143px] sm:w-60 sm:h-60 w-24 h-24 z-30 opacity-40"
+			src={images.union}
+			alt="union"
+		/>
 	</div>
-	<img
-		class="lg:w-[427.143px] lg:h-[427.143px] sm:w-60 sm:h-60 w-24 h-24 z-30 opacity-40"
-		src={images.union}
-		alt="union"
-	/>
 </div>
 <div class=" px-4 lg:py-20 py-5 bg-white">
 	<div
-		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 lg:pb-[114px] pb-5 md:px-8"
+		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 lg:pb-[114px] pb-5 md:px-8 lg:max-w-[1517px]"
 	>
 		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
@@ -244,7 +250,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="pt-6 px-8 flex justify-between sm:flex-row flex-col gap-1">
+	<div
+		class="pt-6 px-8 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
+	>
 		<Label
 			className="md:text-2xl 2xl:text-4xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
