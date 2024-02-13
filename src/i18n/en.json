@@ -46,7 +46,7 @@
     "label": "What you can build with Sunrise",
     "description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
     "product-validiums": {
-      "label": "Validiums",
+      "label": "Optimium / Validium",
       "description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment that data is posted to a separate chain, such as Sunrise. They save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can pay any tokens as gas fees for AltDA."
     },
     "product-rollups": {
