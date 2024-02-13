@@ -50,10 +50,10 @@
 	let currentIndex = writable(0);
 </script>
 
-<div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 2xl:max-w-[1517px] 2xl:mx-auto">
+<div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 max-w-[1311px] 2xl:mx-auto">
 	{#each items as item (item.id)}
 		<div
-			class="2xl:min-w-[500px] lg:min-w-[400px] md:min-w-[300px] sm:px-[30px] px-5 min-w-[300px] sm:py-12 py-3 text-white rounded-[20px]"
+			class="md:min-w-[500px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px]"
 			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
 		>
 			<img

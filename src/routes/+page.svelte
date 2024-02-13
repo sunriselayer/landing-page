@@ -25,70 +25,105 @@
 </svelte:head>
 
 <div class="flex justify-center relative">
-	<img src={images.TopBG} alt="TopBG" class="absolute z-0 h-full w-full object-cover" />
-	<img
-		src={images.TopMask}
-		alt="TopBG"
-		class="absolute z-0 opacity-95 h-full w-full object-cover"
-	/>
-	<div class="z-10 2xl:max-w-[1517px] 2xl:mx-auto">
-		<div class="flex flex-col lg:gap-[140px] gap-20 md:pt-[50px] sm:pt-3">
+	<img src={images.main} alt="main" class="absolute z-0 h-full w-full object-cover" />
+	<div class="z-10 w-full">
+		<div class="flex flex-col lg:gap-[140px] md:gap-20 gap-10 md:pt-[50px] sm:pt-3 w-full">
 			<div
 				class="flex sm:flex-row flex-col justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5 flex-auto"
 			>
 				<div class="flex gap-2 items-center text-2xl">
-					<img src={images.logo} alt="SvelteKit" />
-					<span>{appTitle}</span>
+					<img
+						class="fill-current text-white"
+						style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
+						src={images.logo}
+						alt="logo"
+					/>
+					<img
+						style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
+						src={images.sunrise}
+						alt="sunrise"
+					/>
 				</div>
 
 				<nav class="flex items-center">
 					<ul class="flex sm:gap-8 gap-3 text-xl">
 						<li
-							class="flex items-center"
+							class="flex items-center text-white"
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
 						>
 							<button on:click={toggleLanguage} class="items-center">
 								{isEnglish ? 'English' : 'Japanese'}
 							</button>
 						</li>
-						<li aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
+						<li
+							class="text-white"
+							aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}
+						>
 							<a href="/">Learn</a>
 						</li>
-						<li aria-current={$page.url.pathname === '/build' ? 'page' : undefined}>
+						<li
+							class="text-white"
+							aria-current={$page.url.pathname === '/build' ? 'page' : undefined}
+						>
 							<a href="/">Build</a>
 						</li>
-						<li aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}>
+						<li
+							class="text-white"
+							aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}
+						>
 							<a href="/">Run a Node</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center">
+			<div
+				class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center 2xl:mx-auto"
+			>
 				<Label
-					className={'md:max-w-[1076px] lg:max-w-full text-center font-orbitron lg:text-[70px] md:text-[60px] text-4xl font-normal sm:leading-[80px] sm:tracking-[1.4px] text-textPrimary'}
+					className={'font-orbitron xl:text-[70px] md:text-[50px] sm:text-4xl text-3xl font-extrabold md:leading-[70px] leading-9 tracking-tight text-center text-white max-w-[962px]'}
 					text={appDescription}
 				/>
 				<Label
-					className={'max-w-[1076px] lg:max-w-full text-center font-overpass sm:text-[30px] text-xl font-medium tracking-wide text-textPrimary'}
+					className={'max-w-[721px] text-center font-overpass md:text-[26px] text-xl font-normal leading-[30px] text-white'}
 					text={$_('app-description')}
 				/>
 			</div>
-			<div class="flex sm:gap-9 gap-2 justify-center pb-4">
-				<button
-					class="items-center sm:px-[30px] sm:py-5 px-3 py-2 rounded-md bg-gradient-to-b to-[#0A204A] from-[#0F1C364D]"
+			<div class="flex sm:gap-9 gap-2 justify-center pb-32">
+				<button class="items-center sm:px-[30px] sm:py-5 px-3 py-2 rounded-md bg-white"
 					><Label
-						className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+						className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
 						text="Build for Modular"
 					/></button
 				>
 				<button
-					class="items-center md:px-[30px] md:py-5 sm:px-3 sm:py-3 rounded-md border-2 border-black"
+					class="items-center md:px-[30px] md:py-5 sm:px-3 sm:py-3 rounded-md border-2 border-white bg-white/20"
 					><Label
-						className="text-textPrimary text-center text-xl font-bold leading-5 tracking-tighter"
+						className="text-white text-center text-xl font-bold leading-5 tracking-tighter"
 						text="Explore"
 					/></button
 				>
 			</div>
+		</div>
+	</div>
+</div>
+<div
+	class="md:py-36 sm:py-12 py-4 lg:px-[60px] md:px-10 text-textPrimary flex sm:flex-row relative justify-center"
+>
+	<img
+		src={images.BgMission1}
+		alt="BgMission1"
+		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
+	/>
+	<div class="flex text-white relative max-w-[1255px] text-center px-4">
+		<div class="flex flex-col gap-8 mx-auto">
+			<Label
+				className="font-orbitron md:text-[70px] text-2xl font-extrabold text-white z-30 max-w-[1000px]"
+				text={$_('sunrise-mission.label')}
+			/>
+			<Label
+				className="font-overpass md:text-[32px] text-xl font-medium tracking-tight text-white md:p-6 p-2 xl:mx-auto max-w-[844px] bg-white/10"
+				text={$_('sunrise-mission.description')}
+			/>
 		</div>
 	</div>
 </div>
@@ -98,11 +133,15 @@
 	style="background: linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 100% 100% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 100% 100% no-repeat;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 >
+	<div class="flex gap-2 justify-center mb-5">
+		<img src={images.logo} alt="logo" />
+		<img src={images.sunrise} alt="sunrise" />
+	</div>
 	<Label
-		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider 2xl:max-w-[1517px] 2xl:mx-auto'}
+		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider max-w-[1312px] xl:mx-auto'}
 		text={$_('sunrise-features.label')}
 	/>
-	<div class="flex justify-center pb-[135px]">
+	<div class="flex justify-center md:pb-[135px] pb-16">
 		<Label
 			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass text-2xl font-medium 2xl:max-w-[1517px] 2xl:mx-auto'}
 			text={$_('sunrise-features.description')}
@@ -111,16 +150,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 	<Feature />
 </div>
 <div
-	class="mx-auto pb-6 md:pb-10 md:px-10 sm:px-6 pt-5"
+	class="pb-6 md:pb-10 md:px-10 sm:px-6 pt-5"
 	style="background: linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 100% 100% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 100% 100% no-repeat;"
 >
-	<div class="text-textPrimary 2xl:max-w-[1517px] 2xl:mx-auto">
+	<div class="text-textPrimary max-w-[1270px] xl:mx-auto">
 		<Label
-			className="mx-auto text-center font-orbitron md:text-6xl sm:text-3xl text-2xl font-extrabold tracking-wide pt-5"
+			className="mx-auto text-center font-orbitron xl:text-[60px] lg:text-6xl sm:text-5xl text-2xl font-extrabold tracking-wide pt-5 2xl:max-w-[1270px] lg:max-w-[1150px]"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="sm:mt-12 mt-8 text-center font-overpass text-2xl 2xl:text-[40px] font-medium tracking-tighter"
+			className="sm:mt-12 mt-8 text-center font-overpass text-2xl lg:text-[26px] font-medium tracking-tighter max-w-[919px] mx-auto"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
@@ -170,47 +209,10 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			/>
 		</div>
 	</div>
-</div>
-
-<div
-	class="md:py-36 sm:py-20 py-4 lg:px-[60px] md:px-10 text-textPrimary flex sm:flex-row relative justify-center"
-	style="background: var(--Sunirse, linear-gradient(to bottom right, #FFC75F 0%, #4988FF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFC75F 0%, #4988FF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFC75F 0%, #4988FF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFC75F 0%, #4988FF 50%) top right / 50% 50% no-repeat);"
->
-	<img
-		src={images.BodyBG}
-		alt="BodyBG"
-		class="absolute z-0 w-full h-full object-cover top-0 left-0"
-	/>
-	<img
-		src={images.BodyMask}
-		alt="BodyMask"
-		class="absolute z-0 w-full h-full opacity-50 object-cover top-0 left-0"
-	/>
-	<div class="flex gap-6 text-white relative px-4">
-		<div class="flex flex-col gap-4">
-			<Label
-				className="font-orbitron sm:text-6xl 2xl:text-[70px] text-2xl font-extrabold text-white z-30 xl:w-max-[1000px]"
-				text={$_('sunrise-mission.label')}
-			/>
-			<Label
-				className=" font-overpass md:text-3xl 2xl:text-5xl font-medium tracking-tight text-white z-30 xl:max-w-[1000px] xl:mx-auto"
-				text={$_('sunrise-mission.description')}
-			/>
-			<div>
-				<button class="sm:px-4 sm:py-5 p-2 items-center rounded-md bg-yellow-300 text-textPrimary"
-					><Label
-						className="text-center font-overpass text-xl 2xl:text-3xl leading-5 tracking-wide font-bold"
-						text="Build with Us"
-					/></button
-				>
-			</div>
-		</div>
-
-		<img
-			class="lg:w-[427.143px] lg:h-[427.143px] sm:w-60 sm:h-60 w-24 h-24 z-30 opacity-40"
-			src={images.union}
-			alt="union"
-		/>
+	<div class="mt-5 flex justify-center">
+		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-xl font-bold font-overpass"
+			>Build with Us</button
+		>
 	</div>
 </div>
 <div class=" px-4 lg:py-20 py-5 bg-white">

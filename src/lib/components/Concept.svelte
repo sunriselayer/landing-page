@@ -51,16 +51,16 @@
 		class="absolute z-0 opacity-50 w-full h-full object-cover"
 	/>
 	<div
-		class="lg:px-16 px-6 w-full flex flex-col justify-center relative 2xl:max-w-[1517px] 2xl:mx-auto"
+		class="lg:px-16 px-6 w-full flex flex-col justify-center relative 2xl:max-w-[1312px] 2xl:mx-auto"
 	>
 		<div>
 			<div class="flex flex-col justify-center pt-4 sm:pt-[60px] sm:pb-16 pb-5 gap-3">
 				<Label
-					className="text-center text-white font-orbitron sm:text-4xl text-2xl font-bold md:leading-[80px] sm:leading-5 tracking-wide"
+					className="text-center text-white font-orbitron md:text-[68px] text-[30px] font-bold tracking-wider"
 					text={$_('sunrise-question')}
 				/>
 				<Label
-					className="text-center text-white font-overpass sm:text-2xl text-xl tracking-tighter"
+					className="text-center text-white font-overpass md:text-[26px] font-medium leading-[25px] tracking-wide max-w-[626px] mx-auto"
 					text={$_('sunrise-definition')}
 				/>
 			</div>
