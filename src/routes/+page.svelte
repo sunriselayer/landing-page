@@ -48,14 +48,6 @@
 				<nav class="flex items-center">
 					<ul class="flex sm:gap-8 gap-3 text-xl">
 						<li
-							class="flex items-center text-white"
-							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
-						>
-							<button on:click={toggleLanguage} class="items-center">
-								{isEnglish ? 'English' : 'Japanese'}
-							</button>
-						</li>
-						<li
 							class="text-white"
 							aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}
 						>
@@ -73,6 +65,14 @@
 						>
 							<a href="/">Run a Node</a>
 						</li>
+						<li
+							class="flex items-center text-white"
+							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
+						>
+							<button on:click={toggleLanguage} class="items-center">
+								{isEnglish ? 'EN' : 'JP'}
+							</button>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -89,16 +89,16 @@
 				/>
 			</div>
 			<div class="flex sm:gap-9 gap-2 justify-center pb-32">
-				<button class="items-center sm:px-[30px] sm:py-5 px-3 py-2 rounded-md bg-white"
+				<button class="items-center sm:px-4 sm:py-5 px-2 py-1 rounded-md bg-white"
 					><Label
 						className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
 						text="Build for Modular"
 					/></button
 				>
 				<button
-					class="items-center md:px-[30px] md:py-5 sm:px-3 sm:py-3 rounded-md border-2 border-white bg-white/20"
+					class="items-center sm:px-4 sm:py-5 px-2 py-1 rounded-md border-2 border-white bg-white/20"
 					><Label
-						className="text-white text-center text-xl font-bold leading-5 tracking-tighter"
+						className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
 						text="Explore"
 					/></button
 				>
