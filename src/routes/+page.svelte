@@ -89,14 +89,14 @@
 				/>
 			</div>
 			<div class="flex sm:gap-9 gap-2 justify-center pb-32">
-				<button class="items-center sm:px-4 sm:py-5 px-2 py-1 rounded-md bg-white"
+				<button class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md bg-white"
 					><Label
 						className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
 						text="Build for Modular"
 					/></button
 				>
 				<button
-					class="items-center sm:px-4 sm:py-5 px-2 py-1 rounded-md border-2 border-white bg-white/20"
+					class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md border-2 border-white bg-white/20"
 					><Label
 						className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
 						text="Explore"
@@ -210,8 +210,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		</div>
 	</div>
 	<div class="mt-5 flex justify-center">
-		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-xl font-bold font-overpass"
-			>Build with Us</button
+		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center"
+			><Label
+				className="text-xl font-bold font-overpass tracking-tighter"
+				text="Build for Us"
+			/></button
 		>
 	</div>
 </div>
