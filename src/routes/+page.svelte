@@ -121,7 +121,7 @@
 				text={$_('sunrise-mission.label')}
 			/>
 			<Label
-				className="font-overpass md:text-[32px] text-xl font-medium tracking-tight text-white md:p-6 p-2 xl:mx-auto max-w-[844px] bg-white/10"
+				className="font-overpass md:text-[32px] text-xl font-medium tracking-tight text-white md:p-6 p-2 xl:mx-auto xl:leading-10 max-w-[844px] bg-white/10"
 				text={$_('sunrise-mission.description')}
 			/>
 		</div>
@@ -258,7 +258,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		class="pt-6 sm:px-8 px-5 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
 	>
 		<Label
-			className="md:text-2xl 2xl:text-4xl sm:tracking-wider tracking-tighter"
+			className="md:text-2xl 2xl:text-3xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
 		<div class="flex lg:gap-9 md:gap-3 gap-1">
