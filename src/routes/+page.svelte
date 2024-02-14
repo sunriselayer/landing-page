@@ -228,29 +228,29 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 				<img class="md:w-full h-full" src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
-		<div class="w-full flex sm:justify-between sm:flex-row flex-col pr-6">
-			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Developers" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Docs" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="GitHub" />
+		<div class="w-full flex sm:justify-between sm:flex-row flex-col gap-4 pr-6">
+			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
+				<Label className="md:text-[30px] font-bold text-lg" text="Developers" />
+				<Label className="md:text-xl font-medium" text="Docs" />
+				<Label className="md:text-xl font-medium" text="GitHub" />
 			</div>
-			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Services" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Portal" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Explorer" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Community" />
+			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
+				<Label className="md:text-[30px] font-bold text-lg" text="Services" />
+				<Label className="md:text-xl font-medium" text="Portal" />
+				<Label className="md:text-xl font-medium" text="Explorer" />
+				<Label className="md:text-xl font-medium" text="Community" />
 			</div>
-			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Information" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Whitepaper" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Blog" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Jobs" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Press Kit" />
+			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
+				<Label className="md:text-[30px] font-bold text-lg" text="Information" />
+				<Label className="md:text-xl font-medium" text="Whitepaper" />
+				<Label className="md:text-xl font-medium" text="Blog" />
+				<Label className="md:text-xl font-medium" text="Jobs" />
+				<Label className="md:text-xl font-medium" text="Press Kit" />
 			</div>
-			<div class=" flex flex-col sm:gap-8 gap-3 ibm-plex-sans">
-				<Label className="md:text-[30px] 2xl:text-[40px] font-bold" text="Legal" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Terms and Services" />
-				<Label className="md:text-xl 2xl:text-[30px] font-medium" text="Privacy Policy" />
+			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
+				<Label className="md:text-[30px]  font-bold text-lg" text="Legal" />
+				<Label className="md:text-xl font-medium" text="Terms and Services" />
+				<Label className="md:text-xl font-medium" text="Privacy Policy" />
 			</div>
 		</div>
 	</div>
