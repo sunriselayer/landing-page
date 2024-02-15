@@ -159,54 +159,62 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="sm:mt-12 mt-8 text-center font-overpass text-2xl lg:text-[26px] md:text-2xl font-medium tracking-tighter max-w-[919px] mx-auto"
+			className="sm:mt-12 mt-8 text-center font-overpass text-2xl lg:text-[26px] md:text-2xl font-medium tracking-wide max-w-[919px] mx-auto"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
-	<div
-		class="flex justify-center lg:gap-[35px] gap-6 lg:flex-row flex-col mt-[35px] max-w-[1270px] lg:mx-auto px-5 md:px-0"
-	>
+	<div class="justify-center gap-6 mt-[35px] max-w-[1270px] lg:mx-auto px-5 md:px-0">
 		<div
-			class="flex flex-col sm:gap-[23px] gap-2 p-5 lg:max-w-[400px] max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
-			style="background: var(--PURPLE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #A134F9 100%))"
+			class="flex lg:gap-[60px] md:gap-10 md:flex-row flex-col sm:gap-5 py-5 px-6 rounded-[20px] border border-solid border-[#7871FB80] border-opacity-50 mb-10 items-center"
+			style="background: linear-gradient(180deg, #182949 0%, #213457 100%)"
 		>
-			<Label
-				className="text-center text-[32px] font-extrabold leading-[50px] text-white font-sans"
-				text={$_('sunrise-products.product-validiums.label')}
+			<img
+				class="md:w-full w-[60%] max-w-60 mx-auto max-h-60"
+				src={images.validiums}
+				alt="validiums"
 			/>
-			<img class="w-[138.438px] h-[248px] mx-auto" src={images.validiums} alt="validiums" />
-			<Label
-				className="text-2xl font-normal text-white font-sans"
-				text={$_('sunrise-products.product-validiums.description')}
-			/>
+			<div>
+				<Label
+					className="sm:text-[32px] text-[20px] font-extrabold leading-[50px] text-white font-sans sm:mb-[23px] mb-1"
+					text={$_('sunrise-products.product-validiums.label')}
+				/>
+				<Label
+					className="sm:text-2xl text-base font-normal text-white font-sans"
+					text={$_('sunrise-products.product-validiums.description')}
+				/>
+			</div>
 		</div>
 		<div
-			class="flex flex-col sm:gap-[23px] gap-2 p-5 lg:max-w-[400px] max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
-			style="background: var(--BLUE-LINEAR, linear-gradient(174deg, #71AFFB 0%, #3E34F9 100%)"
+			class="flex lg:gap-[60px] md:gap-10 md:flex-row flex-col sm:gap-5 py-5 px-6 rounded-[20px] border border-solid border-[#7871FB80] border-opacity-50 mb-10 items-center"
+			style="background: linear-gradient(180deg, #182949 0%, #213457 100%)"
 		>
-			<Label
-				className="text-center text-[32px] font-extrabold leading-[50px] text-white font-sans"
-				text={$_('sunrise-products.product-rollups.label')}
-			/>
-			<img class="w-60 h-60 mx-auto" src={images.rollups} alt="rollups" />
-			<Label
-				className="text-2xl font-normal text-white font-sans"
-				text={$_('sunrise-products.product-rollups.description')}
-			/>
+			<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={images.rollups} alt="rollups" />
+			<div>
+				<Label
+					className="sm:text-[32px] text-[20px] font-extrabold leading-[50px] text-white font-sans sm:mb-[23px] mb-1"
+					text={$_('sunrise-products.product-rollups.label')}
+				/>
+				<Label
+					className="sm:text-2xl text-base font-normal text-white font-sans"
+					text={$_('sunrise-products.product-rollups.description')}
+				/>
+			</div>
 		</div>
 		<div
-			class="flex flex-col sm:gap-[23px] gap-2 p-5 lg:max-w-[400px] max-w-full rounded-[20px] border border-solid border-indigo-500 border-opacity-50"
-			style="background: linear-gradient(186deg, #F9348C -64.12%, #A134F9 88.98%)"
+			class="flex lg:gap-[60px] md:gap-10 md:flex-row flex-col sm:gap-5 py-5 px-6 rounded-[20px] border border-solid border-[#7871FB80] border-opacity-50 mb-10 items-center"
+			style="background: linear-gradient(180deg, #182949 0%, #213457 100%)"
 		>
-			<Label
-				className="text-center text-[28px] font-extrabold text-white font-sans"
-				text={$_('sunrise-products.product-pol.label')}
-			/>
-			<img class="w-60 h-60 mx-auto" src={images.pol} alt="pol" />
-			<Label
-				className="text-2xl font-normal text-white font-sans"
-				text={$_('sunrise-products.product-pol.description')}
-			/>
+			<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={images.pol} alt="pol" />
+			<div>
+				<Label
+					className="sm:text-[32px] text-[20px] font-extrabold sm:leading-[50px] text-white font-sans sm:mb-[23px] mb-1"
+					text={$_('sunrise-products.product-pol.label')}
+				/>
+				<Label
+					className="sm:text-2xl text-base font-normal text-white font-sans"
+					text={$_('sunrise-products.product-pol.description')}
+				/>
+			</div>
 		</div>
 	</div>
 	<div class="mt-5 flex justify-center">

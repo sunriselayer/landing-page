@@ -53,21 +53,20 @@
 <div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 max-w-[1311px] 2xl:mx-auto">
 	{#each items as item (item.id)}
 		<div
-			class="md:min-w-[500px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px]"
-			style="background: var(--Sunrise-Degragee, linear-gradient(180deg, #EDBC64 0%, #6495ED 100%))"
+			class="md:min-w-[400px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px] border-2 border-[#EDBC64] bg-white"
 		>
 			<img
-				class="md:w-[382px] 2xl:h-[353px] md:h-[180px] w-40 h-40 mx-auto"
+				class="md:w-[350px] 2xl:h-[303px] md:h-[180px] w-40 h-40 mx-auto"
 				src={item.image}
 				alt={$_(`Image of ${item.label}`)}
 			/>
-			<div class="py-6 sm:px-3 mt-[23px] bg-blue-700 bg-opacity-10">
+			<div class="py-6 sm:px-3 mt-[23px]">
 				<Label
-					className={'px-2 font-orbitron 2xl:text-3xl md:text-2xl text-xl font-extrabold tracking-wider text-white'}
+					className={'px-2 font-orbitron 2xl:text-3xl md:text-2xl text-xl font-extrabold tracking-wider text-black'}
 					text={$_(item.label)}
 				/>
 				<Label
-					className={'px-2 mt-[23px] 2xl:text-2xl md:text-xl text-lg font-normal text-white'}
+					className={'px-2 mt-[23px] 2xl:text-2xl md:text-xl text-lg font-normal text-black'}
 					text={$_(item.description)}
 				/>
 			</div>
