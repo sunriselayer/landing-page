@@ -151,7 +151,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 </div>
 <div
 	class="pb-6 md:pb-10 md:px-10 sm:px-6 pt-5"
-	style="background: linear-gradient(to top left, #D7E5FB 0%, #FCECCF 50%) top left / 100% 100% no-repeat, linear-gradient(to top right, #D7E5FB 0%, #FCECCF 50%) top right / 100% 100% no-repeat;"
+	style="background: linear-gradient(to bottom right, #FCECCF 0%, #D7E5FB 50%) top left / 100% 100% no-repeat;"
 >
 	<div class="text-textPrimary max-w-[1270px] xl:mx-auto">
 		<Label

@@ -66,7 +66,7 @@
 					text={$_(item.label)}
 				/>
 				<Label
-					className={'px-2 mt-[23px] 2xl:text-2xl md:text-xl text-lg font-normal text-black'}
+					className={'px-2 font-overpass mt-[23px] 2xl:text-2xl md:text-xl text-lg font-normal text-black'}
 					text={$_(item.description)}
 				/>
 			</div>
