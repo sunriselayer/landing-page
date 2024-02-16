@@ -53,7 +53,10 @@
 <div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 max-w-[1311px] 2xl:mx-auto">
 	{#each items as item (item.id)}
 		<div
-			class="md:min-w-[400px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px] border-2 border-[#EDBC64] bg-white"
+			class="md:min-w-[400px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px] border-2 bg-white"
+			style="border-width: 2px,
+  					border-style: solid,
+  					background-image: linear-gradient(to bottom, #FCECCF, #99B6F4);"
 		>
 			<img
 				class="md:w-[350px] 2xl:h-[303px] md:h-[180px] w-40 h-40 mx-auto"

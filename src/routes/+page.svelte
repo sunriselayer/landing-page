@@ -80,7 +80,7 @@
 				class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center 2xl:mx-auto"
 			>
 				<Label
-					className={'font-orbitron xl:text-[70px] md:text-[50px] sm:text-4xl text-3xl font-extrabold md:leading-[70px] leading-9 tracking-wider text-center text-white max-w-[962px]'}
+					className={'font-orbitron xl:text-[64px] md:text-[40px] sm:text-[30px] text-lg font-extrabold md:leading-[70px] leading-9 md:tracking-normal tracking-wide text-center text-white max-w-[962px]'}
 					text={appDescription}
 				/>
 				<Label
