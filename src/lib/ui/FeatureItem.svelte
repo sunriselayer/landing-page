@@ -18,15 +18,15 @@
 </script>
 
 <div
-	class="xl:w-[49.3%] md:w-[48.5%] sm:w-full px-[30px] py-5 flex flex-col gap-3 rounded-[20px]"
+	class="xl:w-[45.3%] md:w-[45.5%] sm:w-full px-[30px] py-5 flex flex-col gap-3 rounded-[20px]"
 	style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 >
 	<Label
-		className="font-orbitron lg:text-4xl sm:text-2xl font-extrabold tracking-widest text-white"
+		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
 		text={$_(index)}
 	/>
 	<Label
-		className="font-orbitron lg:text-4xl sm:text-2xl font-extrabold tracking-widest text-white"
+		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
 		text={$_(label)}
 	/>
 	<Label

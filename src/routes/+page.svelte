@@ -27,7 +27,7 @@
 <div class="flex justify-center relative">
 	<img src={images.main} alt="main" class="absolute z-0 h-full w-full object-cover" />
 	<div class="z-10 w-full">
-		<div class="flex flex-col lg:gap-[140px] md:gap-20 gap-10 md:pt-[50px] sm:pt-3 w-full">
+		<div class="flex flex-col 2xl:gap-[140px] lg:gap-24 gap-14 md:pt-[50px] sm:pt-3 w-full">
 			<div
 				class="flex md:flex-row flex-col gap-4 justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5 flex-auto"
 			>
@@ -88,7 +88,7 @@
 					text={$_('app-description')}
 				/>
 			</div>
-			<div class="flex sm:gap-9 gap-2 justify-center pb-32">
+			<div class="flex sm:gap-9 gap-2 justify-center lg:pb-32 pb-14">
 				<button class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md bg-white"
 					><Label
 						className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
@@ -138,12 +138,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<img src={images.sunrise} alt="sunrise" />
 	</div>
 	<Label
-		className={'text-textPrimary text-center font-orbitron lg:text-6xl sm:text-4xl text-2xl font-bold tracking-wider max-w-[1312px] xl:mx-auto'}
+		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center md:pb-[135px] pb-16">
 		<Label
-			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass text-2xl font-medium 2xl:max-w-[1517px] 2xl:mx-auto'}
+			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass lg:text-2xl text-base font-medium 2xl:max-w-[1517px] 2xl:mx-auto'}
 			text={$_('sunrise-features.description')}
 		/>
 	</div>
