@@ -27,7 +27,7 @@
 <div class="flex justify-center relative">
 	<img src={images.main} alt="main" class="absolute z-0 h-full w-full object-cover" />
 	<div class="z-10 w-full">
-		<div class="flex flex-col 2xl:gap-[140px] lg:gap-24 gap-14 md:pt-[50px] sm:pt-3 w-full">
+		<div class="flex flex-col 2xl:gap-12 lg:gap-8 gap-6 md:pt-6 sm:pt-3 w-full">
 			<div
 				class="flex md:flex-row flex-col gap-4 justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5 flex-auto"
 			>
@@ -45,7 +45,7 @@
 					/>
 				</div>
 
-				<nav class="flex items-center">
+				<nav class="hidden sm:flex items-center">
 					<ul class="flex sm:gap-8 gap-3 text-xl">
 						<li
 							class="text-white"
@@ -226,9 +226,9 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		>
 	</div>
 </div>
-<div class=" px-4 lg:py-20 py-5 bg-white">
+<div class="px-4 lg:py-20 py-5 bg-white">
 	<div
-		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 lg:pb-[114px] pb-5 md:px-8 lg:max-w-[1517px]"
+		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 lg:pb-10 pb-5 md:px-8 lg:max-w-[1517px]"
 	>
 		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
@@ -237,28 +237,28 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			</div>
 		</div>
 		<div class="w-full flex sm:justify-between sm:flex-row flex-col gap-4 pr-6">
-			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold text-lg" text="Developers" />
-				<Label className="md:text-xl font-medium" text="Docs" />
-				<Label className="md:text-xl font-medium" text="GitHub" />
+			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Developers" />
+				<Label className="md:text-lg font-medium" text="Docs" />
+				<Label className="md:text-lg font-medium" text="GitHub" />
 			</div>
-			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold text-lg" text="Services" />
-				<Label className="md:text-xl font-medium" text="Portal" />
-				<Label className="md:text-xl font-medium" text="Explorer" />
-				<Label className="md:text-xl font-medium" text="Community" />
+			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Services" />
+				<Label className="md:text-lg font-medium" text="Portal" />
+				<Label className="md:text-lg font-medium" text="Explorer" />
+				<Label className="md:text-lg font-medium" text="Community" />
 			</div>
-			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
-				<Label className="md:text-[30px] font-bold text-lg" text="Information" />
-				<Label className="md:text-xl font-medium" text="Whitepaper" />
-				<Label className="md:text-xl font-medium" text="Blog" />
-				<Label className="md:text-xl font-medium" text="Jobs" />
-				<Label className="md:text-xl font-medium" text="Press Kit" />
+			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Information" />
+				<Label className="md:text-lg font-medium" text="Whitepaper" />
+				<Label className="md:text-lg font-medium" text="Blog" />
+				<Label className="md:text-lg font-medium" text="Jobs" />
+				<Label className="md:text-lg font-medium" text="Press Kit" />
 			</div>
-			<div class=" flex flex-col sm:gap-8 gap-1 ibm-plex-sans">
-				<Label className="md:text-[30px]  font-bold text-lg" text="Legal" />
-				<Label className="md:text-xl font-medium" text="Terms and Services" />
-				<Label className="md:text-xl font-medium" text="Privacy Policy" />
+			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Legal" />
+				<Label className="md:text-lg font-medium" text="Terms and Services" />
+				<Label className="md:text-lg font-medium" text="Privacy Policy" />
 			</div>
 		</div>
 	</div>
@@ -266,7 +266,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		class="pt-6 sm:px-8 px-5 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
 	>
 		<Label
-			className="md:text-2xl 2xl:text-3xl sm:tracking-wider tracking-tighter"
+			className="md:text-xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
 		<div class="flex lg:gap-9 md:gap-3 gap-1">
