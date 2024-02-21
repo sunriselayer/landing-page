@@ -27,9 +27,9 @@
 <div class="flex justify-center relative">
 	<img src={images.main} alt="main" class="absolute z-0 h-full w-full object-cover" />
 	<div class="z-10 w-full">
-		<div class="flex flex-col 2xl:gap-12 lg:gap-8 gap-6 md:pt-6 sm:pt-3 w-full">
+		<div class="flex flex-col 2xl:gap-12 lg:gap-8 sm:gap-4 md:pt-6 sm:pt-3 w-full">
 			<div
-				class="flex md:flex-row flex-col gap-4 justify-between lg:px-36 md:px-16 pl-10 sm:px-14 py-5 flex-auto"
+				class="flex flex-row gap-4 justify-between lg:px-36 md:px-16 sm:pl-10 pl-4 sm:px-14 py-5 flex-auto"
 			>
 				<div class="flex gap-2 items-center text-2xl">
 					<img
@@ -46,7 +46,7 @@
 				</div>
 
 				<nav class="hidden sm:flex items-center">
-					<ul class="flex sm:gap-8 gap-3 text-xl">
+					<ul class="flex sm:gap-8 gap-2 text-xl">
 						<li
 							class="text-white"
 							aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}
@@ -75,6 +75,24 @@
 						</li>
 					</ul>
 				</nav>
+
+				<ul class="menu menu-horizontal px-4 md:hidden">
+					<li>
+						<details>
+							<summary class="text-white">Menu</summary>
+							<ul class="bg-white right-0 w-[124px]">
+								<li><a href="/">Learn</a></li>
+								<li><a href="/">Build</a></li>
+								<li><a href="/">Run a Node</a></li>
+								<li>
+									<button on:click={toggleLanguage} class="items-center">
+										{isEnglish ? 'EN' : 'JP'}
+									</button>
+								</li>
+							</ul>
+						</details>
+					</li>
+				</ul>
 			</div>
 			<div
 				class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center 2xl:mx-auto"
