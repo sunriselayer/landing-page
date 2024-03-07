@@ -1,0 +1,37 @@
+<script lang="ts">
+	import Label from '$lib/components/Label.svelte';
+	import { newLocale } from '../stores/i18nStore';
+	import { _, locale } from 'svelte-i18n';
+	import { onDestroy } from 'svelte';
+
+	export let index: string;
+	export let label: string;
+	export let description: string;
+	export let imageSrc: string;
+
+	// Subscribe to the newLocale store
+	const unsubscribe = newLocale.subscribe((value: string) => {
+		locale.set(value);
+	});
+
+	onDestroy(unsubscribe);
+</script>
+
+<div
+	class="xl:w-[45.3%] md:w-[45.5%] sm:w-full px-[30px] py-5 flex flex-col gap-3 rounded-[20px]"
+	style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
+>
+	<Label
+		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
+		text={$_(index)}
+	/>
+	<Label
+		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
+		text={$_(label)}
+	/>
+	<Label
+		className="font-sans lg:text-2xl sm:text-xl font-normal text-white"
+		text={$_(description)}
+	/>
+	<img class="md:w-[70%] w-[200px] mx-auto" src={imageSrc} alt={label} />
+</div>

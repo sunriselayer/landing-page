@@ -1,41 +1,40 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/images/logo.svg';
+
+	import { appTitle } from '../consts';
+
+	let isEnglish = true;
+
+	function toggleLanguage() {
+		isEnglish = !isEnglish;
+	}
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+	<div class="corner flex gap-2 items-center text-2xl">
+		<img src={logo} alt="SvelteKit" />
+		<span>{appTitle}</span>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
+	<nav class="items-center">
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+			<li class="flex items-center" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<button on:click={toggleLanguage} class="items-center">
+					{isEnglish ? 'English' : 'Japanese'}
+				</button>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
+				<a href="/learn">Learn</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/build' ? 'page' : undefined}>
+				<a href="/build">Build</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}>
+				<a href="/run-node">Run a Node</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
 </header>
 
 <style>
@@ -66,7 +65,6 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
