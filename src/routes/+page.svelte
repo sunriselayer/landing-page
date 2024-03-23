@@ -246,7 +246,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			</div>
 		</div>
 	</div>
-	<div class="mt-5 flex justify-center">
+	<!-- <div class="mt-5 flex justify-center">
 		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center">
 			<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
 				><Label
@@ -255,7 +255,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 				/></a
 			></button
 		>
-	</div>
+	</div> -->
 </div>
 <div class="px-4 lg:py-20 py-5 bg-white">
 	<div
@@ -277,20 +277,19 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Services" />
 				<Label className="md:text-lg font-medium" text="Portal (coming soon)" />
 				<Label className="md:text-lg font-medium" text="Explorer (coming soon)" />
-				<Label className="md:text-lg font-medium" text="Community (coming soon)" />
 			</div>
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Information" />
-				<Label className="md:text-lg font-medium" text="Whitepaper" />
-				<Label className="md:text-lg font-medium" text="Blog" />
-				<Label className="md:text-lg font-medium" text="Jobs" />
-				<Label className="md:text-lg font-medium" text="Press Kit" />
+				<a href="https://sunriselayer.medium.com" target="_blank"><Label className="md:text-lg font-medium" text="Blog" /></a>
+				<a href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4" target="_blank"><Label className="md:text-lg font-medium" text="Jobs" /></a>
+				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"><Label className="md:text-lg font-medium" text="Press Kit" /></a>
+				
 			</div>
-			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+			<!-- <div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Legal" />
 				<Label className="md:text-lg font-medium" text="Terms and Services" />
 				<Label className="md:text-lg font-medium" text="Privacy Policy" />
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div
@@ -301,11 +300,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
 		<div class="flex lg:gap-9 md:gap-3 gap-1">
-			<img src={images.discord} alt="discord" />
-			<img src={images.twitter} alt="twitter" />
-			<img src={images.linkedin} alt="linkedin" />
+			<a href="https://discord.com/invite/ununifi" target="_blank"><img src={images.discord} alt="discord" /></a>
+			<a href="https://twitter.com/SunriseLayer" target="_blank"><img src={images.twitter} alt="twitter" /></a>
+			<!-- <img src={images.linkedin} alt="linkedin" />
 			<img src={images.youtube} alt="youtube" />
-			<img src={images.linktree} alt="linktree" />
+			<img src={images.linktree} alt="linktree" /> -->
 		</div>
 	</div>
 </div>
