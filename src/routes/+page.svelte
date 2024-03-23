@@ -51,20 +51,20 @@
 							class="text-white"
 							aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}
 						>
-							<a href="/">Learn</a>
+							<a href="https://docs.sunriselayer.io" target="_blank">Learn</a>
 						</li>
 						<li
 							class="text-white"
 							aria-current={$page.url.pathname === '/build' ? 'page' : undefined}
 						>
-							<a href="/">Build</a>
+							<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
 						</li>
-						<li
+						<!-- <li
 							class="text-white"
 							aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}
 						>
 							<a href="/">Run a Node</a>
-						</li>
+						</li> -->
 						<li
 							class="flex items-center text-white"
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
@@ -81,9 +81,11 @@
 						<details>
 							<summary class="text-white">Menu</summary>
 							<ul class="bg-white right-0 w-[124px]">
-								<li><a href="/">Learn</a></li>
-								<li><a href="/">Build</a></li>
-								<li><a href="/">Run a Node</a></li>
+								<li><a href="https://docs.sunriselayer.io" target="_blank">Learn</a></li>
+								<li>
+									<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
+								</li>
+								<!-- <li><a href="/">Run a Node</a></li> -->
 								<li>
 									<button on:click={toggleLanguage} class="items-center">
 										{isEnglish ? 'EN' : 'JP'}
@@ -107,18 +109,22 @@
 				/>
 			</div>
 			<div class="flex sm:gap-9 gap-2 justify-center lg:pb-32 pb-14">
-				<button class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md bg-white"
-					><Label
-						className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
-						text="Build for Modular"
-					/></button
+				<button class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md bg-white">
+					<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
+						><Label
+							className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+							text="Build for Modular"
+						/>
+					</a></button
 				>
 				<button
 					class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md border-2 border-white bg-white/20"
-					><Label
-						className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
-						text="Explore"
-					/></button
+					><a href="https://docs.sunriselayer.io" target="_blank"
+						><Label
+							className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+							text="Explore"
+						/></a
+					></button
 				>
 			</div>
 		</div>
