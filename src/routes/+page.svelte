@@ -70,6 +70,11 @@
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
 						>
 							<button on:click={toggleLanguage} class="items-center">
+								{#if isEnglish}
+									<span class="flag-icon flag-icon-us"></span>
+								{:else}
+									<span class="flag-icon flag-icon-jp"></span>
+								{/if}
 								{isEnglish ? 'EN' : 'JP'}
 							</button>
 						</li>
