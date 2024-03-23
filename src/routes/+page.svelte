@@ -247,11 +247,13 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		</div>
 	</div>
 	<div class="mt-5 flex justify-center">
-		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center"
-			><Label
-				className="text-xl font-bold font-overpass tracking-tighter"
-				text="Build for Us"
-			/></button
+		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center">
+			<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
+				><Label
+					className="text-xl font-bold font-overpass tracking-tighter"
+					text="Build with us"
+				/></a
+			></button
 		>
 	</div>
 </div>
@@ -268,14 +270,14 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<div class="w-full flex sm:justify-between sm:flex-row flex-col gap-4 pr-6">
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Developers" />
-				<Label className="md:text-lg font-medium" text="Docs" />
-				<Label className="md:text-lg font-medium" text="GitHub" />
+				<a href="https://docs.sunriselayer.io" target="_blank"><Label className="md:text-lg font-medium" text="Docs" /></a>
+				<a href="https://github.com/SunriseLayer" target="_blank"><Label className="md:text-lg font-medium" text="GitHub" /></a>
 			</div>
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Services" />
-				<Label className="md:text-lg font-medium" text="Portal" />
-				<Label className="md:text-lg font-medium" text="Explorer" />
-				<Label className="md:text-lg font-medium" text="Community" />
+				<Label className="md:text-lg font-medium" text="Portal (coming soon)" />
+				<Label className="md:text-lg font-medium" text="Explorer (coming soon)" />
+				<Label className="md:text-lg font-medium" text="Community (coming soon)" />
 			</div>
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Information" />
