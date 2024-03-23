@@ -156,7 +156,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<img src={images.sunrise} alt="sunrise" />
 	</div>
 	<Label
-		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto'}
+		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto whitespace-pre-wrap'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center md:pb-[135px] pb-16">
