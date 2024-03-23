@@ -114,7 +114,7 @@
 				/>
 			</div>
 			<div class="flex sm:gap-9 gap-2 justify-center lg:pb-32 pb-14">
-				<button class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md bg-white">
+				<button class="items-center sm:px-[30px] sm:py-5 px-4 py-1 rounded-md bg-white">
 					<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
 						><Label
 							className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
@@ -123,7 +123,7 @@
 					</a></button
 				>
 				<button
-					class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md border-2 border-white bg-white/20"
+					class="items-center sm:px-[30px] sm:py-5 px-4 py-1 rounded-md border-2 border-white bg-white/20"
 					><a href="https://docs.sunriselayer.io" target="_blank"
 						><Label
 							className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
