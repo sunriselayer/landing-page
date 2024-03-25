@@ -263,7 +263,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 	>
 		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
-				<img class="md:w-full h-full" src={images.logo} alt="logo" />
+				<img class="md:w-full h-full" src={images.color} alt="logo" />
 				<img class="md:w-full h-full" src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
