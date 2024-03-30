@@ -1,26 +1,26 @@
 {
-  "app-description": "Sunrise is a modular data availability layer, which enhances liquidity and sovereignty for developers.",
-  "sunrise-question": "So, What is Sunrise?",
+  "app-description": "Sunrise is a specialized data availability layer for proof of liquidity, which enhances liquidity and sovereignty for developers.",
+  "sunrise-question": "Build with Sunrise",
   "sunrise-definition": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
   "sunrise-01": {
-    "label": "Monolithic blockchains can’t keep up.",
-    "description": "A monolithic chain is a generalist blockchain that performs all tasks. Really, the monolithic approach is “do everything yourself”.  But It’s prohibitively expensive and slow to build modern applications directly on monolithic chains. There has to be a better way."
+    "label": "Monolithic blockchains can't scale.",
+    "description": "A monolithic chain is a generalist blockchain that performs all tasks. Overall, the monolithic approach is to “do everything yourself”. However, this approach is expensive, not customizable, and not scalable. It's extremely slow to build and deploy modern applications directly on monolithic chains. It's an outdated formula, ready for disruption."
   },
   "sunrise-02": {
-    "label": "The modular evolution is here.",
-    "description": "A modular blockchain differs from a monolithic chain in that one or more of these four functions are offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability ('DA') and consensus by offloading the responsibility of transaction execution and settlement to a different network."
+    "label": "The modular paradigm is already here.",
+    "description": "A modular blockchain differs from a monolithic chain in that its four main functions can each be offloaded to a separate layer. Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus, while offloading the responsibility of execution and settlement to a different network. By using this structure, Modular Blockchains are more efficient, customizable, scalable, sovereign..."
   },
   "sunrise-03": {
-    "label": "What will you build on Sunrise?",
-    "description": "Sunrise brings the modular foundation, so you can bring the innovation. With Sunrise, your chain can become sovereign. This means freedom to build your chain the way you want. Since Sunrise naturally supports any execution environment, you now have the power to create next-gen blockchain solutions."
+    "label": "What will you build in a modular future?",
+    "description": "Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable modular blockchain. With Sunrise, your chain can become scalable and sovereign, giving you the freedom to build your chain anyway you want. Sunrise's DA layer supports any execution environment, empowering you to create next-gen blockchain solutions."
   },
   "sunrise-04": {
-    "label": "The value of Sunrise",
-    "description": "Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable blockchain in entertainment industry. Sunrise brings the modular foundation, so you can bring the innovation. Sovereign rollups with “Proof of Liquidity”, you can incentivize both those who participated in governance and those who provided liquidity for the tokens. And also with functions of “Accepting any tokens as gas fees for AltDA”, Sunrise guaranteed to lock in a long term while generating a yield."
+    "label": "The unique value of Sunrise",
+    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality for AltDA: Any Token for Fees, and Sovereign Proof of Liquidity. Sunrise resolves singular token dependency by allowing users of its DA layer to pay for gas fees with “any token”. Tokens received by Sunrise are locked in long term, preventing selling pressure against fees received and earning yield for Sunrise stakers. Sunrise also resolves the liquidity issue faced by sovereign rollups by enabling “Proof of Liquidity”, which incentivizes governance participants and liquidity providers. Pairing the Sunrise token with the sovereign rollup’s native token creates a mutual feedback loop that simultaneously enhances liquidity and security for both the Sunrise DA layer and any rollup deployed onto it. Together, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
   },
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiency then ever before.",
-    "description": "Building blockchains doesn’t have to be complicated. Develop intuitively with a base layer built for the future.",
+    "description": "Building blockchains doesn't have to be complicated. Develop intuitively with a base layer built for the future.",
     "feature-1": {
       "label": "Easy to use",
       "description": "No need to bootstrap your own validator set and easily set up on Sunrise."
