@@ -17,6 +17,7 @@ export { default as TopMask } from '../lib/images/TopMask.png';
 export { default as BodyMask } from '../lib/images/Mask group.png';
 export { default as BodyBG } from '../lib/images/Rectangle 9.png';
 export { default as logo } from '../lib/images/logo.svg'
+export { default as color } from '../lib/images/color.svg'
 export { default as feature1 } from '../lib/images/feature1.svg'
 export { default as feature2 } from '../lib/images/feature2.svg'
 export { default as feature3 } from '../lib/images/feature3.svg'

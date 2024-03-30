@@ -51,25 +51,30 @@
 							class="text-white"
 							aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}
 						>
-							<a href="/">Learn</a>
+							<a href="https://docs.sunriselayer.io" target="_blank">Learn</a>
 						</li>
 						<li
 							class="text-white"
 							aria-current={$page.url.pathname === '/build' ? 'page' : undefined}
 						>
-							<a href="/">Build</a>
+							<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
 						</li>
-						<li
+						<!-- <li
 							class="text-white"
 							aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}
 						>
 							<a href="/">Run a Node</a>
-						</li>
+						</li> -->
 						<li
 							class="flex items-center text-white"
 							aria-current={$page.url.pathname === '/' ? 'page' : undefined}
 						>
 							<button on:click={toggleLanguage} class="items-center">
+								<!-- {#if isEnglish}
+									<span class="flag-icon flag-icon-us"></span>
+								{:else}
+									<span class="flag-icon flag-icon-jp"></span>
+								{/if} -->
 								{isEnglish ? 'EN' : 'JP'}
 							</button>
 						</li>
@@ -81,9 +86,11 @@
 						<details>
 							<summary class="text-white">Menu</summary>
 							<ul class="bg-white right-0 w-[124px]">
-								<li><a href="/">Learn</a></li>
-								<li><a href="/">Build</a></li>
-								<li><a href="/">Run a Node</a></li>
+								<li><a href="https://docs.sunriselayer.io" target="_blank">Learn</a></li>
+								<li>
+									<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
+								</li>
+								<!-- <li><a href="/">Run a Node</a></li> -->
 								<li>
 									<button on:click={toggleLanguage} class="items-center">
 										{isEnglish ? 'EN' : 'JP'}
@@ -107,18 +114,22 @@
 				/>
 			</div>
 			<div class="flex sm:gap-9 gap-2 justify-center lg:pb-32 pb-14">
-				<button class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md bg-white"
-					><Label
-						className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
-						text="Build for Modular"
-					/></button
+				<button class="items-center sm:px-[30px] sm:py-5 px-4 py-1 rounded-md bg-white">
+					<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
+						><Label
+							className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+							text="Build for Modular"
+						/>
+					</a></button
 				>
 				<button
-					class="items-center sm:px-[30px] sm:py-5 px-2 py-1 rounded-md border-2 border-white bg-white/20"
-					><Label
-						className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
-						text="Explore"
-					/></button
+					class="items-center sm:px-[30px] sm:py-5 px-4 py-1 rounded-md border-2 border-white bg-white/20"
+					><a href="https://docs.sunriselayer.io" target="_blank"
+						><Label
+							className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+							text="Explore"
+						/></a
+					></button
 				>
 			</div>
 		</div>
@@ -156,7 +167,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<img src={images.sunrise} alt="sunrise" />
 	</div>
 	<Label
-		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto'}
+		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto whitespace-pre-wrap'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center md:pb-[135px] pb-16">
@@ -235,14 +246,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			</div>
 		</div>
 	</div>
-	<div class="mt-5 flex justify-center">
-		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center"
-			><Label
-				className="text-xl font-bold font-overpass tracking-tighter"
-				text="Build for Us"
-			/></button
+	<!-- <div class="mt-5 flex justify-center">
+		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center">
+			<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
+				><Label
+					className="text-xl font-bold font-overpass tracking-tighter"
+					text="Build with us"
+				/></a
+			></button
 		>
-	</div>
+	</div> -->
 </div>
 <div class="px-4 lg:py-20 py-5 bg-white">
 	<div
@@ -250,34 +263,33 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 	>
 		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
-				<img class="md:w-full h-full" src={images.logo} alt="logo" />
+				<img class="md:w-full h-full" src={images.color} alt="logo" />
 				<img class="md:w-full h-full" src={images.sunrise} alt="sunrise" />
 			</div>
 		</div>
 		<div class="w-full flex sm:justify-between sm:flex-row flex-col gap-4 pr-6">
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Developers" />
-				<Label className="md:text-lg font-medium" text="Docs" />
-				<Label className="md:text-lg font-medium" text="GitHub" />
+				<a href="https://docs.sunriselayer.io" target="_blank"><Label className="md:text-lg font-medium" text="Docs" /></a>
+				<a href="https://github.com/SunriseLayer" target="_blank"><Label className="md:text-lg font-medium" text="GitHub" /></a>
 			</div>
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Services" />
-				<Label className="md:text-lg font-medium" text="Portal" />
-				<Label className="md:text-lg font-medium" text="Explorer" />
-				<Label className="md:text-lg font-medium" text="Community" />
+				<Label className="md:text-lg font-medium" text="Portal (coming soon)" />
+				<Label className="md:text-lg font-medium" text="Explorer (coming soon)" />
 			</div>
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Information" />
-				<Label className="md:text-lg font-medium" text="Whitepaper" />
-				<Label className="md:text-lg font-medium" text="Blog" />
-				<Label className="md:text-lg font-medium" text="Jobs" />
-				<Label className="md:text-lg font-medium" text="Press Kit" />
+				<a href="https://sunriselayer.medium.com" target="_blank"><Label className="md:text-lg font-medium" text="Blog" /></a>
+				<a href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4" target="_blank"><Label className="md:text-lg font-medium" text="Jobs" /></a>
+				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"><Label className="md:text-lg font-medium" text="Press Kit" /></a>
+				
 			</div>
-			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+			<!-- <div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Legal" />
 				<Label className="md:text-lg font-medium" text="Terms and Services" />
 				<Label className="md:text-lg font-medium" text="Privacy Policy" />
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div
@@ -288,11 +300,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
 		<div class="flex lg:gap-9 md:gap-3 gap-1">
-			<img src={images.discord} alt="discord" />
-			<img src={images.twitter} alt="twitter" />
-			<img src={images.linkedin} alt="linkedin" />
+			<a href="https://discord.com/invite/ununifi" target="_blank"><img src={images.discord} alt="discord" /></a>
+			<a href="https://twitter.com/SunriseLayer" target="_blank"><img src={images.twitter} alt="twitter" /></a>
+			<!-- <img src={images.linkedin} alt="linkedin" />
 			<img src={images.youtube} alt="youtube" />
-			<img src={images.linktree} alt="linktree" />
+			<img src={images.linktree} alt="linktree" /> -->
 		</div>
 	</div>
 </div>

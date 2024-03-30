@@ -1,6 +1,6 @@
 {
   "app-description": "Sunriseは、デベロッパーがさらなる流動製と主権を得られる、Proof of Liquidityに特化したデータ可用性層です。",
-  "sunrise-question": "Sunriseとは何か",
+  "sunrise-question": "Sunriseとは",
   "sunrise-definition": "Sunriseは、最新のブロックチェーン開発で直面する問題を解決する包括的なソリューションです。",
   "sunrise-01": {
     "label": "モノリシックなブロックチェーンはスケールに限界があります。",
@@ -19,19 +19,19 @@
     "description": "Sunriseは、任意トークンのDA手数料支払いと、Sovereign Proof of Liquidityを導入することにより、モジュラーパラダイムにさらなる革新をもたらします。Sunriseを使用するための単一のトークンしか使えない制約がなくなり、任意のトークンでDA層への手数料を支払うことができます。SunriseはSovereign Rollupの流動性の問題も、Proof of Liquidityの導入により解決します。これによりガバナンス参加者と流動性供給社に報いることができます。SunriseのトークンとSovereign rollupのネイティブトークンのペアにより流動性とセキュリティを同時に向上させる、SunriseとSovereign rollupの相互のフィードバックループが形成されます。また、これらのユニークな機能が開発者に流動性と主権をもたらすデータ可用性層をより強固にします。"
   },
   "sunrise-features": {
-    "label": "より優れたブロックチェーンを これまで以上に簡単かつ効率的に",
-    "description": "ブロックチェーンの構築は複雑である必要はありません。 未来のために構築されたベースレイヤーで直感的に開発しましょう。",
+    "label": "より優れたブロックチェーンを \nより簡単に、より効率的に",
+    "description": "ブロックチェーンの構築は複雑であるべきではありません。 最新のブロックチェーンのために構築されたベースレイヤーで直感的に開発しましょう。",
     "feature-1": {
       "label": "Easy to use",
       "description": "独自のバリデーターセットをブートストラップする必要がなく、Sunriseで簡単にセットアップできます。"
     },
     "feature-2": {
       "label": "Scalable",
-      "description": "開発者はインフラのことを考えずに目的に集中できます。"
+      "description": "開発者はインフラのことを考えずに主機能の開発に集中できます。"
     },
     "feature-3": {
       "label": "Flexible",
-      "description": "Sunriseはあらゆるブロックチェーン実行環境をサポートし、開発者のイノベーションを可能にします。"
+      "description": "Sunriseはあらゆるブロックチェーン実行環境をサポートし、ブロックチェーンの開発をより容易にします。"
     },
     "feature-4": {
       "label": "Any tokens as Gas fees",
@@ -43,23 +43,23 @@
     }
   },
   "sunrise-products": {
-    "label": "Sunrise上で構築できるもの",
-    "description": "Sunriseは、最新のブロックチェーン開発で直面する問題を解決する包括的なソリューションです。",
+    "label": "Sunrise上でのブロックチェーン構築",
+    "description": "Sunriseは、最新のブロックチェーン開発で直面する様々な問題を解決する包括的なソリューションです。",
     "product-validiums": {
       "label": "Validiums",
-      "description": "ゼロ・ナレッジ・ロールアップの一種で、親チェーンではなくオフチェーンにデータをポストします。オフチェーン環境では、データはSunriseなどの別のチェーンにポストされます。イーサリアムに直接データをポストするロールアップと比較すると、ガス料金を最大90%節約でき、AltDAのガス料金として任意のトークンを支払うことができます。"
+      "description": "ゼロ・ナレッジ・ロールアップの一種で、親チェーンではなくオフチェーンにデータをポストします。オフチェーン環境では、データはSunriseなどの別のチェーンにポストされます。イーサリアムに直接データをポストするロールアップと比較すると、ガス代を最大90%節約でき、AltDAのガス代を任意のトークンで支払うことができます。"
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
-      "description": "ソブリン・ロールアップはブロックチェーンの一種であり、そのトランザクションを他のブロックチェーンに公開します。 ソブリン・ロールアップは取引の実行と調停を担当し、DAレイヤーはコンセンサスとデータの可用性を担当します。"
+      "description": "ソブリン・ロールアップはブロックチェーンの一種であり、そのトランザクションを他のブロックチェーンに公開します。 ソブリン・ロールアップは取引の実行と承認を担当し、DAレイヤーはコンセンサスとデータの可用性を担当します。"
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "SunriseのLSTとSovereign RollupネイティブトークンのAMM LPシェアは、Sovereign Rollupのvoting powerとなります。(例：GLU/stSR） プロジェクトのトークンに対して流動性供給した人に適切に報いることができます。"
+      "description": "SunriseのLSTとSovereign RollupネイティブトークンのAMM LPシェアは、Sovereign Rollupのvoting powerとなります。(例：GLU/stSR） 流動性供給に対して適切な報酬分配を可能にします。"
     }
   },
   "sunrise-mission": {
     "label": "Mission",
-    "description": "我々は、開発者にさらなる流動性と主権を与えることで、次世代のウェブアプリケーションを実現します。"
+    "description": "流動的かつ主権のあるブロックチェーン開発を促進することで次世代のウェブアプリケーションサービスの拡大を実現します。"
   }
 }
