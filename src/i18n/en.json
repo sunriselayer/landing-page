@@ -20,14 +20,14 @@
   },
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiency then ever before.",
-    "description": "Building blockchains doesn't have to be complicated. Develop intuitively with a base layer built for the future.",
+    "description": "Building blockchains doesn't have to be complicated. Develop intuitively with data availability for the modular future.",
     "feature-1": {
       "label": "Easy to use",
-      "description": "No need to bootstrap your own validator set and easily set up on Sunrise."
+      "description": "No need to bootstrap your own validator set, deploy easily onto Sunrise and benefit from shared security."
     },
     "feature-2": {
       "label": "Scalable",
-      "description": "Developers focus on their goals without thinking of infrastructure."
+      "description": "Modular blockchains scale easily so developers using Sunrise will not have to worry about infrastructure."
     },
     "feature-3": {
       "label": "Flexible",
@@ -51,11 +51,11 @@
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
-      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. \nThe Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "The AMM LP share of the LST of Sunrise and the Sovereign Rollup’s native tokens will be the voting power of the Sovereign Rollup. In other words, LP rewards and Proof of Stake rewards are given to users for LPing and improved security. (e.g. GLU/stSR)"
+      "description": "The LST of Sunrise and the AMM LP share of the Sovereign Rollup native tokens will be the voting power of the Sovereign Rollup Settlement Committee. \nIn other words, LP rewards and Proof of Stake rewards are given to users for LPing and improved security. (e.g. GLU/stSR)"
     }
   },
   "sunrise-mission": {
