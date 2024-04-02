@@ -60,14 +60,14 @@
 					text={$_('sunrise-question')}
 				/>
 				<Label
-					className="text-center text-white font-overpass md:text-[26px] font-medium leading-[25px] tracking-wide max-w-[626px] mx-auto"
+					className="text-center text-white font-overpass md:text-[26px] font-medium leading-[25px] tracking-wide max-w-[800px] mx-auto whitespace-pre-wrap"
 					text={$_('sunrise-definition')}
 				/>
 			</div>
 		</div>
 		<!-- <div class="flex flex-col sm:flex-row gap-y-9 sm:flex-wrap sm:justify-between pb-16"> -->
 		<div
-			class="flex flex-col sm:flex-row md:gap-y-9 sm:gap-y-5 lg:gap-20 md:gap-14 gap-10 sm:flex-wrap pb-16"
+			class="flex flex-col sm:flex-row gap-4 sm:flex-wrap pb-16"
 		>
 			{#each features as { index, label, description, imageSrc }, i}
 				<FeatureItem {index} {label} {description} {imageSrc} />

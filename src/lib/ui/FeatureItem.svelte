@@ -18,7 +18,7 @@
 </script>
 
 <div
-	class="xl:w-[45.3%] md:w-[45.5%] sm:w-full px-[30px] py-5 flex flex-col gap-3 rounded-[20px]"
+	class="xl:w-[49%] md:w-[48%] sm:w-full px-[30px] py-5 flex flex-col gap-3 rounded-[20px]"
 	style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 >
 	<Label
@@ -30,7 +30,7 @@
 		text={$_(label)}
 	/>
 	<Label
-		className="font-sans lg:text-2xl sm:text-xl font-normal text-white"
+		className="font-sans lg:text-2xl sm:text-xl font-normal text-white whitespace-pre-wrap"
 		text={$_(description)}
 	/>
 	<img class="md:w-[70%] w-[200px] mx-auto" src={imageSrc} alt={label} />
