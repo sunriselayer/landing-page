@@ -34,8 +34,7 @@
 				<div class="flex gap-2 items-center text-2xl">
 					<img
 						class="fill-current text-white"
-						style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-						src={images.logo}
+						src={images.color}
 						alt="logo"
 					/>
 					<img
@@ -109,12 +108,12 @@
 					text={appDescription}
 				/>
 				<Label
-					className={'max-w-[821px] text-center font-overpass md:text-[26px] text-xl font-normal leading-[30px] text-white whitespace-pre-wrap'}
+					className={'max-w-[821px] text-center font-overpass md:text-2xl text-xl font-normal leading-[30px] text-white whitespace-pre-wrap'}
 					text={$_('app-description')}
 				/>
 			</div>
-			<div class="flex sm:gap-9 gap-2 justify-center lg:pb-32 pb-14">
-				<button class="items-center sm:px-[30px] sm:py-5 px-4 py-1 rounded-md bg-white">
+			<div class="flex sm:gap-9 gap-2 justify-center pb-8 mt-8">
+				<button class="items-center sm:px-[30px] py-5 px-4 rounded-md bg-white">
 					<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
 						><Label
 							className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
@@ -159,7 +158,7 @@
 </div> -->
 <Concept />
 <div
-	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12 pt-10"
+	class="p-4 lg:px-16 sm:px-12 pt-10"
 	style="background: linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 100% 100% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 100% 100% no-repeat;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 >
@@ -171,7 +170,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto whitespace-pre-wrap'}
 		text={$_('sunrise-features.label')}
 	/>
-	<div class="flex justify-center md:pb-[135px] pb-16">
+	<div class="flex justify-center md:pb-16 pb-8">
 		<Label
 			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass lg:text-2xl text-base font-medium 2xl:max-w-[1517px] 2xl:mx-auto whitespace-pre-wrap'}
 			text={$_('sunrise-features.description')}
@@ -189,7 +188,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="sm:mt-12 mt-8 text-center font-overpass text-2xl lg:text-[26px] md:text-2xl font-medium tracking-wide max-w-[919px] mx-auto whitespace-pre-wrap"
+			className="sm:mt-12 mt-8 text-center font-overpass lg:text-xl xl:text-2xl font-medium tracking-wide max-w-[919px] mx-auto whitespace-pre-wrap"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
@@ -209,7 +208,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-validiums.label')}
 				/>
 				<Label
-					className="sm:text-2xl text-base font-normal text-white font-sans whitespace-pre-wrap"
+					className="sm:text-xl text-base font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-validiums.description')}
 				/>
 			</div>
@@ -225,7 +224,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-rollups.label')}
 				/>
 				<Label
-					className="sm:text-2xl text-base font-normal text-white font-sans whitespace-pre-wrap"
+					className="sm:text-xl text-base font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-rollups.description')}
 				/>
 			</div>
@@ -241,7 +240,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-pol.label')}
 				/>
 				<Label
-					className="sm:text-2xl text-base font-normal text-white font-sans whitespace-pre-wrap"
+					className="sm:text-xl text-base font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-pol.description')}
 				/>
 			</div>
@@ -258,9 +257,9 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		>
 	</div> -->
 </div>
-<div class="px-4 lg:py-20 py-5 bg-white">
+<div class="px-4 py-5 bg-white">
 	<div
-		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 lg:pb-10 pb-5 md:px-8 lg:max-w-[1517px]"
+		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 md:px-8 lg:max-w-[1517px]"
 	>
 		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
@@ -294,15 +293,15 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		</div>
 	</div>
 	<div
-		class="pt-6 sm:px-8 px-5 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
+		class="px-5 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
 	>
 		<Label
 			className="md:text-xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
-		<div class="flex lg:gap-9 md:gap-3 gap-1">
-			<a href="https://discord.com/invite/ununifi" target="_blank"><img src={images.discord} alt="discord" /></a>
-			<a href="https://twitter.com/SunriseLayer" target="_blank"><img src={images.twitter} alt="twitter" /></a>
+		<div class="flex lg:gap-9 md:gap-3 gap-1 items-center">
+			<a href="https://discord.com/invite/ununifi" target="_blank"><img class="w-6 h-6" src={images.discord} alt="discord" /></a>
+			<a href="https://twitter.com/SunriseLayer" target="_blank"><img class="w-6 h-6" src={images.twitter} alt="twitter" /></a>
 			<!-- <img src={images.linkedin} alt="linkedin" />
 			<img src={images.youtube} alt="youtube" />
 			<img src={images.linktree} alt="linktree" /> -->

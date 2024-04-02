@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/logo.svg';
+	import color from '$lib/images/color.svg';
 
 	import { appTitle } from '../consts';
 
@@ -13,7 +13,7 @@
 
 <header>
 	<div class="corner flex gap-2 items-center text-2xl">
-		<img src={logo} alt="SvelteKit" />
+		<img src={color} alt="SvelteKit" />
 		<span>{appTitle}</span>
 	</div>
 
