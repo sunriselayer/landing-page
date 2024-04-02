@@ -34,8 +34,7 @@
 				<div class="flex gap-2 items-center text-2xl">
 					<img
 						class="fill-current text-white"
-						style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-						src={images.logo}
+						src={images.color}
 						alt="logo"
 					/>
 					<img
