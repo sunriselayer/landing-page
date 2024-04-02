@@ -60,13 +60,13 @@
 				src={item.image}
 				alt="item"
 			/>
-			<div class="py-6 sm:px-3 lg:mt-[23px] mt-4">
+			<div class="sm:px-3 mt-4">
 				<Label
 					className={'px-2 font-orbitron 2xl:text-3xl md:text-2xl text-xl font-extrabold tracking-wider text-black'}
 					text={$_(item.label)}
 				/>
 				<Label
-					className={'px-2 font-overpass lg:mt-[23px] mt-4 2xl:text-2xl md:text-xl text-lg font-normal text-black'}
+					className={'px-2 font-overpass lg:mt-[23px] mt-4 2xl:text-lg font-normal text-black'}
 					text={$_(item.description)}
 				/>
 			</div>

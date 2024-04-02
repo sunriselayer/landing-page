@@ -29,9 +29,9 @@
 		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
 		text={$_(label)}
 	/>
+	<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={imageSrc} alt={label} />
 	<Label
-		className="font-sans lg:text-2xl sm:text-xl font-normal text-white whitespace-pre-wrap"
+		className="font-sans font-normal text-white whitespace-pre-wrap"
 		text={$_(description)}
 	/>
-	<img class="md:w-[70%] w-[200px] mx-auto" src={imageSrc} alt={label} />
 </div>
