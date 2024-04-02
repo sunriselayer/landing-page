@@ -34,7 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"firebase": "^10.8.0",
-		"firebase-tools": "^10.5.0",
+		"firebase-tools": "^13.1.0",
 		"flag-icons": "^7.1.0",
 		"svelte-i18n": "^4.0.0"
 	}
