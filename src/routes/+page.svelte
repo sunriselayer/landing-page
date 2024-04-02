@@ -109,7 +109,7 @@
 					text={appDescription}
 				/>
 				<Label
-					className={'max-w-[721px] text-center font-overpass md:text-[26px] text-xl font-normal leading-[30px] text-white'}
+					className={'max-w-[821px] text-center font-overpass md:text-[26px] text-xl font-normal leading-[30px] text-white whitespace-pre-wrap'}
 					text={$_('app-description')}
 				/>
 			</div>
@@ -135,7 +135,8 @@
 		</div>
 	</div>
 </div>
-<div
+<!-- Mission Section -->
+<!-- <div
 	class="md:py-36 sm:py-12 py-4 lg:px-[60px] md:px-10 text-textPrimary flex sm:flex-row relative justify-center"
 >
 	<img
@@ -155,7 +156,7 @@
 			/>
 		</div>
 	</div>
-</div>
+</div> -->
 <Concept />
 <div
 	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12 pt-10"
@@ -172,7 +173,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 	/>
 	<div class="flex justify-center md:pb-[135px] pb-16">
 		<Label
-			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass lg:text-2xl text-base font-medium 2xl:max-w-[1517px] 2xl:mx-auto'}
+			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass lg:text-2xl text-base font-medium 2xl:max-w-[1517px] 2xl:mx-auto whitespace-pre-wrap'}
 			text={$_('sunrise-features.description')}
 		/>
 	</div>
@@ -188,7 +189,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="sm:mt-12 mt-8 text-center font-overpass text-2xl lg:text-[26px] md:text-2xl font-medium tracking-wide max-w-[919px] mx-auto"
+			className="sm:mt-12 mt-8 text-center font-overpass text-2xl lg:text-[26px] md:text-2xl font-medium tracking-wide max-w-[919px] mx-auto whitespace-pre-wrap"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
@@ -208,7 +209,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-validiums.label')}
 				/>
 				<Label
-					className="sm:text-2xl text-base font-normal text-white font-sans"
+					className="sm:text-2xl text-base font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-validiums.description')}
 				/>
 			</div>
@@ -224,7 +225,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-rollups.label')}
 				/>
 				<Label
-					className="sm:text-2xl text-base font-normal text-white font-sans"
+					className="sm:text-2xl text-base font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-rollups.description')}
 				/>
 			</div>
@@ -240,7 +241,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-pol.label')}
 				/>
 				<Label
-					className="sm:text-2xl text-base font-normal text-white font-sans"
+					className="sm:text-2xl text-base font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-pol.description')}
 				/>
 			</div>
