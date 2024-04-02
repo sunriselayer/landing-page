@@ -53,15 +53,12 @@
 <div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 max-w-[1311px] 2xl:mx-auto">
 	{#each items as item (item.id)}
 		<div
-			class="md:min-w-[400px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px] border-2 bg-white"
-			style="border-width: 2px,
-  					border-style: solid,
-  					background-image: linear-gradient(to bottom, #FCECCF, #99B6F4);"
+			class="md:min-w-[400px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px] border-2 border-solid bg-white"
 		>
 			<img
-				class="md:w-[350px] 2xl:h-[303px] md:h-[180px] w-40 h-32 mx-auto"
+				class="md:w-full w-[60%] max-w-60 mx-auto max-h-60"
 				src={item.image}
-				alt={$_(`Image of ${item.label}`)}
+				alt="item"
 			/>
 			<div class="py-6 sm:px-3 lg:mt-[23px] mt-4">
 				<Label
