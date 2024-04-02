@@ -29,4 +29,8 @@ jobs:
       - run: npm i -g npm
       - run: npm ci
       - run: npm run build
-      - run: npx firebase deploy --only hosting:sunrise-landing-page --project=default --token=${{ secrets.FIREBASE_TOKEN }}
+      - uses: google-github-actions/auth@v0
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+      - name: Deploy to Firebase
+        run: npx firebase deploy --only hosting:sunrise-landing-page --project=default
