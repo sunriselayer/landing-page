@@ -135,7 +135,8 @@
 		</div>
 	</div>
 </div>
-<div
+<!-- Mission Section -->
+<!-- <div
 	class="md:py-36 sm:py-12 py-4 lg:px-[60px] md:px-10 text-textPrimary flex sm:flex-row relative justify-center"
 >
 	<img
@@ -155,7 +156,7 @@
 			/>
 		</div>
 	</div>
-</div>
+</div> -->
 <Concept />
 <div
 	class=" p-4 lg:py-[100px] lg:px-16 sm:px-12 pt-10"
