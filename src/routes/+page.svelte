@@ -104,11 +104,11 @@
 				class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center 2xl:mx-auto"
 			>
 				<Label
-					className={'font-orbitron xl:text-[64px] md:text-[40px] sm:text-[30px] text-lg font-extrabold md:leading-[70px] leading-9 md:tracking-normal tracking-wide text-center text-white max-w-[962px]'}
+					className={'font-orbitron xl:text-[64px] md:text-[40px] sm:text-[30px] text-lg font-extrabold md:leading-[70px] sm:leading-4 md:tracking-normal tracking-wide text-center text-white max-w-[962px]'}
 					text={appDescription}
 				/>
 				<Label
-					className={'max-w-[821px] text-center font-overpass md:text-2xl text-xl font-normal leading-[30px] text-white whitespace-pre-wrap'}
+					className={'max-w-[821px] text-center font-overpass md:text-[26px] text-xs font-normal sm:leading-[25px] text-white whitespace-pre-wrap'}
 					text={$_('app-description')}
 				/>
 			</div>
@@ -116,7 +116,7 @@
 				<button class="items-center sm:px-[30px] py-5 px-4 rounded-md bg-white">
 					<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
 						><Label
-							className="text-[#4988FF] text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+							className="text-[#4988FF] text-center font-overpass sm:text-xl font-bold leading-5 tracking-tighter"
 							text="Build for Modular"
 						/>
 					</a></button
@@ -125,7 +125,7 @@
 					class="items-center sm:px-[30px] sm:py-5 px-4 py-1 rounded-md border-2 border-white bg-white/20"
 					><a href="https://docs.sunriselayer.io" target="_blank"
 						><Label
-							className="text-white text-center font-overpass text-xl font-bold leading-5 tracking-tighter"
+							className="text-white text-center font-overpass sm:text-xl font-bold leading-5 tracking-tighter"
 							text="Explore"
 						/></a
 					></button
@@ -167,12 +167,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<img src={images.sunrise} alt="sunrise" />
 	</div>
 	<Label
-		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-sm font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto whitespace-pre-wrap'}
+		className={'text-textPrimary text-center font-orbitron 2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl font-bold lg:tracking-wider max-w-[1329px] xl:mx-auto whitespace-pre-wrap'}
 		text={$_('sunrise-features.label')}
 	/>
 	<div class="flex justify-center md:pb-16 pb-8">
 		<Label
-			className={'w-[892px] text-textPrimary text-center pt-12 font-overpass lg:text-2xl text-base font-medium 2xl:max-w-[1517px] 2xl:mx-auto whitespace-pre-wrap'}
+			className={'w-[892px] text-textPrimary text-center sm:pt-12 pt-8 font-overpass lg:text-2xl sm:text-base text-sm font-medium 2xl:max-w-[1517px] 2xl:mx-auto whitespace-pre-wrap'}
 			text={$_('sunrise-features.description')}
 		/>
 	</div>
@@ -188,7 +188,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text={$_('sunrise-products.label')}
 		/>
 		<Label
-			className="sm:mt-12 mt-8 text-center font-overpass lg:text-xl xl:text-2xl font-medium tracking-wide max-w-[919px] mx-auto whitespace-pre-wrap"
+			className="sm:mt-12 mt-8 text-center font-overpass lg:text-xl xl:text-2xl sm:text-base text-sm font-medium tracking-wide max-w-[919px] mx-auto whitespace-pre-wrap"
 			text={$_('sunrise-products.description')}
 		/>
 	</div>
@@ -208,7 +208,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-validiums.label')}
 				/>
 				<Label
-					className="sm:text-xl text-base font-normal text-white font-sans whitespace-pre-wrap"
+					className="md:text-lg sm:text-base text-xs font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-validiums.description')}
 				/>
 			</div>
@@ -224,7 +224,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-rollups.label')}
 				/>
 				<Label
-					className="sm:text-xl text-base font-normal text-white font-sans whitespace-pre-wrap"
+					className="md:text-lg sm:text-base text-xs font-normal text-white font-sans whitespace-pre-wrap"
 					text={$_('sunrise-products.product-rollups.description')}
 				/>
 			</div>
@@ -240,7 +240,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 					text={$_('sunrise-products.product-pol.label')}
 				/>
 				<Label
-					className="sm:text-xl text-base font-normal text-white font-sans whitespace-pre-wrap"
+					className="md:text-lg sm:text-base text-xs font-normal text-white font-sans whitespace-pre-wrap mt-4"
 					text={$_('sunrise-products.product-pol.description')}
 				/>
 			</div>
@@ -259,7 +259,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 </div>
 <div class="px-4 py-5 bg-white">
 	<div
-		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-3 pl-5 md:px-8 lg:max-w-[1517px]"
+		class="flex xl:gap-32 lg:flex-row lg:mx-auto lg:gap-24 flex-col gap-1 pl-5 md:px-8 lg:max-w-[1517px]"
 	>
 		<div class="flex justify-between items-start pt-4">
 			<div class="flex gap-3 items-center">
@@ -270,19 +270,19 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<div class="w-full flex sm:justify-between sm:flex-row flex-col gap-4 pr-6">
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Developers" />
-				<a href="https://docs.sunriselayer.io" target="_blank"><Label className="md:text-lg font-medium" text="Docs" /></a>
-				<a href="https://github.com/SunriseLayer" target="_blank"><Label className="md:text-lg font-medium" text="GitHub" /></a>
+				<a href="https://docs.sunriselayer.io" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Docs" /></a>
+				<a href="https://github.com/SunriseLayer" target="_blank"><Label className="md:text-lg text-xs font-medium" text="GitHub" /></a>
 			</div>
-			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+			<div class="flex flex-col sm:gap-2 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Services" />
-				<Label className="md:text-lg font-medium" text="Portal (coming soon)" />
-				<Label className="md:text-lg font-medium" text="Explorer (coming soon)" />
+				<Label className="md:text-lg text-xs font-medium" text="Portal (coming soon)" />
+				<Label className="md:text-lg text-xs font-medium" text="Explorer (coming soon)" />
 			</div>
-			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
+			<div class="flex flex-col sm:gap-2 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Information" />
-				<a href="https://sunriselayer.medium.com" target="_blank"><Label className="md:text-lg font-medium" text="Blog" /></a>
-				<a href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4" target="_blank"><Label className="md:text-lg font-medium" text="Jobs" /></a>
-				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"><Label className="md:text-lg font-medium" text="Press Kit" /></a>
+				<a href="https://sunriselayer.medium.com" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Blog" /></a>
+				<a href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Jobs" /></a>
+				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Press Kit" /></a>
 				
 			</div>
 			<!-- <div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
@@ -293,7 +293,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		</div>
 	</div>
 	<div
-		class="px-5 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
+		class="px-5 py-2 flex justify-between sm:flex-row flex-col gap-1 2xl:max-w-[1517px] 2xl:mx-auto"
 	>
 		<Label
 			className="md:text-xl sm:tracking-wider tracking-tighter"

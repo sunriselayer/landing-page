@@ -54,13 +54,13 @@
 		class="lg:px-16 px-6 w-full flex flex-col justify-center relative 2xl:max-w-[1312px] 2xl:mx-auto"
 	>
 		<div>
-			<div class="flex flex-col justify-center pt-4 sm:pt-[60px] sm:pb-16 pb-5 gap-3">
+			<div class="flex flex-col justify-center pt-8 sm:pt-[60px] sm:pb-16 pb-5 gap-3">
 				<Label
-					className="text-center text-white font-orbitron md:text-[68px] text-[30px] font-bold tracking-wider"
+					className="text-center text-white font-orbitron xl:text-[64px] md:text-[40px] sm:text-[30px] text-lg font-bold tracking-wider"
 					text={$_('sunrise-question')}
 				/>
 				<Label
-					className="text-center text-white font-overpass md:text-[26px] font-medium leading-[25px] tracking-wide max-w-[800px] mx-auto whitespace-pre-wrap"
+					className="text-center text-white font-overpass md:text-[26px] text-xs font-medium sm:leading-[25px] tracking-wide max-w-[800px] mx-auto whitespace-pre-wrap sm:pt-8"
 					text={$_('sunrise-definition')}
 				/>
 			</div>

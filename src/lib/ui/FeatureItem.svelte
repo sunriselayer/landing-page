@@ -31,7 +31,7 @@
 	/>
 	<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={imageSrc} alt={label} />
 	<Label
-		className="font-sans font-normal text-white whitespace-pre-wrap"
+		className="font-sans font-normal text-white whitespace-pre-wrap sm:text-base text-xs"
 		text={$_(description)}
 	/>
 </div>
