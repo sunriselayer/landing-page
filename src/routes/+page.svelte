@@ -162,7 +162,7 @@
 	style="background: linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 100% 100% no-repeat, linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 100% 100% no-repeat;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 >
-	<div class="flex gap-2 justify-center mb-5">
+	<div class="flex gap-2 justify-center mb-5 py-8">
 		<img src={images.logo} alt="logo" />
 		<img src={images.sunrise} alt="sunrise" />
 	</div>
