@@ -101,7 +101,7 @@
 				</ul>
 			</div>
 			<div
-				class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center 2xl:mx-auto"
+				class="flex flex-col lg:gap-12 gap-4 md:gap-6 sm:px-[50px] px-8 items-center 2xl:mx-auto mt-8"
 			>
 				<Label
 					className={'font-orbitron xl:text-[64px] md:text-[40px] sm:text-[30px] text-lg font-extrabold md:leading-[70px] sm:leading-4 md:tracking-normal tracking-wide text-center text-white max-w-[962px]'}
