@@ -34,7 +34,8 @@
 				<div class="flex gap-2 items-center text-2xl">
 					<img
 						class="fill-current text-white"
-						src={images.color}
+						style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
+						src={images.logo}
 						alt="logo"
 					/>
 					<img
@@ -270,8 +271,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 		<div class="w-full flex sm:justify-between sm:flex-row flex-col gap-4 pr-6">
 			<div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Developers" />
-				<a href="https://docs.sunriselayer.io" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Docs" /></a>
-				<a href="https://github.com/SunriseLayer" target="_blank"><Label className="md:text-lg text-xs font-medium" text="GitHub" /></a>
+				<a href="https://docs.sunriselayer.io" target="_blank"
+					><Label className="md:text-lg text-xs font-medium" text="Docs" /></a
+				>
+				<a href="https://github.com/SunriseLayer" target="_blank"
+					><Label className="md:text-lg text-xs font-medium" text="GitHub" /></a
+				>
 			</div>
 			<div class="flex flex-col sm:gap-2 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Services" />
@@ -280,10 +285,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			</div>
 			<div class="flex flex-col sm:gap-2 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Information" />
-				<a href="https://sunriselayer.medium.com" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Blog" /></a>
-				<a href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Jobs" /></a>
-				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"><Label className="md:text-lg text-xs font-medium" text="Press Kit" /></a>
-				
+				<a href="https://sunriselayer.medium.com" target="_blank"
+					><Label className="md:text-lg text-xs font-medium" text="Blog" /></a
+				>
+				<a
+					href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4"
+					target="_blank"><Label className="md:text-lg text-xs font-medium" text="Jobs" /></a
+				>
+				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"
+					><Label className="md:text-lg text-xs font-medium" text="Press Kit" /></a
+				>
 			</div>
 			<!-- <div class="flex flex-col sm:gap-2 gap-1 ibm-plex-sans">
 				<Label className="md:text-3xl font-bold text-lg mb-2 text-slate-500" text="Legal" />
@@ -300,8 +311,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
 		<div class="flex lg:gap-9 md:gap-3 gap-1 items-center">
-			<a href="https://discord.com/invite/ununifi" target="_blank"><img class="w-6 h-6" src={images.discord} alt="discord" /></a>
-			<a href="https://twitter.com/SunriseLayer" target="_blank"><img class="w-6 h-6" src={images.twitter} alt="twitter" /></a>
+			<a href="https://discord.com/invite/ununifi" target="_blank"
+				><img class="w-6 h-6" src={images.discord} alt="discord" /></a
+			>
+			<a href="https://twitter.com/SunriseLayer" target="_blank"
+				><img class="w-6 h-6" src={images.twitter} alt="twitter" /></a
+			>
 			<!-- <img src={images.linkedin} alt="linkedin" />
 			<img src={images.youtube} alt="youtube" />
 			<img src={images.linktree} alt="linktree" /> -->
