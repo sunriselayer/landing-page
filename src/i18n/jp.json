@@ -12,11 +12,11 @@
   },
   "sunrise-03": {
     "label": "モジュラー型ブロックチェーンの未来",
-    "description": "Sunriseは、持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。\n\nSunriseは、日本発のグローバル・DAレイヤーです。日本のブロックチェーンエコシステムは堅牢ですが、技術的には孤立しています。Sunriseはモジュラー型ブロックチェーンを推進し、日本の主要なDAレイヤーを目指します。また、その後はグローバルな展開を視野に入れています。\n\nSunriseによってブロックチェーンはSovereign rollupに対応し、拡張性が向上します。Sunriseはどのような実行環境にも対応した、次世代のブロックチェーン・ソリューションです。"
+    "description": "Sunriseは、持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。\n\nSunriseは、日本発のグローバル・DAレイヤーです。日本のブロックチェーンエコシステムは堅牢ですが、技術的には孤立しています。Sunriseはモジュラー型ブロックチェーンを推進し、日本の主要なDAレイヤーを目指します。また、その後はグローバルな展開を視野に入れています。\n\nSunriseによってブロックチェーンはSovereign Rollupsに対応し、拡張性が向上します。Sunriseはどのような実行環境にも対応した、次世代のブロックチェーン・ソリューションです。"
   },
   "sunrise-04": {
     "label": "Sunriseの特長",
-    "description": "SunriseはAltDAに2つの独自機能を追加することでモジュラーパラダイムに革新を起こします。\n\n1つめはDAレイヤーのユーザーのガス支払いをどのトークンでも行えるようにすることです。これにより単一トークンへの依存を無くします。Sunriseは支払われたトークンを長期的に保有することで売り圧力を防ぎ、ステーキングの利回りを維持します。\n\n2つめはSovereign Proof of Liquidityです。ガバナンス参加と流動性供給にインセンティブを与えるProof of Liquidityを可能にすることでSovereign Rollup全体の流動性を確保します。SunriseトークンとSovereign Rollup上のネイティブトークンをペアにすることで、両方の流動性と安全性が同時に強化されます。\n\nこれらの機能を組み合わせることでData Availability（データの可用性）を高め、流動性とチェーンの主権を強化します。"
+    "description": "SunriseはAltDAとして、またSovereign Rollupsに対して、独自の価値を提供することでモジュラーパラダイムに革新を起こします。\n\n1つめはDAレイヤーのユーザーのガス支払いをどのトークンでも行えるようにすることです。これにより単一トークンへの依存を無くします。Sunriseは支払われたトークンを長期的に保有することで売り圧力を防ぎ、ステーキングの利回りを維持します。 \n\n2つめはSovereign Proof of Liquidityです。ガバナンス参加と流動性供給にインセンティブを与えるProof of Liquidityを可能にします。SunriseトークンとSovereign Rollups上のネイティブトークンをペアにしてSovereign Rollupsへのvoting powerとすることで、SunriseとSovereign Rollupsの流動性とセキュリティが強化されます。 \n\nこれらの機能を組み合わせることでData Availability（データの可用性）を高め、流動性とチェーンの主権を強化します。"
   },
   "sunrise-features": {
     "label": "より優れたブロックチェーンを \nより簡単に、より効率的に",
@@ -51,11 +51,11 @@
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
-      "description": "ソブリン・ロールアップはブロックチェーンの一種であり、そのトランザクションを他のブロックチェーンに公開します。 ソブリン・ロールアップは取引の実行と承認を担当し、DAレイヤーはコンセンサスとデータの可用性を担当します。"
+      "description": "Sovereign Rollupsはブロックチェーンの一種であり、そのトランザクションを他のブロックチェーンに公開します。 Sovereign Rollupsは取引の実行と承認を担当し、DAレイヤーはコンセンサスとデータの可用性を担当します。"
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "SunriseのLSTとSovereign RollupネイティブトークンのAMM LPシェアがSovereign Rollup上のvoting powerとなります。\n\nつまり、流動性供給とProof of Stakeによるセキュリティの向上の2つに対し、Sunriseは報酬を与えます。(例：GLU/stSR）"
+      "description": "SunriseのLSTとSovereign RollupsネイティブトークンのAMM LPシェアがSovereign Rollups上のvoting powerとなります。\n\nつまり、流動性供給とProof of Stakeによるセキュリティの向上の2つに対し、Sunriseは報酬を与えます。(例：GLU/stSR）"
     }
   },
   "sunrise-mission": {
