@@ -16,7 +16,7 @@
   },
   "sunrise-04": {
     "label": "The unique value of Sunrise",
-    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality like Any Token for Fees and Sovereign Proof of Liquidity. \n\nSunrise resolves singular token dependency by allowing users of its DA layer to pay for gas fees with “any token”. Tokens received by Sunrise are locked in long term, preventing selling pressure against fees received and earning yield for Sunrise stakers. \n\nSunrise also resolves the liquidity issue faced by sovereign rollups by “Sovereign Proof of Liquidity”, which incentivizes governance participants and liquidity providers. Pairing the LST of Sunrise token with the sovereign rollup’s native token creates a mutual feedback loop that simultaneously enhances liquidity and security for both the Sunrise DA layer and any rollup deployed onto it. \n\nTogether, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
+    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality like DA Fee Abstraction and Sovereign Proof of Liquidity. \n\nSunrise resolves singular token dependency by allowing users of its DA layer to pay for gas fees with “any token”. Tokens received by Sunrise are locked in long term, preventing selling pressure against fees received and earning yield for Sunrise stakers. \n\nSunrise also resolves the liquidity issue faced by sovereign rollups by “Sovereign Proof of Liquidity”, which incentivizes governance participants and liquidity providers. Pairing the LST of Sunrise token with the sovereign rollup’s native token creates a mutual feedback loop that simultaneously enhances liquidity and security for both the Sunrise DA layer and any rollup deployed onto it. \n\nTogether, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
   },
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiently than ever before.",
@@ -34,7 +34,7 @@
       "description": "Sunrise supports any blockchain execution environment, enabling devs to innovate."
     },
     "feature-4": {
-      "label": "Any tokens as Gas fees",
+      "label": "Fee Abstraction",
       "description": "Sunrise enables projects to pay any tokens as gas fees for using Sunrise."
     },
     "feature-5": {
