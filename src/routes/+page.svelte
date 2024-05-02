@@ -310,16 +310,17 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 			className="md:text-xl sm:tracking-wider tracking-tighter"
 			text="Sunrise © – All rights reserved. 2024"
 		/>
-		<div class="flex lg:gap-9 md:gap-3 gap-1 items-center">
-			<a href="https://discord.com/invite/ununifi" target="_blank"
-				><img class="w-6 h-6" src={images.discord} alt="discord" /></a
-			>
-			<a href="https://twitter.com/SunriseLayer" target="_blank"
-				><img class="w-6 h-6" src={images.twitter} alt="twitter" /></a
-			>
-			<!-- <img src={images.linkedin} alt="linkedin" />
-			<img src={images.youtube} alt="youtube" />
-			<img src={images.linktree} alt="linktree" /> -->
+		<div class="flex lg:gap-9 md:gap-3 gap-1 items-center ml-9">
+			<button class="btn btn-sm btn-outline">
+				<a href="https://discord.gg/sunrise" target="_blank">
+					<img class="w-6 h-6" src={images.discord} alt="discord" /></a
+				>
+			</button>
+			<button class="btn btn-sm btn-outline">
+				<a href="https://twitter.com/SunriseLayer" target="_blank">
+					<img class="w-6 h-6" src={images.twitter} alt="twitter" /></a
+				>
+			</button>
 		</div>
 	</div>
 </div>
