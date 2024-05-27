@@ -16,7 +16,7 @@
   },
   "sunrise-04": {
     "label": "The unique value of Sunrise",
-    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality like DA Fee Abstraction and Sovereign Proof of Liquidity. \n\nSunrise resolves singular token dependency by allowing users of its DA layer to pay for gas fees with “any token”. Tokens received by Sunrise are locked in long term, preventing selling pressure against fees received and earning yield for Sunrise stakers. \n\nSunrise also resolves the liquidity issue faced by sovereign rollups by “Sovereign Proof of Liquidity”, which incentivizes governance participants and liquidity providers. Pairing the LST of Sunrise token with the sovereign rollup’s native token creates a mutual feedback loop that simultaneously enhances liquidity and security for both the Sunrise DA layer and any rollup deployed onto it. \n\nTogether, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
+    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality for AltDA: Fee Abstraction and Proof of Liquidity (PoL). \n\nSunrise resolves singular token dependency by allowing anyone to engage in PoL in exchange for blobspace. Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems. \n\nSunrise also resolves the liquidity issue by extending replicating Berachain Proof of Liquidity across the entire DA Layer. This replaces the net-fee extract model (used by many AltDA providers) with an aligned liquidity and security model that replaces Berachain. \n\nTogether, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
   },
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiently than ever before.",
@@ -30,16 +30,16 @@
       "description": "Modular blockchains scale easily so developers using Sunrise will not have to worry about infrastructure."
     },
     "feature-3": {
-      "label": "Flexible",
-      "description": "Sunrise supports any blockchain execution environment, enabling devs to innovate."
+      "label": "Interoperable",
+      "description": "Build interoperable rollup."
     },
     "feature-4": {
-      "label": "Fee Abstraction",
-      "description": "Sunrise enables projects to pay any tokens as gas fees for using Sunrise."
+      "label": "AltDA Fee Abstraction",
+      "description": "LP to a pool of your choice, engaging in PoL in exchange for blobspace."
     },
     "feature-5": {
-      "label": "Sovereign Proof of Liquidity",
-      "description": "Projects can incentivize both those who participated in governance and who provided liquidity for the tokens."
+      "label": "Proof of Liquidity",
+      "description": "Bootstrap liquidity and benefit from aligned & enhanced security, using LP tokens of your choice, and the liquidity of many ecosystems to secure your rollup."
     }
   },
   "sunrise-products": {
@@ -47,7 +47,7 @@
     "description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
     "product-validiums": {
       "label": "Optimium / Validium",
-      "description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment that data is posted to a separate chain, such as Sunrise. They save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can pay any tokens as gas fees for AltDA."
+      "description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment that data is posted to a separate chain, such as Sunrise. They save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can LPing to use Sunrise DA Layer."
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
@@ -55,7 +55,7 @@
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "The LST of Sunrise and the AMM LP share of the Sovereign Rollup native tokens will be the voting power of the Sovereign Rollup Settlement Committee. \n\nIn other words, LP rewards and Proof of Stake rewards are given to users for LPing and improved security. (e.g. GLU/stSR)"
+      "description": "Sunrise supports minting LP share.  The LST of LP share of the Sovereign Rollup’s native tokens and the Sunrise token can be staked to the Sovereign Rollup for governance and reward distribution."
     }
   },
   "sunrise-mission": {

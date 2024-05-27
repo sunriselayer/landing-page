@@ -11,12 +11,12 @@
     "description": "モジュラー型ブロックチェーンがモノリシック・チェーンと異なるのは、4つの役割のうち1つ以上を別のレイヤーにオフロードしている点です。\n\nSunriseは、トランザクションの実行と調停の責任を別のネットワークにオフロードすることで、データの可用性 (DA) とコンセンサスの機能を満たすことに特化したブロックチェーンです。"
   },
   "sunrise-03": {
-    "label": "モジュラー型ブロックチェーンの未来",
+    "label": "モジュラー型ブロックチェーン",
     "description": "Sunriseは、持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。\n\nSunriseは、日本発のグローバル・DAレイヤーです。日本のブロックチェーンエコシステムは堅牢ですが、技術的には孤立しています。Sunriseはモジュラー型ブロックチェーンを推進し、日本の主要なDAレイヤーを目指します。また、その後はグローバルな展開を視野に入れています。\n\nSunriseによってブロックチェーンはSovereign Rollupsに対応し、拡張性が向上します。Sunriseはどのような実行環境にも対応した、次世代のブロックチェーン・ソリューションです。"
   },
   "sunrise-04": {
     "label": "Sunriseの特長",
-    "description": "SunriseはDA手数料の抽象化やSovereign Proof of Liquidityといった独自の機能を導入することでモジュラーパラダイムにさらなる革新を起こします。\n\n1つめはDAレイヤーのユーザーのガス支払いをどのトークンでも行えるようにすることです。これにより単一トークンへの依存を解消します。Sunriseは支払われたトークンを長期的に保有することで売り圧力を防ぎ、ステーキングの利回りを維持します。 \n\n2つめはSovereign Proof of Liquidityです。ガバナンス参加と流動性供給にインセンティブを与えるProof of Liquidityを可能にします。SunriseトークンとSovereign Rollups上のネイティブトークンをペアにしてSovereign Rollupsへのvoting powerとすることで、SunriseとSovereign Rollupsの流動性とセキュリティが強化されます。 \n\nこれらの機能を組み合わせることでData Availability（データの可用性）を高め、流動性とチェーンの主権を強化します。"
+    "description": "Sunriseは、持続可能なブロックチェーンを立ち上げるために必要なすべてを提供する、高速で安全なデータとコンセンサスのレイヤーを提供します。\n\nまた、LPingをするだけでデータ可用性層が利用可能なDA Fee Abstractionという機能を提供します。この機能により、L2プロジェクトがUSDC/USDTなどのステーブルコイン、L1やL2プロジェクトを含む様々なトークンをLPingするだけでデータ可用性層を使用できるようになります。また、SunriseはBerachainのProof of Liquidityを拡張し、独自のガバナンスを実現しています。"
   },
   "sunrise-features": {
     "label": "より優れたブロックチェーンを \nより簡単に、より効率的に",
@@ -30,16 +30,16 @@
       "description": "モジュラー型ブロックチェーンは簡単にスケーラビリティを向上させることができるため、Sunrise上ではインフラを心配する必要はありません。"
     },
     "feature-3": {
-      "label": "Flexible",
-      "description": "Sunriseはあらゆるブロックチェーン実行環境をサポートし、ブロックチェーンの開発をより容易にします。"
+      "label": "Interoperable",
+      "description": "Interoperabilityを持ったRollupを構築できます。"
     },
     "feature-4": {
-      "label": "Fee Abstraction",
-      "description": "プロジェクトがSunriseを利用する際に、あらゆるトークンをガス代として支払うことができます。"
+      "label": "AltDA Fee Abstraction",
+      "description": "プロジェクトがLPingをするだけでデータ可用性層が利用可能です。"
     },
     "feature-5": {
-      "label": "Sovereign Proof of Liquidity",
-      "description": "ガバナンスに参加した人とトークンの流動性を提供した人の両方にインセンティブを与えることができます。"
+      "label": "Proof of Liquidity",
+      "description": "BerachainのProof of LiquidityメカニズムをSovereign Rollupとネイティブに連携するように拡張することで、流動性と安全性の向上を実現します。"
     }
   },
   "sunrise-products": {
@@ -47,7 +47,7 @@
     "description": "Sunriseは、最新のブロックチェーン開発で直面する様々な問題を解決する包括的なソリューションです。",
     "product-validiums": {
       "label": "Validiums",
-      "description": "ゼロ・ナレッジ・ロールアップの一種で、親チェーンではなくオフチェーンにデータをポストします。オフチェーン環境では、データはSunriseなどの別のチェーンにポストされます。イーサリアムに直接データをポストするロールアップと比較すると、ガス代を最大90%節約でき、AltDAのガス代を任意のトークンで支払うことができます。"
+      "description": "ゼロ・ナレッジ・ロールアップの一種で、親チェーンではなくオフチェーンにデータをポストします。オフチェーン環境では、データはSunriseなどの別のチェーンにポストされます。イーサリアムに直接データをポストするロールアップと比較すると、ガス代を最大90%節約でき、Sunrise上のLiquidity PoolにLPingするだけでSunrise DAを使用できます。"
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
@@ -55,7 +55,7 @@
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",
-      "description": "SunriseのLSTとSovereign RollupsネイティブトークンのAMM LPシェアがSovereign Rollups上のvoting powerとなります。\n\nつまり、流動性供給とProof of Stakeによるセキュリティの向上の2つに対し、Sunriseは報酬を与えます。(例：GLU/stSR）"
+      "description": "Sovereign RollupsのネイティブトークンとSunriseトークンのLPシェアのLSTは、ガバナンスとreward分配のためにSovereign Rollupsにstakingすることができます。つまり、流動性供給とProof of Stakeによるセキュリティの向上の2つに対し、Sunriseは報酬を与えます。"
     }
   },
   "sunrise-mission": {
