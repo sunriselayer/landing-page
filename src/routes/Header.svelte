@@ -28,7 +28,7 @@
 				<a href="https://docs.sunriselayer.io" target="_blank">Learn</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/build' ? 'page' : undefined}>
-				<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
+				<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank">Build</a>
 			</li>
 			<!-- <li aria-current={$page.url.pathname === '/run-node' ? 'page' : undefined}>
 				<a href="/run-node">Run a Node</a>
