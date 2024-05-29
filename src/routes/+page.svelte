@@ -57,7 +57,9 @@
 							class="text-white"
 							aria-current={$page.url.pathname === '/build' ? 'page' : undefined}
 						>
-							<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
+							<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank"
+								>Build</a
+							>
 						</li>
 						<!-- <li
 							class="text-white"
@@ -88,7 +90,9 @@
 							<ul class="bg-white right-0 w-[124px]">
 								<li><a href="https://docs.sunriselayer.io" target="_blank">Learn</a></li>
 								<li>
-									<a href="https://docs.sunriselayer.io/node/build-node" target="_blank">Build</a>
+									<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank"
+										>Build</a
+									>
 								</li>
 								<!-- <li><a href="/">Run a Node</a></li> -->
 								<li>
@@ -115,7 +119,7 @@
 			</div>
 			<div class="flex sm:gap-9 gap-2 justify-center pb-8 mt-8">
 				<button class="items-center sm:px-[30px] py-5 px-4 rounded-md bg-white">
-					<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
+					<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank"
 						><Label
 							className="text-[#4988FF] text-center font-overpass sm:text-xl font-bold leading-5 tracking-tighter"
 							text="Build for Modular"
@@ -249,7 +253,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"
 	</div>
 	<!-- <div class="mt-5 flex justify-center">
 		<button class="rounded-md px-[30px] py-5 bg-[#FFC75F] text-center items-center">
-			<a href="https://docs.sunriselayer.io/node/build-node" target="_blank"
+			<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank"
 				><Label
 					className="text-xl font-bold font-overpass tracking-tighter"
 					text="Build with us"
