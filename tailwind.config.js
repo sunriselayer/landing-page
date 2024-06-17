@@ -14,6 +14,9 @@ export default {
 		}
 	},
 	plugins: [require('daisyui')],
+	daisyui: {
+        themes: ['light']
+    },
 	extend: {
 		keyframes: {
 			'image-change': {
