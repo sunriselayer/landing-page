@@ -6,6 +6,10 @@
 	import jp from '../i18n/jp.json';
 	import { _, init, addMessages } from 'svelte-i18n';
 	import '/node_modules/flag-icons/css/flag-icons.min.css';
+	import Footer from './Footer.svelte';
+	import Concepts from './Concepts.svelte';
+	import Features from './Features.svelte';
+	import Summaries from './Summaries.svelte';
 
 	const defaultLocale = 'en';
 
@@ -19,29 +23,49 @@
 </script>
 
 <div class="app">
-	<!-- <Header /> -->
-
 	<main>
+		<Header />
 		<slot />
 	</main>
+	<second>
+		<Concepts />
+	</second>
+	<third>
+		<Features />
+	</third>
+	<fourth>
+		<Summaries />
+	</fourth>
 
-	<!-- <footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer> -->
+	<Footer />
 </div>
 
 <style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+	main {
+		background-image: url(../lib/images/main.png);
+		background-position-x: center;
+		background-position-y: center;
 	}
 
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	second {
+		background-image: url(../lib/images/secondary.png);
+		background-size: cover;
+	}
+
+	third {
+		background:
+			linear-gradient(to top right, #fceccf 0%, #d7e5fb 50%) top right / 100% 100% no-repeat,
+			linear-gradient(to top left, #fceccf 0%, #d7e5fb 50%) top left / 100% 100% no-repeat;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+
+	fourth {
+		background: linear-gradient(to bottom right, #fceccf 0%, #d7e5fb 50%) top left / 100% 100%
+			no-repeat;
+	}
+	.app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
 	}
 </style>

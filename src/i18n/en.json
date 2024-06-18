@@ -1,22 +1,22 @@
 {
-  "app-description": "Sunrise is a specialized data availability layer for proof of liquidity, \nwhich enhances liquidity and sovereignty for developers.",
-  "sunrise-question": "Build with Sunrise",
-  "sunrise-definition": "Sunrise is the data availability layer with unique functionalities that enhance modular blockchain development and provide a comprehensive solution to scalability for modern blockchains.",
+  "app-description": "Sunrise is a specialized data availability layer for proof of liquidity, <br />which enhances liquidity and sovereignty for developers.",
+  "sunrise-question": "Enhanced Liquidity for Everyone",
+  "sunrise-definition": "Building with Sunrise enables the same advantages and benefits of an aligned liquidity and security model by extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while providing a comprehensive solution for modular blockchain development.",
   "sunrise-01": {
     "label": "Monolithic blockchains can't scale.",
-    "description": "A monolithic chain is a generalist blockchain that performs all tasks. Overall, the monolithic approach is to “do everything yourself”. \n\nHowever, this approach is expensive, not customizable, and not scalable. It's extremely slow to build and deploy modern applications directly on monolithic chains. It's an outdated formula, ready for disruption."
+    "description": "A monolithic chain is a generalist blockchain that performs all tasks. Overall, the monolithic approach is to “do everything yourself”. <br /><br />However, this approach is expensive, not customizable, and not scalable. It's extremely slow to build and deploy modern applications directly on monolithic chains. It's an outdated formula, ready for disruption."
   },
   "sunrise-02": {
     "label": "The modular paradigm is already here.",
-    "description": "A modular blockchain differs from a monolithic chain in that its four main functions can each be offloaded to a separate layer. \n\nSunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus, while offloading the responsibility of execution and settlement to a different network. \n\nBy using this structure, Modular Blockchains are more efficient, customizable, scalable, sovereign..."
+    "description": "A modular blockchain differs from a monolithic chain in that its four main functions can each be offloaded to a separate layer. <br /><br />Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus, while offloading the responsibility of execution and settlement to a different network. <br /><br />By using this structure, Modular Blockchains are more efficient, customizable, scalable, sovereign..."
   },
   "sunrise-03": {
     "label": "What will you build in a modular future?",
-    "description": "Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable modular blockchain. \n\nSunrise is a global DA layer, originating in Japan. \n\nWith Sunrise, your chain can become scalable and sovereign, giving you the freedom to build your chain anyway you want. Sunrise’s DA layer supports any execution environment, empowering you to create next-gen blockchain solutions."
+    "description": "Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable modular blockchain. <br /><br />Sunrise is a global DA layer, originating in Japan. <br /><br />With Sunrise, your chain can become scalable and sovereign, giving you the freedom to build your chain anyway you want. Sunrise’s DA layer supports any execution environment, empowering you to create next-gen blockchain solutions."
   },
   "sunrise-04": {
     "label": "The unique value of Sunrise",
-    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality for AltDA: Fee Abstraction and Proof of Liquidity (PoL). \n\nSunrise resolves singular token dependency by allowing anyone to engage in PoL in exchange for blobspace. Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems. \n\nSunrise also resolves the liquidity issue by extending and replicating Berachain Proof of Liquidity across the entire DA Layer. This replaces the net-fee extract model (used by many AltDA providers) with an aligned liquidity and security model that replicates Berachain’s PoL flywheel. \n\nTogether, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
+    "description": "Sunrise brings further innovation to the modular paradigm by introducing unique functionality for AltDA: Fee Abstraction and Proof of Liquidity (PoL). <br /><br />Sunrise resolves singular token dependency by allowing anyone to engage in PoL in exchange for blobspace. Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems. <br /><br />Sunrise also resolves the liquidity issue by extending and replicating Berachain Proof of Liquidity across the entire DA Layer. This replaces the net-fee extract model (used by many AltDA providers) with an aligned liquidity and security model that replicates Berachain’s PoL flywheel. <br /><br />Together, these unique functions supercharge Data Availability while enhancing liquidity and sovereignty for developers."
   },
   "sunrise-features": {
     "label": "Build better blockchains, more easily and efficiently than ever before.",
@@ -51,7 +51,7 @@
     },
     "product-rollups": {
       "label": "Sovereign Rollups",
-      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. \n\nThe Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. <br /><br />The Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
     },
     "product-pol": {
       "label": "Sovereign Proof of Liquidity",

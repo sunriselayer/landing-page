@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
-	import { writable } from 'svelte/store';
+	import { onDestroy } from 'svelte';
 	import { _, locale } from 'svelte-i18n';
 	import * as images from '../../consts/images';
-	import Label from './Label.svelte';
 	import { newLocale } from '../stores/i18nStore';
 
 	// Subscribe to the newLocale store
@@ -46,25 +44,21 @@
 			description: 'sunrise-features.feature-2.description'
 		}
 	];
-
-	let currentIndex = writable(0);
 </script>
 
-<div class="flex sm:gap-5 gap-1 overflow-x-auto rounded-[20px] px-2 max-w-[1311px] 2xl:mx-auto">
+<div class="flex min-w-60 gap-4 overflow-x-auto px-4 md:px-8 lg:px-20 xl:px-40">
 	{#each items as item (item.id)}
-		<div
-			class="md:min-w-[400px] min-w-[310px] gap-3 py-4 px-3 text-white rounded-[20px] border-2 border-solid bg-white"
-		>
-			<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={item.image} alt="item" />
-			<div class="sm:px-3 mt-4">
-				<Label
-					className={'px-2 font-orbitron 2xl:text-3xl md:text-2xl text-xl font-extrabold tracking-wider text-black'}
-					text={$_(item.label)}
-				/>
-				<Label
-					className={'px-2 font-overpass lg:mt-[23px] mt-4 2xl:text-lg sm:text-base text-sm font-normal text-black'}
-					text={$_(item.description)}
-				/>
+		<div class="card bg-white w-96">
+			<figure>
+				<img class="max-w-60 max-h-60 mx-auto" src={item.image} alt="item" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title text-xl xl:text-2xl font-orbitron tracking-wider">
+					{$_(item.label)}
+				</h2>
+				<p class="text-xs sm:text-sm lg:text-base xl:text-lg font-overpass">
+					{$_(item.description)}
+				</p>
 			</div>
 		</div>
 	{/each}
