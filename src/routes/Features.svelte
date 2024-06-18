@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Label from '$lib/components/Label.svelte';
 	import Feature from '$lib/components/Feature.svelte';
 	import * as images from '../consts/images';
 </script>
@@ -11,7 +10,9 @@
 			<img src={images.logo} alt="logo" />
 			<img src={images.sunrise} alt="sunrise" />
 		</div>
-		<h1 class="md:text:xl text-center font-overpass sm:text-lg xl:text-2xl my-8">
+		<h1
+			class="text-sm xs:text-base md:text:xl text-center font-overpass sm:text-lg xl:text-2xl md:my-8"
+		>
 			{@html $_('sunrise-features.description')}
 		</h1>
 	</section>

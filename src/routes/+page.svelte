@@ -21,13 +21,13 @@
 			{@html $_('app-description')}
 		</h2>
 		<div class="flex gap-4 my-8">
-			<button class="btn sm:btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl">
+			<button class="btn btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl">
 				<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank">
 					Build for Modular
 				</a>
 			</button>
 			<button
-				class="btn sm:btn-sm md:btn-md lg:btn-lg btn-outline font-overpass text-white lg:text-xl"
+				class="btn btn-sm md:btn-md lg:btn-lg btn-outline font-overpass text-white lg:text-xl"
 			>
 				<a href="https://docs.sunriselayer.io" target="_blank">Explore </a>
 			</button>

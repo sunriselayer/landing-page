@@ -2,7 +2,6 @@
 	import { onDestroy } from 'svelte';
 	import { _, locale } from 'svelte-i18n';
 	import * as images from '../../consts/images';
-	import Label from './Label.svelte';
 	import { newLocale } from '../stores/i18nStore';
 
 	// Subscribe to the newLocale store
@@ -57,7 +56,7 @@
 				<h2 class="card-title text-xl xl:text-2xl font-orbitron tracking-wider">
 					{$_(item.label)}
 				</h2>
-				<p class="xl:text-lg font-overpass">
+				<p class="text-xs sm:text-sm lg:text-base xl:text-lg font-overpass">
 					{$_(item.description)}
 				</p>
 			</div>
