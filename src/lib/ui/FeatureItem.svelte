@@ -22,16 +22,16 @@
 	style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 >
 	<Label
-		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
+		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest "
 		text={$_(index)}
 	/>
 	<Label
-		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest text-white"
+		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest "
 		text={$_(label)}
 	/>
 	<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={imageSrc} alt={label} />
 	<Label
-		className="font-sans font-normal text-white whitespace-pre-wrap sm:text-base text-xs"
+		className="font-sans font-normal  whitespace-pre-wrap sm:text-base text-xs"
 		text={$_(description)}
 	/>
 </div>

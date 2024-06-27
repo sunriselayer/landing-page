@@ -47,11 +47,11 @@
 			src={item.image}
 			alt={item.name}
 		/>
-		<div class="card-body">
-			<h2 class="card-title text-2xl font-sans text-white">
+		<div class="card-body text-base-100">
+			<h2 class="card-title text-2xl font-sans">
 				{$_(item.label)}
 			</h2>
-			<p class="text-white font-sans text-xs sm:text-sm md:text-base">
+			<p class=" font-sans text-xs sm:text-sm md:text-base">
 				{@html $_(item.description)}
 			</p>
 		</div>
