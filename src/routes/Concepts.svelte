@@ -31,13 +31,11 @@
 </script>
 
 <main>
-	<section class="z-20 mx-auto max-w-screen-xl gap-8 md:my-20">
-		<h1
-			class="text-center font-orbitron text-4xl font-extrabold text-white md:text-5xl xl:text-6xl"
-		>
+	<section class="z-20 mx-auto max-w-screen-xl gap-8 md:my-20 text-base-100">
+		<h1 class="text-center font-orbitron text-4xl font-extrabold md:text-5xl xl:text-6xl">
 			{@html $_('sunrise-question')}
 		</h1>
-		<h2 class="md:text:xl text-center font-overpass text-white text-sm sm:text-lg xl:text-2xl">
+		<h2 class="md:text:xl text-center font-overpass text-sm sm:text-lg xl:text-2xl">
 			{@html $_('sunrise-definition')}
 		</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -47,9 +45,7 @@
 					style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 				>
 					<div class="card-body">
-						<h2
-							class="card-title md:text-2xl font-orbitron font-extrabold text-white tracking-widest"
-						>
+						<h2 class="card-title md:text-2xl font-orbitron font-extrabold tracking-widest">
 							{$_(index)} <br />
 							{$_(label)}
 						</h2>
@@ -57,7 +53,7 @@
 						<figure>
 							<img class="max-w-60 max-h-60 mx-auto" src={imageSrc} alt={label} />
 						</figure>
-						<p class="font-sans text-white text-xs sm:text-sm md:text-base">
+						<p class="font-sans text-xs sm:text-sm md:text-base">
 							{@html $_(description)}
 						</p>
 					</div>

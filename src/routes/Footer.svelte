@@ -24,7 +24,7 @@
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Services" />
-				<Label className="md:text-base text-xs font-medium" text="Portal (coming soon)" />
+				<Label className="md:text-base text-xs font-medium" text="App (coming soon)" />
 				<Label className="md:text-base text-xs font-medium" text="Explorer (coming soon)" />
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
