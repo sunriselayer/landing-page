@@ -20,7 +20,7 @@
 		</h2>
 		<div class="flex gap-4 my-8">
 			<button
-				class="btn btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl"
+				class="btn btn-disabled btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl"
 				disabled
 			>
 				Try our Testnet
