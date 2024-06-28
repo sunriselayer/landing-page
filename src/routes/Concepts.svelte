@@ -45,10 +45,10 @@
 					style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 				>
 					<div class="card-body">
-						<h2 class="card-title md:text-2xl font-orbitron font-extrabold tracking-widest">
+						<h3 class="card-title md:text-2xl font-orbitron font-extrabold tracking-widest">
 							{$_(index)} <br />
 							{$_(label)}
-						</h2>
+						</h3>
 
 						<figure>
 							<img class="max-w-60 max-h-60 mx-auto" src={imageSrc} alt={label} />

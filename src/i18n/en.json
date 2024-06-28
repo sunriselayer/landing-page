@@ -3,7 +3,7 @@
   "sunrise-question": "Enhanced Liquidity for Everyone",
   "sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while providing a comprehensive solution for modular blockchain development.",
   "sunrise-01": {
-    "label": "Monolithic blockchains can't scale.",
+    "label": "Monolithic blockchains can’t scale.",
     "description": "<div class='flex flex-col gap-2'><span>Monolithic chains are generalist blockchains that perform all tasks themselves. The monolithic approach is to “do everything yourself”.</span><span>This approach is expensive, not customizable, and not scalable. It’s extremely slow to build and deploy modern applications directly on monolithic chains. It’s an outdated formula, ready for disruption.</span></div>"
   },
   "sunrise-02": {
@@ -15,7 +15,7 @@
     "description": "<div class='flex flex-col gap-2'><span>Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable modular blockchain.</span><span>Sunrise brings further innovation to the modular paradigm by integrating a novel mechanism: <b>Proof of Liquidity (PoL)</b>.</span><span>PoL on Sunrise is Modular Liquidity, resolving the liquidity issue faced by pre-existing modular infrastructure. Extending & replicating Berachain Proof of Liquidity across the entire DA Layer creates an aligned liquidity & security model identical to Berachain’s PoL flywheel, systematically building liquidity for both Sunrise and its users.</span><span>DA users on Sunrise can now directly engage in PoL on Sunrise to bootstrap liquidity and security for their rollup.</span></div>"
   },
   "sunrise-04": {
-    "label": "The unique value of Sunrise",
+    "label": "DA Fee Abstraction",
     "description": "<div class='flex flex-col gap-2'><span>Integrating PoL at the DA Layer also enables <b>Fee Abstraction</b> on Sunrise.</span><span>While other DA layers charge fees in their native tokens, leading to a net-value extract to rollup developers, Sunrise instead can utilize any token.</span><span>Sunrise resolves singular token dependency by allowing anyone to engage in PoL in exchange for blobspace. Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems.</span><span>Together, these unique functions supercharge Data Availability for developers.</span></div>"
   },
   "sunrise-features": {
