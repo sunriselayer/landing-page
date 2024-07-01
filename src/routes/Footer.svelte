@@ -15,40 +15,44 @@
 		<div class="flex w-full gap-4 sm:justify-between">
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Developers" />
-				<a href="https://docs.sunriselayer.io" target="_blank"
-					><Label className="md:text-base text-xs font-medium" text="Docs" /></a
-				>
-				<a href="https://github.com/SunriseLayer" target="_blank"
-					><Label className="md:text-base text-xs font-medium" text="GitHub" /></a
-				>
+				<a href="https://docs.sunriselayer.io" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="Docs" />
+				</a>
+				<a href="https://github.com/SunriseLayer" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="GitHub" />
+				</a>
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Services" />
-				<Label className="md:text-base text-xs font-medium" text="App (coming soon)" />
+				<a href="https://testnet.app.sunriselayer.io" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="App (Testnet)" />
+				</a>
 				<Label className="md:text-base text-xs font-medium" text="Explorer (coming soon)" />
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Information" />
-				<a href="https://sunriselayer.medium.com" target="_blank"
-					><Label className="md:text-base text-xs font-medium" text="Blog" /></a
-				>
+				<a href="https://sunriselayer.medium.com" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="Blog" />
+				</a>
 				<a
 					href="https://cauchye.notion.site/Careers-at-Sunrise-38a5b18e890d476fad755b9f3063d06b?pvs=4"
-					target="_blank"><Label className="md:text-base text-xs font-medium" text="Jobs" /></a
+					target="_blank"
 				>
-				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank"
-					><Label className="md:text-base text-xs font-medium" text="Press Kit" /></a
-				>
+					<Label className="md:text-base text-xs font-medium" text="Jobs" />
+				</a>
+				<a href="https://github.com/SunriseLayer/brand-kit" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="Press Kit" />
+				</a>
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Social" />
 				<div class="grid grid-flow-col gap-4">
-					<a href="https://discord.gg/sunrise" target="_blank"
-						><img class="h-6 w-6" src={images.discord} alt="discord" /></a
-					>
-					<a href="https://twitter.com/SunriseLayer" target="_blank"
-						><img class="h-6 w-6" src={images.twitter} alt="twitter" /></a
-					>
+					<a href="https://discord.gg/sunrise" target="_blank">
+						<img class="h-6 w-6" src={images.discord} alt="discord" />
+					</a>
+					<a href="https://twitter.com/SunriseLayer" target="_blank">
+						<img class="h-6 w-6" src={images.twitter} alt="twitter" />
+					</a>
 				</div>
 			</div>
 		</div>
