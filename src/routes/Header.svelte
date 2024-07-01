@@ -1,5 +1,4 @@
 <script>
-	import { page } from '$app/stores';
 	import * as images from '../consts/images';
 	let isEnglish = true;
 	import { newLocale } from '../lib/stores/i18nStore';
@@ -13,70 +12,32 @@
 </script>
 
 <header>
-	<div class="flex flex-row px-4 md:px-20 py-2">
-		<!-- <details class="dropdown sm:hidden">
-			<summary class="btn btn-square btn-ghost">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					class="inline-block w-5 h-5 stroke-current"
-					style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-					><path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M4 6h16M4 12h16M4 18h16"
-					></path>
-				</svg>
-			</summary>
-			<ul class="p-2 shadow menu dropdown-content z-50 bg-base-100 rounded-box w-52">
-				<li><a href="https://docs.sunriselayer.io" target="_blank">Learn</a></li>
-				<li>
-					<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank"
-						>Build</a
-					>
-				</li>
-				<li>
-					<button on:click={toggleLanguage} class="items-center">
-						{isEnglish ? 'EN' : 'JP'}
-					</button>
-				</li>
-			</ul>
-		</details> -->
-		<div class="flex gap-4 items-center text-2xl">
-			<img
-				class="fill-current"
-				style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-				src={images.logo}
-				alt="logo"
-			/>
-			<img
-				style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-				src={images.sunrise}
-				alt="sunrise"
-			/>
-		</div>
+	<div class="navbar sticky top-0 z-50 gap-4 px-4 md:px-20">
+		<img
+			class="fill-current"
+			style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
+			src={images.logo}
+			alt="logo"
+		/>
+		<img
+			style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
+			src={images.sunrise}
+			alt="sunrise"
+		/>
+
 		<span class="flex-auto"></span>
 
-		<!-- <div class="hidden sm:flex items-center">
-			<nav>
-				<ul class="flex gap-8 text-2xl">
-					<li class="" aria-current={$page.url.pathname === '/learn' ? 'page' : undefined}>
-						<a href="https://docs.sunriselayer.io" target="_blank">Learn</a>
-					</li>
-					<li class="" aria-current={$page.url.pathname === '/build' ? 'page' : undefined}>
-						<a href="https://docs.sunriselayer.io/run-a-sunrise-node/networks" target="_blank"
-							>Build</a
-						>
-					</li>
-					<li class="" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<button on:click={toggleLanguage} class="items-center">
-							{isEnglish ? 'EN' : 'JP'}
-						</button>
-					</li>
-				</ul>
-			</nav>
-		</div> -->
+		<details class="dropdown dropdown-end">
+			<summary class="btn btn-outline text-base-100 w-full gap-2 md:w-auto md:px-8">
+				<span class="material-symbols-outlined">menu</span>
+				<span class="hidden md:inline">Menu</span>
+			</summary>
+			<ul class="p-2 shadow menu dropdown-content bg-base-100 z-50 rounded-box w-52">
+				<li><a href="https://testnet.app.sunriselayer.io" target="_blank">App (Testnet)</a></li>
+				<li><a>Explorer (coming soon)</a></li>
+				<li><a href="https://docs.sunriselayer.io" target="_blank">Docs</a></li>
+				<li><a href="https://github.com/SunriseLayer" target="_blank">GitHub</a></li>
+			</ul>
+		</details>
 	</div>
 </header>

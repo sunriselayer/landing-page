@@ -19,11 +19,8 @@
 			{@html $_('app-description')}
 		</h2>
 		<div class="flex gap-4 my-8">
-			<button
-				class="btn btn-disabled btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl"
-				disabled
-			>
-				Try our Testnet
+			<button class="btn btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl">
+				<a href="https://testnet.app.sunriselayer.io" target="_blank">Try our Testnet</a>
 			</button>
 			<button
 				class="btn btn-sm md:btn-md lg:btn-lg btn-outline font-overpass text-base-100 lg:text-xl"
