@@ -6,11 +6,7 @@
 	<section class="gap-8 my-40 text-base-100">
 		<div class="flex gap-4 justify-center my-8">
 			<img src={images.color} alt="logo" />
-			<img
-				style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-				src={images.sunrise}
-				alt="sunrise"
-			/>
+			<img class="filter invert" src={images.sunrise} alt="sunrise" />
 		</div>
 		<h1 class="text-center font-orbitron text-4xl font-extrabold md:text-5xl xl:text-6xl">
 			Testnet is live
