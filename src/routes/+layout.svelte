@@ -10,6 +10,7 @@
 	import Concepts from './Concepts.svelte';
 	import Features from './Features.svelte';
 	import Summaries from './Summaries.svelte';
+	import Testnet from './Testnet.svelte';
 
 	const defaultLocale = 'en';
 
@@ -36,6 +37,9 @@
 	<fourth>
 		<Summaries />
 	</fourth>
+	<fifth>
+		<Testnet />
+	</fifth>
 
 	<Footer />
 </div>
@@ -62,6 +66,11 @@
 	fourth {
 		background: linear-gradient(to bottom right, #fceccf 0%, #d7e5fb 50%) top left / 100% 100%
 			no-repeat;
+	}
+
+	fifth {
+		background-image: url(../lib/images/bg-testnet.png);
+		background-size: cover;
 	}
 	.app {
 		display: flex;

@@ -13,17 +13,8 @@
 
 <header>
 	<div class="navbar sticky top-0 z-50 gap-4 px-4 md:px-20">
-		<img
-			class="fill-current"
-			style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-			src={images.logo}
-			alt="logo"
-		/>
-		<img
-			style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg) brightness(100%) contrast(100%);"
-			src={images.sunrise}
-			alt="sunrise"
-		/>
+		<img class="fill-current filter invert" src={images.logo} alt="logo" />
+		<img class="filter invert" src={images.sunrise} alt="sunrise" />
 
 		<span class="flex-auto"></span>
 
