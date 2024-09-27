@@ -27,7 +27,9 @@
 				<a href="https://testnet.app.sunriselayer.io" target="_blank">
 					<Label className="md:text-base text-xs font-medium" text="App (Testnet)" />
 				</a>
-				<Label className="md:text-base text-xs font-medium" text="Explorer (coming soon)" />
+				<a href="https://testnet.risescan.sunriselayer.io/" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="Explorer (Testnet)" />
+				</a>
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Information" />
