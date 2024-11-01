@@ -11,8 +11,13 @@
 		<h1 class="text-center font-orbitron text-4xl font-extrabold md:text-5xl xl:text-6xl">
 			Testnet is live
 		</h1>
-		<button class="my-8 btn btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl">
-			<a href="https://testnet.app.sunriselayer.io" target="_blank">Try our Testnet</a>
+		<button
+			disabled
+			class="my-8 btn btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl"
+		>
+			<a href="https://testnet.app.sunriselayer.io" target="_blank">
+				Testnet is under maintenance
+			</a>
 		</button>
 	</section>
 </main>

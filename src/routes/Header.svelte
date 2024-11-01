@@ -25,7 +25,9 @@
 			</summary>
 			<ul class="p-2 shadow menu dropdown-content bg-base-100 z-50 rounded-box w-52">
 				<li><a href="https://testnet.app.sunriselayer.io" target="_blank">App (Testnet)</a></li>
-				<li><a>Explorer (coming soon)</a></li>
+				<li>
+					<a href="https://testnet.risescan.sunriselayer.io" target="_blank">Explorer (Testnet)</a>
+				</li>
 				<li><a href="https://docs.sunriselayer.io" target="_blank">Docs</a></li>
 				<li><a href="https://github.com/SunriseLayer" target="_blank">GitHub</a></li>
 			</ul>
