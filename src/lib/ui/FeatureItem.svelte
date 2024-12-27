@@ -4,10 +4,19 @@
 	import { _, locale } from 'svelte-i18n';
 	import { onDestroy } from 'svelte';
 
-	export let index: string;
-	export let label: string;
-	export let description: string;
-	export let imageSrc: string;
+	interface Props {
+		index: string;
+		label: string;
+		description: string;
+		imageSrc: string;
+	}
+
+	let {
+		index,
+		label,
+		description,
+		imageSrc
+	}: Props = $props();
 
 	// Subscribe to the newLocale store
 	const unsubscribe = newLocale.subscribe((value: string) => {

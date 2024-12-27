@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Header from './Header.svelte';
 	import './styles.css';
 	import '../app.css';
@@ -11,6 +11,11 @@
 	import Features from './Features.svelte';
 	import Summaries from './Summaries.svelte';
 	import Testnet from './Testnet.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	const defaultLocale = 'en';
 
@@ -26,7 +31,7 @@
 <div class="app">
 	<main>
 		<Header />
-		<slot />
+		{@render children?.()}
 	</main>
 	<second>
 		<Concepts />
