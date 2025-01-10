@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { check, disable } from '../../consts/images';
+	import { check, disable } from '../../../consts/images';
 </script>
 
 <main class="xl:w-[1030px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
@@ -101,7 +101,9 @@
 											<p class="flex flex-row gap-3 normal-text items-start">
 												{#if i == 1 || i == 5}
 													<img src={check} alt="check" />
-													<span class="md:text-base text-sm">{@html $_(`chain-da-option-${i}`)}</span>
+													<span class="md:text-base text-sm"
+														>{@html $_(`chain-da-option-${i}`)}</span
+													>
 												{:else}
 													<img src={disable} alt="disable" />
 													<span class="md:text-base text-sm text-[#DAB777]"

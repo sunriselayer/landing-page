@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { logo, distribution, sunrise, emission } from '../../consts/images';
+	import { logo, distribution, sunrise, emission } from '../../../consts/images';
 </script>
 
 <main class="xl:w-[1104px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
@@ -58,51 +58,75 @@
 				</table>
 			</div>
 			<div class="text-center">
-				<h4 class="normal-text font-bold md:text-2xl text-lg text-center tracking-wider leading-none md:pb-[3.75rem] pb-6">
+				<h4
+					class="normal-text font-bold md:text-2xl text-lg text-center tracking-wider leading-none md:pb-[3.75rem] pb-6"
+				>
 					{@html $_('token-distribution-schedule')}
 				</h4>
-				<img class="w-full md:px-20" src={distribution} alt={$_('token-distribution-schedule')}>
+				<img class="w-full md:px-20" src={distribution} alt={$_('token-distribution-schedule')} />
 			</div>
 			<div class="text-center">
-				<h4 class="normal-text font-bold md:text-2xl text-lg text-center tracking-wider leading-none md:pb-[3.75rem] pb-10">
+				<h4
+					class="normal-text font-bold md:text-2xl text-lg text-center tracking-wider leading-none md:pb-[3.75rem] pb-10"
+				>
 					{@html $_('token-emission-schedule')}
 				</h4>
-				<img class="w-full md:px-20 pb-[3.125rem]" src={emission} alt={$_('token-emission-schedule')}>
-				<div class="flex sm:flex-row flex-wrap flex-col font-semibold md:gap-[0.875rem] gap-5 md:px-20 justify-center">
+				<img
+					class="w-full md:px-20 pb-[3.125rem]"
+					src={emission}
+					alt={$_('token-emission-schedule')}
+				/>
+				<div
+					class="flex sm:flex-row flex-wrap flex-col font-semibold md:gap-[0.875rem] gap-5 md:px-20 justify-center"
+				>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#FF7B04]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">20%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-3.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-3.1')}</span
+						>
 					</div>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#FFAA17]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#FFAA17]">20%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-2.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-2.1')}</span
+						>
 					</div>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#FFE089]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#FFE089]">15.5%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-6.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-6.1')}</span
+						>
 					</div>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#004AA9]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#004AA9]">14.5%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-1.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-1.1')}</span
+						>
 					</div>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#267ADA]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#267ADA]">10%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-4.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-4.1')}</span
+						>
 					</div>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#A3CEFF]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#A3CEFF]">10%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-5.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-5.1')}</span
+						>
 					</div>
 					<div class="flex items-center justify-center">
 						<div class="w-[21px] h-[10px] bg-[#ADADAD]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#ADADAD]">10%</span>
-						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]">{@html $_('schedule-table.row-7.1')}</span>
+						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
+							>{@html $_('schedule-table.row-7.1')}</span
+						>
 					</div>
 				</div>
 			</div>

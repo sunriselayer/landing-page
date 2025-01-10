@@ -3,7 +3,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-	height: 100%;
 	position: relative;
 	font-family: 'Clash Grotesk' !important;
 }
@@ -23,20 +22,16 @@ main {
 }
 
 .highlight-text {
-	color: #FDA60B !important;
-	background: linear-gradient(0deg, rgba(255, 14, 14, 0.2), rgba(255, 14, 14, 0.2)), linear-gradient(90deg, #FF9500 0%, #FFC300 100%);
+	color: #fda60b !important;
+	background: linear-gradient(0deg, rgba(255, 14, 14, 0.2), rgba(255, 14, 14, 0.2)),
+		linear-gradient(90deg, #ff9500 0%, #ffc300 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
 }
-
-.font-eudoxus {
-	font-family: 'Eudoxus Sans' !important;
-}
-
 .rounded-box-custom {
-	background-color: #FFF1CB;
+	background-color: #fff1cb;
 	border-radius: 30px;
-	border: 1px solid #FFC851;
+	border: 1px solid #ffc851;
 }

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { logo, sunrise, logos, logos1, logos2, logos3, logos4 } from '../../consts/images';
+	import { logo, sunrise, logos, logos1, logos2, logos3, logos4 } from '../../../consts/images';
 </script>
 
 <main class="xl:w-[1104px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
@@ -18,14 +18,14 @@
 				{@html $_('ecosystem-title')}
 			</h2>
 			<div class="text-center md:block hidden">
-				<img class="w-full md:px-20" src={logos} alt={$_('ecosystem-title')}>
+				<img class="w-full md:px-20" src={logos} alt={$_('ecosystem-title')} />
 			</div>
 			<div class="md:hidden flex w-full">
 				<div class="flex flex-col gap-3 w-full">
-					<img class="w-full md:px-20" src={logos1} alt={$_('ecosystem-title')}>
-					<img class="w-full md:px-20" src={logos2} alt={$_('ecosystem-title')}>
-					<img class="w-full md:px-20" src={logos3} alt={$_('ecosystem-title')}>
-					<img class="w-full md:px-20" src={logos4} alt={$_('ecosystem-title')}>
+					<img class="w-full md:px-20" src={logos1} alt={$_('ecosystem-title')} />
+					<img class="w-full md:px-20" src={logos2} alt={$_('ecosystem-title')} />
+					<img class="w-full md:px-20" src={logos3} alt={$_('ecosystem-title')} />
+					<img class="w-full md:px-20" src={logos4} alt={$_('ecosystem-title')} />
 				</div>
 			</div>
 		</div>

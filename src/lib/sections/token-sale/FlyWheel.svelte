@@ -16,7 +16,7 @@
 		replicated_small,
 		rightwhite,
 		updown
-	} from '../../consts/images';
+	} from '../../../consts/images';
 </script>
 
 <main class="xl:w-[1172px] w-full md:my-[7.5rem] md:mx-auto mx-0 px-5 py-6">
@@ -75,13 +75,15 @@
 				<h4
 					class="normal-text rounded-[50px] border-[1px] border-[#183973] font-eudoxus uppercase md:text-lg text-xs md:px-[1.8125rem] md:py-5 p-3 md:leading-3 leading-[1.125rem] md:mx-[43px] mx-12 z-20 bg-white relative font-extrabold text-center"
 				>
-					{@html $_('flywheel-extended-title')}
+					{@html $_('flywheel-vs-title')}
 				</h4>
 				<div
 					class="absolute w-[100%] h-[200%] md:mt-[-3%] sm:mt-[-5%] mt-[-7%] rounded-[30px] border-[1px] border-[#183973]"
 				></div>
 			</div>
-			<div class="flex md:flex-row flex-col md:justify-between px-1 gap-6 md:gap-[2.5rem] items-start">
+			<div
+				class="flex md:flex-row flex-col md:justify-between px-1 gap-6 md:gap-[2.5rem] items-start"
+			>
 				<div class="md:w-[calc(50%-1.25rem)] rounded-[1.625rem] overflow-clip shadow-xl">
 					<p
 						class="uppercase md:tracking-wider text-white font-bold leading-3 md:p-[2.33rem] text-[2rem] md:text-[3.3rem] p-6 text-center bg-gradient-to-r from-[#FF9601] to-[#FFC401]"
@@ -96,7 +98,9 @@
 						</div>
 						<div class="flex flex-row justify-between gap-3">
 							<div class="flex flex-col w-max gap-3 my-auto">
-								<div class="rounded-tile-left normal-text py-3 md:px-2 md:w-[8.25rem] px-[0.625rem] w-[6.6275rem]">
+								<div
+									class="rounded-tile-left normal-text py-3 md:px-2 md:w-[8.25rem] px-[0.625rem] w-[6.6275rem]"
+								>
 									<p class="font-bold uppercase">
 										{@html $_('flywheel-tile-user-want')}:
 									</p>
@@ -213,14 +217,16 @@
 						{@html $_('flywheel-replicated')}
 					</p>
 					<div class="flex flex-col md:py-11 pt-6 items-center text-[0.5rem] md:text-xs">
-                        <div
+						<div
 							class="rounded-tile-left normal-text text-center w-[7.425rem] px-5 py-2 md:px-1 md:py-3"
 						>
 							{@html $_('flywheel-replicated-tile-top')}
 						</div>
 						<div class="flex flex-row justify-between gap-3">
 							<div class="flex flex-col w-max gap-3 my-auto">
-								<div class="rounded-tile-left normal-text md:py-3 md:px-2 md:w-[8.25rem] px-[0.625rem] w-[6.6275rem]">
+								<div
+									class="rounded-tile-left normal-text md:py-3 md:px-2 md:w-[8.25rem] px-[0.625rem] w-[6.6275rem]"
+								>
 									<p class="font-bold uppercase md:text-xs">
 										{@html $_('flywheel-tile-user-want')}:
 									</p>
@@ -272,7 +278,9 @@
 						>
 							{@html $_('flywheel-replicated-tile-bottom')}
 						</div>
-						<p class="normal-text md:text-xs md:pb-0 pb-6">{@html $_('flywheel-replicated-description')}</p>
+						<p class="normal-text md:text-xs md:pb-0 pb-6">
+							{@html $_('flywheel-replicated-description')}
+						</p>
 					</div>
 					<div
 						class="gradient-bg py-[2.375rem] px-[1.3125rem] text-white md:text-center text-start md:py-[4.625rem] md:px-11 gap-[1.875rem] flex flex-col"
@@ -299,9 +307,7 @@
 								{@html $_('flywheel-aggregate-tile-1')}
 							</div>
 							<img class="mx-[0.625rem]" src={arrowright} alt="" />
-							<div
-								class="rounded-tile-right normal-text text-start md:p-5 p-4 flex-1"
-							>
+							<div class="rounded-tile-right normal-text text-start md:p-5 p-4 flex-1">
 								{@html $_('flywheel-aggregate-tile-example')}
 								<div class="list-disc ml-3">
 									{#each [1, 2, 3, 4] as i}
@@ -311,15 +317,11 @@
 							</div>
 						</div>
 						<div class="flex flex-col md:text-[0.625rem] text-[0.5rem]">
-							<div
-								class="rounded-tile-right normal-text text-center md:p-5 p-4 w-full"
-							>
+							<div class="rounded-tile-right normal-text text-center md:p-5 p-4 w-full">
 								{@html $_('flywheel-aggregate-tile-2')}
 							</div>
 							<img class="my-[0.625rem] h-8" src={down} alt="" />
-							<div
-								class="rounded-tile-right normal-text text-center py-6 px-12 w-full"
-							>
+							<div class="rounded-tile-right normal-text text-center py-6 px-12 w-full">
 								<p class="md:pb-[0.625rem]">{@html $_('flywheel-aggregate-tile-3-1')}</p>
 								<p>{@html $_('flywheel-aggregate-tile-3-2')}</p>
 							</div>

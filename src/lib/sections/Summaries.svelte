@@ -1,23 +1,19 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Feature from '$lib/components/Feature.svelte';
-	import * as images from '../consts/images';
+	import Summary from '$lib/components/Summary.svelte';
 </script>
 
 <main>
 	<section class="gap-8 my-8">
-		<div class="flex gap-2 justify-center my-8">
-			<img src={images.logo} alt="logo" />
-			<img src={images.sunrise} alt="sunrise" />
-		</div>
-		<h1
-			class="text-sm xs:text-base md:text:xl text-center font-overpass sm:text-lg xl:text-2xl md:my-8"
-		>
-			{@html $_('sunrise-features.description')}
+		<h1 class="text-center font-extrabold text-4xl md:text-5xl xl:text-6xl">
+			{@html $_('sunrise-products.label')}
 		</h1>
+		<h2 class="md:text:xl text-center text-sm sm:text-lg xl:text-2xl">
+			{@html $_('sunrise-products.description')}
+		</h2>
+		<Summary />
 	</section>
 </main>
-<Feature />
 
 <style>
 	main {
@@ -26,7 +22,7 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 96rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}

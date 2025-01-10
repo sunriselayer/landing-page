@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	const fields = ["daLayer", "throughput", "confirmationTime", "verification", "networkSecurity"];
+	const fields = ['daLayer', 'throughput', 'confirmationTime', 'verification', 'networkSecurity'];
 </script>
 
 <main class="xl:w-[1104px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
@@ -21,29 +21,40 @@
 			></div>
 		</div>
 		<div class="border border-[#FFC851] rounded-box-custom">
-			<table
-				class="text-center text-sm overflow-hidden rounded-box-custom border-none break-words"
-			>
+			<table class="text-center text-sm overflow-hidden rounded-box-custom border-none break-words">
 				<thead>
-					<tr class="bg-gradient-to-r from-[#FF7E2E] to-[#FFA004] text-white uppercase tracking-wider">
+					<tr
+						class="bg-gradient-to-r from-[#FF7E2E] to-[#FFA004] text-white uppercase tracking-wider"
+					>
 						{#each fields as field}
-						<th class="font-medium md:text-lg text-[0.625rem] md:p-4 py-4 border-[#FFC851] border-x {field == "daLayer" && "border-l-0"} {field == "networkSecurity" && "border-r-0"}">{@html $_(`closer-table.headers.${field}`)}</th>
+							<th
+								class="font-medium md:text-lg text-[0.625rem] md:p-4 py-4 border-[#FFC851] border-x {field ==
+									'daLayer' && 'border-l-0'} {field == 'networkSecurity' && 'border-r-0'}"
+								>{@html $_(`closer-table.headers.${field}`)}</th
+							>
 						{/each}
 					</tr>
 				</thead>
 				<tbody>
 					{#each [1, 2, 3, 4, 5] as row}
-					<tr class="">
-						{#each fields as field}
-							<td class=" w-1/5 md:h-[6.25rem] h-auto normal-text md:text-sm text-[0.625rem] md:p-4 py-4 border border-[#FFC851] border-l-0 {field == "networkSecurity" && "border-r-0"} {row == 5 && "border-b-0"}">{@html $_(`closer-table.row-${row}.${field}`)}</td>
-						{/each}
-					</tr>	
+						<tr class="">
+							{#each fields as field}
+								<td
+									class=" w-1/5 md:h-[6.25rem] h-auto normal-text md:text-sm text-[0.625rem] md:p-4 py-4 border border-[#FFC851] border-l-0 {field ==
+										'networkSecurity' && 'border-r-0'} {row == 5 && 'border-b-0'}"
+									>{@html $_(`closer-table.row-${row}.${field}`)}</td
+								>
+							{/each}
+						</tr>
 					{/each}
 				</tbody>
 			</table>
 		</div>
 		<div class="text-center md:mt-[4.375rem] mt-6">
-			<button class="bg-gradient-to-r from-[#014093] to-[#0163D3] md:from-[#0163D3] md:to-[#0163D3] shadow-[#014093] shadow text-white uppercase tracking-wider md:px-10 md:py-[1.875rem] rounded-2xl md:text-[1.5rem] text-lg p-6 leading-6">{@html $_('learn-more')}</button>
+			<button
+				class="bg-gradient-to-r from-[#014093] to-[#0163D3] md:from-[#0163D3] md:to-[#0163D3] shadow-[#014093] shadow text-white uppercase tracking-wider md:px-10 md:py-[1.875rem] rounded-2xl md:text-[1.5rem] text-lg p-6 leading-6"
+				>{@html $_('learn-more')}</button
+			>
 		</div>
 	</section>
 </main>

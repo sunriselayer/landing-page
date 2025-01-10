@@ -49,7 +49,7 @@
 		/>
 		<div class="card-body text-base-100">
 			<h2 class="card-title text-2xl font-sans">
-				{$_(item.label)}
+				{@html $_(item.label)}
 			</h2>
 			<p class=" font-sans text-xs sm:text-sm md:text-base">
 				{@html $_(item.description)}

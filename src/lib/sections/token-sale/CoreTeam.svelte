@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import * as images from '../../consts/images';
+	import * as images from '../../../consts/images';
 
 	const coreTeam = [
 		{
@@ -28,7 +28,7 @@
 </script>
 
 <main class="lg:w-[851px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
-	<section class="flex flex-col gap-10">
+	<section class="flex md:flex-col flex-col-reverse gap-10">
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<img class="h-full" src={images.full_logo} alt="sunrise" />
 			<h2
@@ -45,14 +45,18 @@
 							<img class="h-[100%] md:block hidden" src={person.image} alt={person.name} />
 							<img class="h-[100%] md:hidden block" src={person.image_mobile} alt={person.name} />
 							<div class="flex flex-col">
-								<h5 class="uppercase normal-text font-semibold md:text-3xl text-[1.25rem]">{$_(person.name)}</h5>
+								<h5 class="uppercase normal-text font-semibold md:text-3xl text-[1.25rem]">
+									{$_(person.name)}
+								</h5>
 								<h6 class="highlight-text font-medium md:text-2xl text-[1.125rem] pb-[1.125rem]">
 									{$_(person.role)}
 								</h6>
 								<div class="px-[0.625rem]">
 									{#each person.description as desc}
 										<div class="flex flex-row">
-											<div class="rounded-full p-[0.15rem] h-[0.3rem] md:mt-2 mx-2 my-auto bg-[#183973]"></div>
+											<div
+												class="rounded-full p-[0.15rem] h-[0.3rem] md:mt-2 mx-2 my-auto bg-[#183973]"
+											></div>
 											<p class="md:text-[1rem] text-sm normal-text">{$_(desc)}</p>
 										</div>
 									{/each}

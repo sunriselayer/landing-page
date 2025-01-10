@@ -6,6 +6,8 @@ export default {
 			fontFamily: {
 				orbitron: ['Orbitron', 'sans-serif'],
 				overpass: ['Overpass', 'sans-serif'],
+				clash: ['Clash Grotesk', 'sans-serif'],
+				eudoxus: ['Eudoxus Sans', 'sans-serif'],
 				'ibm-plex-sans': ['IBM Plex Sans', 'sans-serif']
 			},
 			colors: {
@@ -15,8 +17,8 @@ export default {
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
-        themes: ['light']
-    },
+		themes: ['light']
+	},
 	extend: {
 		keyframes: {
 			'image-change': {
