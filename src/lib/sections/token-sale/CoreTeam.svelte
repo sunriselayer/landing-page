@@ -27,8 +27,8 @@
 	});
 </script>
 
-<main class="lg:w-[851px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
-	<section class="flex md:flex-col flex-col-reverse gap-10">
+<main class="lg:w-[851px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
+	<section class="flex flex-col gap-10">
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<img class="h-full" src={images.full_logo} alt="sunrise" />
 			<h2

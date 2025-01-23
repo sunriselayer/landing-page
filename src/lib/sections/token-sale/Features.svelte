@@ -1,13 +1,15 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { check, disable } from '../../../consts/images';
+	import { check, disable, glassHaru, glassHaruSP } from '../../../consts/images';
 </script>
 
-<main class="xl:w-[1030px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
+<main class="xl:w-[1030px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-12">
 	<section class="">
 		<h2
-			class="normal-text font-bold md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] mb-6 tracking-wider leading-none"
+			class="flex gap-3 items-center normal-text font-bold md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] mb-6 tracking-wider leading-none"
 		>
+			<img class="hidden md:block" src={glassHaru} alt="" />
+			<img class="block md:hidden" src={glassHaruSP} alt="" />
 			{@html $_('deeper-level')}
 		</h2>
 		<div class="flex flex-col md:gap-[3.125rem] gap-6 md:mt-[1.875rem]">
@@ -19,15 +21,13 @@
 					{@html $_('level-1')}
 				</h4>
 				<div class="flex flex-col gap-[1.875rem] md:mt-[1.875rem] mt-6">
-					{#each [1, 2] as i}
-						<h6
-							class="normal-text flex gap-4 flex-row items-start md:text-[1.25rem] md:leading-6 text-sm"
-						>
-							<p class="pl-[1.5625rem]">
-								{@html $_(`level-1-desc-${i}`)}
-							</p>
-						</h6>
-					{/each}
+					<h6
+						class="normal-text flex gap-4 flex-row items-start md:text-[1.25rem] md:leading-6 text-sm"
+					>
+						<p class="pl-[1.5625rem]">
+							{@html $_(`level-1-desc`)}
+						</p>
+					</h6>
 				</div>
 			</div>
 			<div class="">
@@ -80,7 +80,7 @@
 						</div>
 						<div class="h-auto overflow-clip md:mt-[3.125rem] mb-[1.875rem] mt-6 relative">
 							<h4
-								class="normal-text rounded-[50px] border-[1px] border-[#183973] font-eudoxus uppercase md:text-lg text-xs md:px-7 md:py-5 p-3 md:leading-3 leading-[1.125rem] md:mx-[43px] mx-12 z-20 bg-white relative font-extrabold text-center"
+								class="normal-text rounded-[50px] border-[1px] border-[#183973] font-eudoxus uppercase md:text-lg text-xs md:px-7 md:py-5 p-3 md:leading-3 leading-[1.125rem] md:mx-[43px] mx-12 z-20 bg-white relative font-extrabold text-center tracking-normal"
 							>
 								{@html $_('comparision-title')}
 							</h4>
@@ -117,7 +117,7 @@
 										<b class="text-[#FF7B04] uppercase text-sm">
 											{@html $_('example')}:
 										</b>
-										<div class="flex flex-row items-center text-sm md:text-base pt-4 pb-5">
+										<div class="flex flex-row items-center normal-text text-sm md:text-base pt-4 pb-5">
 											{@html $_('celestia')}
 											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
 											{@html $_('avail')}
@@ -146,10 +146,12 @@
 										<b class="text-[#FF7B04] uppercase text-sm">
 											{@html $_('example')}:
 										</b>
-										<div class="flex flex-row items-center text-sm md:text-base pt-4 pb-5">
+										<div class="flex flex-row items-center normal-text text-sm md:text-base pt-4 pb-5">
 											{@html $_('sunrise')}
 											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
 											{@html $_('walrus')}
+											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
+											{@html $_('og')}
 										</div>
 									</div>
 								</div>
@@ -165,20 +167,20 @@
 					<b class="highlight-text mr-3 font-eudoxus">4</b>
 					{@html $_('level-4')}
 				</h4>
-				<div class="md:pl-12 pl-10 flex flex-col md:gap-[1.875rem] gap-4 mt-[1.875rem]">
+				<div class="md:pl-6  pl-10 flex flex-col md:gap-[1.875rem] gap-4 mt-[1.875rem]">
 					<p
 						class="normal-text items-start md:text-[1.25rem] md:leading-[1.58rem] leading-5 text-sm"
 					>
 						{@html $_('level-4-desc')}
 					</p>
 					<div
-						class="flex md:flex-row justify-between flex-col md:gap-[1.875rem] gap-4 md:mx-[3.125rem]"
+						class="flex md:flex-row justify-between flex-col md:gap-[1.875rem] gap-4 md:mx-[2.875rem]"
 					>
 						{#each [1, 2, 3] as i}
 							<p
-								class="flex flex-col w-full normal-text md:text-[1rem] text-sm leading-[0.75rem] rounded-box-custom md:px-6 md:py-[3.125rem] p-6 text-center gap-[22px]"
+								class="flex flex-col w-full normal-text md:text-lg text-sm leading-[0.75rem] rounded-box-custom md:py-10 py-6 text-center gap-[22px]"
 							>
-								<b class="highlight-text font-eudoxus">{i}</b>
+								<b class="highlight-text font-eudoxus text-xl">{i}</b>
 								{@html $_(`revenue-${i}`)}
 							</p>
 						{/each}

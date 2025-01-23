@@ -11,6 +11,8 @@
 		flywheel,
 		flywheelsmall,
 		infrared,
+		jugglingHaru,
+		jugglingHaruSP,
 		leftright,
 		replicated,
 		replicated_small,
@@ -19,25 +21,26 @@
 	} from '../../../consts/images';
 </script>
 
-<main class="xl:w-[1172px] w-full md:my-[7.5rem] md:mx-auto mx-0 px-5 py-6">
+<main class="xl:w-[1172px] w-full md:py-[7.5rem] md:mx-auto mx-0 md:p-0 px-5 py-6 relative">
 	<section class="w-full">
 		<h2
-			class="normal-text font-bold md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] mb-6 tracking-wider leading-none"
+			class="flex gap-[0.625rem] items-center normal-text font-bold md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] tracking-wider leading-none"
 		>
+			<img class="block md:hidden" src={jugglingHaruSP} alt="" />
 			{@html $_('flywheel')}
 		</h2>
 		<div class="md:px-[4.375rem] pt-[4.375rem] px-0 w-full relative">
 			<div class="flex flex-row justify-center md:gap-8 w-full">
-				<div class="rounded-tile w-1/3">
+				<div class="rounded-tile md:w-[20rem] w-1/3">
 					{@html $_('flywheel-desc-tile-1')}
 				</div>
-				<div class="rounded-tile w-1/3">
+				<div class="rounded-tile md:w-[20rem] w-1/3">
 					{@html $_('flywheel-desc-tile-2')}
 				</div>
 			</div>
 			<div class="flex flex-row justify-around mx-auto w-full md:py-[66px] py-[22px] relative">
 				<div
-					class="w-1/3 flex flex-col mx-auto justify-around md:content-center flex-wrap content-end items-stretch gap-4"
+					class="md:w-[20rem] w-1/3 flex flex-col mx-auto md:justify-between justify-around md:content-center flex-wrap content-end items-stretch gap-4"
 				>
 					<div class="rounded-tile">
 						{@html $_('flywheel-desc-tile-3')}
@@ -46,12 +49,12 @@
 						{@html $_('flywheel-desc-tile-5')}
 					</div>
 				</div>
-				<div class="w-1/3 text-center items-center flex">
-					<img class="m-auto w-5/6 md:hidden block" src={flywheelsmall} alt="Flywheel" />
+				<div class="md:w-[20rem] w-1/3 text-center items-center flex">
+					<img class="m-auto md:hidden block" src={flywheelsmall} alt="Flywheel" />
 					<img class="m-auto md:block hidden" src={flywheel} alt="Flywheel" />
 				</div>
 				<div
-					class="w-1/3 flex flex-col mx-auto justify-around md:content-center flex-wrap content-start items-stretch gap-4"
+					class="md:w-[20rem] w-1/3 flex flex-col mx-auto md:justify-between justify-around md:content-center flex-wrap content-start items-stretch md:gap-16 gap-5"
 				>
 					<div class="rounded-tile">
 						{@html $_('flywheel-desc-tile-4')}
@@ -62,14 +65,20 @@
 				</div>
 			</div>
 			<div class="flex flex-row justify-center md:gap-8 mx-auto w-full">
-				<div class="rounded-tile w-1/3">
+				<div class="rounded-tile md:w-[20rem] w-1/3">
 					{@html $_('flywheel-desc-tile-7')}
 				</div>
-				<div class="rounded-tile w-1/3">
+				<div class="rounded-tile md:w-[20rem] w-1/3">
 					{@html $_('flywheel-desc-tile-8')}
 				</div>
 			</div>
 		</div>
+	</section>
+	<img class="absolute bottom-10 right-[-4.634rem] hidden md:block" src={jugglingHaru} alt="" />
+</main>
+<div class="divider h-0"></div>
+<main class="xl:w-[1172px] w-full md:py-[7.5rem] md:mx-auto mx-0 md:p-0 px-5 py-6">
+	<section class="w-full">
 		<div class="flex flex-col sm:px-14 relative">
 			<div class="h-auto overflow-clip md:mt-[3.125rem] mb-[1.875rem] mt-6 relative">
 				<h4

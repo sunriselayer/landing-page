@@ -74,7 +74,24 @@ export { default as downlong } from '../lib/images/arrow-long-down.svg';
 export { default as infrared } from '../lib/images/infrared.png';
 export { default as berachain } from '../lib/images/berachain.png';
 export { default as berachain_small } from '../lib/images/berachain-mobile.png';
-
 export { default as build1 } from '../lib/images/build1.svg';
 export { default as build2 } from '../lib/images/build2.svg';
 export { default as build3 } from '../lib/images/build3.svg';
+export { default as whyHaru } from '../lib/images/why.png';
+export { default as whyHaruSP } from '../lib/images/why_sp.png';
+export { default as glassHaru } from '../lib/images/haru_glasses.png';
+export { default as glassHaruSP } from '../lib/images/haru_glasses_sp.png';
+export { default as jugglingHaru } from '../lib/images/juggling.png';
+export { default as jugglingHaruSP } from '../lib/images/juggling_sp.png';
+export { default as mapHaru } from '../lib/images/map.png';
+export { default as mapHaruSP } from '../lib/images/map_sp.png';
+export { default as branchHaru } from '../lib/images/branch.png';
+export { default as branchHaruSP } from '../lib/images/branch_sp.png';
+export { default as matric1 } from '../lib/images/metric-1.svg';
+export { default as matric2 } from '../lib/images/metric-2.svg';
+export { default as matric3 } from '../lib/images/metric-3.svg';
+export { default as opendoor } from '../lib/images/opendoor.mp4'
+export { default as ultra1 } from '../lib/images/ultra-1.svg';
+export { default as ultra2 } from '../lib/images/ultra-2.svg';
+export { default as ultra3 } from '../lib/images/ultra-3.svg';
+export { default as ultra4 } from '../lib/images/ultra-4.svg';

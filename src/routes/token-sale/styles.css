@@ -35,3 +35,19 @@ main {
 	border-radius: 30px;
 	border: 1px solid #ffc851;
 }
+
+.divider {
+	height: 0px;
+	border: 1px solid #edbc64;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 2.5rem;
+}
+
+@media (min-width: 768px) {
+	.divider {
+		margin: 5rem auto;
+		width: 422px;
+	}
+}

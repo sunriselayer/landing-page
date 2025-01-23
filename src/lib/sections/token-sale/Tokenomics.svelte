@@ -2,9 +2,9 @@
 	import { _ } from 'svelte-i18n';
 </script>
 
-<main class="md:my-0 md:mx-auto md:p-0 px-5 py-6 justify-center">
+<main class="md:my-0 md:mx-auto md:p-0 px-5 py-12 justify-center">
 	<section
-		class="z-20 flex flex-col mx-auto md:gap-[3.125rem] gap-6 md:my-[7.5rem] text-base-100 lg:w-[880px] w-[calc(100vw-2.5rem)]"
+		class="z-20 flex flex-col mx-auto md:gap-[3.125rem] gap-6 md:py-[7.5rem] text-base-100 lg:w-[880px] w-[calc(100vw-2.5rem)]"
 	>
 		<h2
 			class="normal-text font-bold md:text-[3.125rem] text-[2rem] md:leading-none leading-[1.3125rem] md:tracking-wider"

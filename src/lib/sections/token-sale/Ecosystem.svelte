@@ -1,10 +1,21 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { logo, sunrise, logos, logos1, logos2, logos3, logos4 } from '../../../consts/images';
+	import {
+		logo,
+		sunrise,
+		logos,
+		logos1,
+		logos2,
+		logos3,
+		logos4,
+		branchHaru,
+		branchHaruSP
+	} from '../../../consts/images';
 </script>
 
-<main class="xl:w-[1104px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
-	<section class="">
+<main class="w-full md:py-[7.5rem] md:p-0 px-5 py-12 relative">
+	<img class="absolute left-0 top-0 hidden md:block" src={branchHaru} alt="" />
+	<section class="xl:w-[1104px] w-full md:mx-auto">
 		<div class="flex justify-center content-center mx-auto">
 			<div class="flex gap-3 items-center">
 				<img class="md:w-full h-full w-[45px]" src={logo} alt="logo" />
@@ -13,7 +24,7 @@
 		</div>
 		<div class="flex flex-col">
 			<h2
-				class="normal-text font-bold md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none pt-6 md:pb-[3.125rem] pb-10"
+				class="flex gap-[0.625rem] items-center normal-text font-bold md:text-[3.125rem] text-[2rem] justify-center tracking-wider leading-none pt-6 md:pb-[3.125rem] pb-10"
 			>
 				{@html $_('ecosystem-title')}
 			</h2>
@@ -22,7 +33,10 @@
 			</div>
 			<div class="md:hidden flex w-full">
 				<div class="flex flex-col gap-3 w-full">
-					<img class="w-full md:px-20" src={logos1} alt={$_('ecosystem-title')} />
+					<div class="flex w-full">
+						<img class="md:hidden h-14" src={branchHaruSP} alt="" />
+						<img class="w-[calc(100%-3.5rem)] md:px-20" src={logos1} alt={$_('ecosystem-title')} />
+					</div>
 					<img class="w-full md:px-20" src={logos2} alt={$_('ecosystem-title')} />
 					<img class="w-full md:px-20" src={logos3} alt={$_('ecosystem-title')} />
 					<img class="w-full md:px-20" src={logos4} alt={$_('ecosystem-title')} />

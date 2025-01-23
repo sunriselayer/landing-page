@@ -3,7 +3,7 @@
 	const fields = ['daLayer', 'throughput', 'confirmationTime', 'verification', 'networkSecurity'];
 </script>
 
-<main class="xl:w-[1104px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
+<main class="xl:w-[1104px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-12">
 	<section class="">
 		<h2
 			class="normal-text font-bold md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] mb-6 tracking-wider leading-none"
@@ -40,7 +40,7 @@
 						<tr class="">
 							{#each fields as field}
 								<td
-									class=" w-1/5 md:h-[6.25rem] h-auto normal-text md:text-sm text-[0.625rem] md:p-4 py-4 border border-[#FFC851] border-l-0 {field ==
+									class="w-1/5 md:h-[6.25rem] h-auto normal-text md:text-lg text-[0.625rem] md:p-4 py-4 border {row==1 ? 'bg-[#FECD45CC] border-[#FFC851]' : 'border-[#FFC851]'} border-l-0 {field ==
 										'networkSecurity' && 'border-r-0'} {row == 5 && 'border-b-0'}"
 									>{@html $_(`closer-table.row-${row}.${field}`)}</td
 								>
@@ -50,11 +50,12 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="text-center md:mt-[4.375rem] mt-6">
-			<button
-				class="bg-gradient-to-r from-[#014093] to-[#0163D3] md:from-[#0163D3] md:to-[#0163D3] shadow-[#014093] shadow text-white uppercase tracking-wider md:px-10 md:py-[1.875rem] rounded-2xl md:text-[1.5rem] text-lg p-6 leading-6"
-				>{@html $_('learn-more')}</button
+		<div class="flex justify-center md:mt-[4.375rem] pt-6">
+			<a href="/#"
+				class="hover:opacity-60 bg-gradient-to-r from-[#003F92] to-[#0163D3] md:from-[#003F92] md:to-[#0163D3] shadow-[#014093] shadow-[0px_4px_5px_0px_#00000026] text-white uppercase tracking-wider md:px-10 md:py-[1.875rem] rounded-2xl md:text-[1.5rem] text-lg p-6 leading-6 cursor-pointer"
 			>
+				{@html $_('learn-more')}
+			</a>
 		</div>
 	</section>
 </main>

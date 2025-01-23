@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
+	import { mapHaru, mapHaruSP } from '../../../consts/images';
 
 	const start = '2024';
 	const end = '2025';
@@ -31,7 +32,12 @@
 			description: 'step3.desc',
 			target: `${months[6]}_${start}`
 		},
-		{ id: 'step5', title: 'step5.title', description: 'step5.desc', target: `${months[0]}_${end}` }
+		{
+			id: 'step5',
+			title: 'step5.title',
+			description: ['step5.desc-1', 'step5.desc-2'],
+			target: `${months[0]}_${end}`
+		}
 	];
 	const bottomSteps = [
 		{
@@ -43,7 +49,7 @@
 		{
 			id: 'step4',
 			title: 'step4.title',
-			description: ['step4.desc-1', 'step4.desc-2'],
+			description: 'step4.desc',
 			target: `${months[9]}_${start}`
 		},
 		{
@@ -64,7 +70,6 @@
 				if (!targetElement) return;
 				const partnetRect = specificElement.parentElement?.getBoundingClientRect();
 				if (!partnetRect) return;
-				targetElement.style.top = `${specificElementRect.bottom - partnetRect.bottom}px`;
 				targetElement.style.left = `${specificElementRect.left + specificElementRect.width / 2 - partnetRect.left}px`;
 				if (targetElement?.parentElement?.style) {
 					targetElement.parentElement.style.height = targetElement.clientHeight + 'px';
@@ -94,14 +99,16 @@
 	});
 </script>
 
-<main class="xl:w-[1128px] w-full md:my-[7.5rem] md:mx-auto mx-0 px-5 py-6">
+<main class="xl:w-[1128px] w-full md:py-[7.5rem] md:mx-auto mx-0 md:p-0 px-5 py-12 relative">
 	<section class="w-full relative">
 		<h2
-			class="normal-text font-bold md:text-[3.125rem] text-[2rem] text-start tracking-wider leading-none md:pb-[4.375rem] pb-10"
+			class="flex gap-[0.625rem] items-center normal-text font-bold md:text-[3.125rem] text-[2rem] text-start tracking-wider leading-none md:pb-[4.375rem] pb-10"
 		>
 			{@html $_('roadmap-title')}
 		</h2>
 		<div class="relative">
+			<img class="absolute hidden md:block top-[-1.25rem] left-[-1.25rem]" src={mapHaru} alt="" />
+			<img class="absolute block md:hidden top-4 left-[-0.25rem]" src={mapHaruSP} alt="" />
 			{#each topSteps as step}
 				<div id={step.id} class="roadmap-steps bottom-3 px-[0.2675rem]">
 					<p
@@ -109,9 +116,17 @@
 					>
 						{$_(step.title)}
 					</p>
-					<p class="md:text-xs text-[6.14px] normal-text text-opacity-70">
-						{@html $_(step.description)}
-					</p>
+					{#if typeof step.description !== 'string'}
+						{#each step.description as desc}
+							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-12 pr-4">
+								{@html $_(desc)}
+							</p>
+						{/each}
+					{:else}
+						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-12 pr-4">
+							{@html $_(step.description)}
+						</p>
+					{/if}
 				</div>
 			{/each}
 		</div>
@@ -137,12 +152,12 @@
 				<div id={step.id} class="roadmap-steps mt-3 px-[0.3125rem]">
 					{#if typeof step.description !== 'string'}
 						{#each step.description as desc}
-							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-12 pr-4">
+							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-10 pr-4">
 								{@html $_(desc)}
 							</p>
 						{/each}
 					{:else}
-						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-12 pr-4">
+						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-6 pr-4">
 							{@html $_(step.description)}
 						</p>
 					{/if}
@@ -175,7 +190,7 @@
 			gap: 20px;
 			max-width: 165px;
 			border-left: 0.5rem solid;
-			gap: 20px;
+			gap: 12px;
 		}
 	}
 </style>

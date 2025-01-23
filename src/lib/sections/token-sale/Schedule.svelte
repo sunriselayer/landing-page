@@ -3,7 +3,7 @@
 	import { logo, distribution, sunrise, emission } from '../../../consts/images';
 </script>
 
-<main class="xl:w-[1104px] w-full md:my-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
+<main class="xl:w-[1104px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-12">
 	<section class="">
 		<div class="flex justify-center content-center mx-auto">
 			<div class="flex gap-3 items-center">
@@ -25,7 +25,7 @@
 						>
 							{#each [1, 2, 3] as field}
 								<th
-									class="w-1/3 font-medium md:text-lg text-xs md:p-4 py-5 px-3 border-[#FFC851] border-x {field ==
+									class="{field > 1 ? 'w-[36%]' : 'w-[28%]'}  font-medium md:text-lg text-xs md:p-4 py-5 px-3 border-[#FFC851] border-x {field ==
 										1 && 'border-l-0'} {field == 3 && 'border-r-0'}"
 								>
 									<p
@@ -42,7 +42,7 @@
 							<tr class="">
 								{#each [1, 2, 3] as field}
 									<td
-										class="w-1/3 md:h-[8.125rem] h-auto md:text-base md:p-8 text-[0.625rem] leading-[0.875rem] p-4 border border-l-0 border-[#FFC851] {field ==
+										class="{field > 1 ? 'w-[36%]' : 'w-[28%]'} md:h-[8.125rem] h-auto md:text-lg md:py-8 md:px-2 text-[0.625rem] leading-[0.875rem] p-4 border border-l-0 border-[#FFC851] {field ==
 											3 && 'border-r-0'} {row == 7 && 'border-b-0'}"
 									>
 										<p
@@ -80,50 +80,50 @@
 					class="flex sm:flex-row flex-wrap flex-col font-semibold md:gap-[0.875rem] gap-5 md:px-20 justify-center"
 				>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#FF7B04]"></div>
+						<div class="w-[21px] h-[10px] bg-[#FFA24F]"></div>
 						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">20%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-3.1')}</span
 						>
 					</div>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#FFAA17]"></div>
-						<span class="pl-2 pr-3 font-eudoxus text-[#FFAA17]">20%</span>
+						<div class="w-[21px] h-[10px] bg-[#FFBD81]"></div>
+						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">20%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-2.1')}</span
 						>
 					</div>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#FFE089]"></div>
-						<span class="pl-2 pr-3 font-eudoxus text-[#FFE089]">15.5%</span>
+						<div class="w-[21px] h-[10px] bg-[#FF7B04]"></div>
+						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">15.5%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-6.1')}</span
 						>
 					</div>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#004AA9]"></div>
-						<span class="pl-2 pr-3 font-eudoxus text-[#004AA9]">14.5%</span>
+						<div class="w-[21px] h-[10px] bg-[#FF881D]"></div>
+						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">14.5%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-1.1')}</span
 						>
 					</div>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#267ADA]"></div>
-						<span class="pl-2 pr-3 font-eudoxus text-[#267ADA]">10%</span>
+						<div class="w-[21px] h-[10px] bg-[#FFD7B3]"></div>
+						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">10%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-4.1')}</span
 						>
 					</div>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#A3CEFF]"></div>
-						<span class="pl-2 pr-3 font-eudoxus text-[#A3CEFF]">10%</span>
+						<div class="w-[21px] h-[10px] bg-[#FFE5CD]"></div>
+						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">10%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-5.1')}</span
 						>
 					</div>
 					<div class="flex items-center justify-center">
-						<div class="w-[21px] h-[10px] bg-[#ADADAD]"></div>
-						<span class="pl-2 pr-3 font-eudoxus text-[#ADADAD]">10%</span>
+						<div class="w-[21px] h-[10px] bg-[#FFF2E6]"></div>
+						<span class="pl-2 pr-3 font-eudoxus text-[#FF7B04]">10%</span>
 						<span class="normal-text tracking-wide uppercase md:text-sm text-[0.625rem]"
 							>{@html $_('schedule-table.row-7.1')}</span
 						>

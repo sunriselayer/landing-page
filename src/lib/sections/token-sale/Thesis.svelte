@@ -5,7 +5,7 @@
 
 <main class="md:h-[982px] md:my-0 md:mx-auto md:p-0 px-5 py-6 justify-center">
 	<section
-		class="z-20 mx-auto gap-8 md:my-[7.5rem] text-base-100 lg:w-[854px] w-[calc(100vw-2.5rem)]"
+		class="z-20 mx-auto gap-8 md:py-[7.5rem] text-base-100 lg:w-[854px] w-[calc(100vw-2.5rem)]"
 	>
 		<h2
 			class="normal-text font-bold md:text-[2.25rem] text-[2rem] md:leading-none leading-[1.3125rem]"
