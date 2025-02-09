@@ -37,6 +37,7 @@ export { default as feature2 } from '../lib/images/feature2.png';
 export { default as feature3 } from '../lib/images/feature3.png';
 export { default as feature4 } from '../lib/images/feature4.png';
 export { default as feature5 } from '../lib/images/feature5.png';
+export { default as feature4_sp } from '../lib/images/feature4-sp.png';
 export { default as BgMission1 } from '../lib/images/BG_Mision 1.svg';
 export { default as main } from '../lib/images/main.png';
 export { default as right } from '../lib/images/right.svg';
@@ -90,7 +91,7 @@ export { default as branchHaruSP } from '../lib/images/branch_sp.png';
 export { default as matric1 } from '../lib/images/metric-1.svg';
 export { default as matric2 } from '../lib/images/metric-2.svg';
 export { default as matric3 } from '../lib/images/metric-3.svg';
-export { default as opendoor } from '../lib/images/opendoor.mp4'
+export { default as opendoor } from '../lib/images/opendoor.mp4';
 export { default as ultra1 } from '../lib/images/ultra-1.svg';
 export { default as ultra2 } from '../lib/images/ultra-2.svg';
 export { default as ultra3 } from '../lib/images/ultra-3.svg';

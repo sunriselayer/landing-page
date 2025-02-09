@@ -46,13 +46,21 @@
 			linear-gradient(to bottom, transparent 0%, transparent 70%, rgba(1, 14, 37, 0.103) 100%);
 		background-blend-mode: overlay;
 		background-repeat: no-repeat;
+		background-position-y: 20px;
 		background-position-x: center;
-		background-position-y: top;
-		background-size: cover;
+		background-size: 140%;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		first {
+			background-position-x: center;
+			background-position-y: top;
+			background-size: cover;
+		}
 	}
 
 	fourth {

@@ -30,13 +30,13 @@
 	];
 </script>
 
-<header>
+<header class="z-50">
 	<div
-		class="navbar sticky min-h-12 top-0 px-4 lg:px-20 md:py-10 xl:px-[7.5rem] md:text-[1.25rem] md:leading-[1.5rem]"
+		class="navbar sticky min-h-12 top-0 px-6 lg:px-20 md:py-10 xl:px-[7.5rem] md:text-[1.25rem] md:leading-[1.5rem] gap-[0.625rem]"
 	>
 		<a class="flex z-50 gap-4" href="/">
-			<img class="fill-current filter" src={images.logo} alt="logo" />
-			<img class="filter" src={images.sunriseWhite} alt={$_('app.name')} />
+			<img class="fill-current filter w-8 md:w-[2.6rem]" src={images.logo} alt="logo" />
+			<img class="filter hidden md:block" src={images.sunriseWhite} alt={$_('app.name')} />
 		</a>
 
 		<div class="flex-auto justify-around">
@@ -56,11 +56,11 @@
 		<LinkButton text={$_('try-testnet')} link={testNetLink} />
 
 		<details class="dropdown dropdown-end md:hidden">
-			<summary class="btn btn-outline text-base-100 w-full gap-2 md:w-auto md:px-8">
+			<summary class="btn btn-outline border-none text-[#F2B445] w-full gap-2 md:w-auto md:px-8 px-0 py-0">
 				<span class="material-symbols-outlined">menu</span>
 				<span class="hidden md:inline">Menu</span>
 			</summary>
-			<ul class="p-2 shadow menu dropdown-content bg-base-100 z-50 rounded-box w-52">
+			<ul class="p-2 shadow menu dropdown-content bg-slate-800 rounded-box w-max text-white">
 				{#each menus as menu}
 					<li>
 						<a

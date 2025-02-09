@@ -3,6 +3,8 @@
 	"try-testnet": "Try our Testnet",
 	"build-sunrise": "Build on Sunrise",
 	"learn-more": "Learn more",
+	"learn": "Learn",
+	"deploy": "Deploy",
 	"sunrise-question": "Enhanced Liquidity for Everyone",
 	"sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while providing a comprehensive solution for modular blockchain development.",
 	"sunrise-1": {
