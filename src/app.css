@@ -19,3 +19,11 @@
 	--font-color: #183973;
 	letter-spacing: 0.03em;
 }
+
+@layer base {
+  @font-face {
+	font-family: 'Clash Grotesk';
+	src: local('Clash Grotesk'), url('/fonts/ClashGrotesk-Variable.ttf');
+	font-display: swap;
+  }
+}
