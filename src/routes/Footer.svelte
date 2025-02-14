@@ -61,6 +61,16 @@
 	</div>
 </footer>
 <footer class="footer footer-center p-4 text-black z-30 bg-base-100">
+	<aside class="mb-4">
+		<p class="text-sm">
+			This crypto-asset marketing communication has not been reviewed or approved by any competent
+			authority in any Member State of the European Union.
+		</p>
+		<p class="text-sm">
+			The person seeking admission to trading of the crypto-asset is solely responsible for the
+			content of this crypto-asset marketing communication.
+		</p>
+	</aside>
 	<aside>
 		<p>Sunrise © - All rights reserved. 2024</p>
 	</aside>
