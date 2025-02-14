@@ -9,6 +9,15 @@
 		locale.set(isEnglish ? 'en' : 'jp');
 		newLocale.set(isEnglish ? 'en' : 'jp');
 	}
+	function openDoc() {
+		if (
+			confirm(
+				'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
+			)
+		) {
+			open('https://docs.sunriselayer.io', '_blank');
+		}
+	}
 </script>
 
 <header>
@@ -28,7 +37,7 @@
 				<li>
 					<a href="https://testnet.risescan.sunriselayer.io" target="_blank">Explorer (Testnet)</a>
 				</li>
-				<li><a href="https://docs.sunriselayer.io" target="_blank">Docs</a></li>
+				<li><button class="text-left" on:click={openDoc}> Docs</button></li>
 				<li><a href="https://github.com/SunriseLayer" target="_blank">GitHub</a></li>
 			</ul>
 		</details>

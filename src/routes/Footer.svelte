@@ -1,6 +1,16 @@
 <script>
 	import Label from '$lib/components/Label.svelte';
 	import * as images from '../consts/images';
+
+	function openDoc() {
+		if (
+			confirm(
+				'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
+			)
+		) {
+			open('https://docs.sunriselayer.io', '_blank');
+		}
+	}
 </script>
 
 <footer class="footer p-12 text-black z-30 bg-base-100">
@@ -15,9 +25,9 @@
 		<div class="flex w-full gap-4 sm:justify-between">
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Developers" />
-				<a href="https://docs.sunriselayer.io" target="_blank">
+				<button class="text-left" on:click={openDoc}>
 					<Label className="md:text-base text-xs font-medium" text="Docs" />
-				</a>
+				</button>
 				<a href="https://github.com/SunriseLayer" target="_blank">
 					<Label className="md:text-base text-xs font-medium" text="GitHub" />
 				</a>
