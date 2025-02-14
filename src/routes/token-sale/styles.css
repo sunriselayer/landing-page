@@ -1,0 +1,53 @@
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	position: relative;
+	font-family: 'Clash Grotesk' !important;
+}
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+@media (max-width: 391px) and (min-width: 200px) {
+	main {
+		margin-left: 0.25rem !important;
+		margin-right: 0.25rem !important;
+	}
+}
+.normal-text {
+	color: #183973 !important;
+}
+
+.highlight-text {
+	color: #fda60b !important;
+	background: linear-gradient(0deg, rgba(255, 14, 14, 0.2), rgba(255, 14, 14, 0.2)),
+		linear-gradient(90deg, #ff9500 0%, #ffc300 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+.rounded-box-custom {
+	background-color: #fff1cb;
+	border-radius: 30px;
+	border: 1px solid #ffc851;
+}
+
+.divider {
+	height: 0px;
+	border: 1px solid #edbc64;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 2.5rem;
+}
+
+@media (min-width: 768px) {
+	.divider {
+		margin: 5rem auto;
+		width: 422px;
+	}
+}

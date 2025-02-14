@@ -1,0 +1,68 @@
+<script lang="ts">
+	import './styles.css';
+	import '../../app.css';
+	import en from '../../i18n/token-sale/en.json';
+	import jp from '../../i18n/token-sale/jp.json';
+	import { _, init, addMessages } from 'svelte-i18n';
+	import '/node_modules/flag-icons/css/flag-icons.min.css';
+
+	import Header from '$lib/sections/token-sale/Header.svelte';
+	import About from '$lib/sections/token-sale/About.svelte';
+	import Features from '$lib/sections/token-sale/Features.svelte';
+	import Summaries from '$lib/sections/token-sale/Summaries.svelte';
+	import SalesDetails from '$lib/sections/token-sale/SalesDetails.svelte';
+	import Tokenomics from '$lib/sections/token-sale/Tokenomics.svelte';
+	import Schedule from '$lib/sections/token-sale/Schedule.svelte';
+	import Ecosystem from '$lib/sections/token-sale/Ecosystem.svelte';
+	import Roadmap from '$lib/sections/token-sale/Roadmap.svelte';
+	import Timeline from '$lib/sections/token-sale/Timeline.svelte';
+	import Community from '$lib/sections/token-sale/Community.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+
+	const defaultLocale = 'en';
+
+	addMessages('en', en);
+	addMessages('jp', jp);
+
+	init({
+		fallbackLocale: defaultLocale,
+		initialLocale: defaultLocale
+	});
+</script>
+
+<main class="min-h-[524px] relative">
+	<Header />
+	{@render children?.()}
+</main>
+<About />
+<Features />
+<Summaries />
+<SalesDetails />
+<Timeline />
+<Tokenomics />
+<Ecosystem />
+<Schedule />
+<Roadmap />
+<Community />
+
+<style>
+	main {
+		background-image: url($lib/images/main.png);
+		background-position-y: 120px;
+		background-position-x: center;
+		background-size: 933px;
+		background-repeat: no-repeat;
+	}
+
+	@media (min-width: 768px) {
+		main {
+			background-position-x: center;
+			background-position-y: center;
+			background-size: contain;
+		}
+	}
+</style>

@@ -53,11 +53,11 @@
 				<img class="max-w-60 max-h-60 mx-auto" src={item.image} alt="item" />
 			</figure>
 			<div class="card-body">
-				<h2 class="card-title text-xl xl:text-2xl font-orbitron tracking-wider">
-					{$_(item.label)}
+				<h2 class="card-title text-xl xl:text-2xl tracking-wider">
+					{@html $_(item.label)}
 				</h2>
 				<p class="text-xs sm:text-sm lg:text-base xl:text-lg font-overpass">
-					{$_(item.description)}
+					{@html $_(item.description)}
 				</p>
 			</div>
 		</div>
