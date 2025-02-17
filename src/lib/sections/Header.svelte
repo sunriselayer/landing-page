@@ -19,7 +19,7 @@
 	let { active }: Props = $props();
 
 	const menus = [
-		{ key: 'build', label: 'header-footer.build', link: '/build', isSelf: true },
+		{ key: 'build', label: 'header-footer.build', link: '/build' },
 		{
 			key: 'explorer',
 			label: 'header-footer.explorer',
@@ -28,6 +28,22 @@
 		{ key: 'docs', label: 'header-footer.docs', link: 'https://docs.sunriselayer.io' },
 		{ key: 'git', label: 'header-footer.git', link: 'https://github.com/SunriseLayer' }
 	];
+
+	function openLink(link: string) {
+		if (link.startsWith('/')) {
+			open(link, '_self');
+		} else if (link.startsWith('https://docs.sunriselayer.io')) {
+			if (
+				confirm(
+					'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
+				)
+			) {
+				open(link, '_blank');
+			}
+		} else {
+			open(link, '_blank');
+		}
+	}
 </script>
 
 <header class="z-50">
@@ -43,11 +59,12 @@
 			<ul class="p-2 md:flex flex-row hidden gap-11 text-white">
 				{#each menus as menu}
 					<li>
-						<a
+						<button
 							class={active === menu.key ? 'highlight-text' : ''}
-							href={menu.link}
-							target={menu.isSelf ? '_self' : '_blank'}>{@html $_(menu.label)}</a
+							on:click={() => openLink(menu.link)}
 						>
+							{@html $_(menu.label)}
+						</button>
 					</li>
 				{/each}
 			</ul>
@@ -56,18 +73,21 @@
 		<LinkButton text={$_('try-testnet')} link={testNetLink} />
 
 		<details class="dropdown dropdown-end md:hidden">
-			<summary class="btn btn-outline border-none text-[#F2B445] w-full gap-2 md:w-auto md:px-8 px-0 py-0">
+			<summary
+				class="btn btn-outline border-none text-[#F2B445] w-full gap-2 md:w-auto md:px-8 px-0 py-0"
+			>
 				<span class="material-symbols-outlined">menu</span>
 				<span class="hidden md:inline">Menu</span>
 			</summary>
 			<ul class="p-2 shadow menu dropdown-content bg-slate-800 rounded-box w-max text-white">
 				{#each menus as menu}
 					<li>
-						<a
+						<button
 							class={active === menu.key ? 'active' : ''}
-							href={menu.link}
-							target={menu.isSelf ? '_self' : '_blank'}>{@html $_(menu.label)}</a
+							on:click={() => openLink(menu.link)}
 						>
+							{@html $_(menu.label)}
+						</button>
 					</li>
 				{/each}
 			</ul>
