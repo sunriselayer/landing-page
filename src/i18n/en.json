@@ -1,344 +1,98 @@
 {
-  "app-description": "Sunrise is a specialized Data Availability Layer for Proof of Liquidity (PoL) and Fee Abstraction.",
-  "core-thesis": "Core Thesis",
-  "thesis-1": "Developers continue to seek ways to take advantage of increases in scalability and price competitive blob space. Sunrise offers new advances in functionality and DA fee abstraction (via PoL) to drive competition forward",
-  "thesis-2": "PoL stabilizes L2 rollups by adding utility to their native token in the form of bootstrapping and enhancing liquidity",
-  "thesis-3": "Non-technical users can participate in the same PoL pools to earn yield, provide liquidity to their preferred L2 or L2 tokens, and contribute to the security and governance of both rollups utilizing Sunrise and Sunrise itself",
-  "why-sunrise": "Why <span class='highlight-text'>Sunrise</span> ?",
-  "answer-1": "Sunrise is the first specialized DA layer to implement native DA Fee Abstraction",
-  "answer-2": "Sunrise is the first DA Layer with off-chain blobs immensely increasing throughout",
-  "answer-3": "Highly scalable blob space enables the creation of new fully on-chain use cases such as Decentralized AI, Gaming, and more",
-  "answer-4": "Sunrise introduces <b>Extended Proof of Liquidity</b> which enables Sunrise to participate in a mutually beneficial relationship with Berachain’s liquidity environment by extending Berachain’s PoL to the L2 level",
-  "deeper-level": "On a deeper level...",
-  "level-1": "Proof of Liquidity",
-  "level-1-desc-1": "Sunrise uses <b>Proof of Liquidity (PoL)</b> model to rollups and L2s, while retaining a compatible  architecture. PoL on Sunrise mutually increases security and liquidity for both the rollup and Sunrise, enabling a parallel flywheel effect.",
-  "level-1-desc-2": "Sunrise’s compatibility minimizes onboarding difficulty for rollups. This also means that Sunrise is natively IBC compatible. <b>Rollup-as-a-Service (RaaS)</b> providers who integrated other DAs can integrate Sunrise easily, and <b>Rollup SDKs</b> (e.g. OP stack, Polygon CDK, Rollkit, Sovereign SDK, etc.) that support other DAs will automatically be compatible with Sunrise.",
-  "level-2": "Fee Abstraction",
-  "level-2-desc-1": "<b>DA Fee Abstraction</b> implemented",
-  "level-2-desc-2": "Developers can use Sunrise blob spaces with greater economic flexibility by just providing<br>liquidity to the Sunrise liquidity pool",
-  "level-3": "Off-Chain Blob Data",
-  "level-3-desc": "Sunrise v2 is designed for high-throughput data availability, offering enhanced scalability and flexibility for applications even such as gaming. In off-chain DA attestation, false-positive resistance is maintained through the use of zero-knowledge proofs and cryptographic commitments like erasure coding. By verifying the double-hashed values of shard data, validators can ensure that the data is indeed available without needing to store or directly access the entire data set.",
-  "key-feature": "Key Features",
-  "key-feature-1": "<b>OFF-CHAIN ERASURE ENCODING:</b> Blob data is erasure-coded off-chain, minimizing the computational and storage load on validators",
-  "key-feature-2": "<b>OFF-CHAIN STORAGE INTEGRATION:</b> Utilizing decentralized storage solutions such as IPFS and Arweave, data shards are stored externally. MsgPublishData includes only a metadata URI pointing to these erasure-coded data shares, reducing the on-chain block size requirements for Blob transactions and enhancing scalability",
-  "comparision-title": "Comparison Between On-Chain DA Attestation & Off-Chain DA Attestation",
-  "on-chain-title": "On-Chain DA Attestation",
-  "off-chain-title": "Off-Chain DA Attestation",
-  "chain-da-option-1": "Data Corruption Durability",
-  "chain-da-option-2": "Tx Mempool Scalability",
-  "chain-da-option-3": "Data Retrievability Control",
-  "chain-da-option-4": "Validators Load Mitigation",
-  "chain-da-option-5": "False-Positive DA<br>Attestation Resistance",
-  "example": "Examples",
-  "celestia": "Celestia",
-  "avail": "Avail",
-  "eigenda": "EigenDA",
-  "walrus": "Walrus",
-  "sunrise": "Sunrise",
-  "level-4": "Revenue Streams",
-  "level-4-desc": "The protocol generates revenue through three channels.",
-  "revenue-1": "Transaction fees",
-  "revenue-2": "Swap fees in the liquidity pool",
-  "revenue-3": "MEV captured with Skip Protocol",
-  "closer-title": "A closer look into the DA space...",
-  "data-availability": "Data Availability Layers Comparison",
-  "closer-table": {
-    "headers": {
-      "daLayer": "DA Layer",
-      "throughput": "Throughput<br>MB/S",
-      "confirmationTime": "Confirmation Time",
-      "verification": "Verification",
-      "networkSecurity": "Network Security"
-    },
-    "row-1": {
-      "daLayer": "Sunrise",
-      "throughput": "5+ MB/s",
-      "confirmationTime": "7 sec + proofs",
-      "verification": "Optimistic with Off-Chain Storage",
-      "networkSecurity": "Proof-of-Liquidity"
-    },
-    "row-2": {
-      "daLayer": "Avail DA",
-      "throughput": "0.1 - 3.2 MB/s",
-      "confirmationTime": "20 sec + proofs",
-      "verification": "KZG Commitments with Validity Proofs",
-      "networkSecurity": "Nominated Proof-of-Stake"
-    },
-    "row-3": {
-      "daLayer": "Celestia",
-      "throughput": "1.33 - 6.67 MB/s",
-      "confirmationTime": "6 sec + 10 min",
-      "verification": "Fraud Proofs in Optimistic System",
-      "networkSecurity": "Delegated Proof-of-Stake"
-    },
-    "row-4": {
-      "daLayer": "EigenDA",
-      "throughput": "15 MB/s",
-      "confirmationTime": "~15 min",
-      "verification": "Committee Structure & KZG Commitments",
-      "networkSecurity": "Decentralize Committee Structure"
-    },
-    "row-5": {
-      "daLayer": "Ethereum EIP-4844",
-      "throughput": "0.067 - 1.067 MB/s",
-      "confirmationTime": "~15 min",
-      "verification": "PeerDAS (Danksharding) & Erasure Coding",
-      "networkSecurity": "Proof-of-Stake (+1 Million Validators)"
-    }
-  },
-  "sales-details": "Sales Details",
-  "sales-details-desc": "We can change from 6-10% by adjusting community allocation 2% distribution.",
-  "sales-details-table": {
-    "columns": {
-      "1": "Option 1",
-      "2": "Option 2"
-    },
-    "headers": {
-      "1": "Fixed Price",
-      "2": "Auction"
-    },
-    "row-1": {
-      "value-1": "Asset",
-      "value-2": "RISE token",
-      "value-3": "RISE token"
-    },
-    "row-2": {
-      "value-1": "Fixed Sale Price",
-      "value-2": "$0.04 per token",
-      "value-3": "$0.04 per token<br>(floor price)"
-    },
-    "row-3": {
-      "value-1": "Sale Period",
-      "value-2": "Jan. 13, 2025 18:00 UTC -<br>Jan. 17, 2025 23:59 UTC",
-      "value-3": "Jan. 20, 2025 18:00 UTC -<br>Jan. 24, 2025 23:59 UTC"
-    },
-    "row-4": {
-      "value-1": "Supply for Sale",
-      "value-2": "2% (20M tokens)",
-      "value-3": "8% (80M tokens)"
-    },
-    "row-5": {
-      "value-1": "Purchase Limits",
-      "value-2": "$100 minimum<br>$1000 maximum",
-      "value-3": "$100 minimum<br>$1000 maximum"
-    },
-    "row-6": {
-      "value-1": "Funding Methods",
-      "value-2": "USDT and USDC",
-      "value-3": "USDT and USDC"
-    },
-    "row-7": {
-      "value-1": "Lock-Up & Release",
-      "value-2": "25% unlocked at launch & unlocks<br>continuously for 3 months",
-      "value-3": "25% unlocked at launch & unlocks<br>continuously for 12 months"
-    },
-    "row-8": {
-      "value-1": "Excluded Participants",
-      "value-2": "Excluded participants include residents<br>of the US, Canada, China, South Korea, and CoinList’s unsupported Jurisdictions",
-      "value-3": "Excluded participants include residents<br>of the US, Canada, China, South Korea, and CoinList’s unsupported Jurisdictions"
-    },
-    "row-9": {
-      "value-1": "Sale FAQ",
-      "value-2": "FAQ",
-      "value-3": "FAQ"
-    }
-  },
-  "note-locked": "Note: locked tokens may be staked.<br>RISE tokens received from staking are unlocked",
-  "learn-more": "Learn More About Sunrise",
-  "tokenomics": "Tokenomics",
-  "dual-token-system": "Dual Token System",
-  "dual-token-system-1": "$vRISE: Non-Transferable token for staking and governance",
-  "dual-token-system-1-desc": "Used for calculating voting power in governance",
-  "dual-token-system-2": "$RISE: Transferable token with fee",
-  "dual-token-system-2-desc-1": "Native token of Sunrise network",
-  "dual-token-system-2-desc-2": "Usedd for transaction fees",
-  "token-description": "$RISE token is the native token of Sunrise Network",
-  "ticker": "ticker",
-  "inital-token-supply-label": "initial token supply",
-  "inital-token-supply-value": "92.25M RISE",
-  "token-usecase": "Usecases",
-  "token-usecase-1": "Gas Fee",
-  "token-usecase-1-desc-1": "$RISE token can be used for fees. A portion of transaction fees in $RISE tokens is burned, reducing the circulating supply and adding deflationary pressure to the token. This portion is determined by a percentage of the total gas cost. The burn mechanism aligns with Sunrise Layer's sustainable design and ensures efficient fee management.",
-  "token-usecase-1-desc-2": "The $vRISE token is a non-transferable token for staking. The staked amount will be calculated as a voting power for the governance.",
-  "token-usecase-2": "Staking",
-  "token-usecase-2-desc": "$vRISE can be staked to the Sunrise network. The staked amount will be calculated as a voting power for the governance. Furthermore, the rewards for stakers will be distributed in proportion to the staked amount.",
-  "token-usecase-3": "Gauge Voting",
-  "token-usecase-3-desc": "A Gauge means our product that issues vRISE. The Gauge’s first product in Sunrise is the Liquidity Pool.vRISE holders use vRISE to vote and determine how much vRISE to allocate to which gauge. More vRISE newly issued will be allocated to the liquidity pool linked to the gauge that has collected more vRISE voting power.",
-  "flywheel": "Sunrise Flywheel",
-  "flywheel-desc-tile-1": "More sunrise TVL & Arbitrage Opportunity",
-  "flywheel-desc-tile-2": "More swap activity & revenue",
-  "flywheel-desc-tile-3": "LPing to use Sunrise as DA with no fee",
-  "flywheel-desc-tile-4": "More demand for RISE",
-  "flywheel-desc-tile-5": "Trust in Sunrise",
-  "flywheel-desc-tile-6": "More reward to vRISE stakers",
-  "flywheel-desc-tile-7": "More secure Sunrise & Sovereign Rollup",
-  "flywheel-desc-tile-8": "More liquidity into Sunrise pool",
-  "flywheel-vs-title": "Extended vs. Replicated proof of liquidity (flywheels)",
-  "flywheel-tile-user-want-2": "to earn blobspace for their rollup",
-  "flywheel-tile-stake": "Stake LP Token",
-  "flywheel-tile-earn-reward": "Earn vRISE reward",
-  "flywheel-tile-user-want": "Users want",
-  "flywheel-tile-rollup": "(optional) Bootstrap liquidity  + Security for your rollup using the XXX/ XXX Pool",
-  "flywheel-extended": "Extended",
-  "flywheel-extended-description-1": "** validators & delegators can direct future vRISE emissions to the XXX/iBGT pool",
-  "flywheel-extended-description-2": "*** Provide Liquidity to XXX/iBGT in exchange for blobspace (for Sunrise DA users)",
-  "flywheel-extended-tile-top": "Provide liquidity to<br>XXX/iBGT pool***",
-  "flywheel-extended-tile-user-want-1": "to utilize + earn more iBGT",
-  "flywheel-extended-tile-contribute": "Contribute to Berachain Pol Flywheel using additional iBGT",
-  "flywheel-extended-tile-convert": "(optional) Convert vRISE into iBGT<br>(<small>vRISE -> RISE</small> -> iBGT)",
-  "flywheel-extended-tile-bottom": "Delegate vRISE**",
-  "flywheel-extended-tile-earn": "Earn XXX +<br>iBGT LP Yield",
-  "flywheel-replicated": "Replicated",
-  "flywheel-replicated-tile-top": "Provide liquidity to<br>XXX/XXX pool***",
-  "flywheel-replicated-description": "*** Provide Liquidity to XXX/iBGT in exchange for blobspace (for Sunrise DA users)",
-  "flywheel-replicated-tile-user-want-1": "to contribute liquidity to earn yield",
-  "flywheel-replicated-tile-user-want-3": "earn more vRISE",
-  "flywheel-replicated-tile-validators": "Validators & delegators participate in gauge voting to determine future vRISE emissions",
-  "flywheel-replicated-tile-bottom": "Delegate vRISE",
-  "flywheel-replicated-tile-earn": "Earn XXX +<br>XXX LP Yield",
-  "flywheel-infrared-1": "users can LP into Infrared vaults to earn iBGT",
-  "flywheel-infrared-2": "users can acquire iBGT on the secondary market",
-  "flywheel-infrared-3": "users can earn iBGT when staking LP tokens with Infrared from a whitelist BGT pool",
-  "flywheel-infrared-desc-1": "iBGT operates as a liquidity wrapper for BGT, and allows LPs to participate in Berachain PoL flywheel or use iBGT for DeFi.",
-  "flywheel-infrared-desc-2": "(optional) Sunrise will create a RISE/XXX vault which can be integrated into Infrared once its been WL for BGT emissions.",
-  "flywheel-infrared-desc-3": "Users can deposit RISE to this vault to earn iBGT natively (you can earn iBGT without creating sell pressure for RISE)",
-  "flywheel-aggregate-title": "Aggregated Liquidity from many external systems",
-  "flywheel-aggregate-list-1": "Native IBC support",
-  "flywheel-aggregate-list-2": "Ethereum compatibility via IBC Eureka / Axelar GMP",
-  "flywheel-aggregate-list-3": "Solana compatibility via Wormhole",
-  "flywheel-aggregate-list-4": "(additional integrations to be announced)",
-  "flywheel-aggregate-tile-1": "All L2s (including Sovereign Rollup) can spin up PoL pool composed of assets of their own choice including bridged or native assets",
-  "flywheel-aggregate-tile-example": "Examples: XXX/XXX",
-  "flywheel-aggregate-tile-example-1": "L2 Native Token / RISE",
-  "flywheel-aggregate-tile-example-2": "RISE/USDC",
-  "flywheel-aggregate-tile-example-3": "RISE SOL",
-  "flywheel-aggregate-tile-example-4": "SOL/WIF",
-  "flywheel-aggregate-tile-example-5": "PEPE/USDC",
-  "flywheel-aggregate-tile-2": "Interacting with Sunrise PoL introduces the opportunity for any L2 benefit from enhanced token liquidity + security",
-  "flywheel-aggregate-tile-3-1": "If a rollup uses Sunrise’s native token ($RISE) in its PoL pool THEN a mutually beneficial relationship is established between the rollup an the DA layer.",
-  "flywheel-aggregate-tile-3-2": "As Sunrise’s security an liquidity increases, so does the security and liquidity of the L2.",
-  "flywheel-aggregate-tile-4": "RISE token liquidity increases<br>Rollup’s security increases",
-  "flywheel-aggregate-tile-5": "Sunrise security increases<br>Rollup’s token liquiity increases",
-  "schedule-title": "Distribution & Release Schedule",
-  "schedule-table": {
-    "headers": {
-      "1": "Segment",
-      "2": "Total Supply in %",
-      "3": "Release Schedule"
-    },
-    "row-1": {
-      "1": "Early Backers",
-      "2": "25%",
-      "3": "5% unlocked at launch<br>95% fully locked for 3 months,<br>then unlocks continuously for 12 months"
-    },
-    "row-2": {
-      "1": "Initial Core Contributors",
-      "2": "20%",
-      "3": "Fully locked for 3 months,<br>unlocks continuously for 24 months"
-    },
-    "row-3": {
-      "1": "Ecosystem",
-      "2": "20%",
-      "3": "25% unlocked at launch<br>75% unlocks continuously for 18 months"
-    },
-    "row-4": {
-      "1": "Community Allocation 2",
-      "2": "10%",
-      "3": "Fully locked for 6 months,<br>unlocks continuously for 24 months"
-    },
-    "row-5": {
-      "1": "Community Allocation 1",
-      "2": "10%",
-      "3": "10% unlocked at launch<br>90% fully locked for 9 months"
-    },
-    "row-6": {
-      "1": "Community Contributors & Grants",
-      "2": "5%",
-      "3": "Fully locked for 3 months,<br>unlocks continuously for 24 months"
-    },
-    "row-7": {
-      "1": "Public Sale",
-      "2": "10%",
-      "3": "See sale structure above"
-    }
-  },
-  "token-distribution-schedule": "Token Distribution Schedule",
-  "token-emission-schedule": "Token Emission Schedule",
-  "roadmap-title": "Sunrise Roadmap",
-  "jan": "Jan",
-  "feb": "Feb",
-  "mar": "Mar",
-  "apr": "Apr",
-  "may": "May",
-  "jun": "Jun",
-  "jul": "Jul",
-  "aug": "Aug",
-  "sep": "Sep",
-  "oct": "Oct",
-  "nov": "Nov",
-  "dec": "Dec",
-  "step1": {
-    "title": "Q1 2024",
-    "desc": "Launch private testnet of Sunrise"
-  },
-  "step2": {
-    "title": "Q2 2024",
-    "desc": "Launch public testnet of Sunrise"
-  },
-  "step3": {
-    "title": "Q3 2024",
-    "desc": "Launch public testnet v2 of Sunrise"
-  },
-  "step4": {
-    "title": "Q4 2024",
-    "desc-1": "Listing token in CEX & DEX",
-    "desc-2": "Launch Mainnet of Sunrise"
-  },
-  "step5": {
-    "title": "Q1 2025",
-    "desc": "Expand use case of DA like fully on-chain AI, etc."
-  },
-  "step6": {
-    "title": "Q2 2025",
-    "desc-1": "Integrate Sovereign SDK",
-    "desc-2": "Integrate Based Rollup"
-  },
-  "ecosystem-title": "Sunrise Ecosystem",
-  "coreteam-title": "Core Team",
-  "team-core-member-1": {
-    "name": "Yu Kimura",
-    "role": "Co-Founder/CEO & CTO",
-    "desc-1": "Famous developer with deep ties to Japan blockchain ecosystem",
-    "desc-2": "Previously CEO & CTO at a blockchain startup for 5 years",
-    "desc-3": "Accomplished white hat hacker & previously rescued $ 5, 000, 000 in stolen funds",
-    "desc-4": "PHD student (INFO), MBA, & SIC researcher at Kyoto University"
-  },
-  "team-core-member-2": {
-    "name": "Takeru s.",
-    "role": "Co-Founder/COO & CFO",
-    "desc-1": "Business management & operations expert",
-    "desc-2": "Previously COO & CFO at blockchain startup for 5 years",
-    "desc-3": "Former strategic consultant at major consulting firm, leading new business through its development & eventual sale",
-    "desc-4": "BA at Tokyo University of Foreign Studies & SIC researcher at Kyoto University"
-  },
-  "team-member-1": {
-    "name": "Christopher Lee",
-    "role": "Head of Business Development"
-  },
-  "team-member-2": {
-    "name": "Diogo Ferreira",
-    "role": "Head of Listing"
-  },
-  "team-member-3": {
-    "name": "Ugo Dike-hart",
-    "role": "Head of Marketing & Community"
-  },
-  "team-member-4": {
-    "name": "Kavin Mohan",
-    "role": "Head of Developer Relations"
-  },
-  "team-member-5": {
-    "name": "Sena Omura",
-    "role": "Head Developer"
-  }
+	"app-description": "Sunrise is a specialized Data Availability Layer for Proof of Liquidity.",
+	"try-testnet": "Try our Testnet",
+	"build-sunrise": "Build on Sunrise",
+	"learn-more": "Learn more",
+	"learn": "Learn",
+	"deploy": "Deploy",
+	"sunrise-question": "Enhanced Liquidity for Everyone",
+	"sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while providing a comprehensive solution for modular blockchain development.",
+	"sunrise-1": {
+		"label": "Modular Blockchain Structures",
+		"description": "A modular blockchain differs from a monolithic chain in that at least one of its four main functions has been offloaded to a separate layer. In the current infrastructure landscape, modular solutions have become the preeminent method for blockchain development.<br><br>Sunrise provides a fast, secure data availability and consensus layer for scalable modular blockchains, while allowing individual networks to determine their own customized execution and settlement layers.<br><br>By using this structure, modular blockchains are more efficient, customizable, scalable, and sovereign."
+	},
+	"sunrise-2": {
+		"label": "Proof of Liquidity",
+		"description": "Sunrise brings further innovation to modular blockchain structures by directly integrating Proof of Liquidity (PoL), which enables modular liquidity, and resolves the liquidity issue faced by new rollup developers.<br><br>Extending & replicating Berachain Proof of Liquidity across the entire DA Layer creates an aligned liquidity & security model similar to Berachain’s PoL flywheel, systematically building liquidity for both Sunrise and its users.<br><br>DA users on Sunrise can now directly engage in PoL on Sunrise to bootstrap liquidity and security for their rollup."
+	},
+	"sunrise-3": {
+		"label": "Fee Abstraction and LP Benefits",
+		"description": "Integrating PoL at the DA Layer also enables Fee Abstraction on Sunrise. While other DA layers charge fees in their native tokens, leading to a net-value extract to rollup developers, Sunrise instead rewards liquidity provision with blobspace. <br><br>Sunrise resolves singular token dependency by allowing any liquidity pool to apply to become whitelisted for PoL emissions; such that any token with a rich, deep liquidity pool will automatically earn more rewards and more blobspace. <br><br>Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems. Together, these unique functions supercharge Data Availability for developers."
+	},
+	"sunrise-4": {
+		"label": "Off-Chain Blobs and Data Storage",
+		"description": "Sunrise has been designed from the ground-up to enable higher throughput data availability through the use of off-chain blobs. Sunrise’s blob module allows for larger block sizes, enabling new experimentation in DA usage such as fully-onchain AI, gaming, and more.<br><br>Off-chain blobs also provide optionality for native data retrievability and controllable retrievability periods, thus ensuring both immediate data availability and permanent storage solutions."
+	},
+	"sunrise-features": {
+		"description": "Building blockchains doesn't have to be complicated. Develop intuitively with data availability for the modular future.",
+		"feature-1": {
+			"label": "AltDA Fee Abstraction",
+			"description": "LP to a pool of your choice, engaging in PoL in exchange for blobspace."
+		},
+		"feature-2": {
+			"label": "Interoperable",
+			"description": "Build interoperable rollup."
+		},
+		"feature-3": {
+			"label": "Proof of Liquidity",
+			"description": "Bootstrap liquidity and benefit from aligned & enhanced security, using LP tokens of your choice, and the liquidity of many ecosystems to secure your rollup."
+		},
+		"feature-4": {
+			"label": "Easy to use",
+			"description": "No need to bootstrap your own validator set, deploy easily onto Sunrise and benefit from shared security + PoL flywheel."
+		},
+		"feature-5": {
+			"label": "Scalable",
+			"description": "Modular blockchains scale automatically; developers on Sunrise have a worry-free infrastructure experience."
+		}
+	},
+	"sunrise-products": {
+		"label": "What you can build with Sunrise",
+		"description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+		"product-validiums": {
+			"label": "Optimium / Validium",
+			"description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment where data is posted is a separate chain, such as Sunrise. These rollups save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can engage in PoL to use Sunrise DA Layer."
+		},
+		"product-rollups": {
+			"label": "Sovereign Rollups",
+			"description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and <a href='https://celestia.org/glossary/data-availability' target='_blank'><u>data availability</u></a>, but handles its own <a href='https://celestia.org/learn/modular-settlement-layers/settlement-in-the-modular-stack' target='_blank'><u>settlement</u></a>.<br />Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+		},
+		"product-pol": {
+			"label": "Sovereign Proof of Liquidity",
+			"description": "Sunrise supports minting LP shares from its various liqudity pools.  The LST of the LP share of the Sovereign Rollup’s native tokens and the Sunrise token can be staked to the Sovereign Rollup for governance and reward distribution."
+		}
+	},
+	"sunrise-mission": {
+		"label": "Mission",
+		"description": "Realizing the next generation of web applications by enhancing liquidity and sovereignty for developers."
+	},
+	"build": {
+		"question": "What you can build with Sunrise",
+		"question-description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+		"build-1": {
+			"title": "Optimium / Validium",
+			"description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment where data is posted is a separate chain, such as Sunrise. These rollups save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can engage in PoL to use Sunrise DA Layer."
+		},
+		"build-2": {
+			"title": "Sovereign Rollups",
+			"description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and <a style='text-decoration: underline' href='https://celestia.org/glossary/data-availability'>data availability</a>, but handles its own <a style='text-decoration: underline' href='https://celestia.org/learn/modular-settlement-layers/settlement-in-the-modular-stack'>settlement</a>.<br><br>Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+		},
+		"build-3": {
+			"title": "Sovereign Proof of Liquidity",
+			"description": "Sunrise supports minting LP shares from its various liqudity pools. The LST of the LP share of the Sovereign Rollup’s native tokens and the Sunrise token can be staked to the Sovereign Rollup for governance and reward distribution."
+		}
+	},
+	"header-footer": {
+		"build": "Build",
+		"devs": "Developers",
+		"services": "Services",
+		"about": "About",
+		"docs": "Docs",
+		"git": "GitHub",
+		"app": "App (Testnet)",
+		"explorer": "Explorer (soon)",
+		"blog": "Blog",
+		"jobs": "Jobs",
+		"press-kit": "Press Kit"
+	}
 }

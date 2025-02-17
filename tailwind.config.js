@@ -6,7 +6,10 @@ export default {
 			fontFamily: {
 				orbitron: ['Orbitron', 'sans-serif'],
 				overpass: ['Overpass', 'sans-serif'],
-				'ibm-plex-sans': ['IBM Plex Sans', 'sans-serif']
+				clash: ['Clash Grotesk', 'sans-serif'],
+				eudoxus: ['Eudoxus Sans', 'sans-serif'],
+				'ibm-plex-sans': ['IBM Plex Sans', 'sans-serif'],
+				'plus-jakarta-sans': ['Plus Jakarta Sans', 'sans-serif']
 			},
 			colors: {
 				textPrimary: '#181818'
@@ -15,8 +18,8 @@ export default {
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
-        themes: ['light']
-    },
+		themes: ['light']
+	},
 	extend: {
 		keyframes: {
 			'image-change': {

@@ -11,12 +11,7 @@
 		imageSrc: string;
 	}
 
-	let {
-		index,
-		label,
-		description,
-		imageSrc
-	}: Props = $props();
+	let { index, label, description, imageSrc }: Props = $props();
 
 	// Subscribe to the newLocale store
 	const unsubscribe = newLocale.subscribe((value: string) => {
@@ -31,11 +26,11 @@
 	style="background: var(--Dark, linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%))"
 >
 	<Label
-		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest "
+		className="2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest "
 		text={$_(index)}
 	/>
 	<Label
-		className="font-orbitron 2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest "
+		className="2xl:text-3xl lg:text-2xl sm:text-xl font-extrabold tracking-widest "
 		text={$_(label)}
 	/>
 	<img class="md:w-full w-[60%] max-w-60 mx-auto max-h-60" src={imageSrc} alt={label} />

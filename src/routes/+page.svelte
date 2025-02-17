@@ -1,42 +1,82 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	import { appDescription } from '../consts';
 	import { appTitle } from '../consts';
+
+	import Header from '$lib/sections/Header.svelte';
+	import Footer from '$lib/sections/Footer.svelte';
+	import Concepts from '$lib/sections/Concepts.svelte';
+	import Features from '$lib/sections/Features.svelte';
+	import Testnet from '$lib/sections/Testnet.svelte';
+	import Top from '$lib/sections/Top.svelte';
 </script>
 
 <svelte:head>
 	<title>{appTitle}</title>
-	<meta name="description" content="Sunrise" />
+	<meta name="description" content={$_('app.name')} />
+	<meta name="theme-color" content="#010E25" media="(prefers-color-scheme: dark)" />
+	<style>
+		body {
+			background-color: #010e25;
+		}
+	</style>
 </svelte:head>
 
-<main class="md:mx-auto md:mt-10 mt-0">
-	<section class="z-20 m-auto max-w-[842px] gap-6">
-		<h1 class="text-center text-[3.75rem] font-extrabold md:text-[7.5rem] highlight-text tracking-wide md:leading-[6rem] leading-[3rem]">
-			{@html appDescription}
-		</h1>
-		<h2 class="md:text-2xl text-center text-base normal-text tracking-wider md:px-0 px-2 pb-10">
-			{@html $_('app-description')}
-		</h2>
-	</section>
+<main class="max-w-[1440px] mx-auto w-full">
+	<first>
+		<Header />
+		<Top />
+	</first>
+	<second>
+		<Concepts />
+	</second>
+	<third>
+		<Features />
+	</third>
+	<fourth>
+		<Testnet />
+	</fourth>
+	<Footer />
 </main>
 
 <style>
-	section {
+	first {
+		background-image: url(../lib/images/main-dark.png),
+			linear-gradient(to bottom, transparent 20%, rgba(1, 14, 37, 1) 80%),
+			linear-gradient(to bottom, transparent 0%, transparent 70%, rgba(1, 14, 37, 0.103) 100%);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+		background-position-y: 20px;
+		background-position-x: center;
+		background-size: 140%;
+		flex: 1;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.4;
+		width: 100%;
 	}
-	@media screen and (min-width: 768px) {
-		section {
-			justify-content: flex-start;
-			flex: 1;
+
+	@media (min-width: 768px) {
+		first {
+			background-position-x: center;
+			background-position-y: top;
+			background-size: cover;
 		}
 	}
 
-	h1 {
-		width: 100%;
+	fourth {
+		background-image: url(../lib/images/bg-testnet.png);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: 118%;
+		background-size: cover;
+	}
+	main {
+		background-image: url(../lib/images/footer-overlay.png);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: bottom;
+		background-size: 100% 45%;
 	}
 </style>

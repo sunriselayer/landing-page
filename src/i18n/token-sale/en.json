@@ -1,0 +1,329 @@
+{
+	"app-description": "Sunrise is a specialized Data Availability Layer for Proof of Liquidity (PoL).",
+	"about-sunrise": "About Sunrise",
+	"about-1": "We're thrilled to announce our latest public sale of 2025 with Sunrise - The first specialized Data Availability Layer for Proof of Liquidity (PoL).",
+	"about-2": "Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
+	"why-sunrise": "Why <span class='highlight-text'>Sunrise</span> ?",
+	"answer-1": "Sunrise <span style=\"font-weight: 500;\">reduces liquidity fragmentation</span> on L2 rollups, while also simultaneously increasing liquidity for their own token.",
+	"answer-2": "Sunrise is the first specialized DA layer to implement native <span style=\"font-weight: 500;\">DA Fee Abstraction</span>.",
+	"answer-3": "Sunrise has <span style=\"font-weight: 500;\">highly scalable off-chain blob space</span> which enables the creation of new fully on-chain use cases such as Decentralized AI, Gaming, and more.",
+	"answer-4": "Sunrise introduces <span style=\"font-weight: 500;\">Extended Proof of Liquidity</span> which enables Sunrise to participate in a mutually beneficial relationship with Berachain’s liquidity environment by extending Berachain’s PoL to the L2 level",
+	"key-metrics": {
+		"title": "Key Metrics",
+		"metric-1": {
+			"title": "300k+",
+			"label": "Active Users",
+			"description": "Growing Community"
+		},
+		"metric-2": {
+			"title": "5+",
+			"label": "MB/s",
+			"description": "Transaction Speed"
+		},
+		"metric-3": {
+			"title": "65k+",
+			"label": "Partners",
+			"description": "Investors, Global Partners and Validators"
+		}
+	},
+	"fundamentals": {
+		"title": "Fundamentals",
+		"description": "Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
+		"step-1": {
+			"label": "ULTRA SCALABLE",
+			"description": "Off-Chain blob data."
+		},
+		"step-2": {
+			"label": "ULTRA LIQIUDITY",
+			"description": "Proof-of-liquidity."
+		},
+		"step-3": {
+			"label": "ULTRA APPLICATIONS",
+			"description": "Built to support fully onchain AI and Gaming."
+		},
+		"step-4": {
+			"label": "ULTRA FAST",
+			"description": "7 Second confirmation time."
+		},
+		"step-5": {
+			"label": "ULTRA SUSTAINABLE",
+			"description": "Triple revenue model."
+		}
+	},
+	"deeper-level": "A deeper dive...",
+	"level-1": "Proof of Liquidity (PoL)",
+	"level-1-desc": "Sunrise uses the <span style=\"font-weight: 500;\">PoL consensus model</span> to deepen both security and liquidity for L2 rollups. Sunrise’s DEX and cross-chain infrastructure let the rollup tap into a single, high-throughput marketplace for liquidity. The benefits for rollups include reducing liquidity fragmentation and increasing liquidity for the rollup’s native token.",
+	"level-2": "DA Fee Abstraction",
+	"level-2-desc-1": "Sunrise introduces “DA Fee Abstraction,” allowing developers to secure blobspace by providing liquidity rather than paying fees exclusively in a single token. This approach reduces reliance on one asset type, giving projects more economic flexibility and making it easier to manage costs. ",
+	"level-2-desc-2": "By providing assets as liquidity in Sunrise’s pools, liquidity providers align their success with the DA network’s overall health, thus driving a more collaborative ecosystem.",
+	"level-3": "Off-Chain Blob Data",
+	"level-3-desc": "Sunrise is designed for high-throughput data availability, offering enhanced scalability and flexibility for applications even such as gaming. Utilizing decentralized storage solutions such as IPFS and Arweave, data shards are stored externally.",
+	"key-feature": "Key Features",
+	"key-feature-1": "<span style=\"font-weight: 500;\">OFF-CHAIN ERASURE ENCODING:</span> Computational and storage load on validators is minimized by having the blob data erasure-coded off-chain.",
+	"key-feature-2": "<span style=\"font-weight: 500;\">OFF-CHAIN STORAGE INTEGRATION:</span> On-chain block size requirements for blob transactions are reduced and scalability is enhanced by using off chain blobs powered by IPFS and Arweave.",
+	"comparision-title": "Comparison Between On-Chain DA Attestation & Off-Chain DA Attestation",
+	"on-chain-title": "On-Chain DA Attestation",
+	"off-chain-title": "Off-Chain DA Attestation",
+	"chain-da-option-1": "Data Corruption Durability",
+	"chain-da-option-2": "Tx Mempool Scalability",
+	"chain-da-option-3": "Data Retrievability Control",
+	"chain-da-option-4": "Validators Load Mitigation",
+	"chain-da-option-5": "False-Positive DA<br>Attestation Resistance",
+	"example": "Examples",
+	"celestia": "Celestia",
+	"avail": "Avail",
+	"eigenda": "EigenDA",
+	"walrus": "Walrus",
+	"og": "OG",
+	"sunrise": "Sunrise",
+	"level-4": "Revenue Streams",
+	"level-4-desc": "The protocol generates revenue through three channels.",
+	"revenue-1": "Transaction fees",
+	"revenue-2": "Swap fees in the liquidity pool",
+	"revenue-3": "MEV captured with Skip Protocol",
+	"closer-title": "A closer look into the DA space...",
+	"data-availability": "Data Availability Layers Comparison",
+	"closer-table": {
+		"headers": {
+			"daLayer": "DA Layer",
+			"throughput": "Throughput<br>MB/S",
+			"confirmationTime": "Confirmation Time",
+			"verification": "Verification",
+			"networkSecurity": "Network Security"
+		},
+		"row-1": {
+			"daLayer": "Sunrise",
+			"throughput": "5+ MB/s",
+			"confirmationTime": "7 sec + proofs",
+			"verification": "Optimistic with Off-Chain Storage",
+			"networkSecurity": "Proof-of-Liquidity"
+		},
+		"row-2": {
+			"daLayer": "Avail DA",
+			"throughput": "0.1 - 3.2 MB/s",
+			"confirmationTime": "20 sec + proofs",
+			"verification": "KZG Commitments with Validity Proofs",
+			"networkSecurity": "Nominated Proof-of-Stake"
+		},
+		"row-3": {
+			"daLayer": "Celestia",
+			"throughput": "1.33 - 6.67 MB/s",
+			"confirmationTime": "6 sec + 10 min",
+			"verification": "Fraud Proofs in Optimistic System",
+			"networkSecurity": "Delegated Proof-of-Stake"
+		},
+		"row-4": {
+			"daLayer": "EigenDA",
+			"throughput": "15 MB/s",
+			"confirmationTime": "~15 min",
+			"verification": "Committee Structure & KZG Commitments",
+			"networkSecurity": "Decentralize Committee Structure"
+		},
+		"row-5": {
+			"daLayer": "Ethereum EIP-4844",
+			"throughput": "0.067 - 1.067 MB/s",
+			"confirmationTime": "~15 min",
+			"verification": "PeerDAS (Danksharding)<br>& Erasure Coding",
+			"networkSecurity": "Proof-of-Stake<br>(+1 Million Validators)"
+		}
+	},
+	"sales-details": "Sales Details",
+	"sales-details-desc": "We can change from 6-10% by adjusting community allocation 2% distribution.",
+	"sales-details-table": {
+		"columns": {
+			"1": "Option 1",
+			"2": "Option 2"
+		},
+		"headers": {
+			"1": "Fixed Price",
+			"2": "Auction"
+		},
+		"row-1": {
+			"value-1": "Asset",
+			"value-2": "RISE token",
+			"value-3": "RISE token"
+		},
+		"row-2": {
+			"value-1": "Fixed Sale Price",
+			"value-2": "$0.04 per token",
+			"value-3": "$0.04 per token<br>(floor price)"
+		},
+		"row-3": {
+			"value-1": "Sale Period",
+			"value-2": "Jan. 13, 2025 18:00 UTC -<br>Jan. 17, 2025 23:59 UTC",
+			"value-3": "Jan. 20, 2025 18:00 UTC -<br>Jan. 24, 2025 23:59 UTC"
+		},
+		"row-4": {
+			"value-1": "Supply for Sale",
+			"value-2": "2% (20M tokens)",
+			"value-3": "8% (80M tokens)"
+		},
+		"row-5": {
+			"value-1": "Purchase Limits",
+			"value-2": "$100 minimum<br>$1000 maximum",
+			"value-3": "$100 minimum<br>$1000 maximum"
+		},
+		"row-6": {
+			"value-1": "Funding Methods",
+			"value-2": "USDT and USDC",
+			"value-3": "USDT and USDC"
+		},
+		"row-7": {
+			"value-1": "Lock-Up & Release",
+			"value-2": "25% unlocked at launch & unlocks<br>continuously for 3 months",
+			"value-3": "25% unlocked at launch & unlocks<br>continuously for 12 months"
+		},
+		"row-8": {
+			"value-1": "Excluded Participants",
+			"value-2": "Excluded participants include residents<br>of the US, Canada, China, South Korea, and CoinList’s unsupported Jurisdictions",
+			"value-3": "Excluded participants include residents<br>of the US, Canada, China, South Korea, and CoinList’s unsupported Jurisdictions"
+		},
+		"row-9": {
+			"value-1": "Sale FAQ",
+			"value-2": "FAQ",
+			"value-3": "FAQ"
+		}
+	},
+	"note-locked": "Note: locked tokens may be staked.<br>RISE tokens received from staking are unlocked",
+	"learn-more": "Learn More About Sunrise",
+	"tokenomics": "What is RISE?",
+	"dual-token-system": "Dual Token System",
+	"dual-token-system-1": "$vRISE: Non-Transferable token for staking and governance",
+	"dual-token-system-1-desc": "Used for calculating voting power in governance",
+	"dual-token-system-2": "$RISE: Transferable token with fee",
+	"dual-token-system-2-desc-1": "Native token of Sunrise network",
+	"dual-token-system-2-desc-2": "Used for transaction fees",
+	"token-description": "$RISE token is the native token of Sunrise Network",
+	"ticker": "ticker",
+	"inital-token-supply-label": "initial token supply",
+	"inital-token-supply-value": "92.25M RISE",
+	"token-usecase": "Usecases",
+	"token-usecase-1": "Gas Fee",
+	"token-usecase-1-desc-1": "$RISE token can be used for fees. A portion of transaction fees in $RISE tokens is burned, reducing the circulating supply and adding deflationary pressure to the token. This portion is determined by a percentage of the total gas cost. The burn mechanism aligns with Sunrise Layer's sustainable design and ensures efficient fee management.",
+	"token-usecase-1-desc-2": "The $vRISE token is a non-transferable token for staking. The staked amount will be calculated as a voting power for the governance.",
+	"token-usecase-2": "Staking",
+	"token-usecase-2-desc": "$vRISE can be staked to the Sunrise network. The staked amount will be calculated as a voting power for the governance. Furthermore, the rewards for stakers will be distributed in proportion to the staked amount.",
+	"token-usecase-3": "Gauge Voting",
+	"token-usecase-3-desc": "A Gauge means our product that issues vRISE. The Gauge’s first product in Sunrise is the Liquidity Pool. vRISE holders use vRISE to vote and determine how much vRISE to allocate to which gauge. More vRISE newly issued will be allocated to the liquidity pool linked to the gauge that has collected more vRISE voting power.",
+	"timeline": {
+		"title": "Launch Timeline",
+		"step-1": {
+			"label": "RISE Token Sales Begin",
+			"time": "january 20<br>17:00 UTc"
+		},
+		"step-2": {
+			"label": "RISE Token Sales End",
+			"time": "january 31<br>17:00 UTc"
+		},
+		"step-3": {
+			"label": "RISE Token Distribution",
+			"time": "february"
+		}
+	},
+	"schedule-title": "Tokenomics",
+	"schedule-table": {
+		"headers": {
+			"1": "Segment",
+			"2": "Total Supply in %",
+			"3": "Release Schedule"
+		},
+		"row-1": {
+			"1": "Public Sale",
+			"2": "10%",
+			"3": "See sale structure above"
+		},
+		"row-2": {
+			"1": "Early Backers",
+			"2": "25%",
+			"3": "5% unlocked at launch<br>95% fully locked for 3 months,<br>then unlocks continuously for 12 months"
+		},
+		"row-3": {
+			"1": "Initial Core<br>Contributors",
+			"2": "20%",
+			"3": "Fully locked for 3 months,<br>unlocks continuously for 24 months"
+		},
+		"row-4": {
+			"1": "Ecosystem",
+			"2": "20%",
+			"3": "25% unlocked at launch<br>75% unlocks continuously for 18 months"
+		},
+		"row-5": {
+			"1": "Community<br>Allocation 2",
+			"2": "10%",
+			"3": "Fully locked for 6 months,<br>unlocks continuously for 24 months"
+		},
+		"row-6": {
+			"1": "Community<br>Allocation 1",
+			"2": "10%",
+			"3": "10% unlocked at launch<br>90% fully locked for 9 months"
+		},
+		"row-7": {
+			"1": "Community<br>Contributors & Grants",
+			"2": "5%",
+			"3": "Fully locked for 3 months,<br>unlocks continuously for 24 months"
+		}
+	},
+	"token-distribution-schedule": "Token Distribution Schedule",
+	"token-emission-schedule": "Token Emission Schedule",
+	"roadmap-title": "Sunrise Roadmap",
+	"jan": "Jan",
+	"feb": "Feb",
+	"mar": "Mar",
+	"apr": "Apr",
+	"may": "May",
+	"jun": "Jun",
+	"jul": "Jul",
+	"aug": "Aug",
+	"sep": "Sep",
+	"oct": "Oct",
+	"nov": "Nov",
+	"dec": "Dec",
+	"step1": {
+		"title": "Q1 2024",
+		"desc": "Launch private testnet of Sunrise"
+	},
+	"step2": {
+		"title": "Q2 2024",
+		"desc": "Launch public testnet of Sunrise"
+	},
+	"step3": {
+		"title": "Q3 2024",
+		"desc": "Development of Sunrise v2"
+	},
+	"step4": {
+		"title": "Q4 2024",
+		"desc": "Launch public testnet v2 of Sunrise"
+	},
+	"step5": {
+		"title": "Q1 2025",
+		"desc-1": "Listing token in CEX & DEX",
+		"desc-2": "Launch Mainnet of Sunrise"
+	},
+	"step6": {
+		"title": "Q2 2025",
+		"desc-1": "Integrate Sovereign SDK",
+		"desc-2": "Integrate Based Rollup"
+	},
+	"ecosystem-title": "Our Ecosystem",
+	"community": "Join Our Community",
+	"twitter": {
+		"title": "80k+",
+		"label": "X/Twitter Followers",
+		"btn": "Join twitter"
+	},
+	"discord": {
+		"title": "31k+",
+		"label": "Discord Members",
+		"btn": "Join Discord"
+	},
+	"join-sunrise": "Ready to Join Sunrise?",
+	"join-sunrise-desc": "Be part of the next generation of blockchain infratructure",
+	"join-sunrise-button": "participate in token launch",
+	"glosarry": "Glossary",
+	"glosarry-1": "<span style=\"font-weight: 500;\">DA Layer:</span> A Data Availability (DA) layer ensures all transaction data is accessible and verifiable, so chains or rollups can focus on execution without storing everything on-chain. Think of it as the storage backbone that guarantees data can be checked by anyone.",
+	"glosarry-2": "<span style=\"font-weight: 500;\">Blob / Blobspace:</span> “Blobs” are large chunks of data handled separately from typical on-chain transactions to reduce congestion. “Blobspace” is the dedicated capacity for these data chunks, allowing for bigger, more flexible data storage.",
+	"glosarry-3": "<span style=\"font-weight: 500;\">Liquidity Fragmentation:</span> When crypto assets are split across multiple platforms, access to large, unified liquidity pools becomes difficult, increasing trading costs and complexity.",
+	"glosarry-4": "<span style=\"font-weight: 500;\">Proof of Liquidity (PoL):</span> Proof of Liquidity (PoL) is a novel consensus mechanism that strengthens a chain’s security by requiring participants to provide on-chain liquidity.",
+	"glosarry-5": "<span style=\"font-weight: 500;\">Fee Abstraction:</span> The ability to pay for network services (like storing data) with multiple kinds of assets, rather than one specific token. It simplifies costs by letting participants contribute liquidity in whatever form suits them best.",
+	"glosarry-6": "<span style=\"font-weight: 500;\">Rollup/L2:</span> A second-layer protocol built on top of a main blockchain to handle more transactions at lower costs. Rollups batch or execute transactions off the main chain while still relying on it for security or final settlement. Optimism and Arbitrum are well known examples."
+}
