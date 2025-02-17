@@ -24,7 +24,7 @@
 				text={$_('header-footer.devs')}
 			/>
 			<div class="flex flex-col gap-[0.625rem]">
-				<button class="text-left" on:click={openDoc}>
+				<button class="text-center" on:click={openDoc}>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
 						text={$_('header-footer.docs')}
