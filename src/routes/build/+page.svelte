@@ -41,7 +41,7 @@
 	<Header active={page} />
 	<div class="flex flex-col md:gap-10">
 		<section
-			class="z-20 flex flex-row md:pl-[9.375rem] md:max-h-[660px] md:py-[7.5rem] p-6 md:gap-[5.25rem] gap-6 pr-0 overflow-clip"
+			class="z-20 flex flex-row md:pl-[9.375rem] md:max-h-[660px] md:pt-[7.5rem] p-6 md:gap-[5.25rem] gap-6 pr-0 overflow-clip"
 		>
 			<div class="flex flex-col">
 				<h1
@@ -69,7 +69,7 @@
 				<img class="md:block hidden" src={hero} alt="" />
 			</div>
 		</section>
-		<section class="z-20 flex flex-col md:px-[9.375rem] md:py-20 p-6 md:gap-12 gap-6">
+		<section class="z-20 flex flex-col md:px-[9.375rem] md:pt-20 p-6 md:gap-12 gap-6">
 			<h1 class="font-semibold text-white md:text-[3rem] md:leading-[3.75rem]">
 				{@html $_('learn-title')}
 			</h1>

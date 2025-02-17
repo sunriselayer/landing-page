@@ -26,7 +26,7 @@
 	>
 		<div class="flex flex-col lg:max-w-[46.625rem] max-w-[100%] text-center gap-[0.75rem]">
 			<h1
-				class="text-center text-[1rem] leading-5 font-extrabold md:text-[3rem] md:leading-[3.725rem] tracking-wide"
+				class="text-center text-[1rem] leading-5 font-medium md:text-[3rem] md:leading-[3.725rem] tracking-wide"
 			>
 				{@html $_('sunrise-question')}
 			</h1>
