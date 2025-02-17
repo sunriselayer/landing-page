@@ -102,7 +102,7 @@
 <main class="xl:w-[1128px] w-full md:py-[7.5rem] md:mx-auto mx-0 md:p-0 px-5 py-12 relative">
 	<section class="w-full relative">
 		<h2
-			class="flex gap-[0.625rem] items-center normal-text font-bold md:text-[3.125rem] text-[2rem] text-start tracking-wider leading-none md:pb-[4.375rem] pb-10"
+			class="flex gap-[0.625rem] items-center normal-text font-medium md:text-[3.125rem] text-[2rem] text-start tracking-wider leading-none md:pb-[4.375rem] pb-10"
 		>
 			{@html $_('roadmap-title')}
 		</h2>
@@ -112,7 +112,7 @@
 			{#each topSteps as step}
 				<div id={step.id} class="roadmap-steps bottom-3 px-[0.2675rem]">
 					<p
-						class="highlight-text font-bold tracking-wider md:text-[1.25rem] text-[9.45px] md:leading-5"
+						class="highlight-text font-semibold tracking-wider md:text-[1.25rem] text-[9.45px] md:leading-5"
 					>
 						{$_(step.title)}
 					</p>
@@ -133,14 +133,18 @@
 		<div
 			class="flex border border-[#FFC851] bg-[#FFF4D5] justify-between items-center md:px-5 px-[6px] py-[5.24px] md:py-4"
 		>
-			<p class="highlight-text md:text-[1.5rem] text-[7.28px] font-bold tracking-wider">{start}</p>
+			<p class="highlight-text md:text-[1.5rem] text-[7.28px] font-medium tracking-wider">
+				{start}
+			</p>
 			{#each months as m}
 				<span
 					id={`${m}_${start}`}
 					class="md:text-sm normal-text text-[4.66px] uppercase font-medium">{$_(m)}</span
 				>
 			{/each}
-			<p class="highlight-text md:text-[1.5rem] text-[7.28px] font-bold tracking-wider">{end}</p>
+			<p class="highlight-text md:text-[1.5rem] text-[7.28px] font-medium tracking-wider">
+				{end}
+			</p>
 			{#each months.slice(0, 6) as m}
 				<span id={`${m}_${end}`} class="md:text-sm normal-text text-[4.66px] uppercase font-medium"
 					>{$_(m)}</span
@@ -162,7 +166,7 @@
 						</p>
 					{/if}
 					<p
-						class="highlight-text font-bold tracking-wider md:text-[1.25rem] text-[9.45px] md:leading-5"
+						class="highlight-text font-semibold tracking-wider md:text-[1.25rem] text-[9.45px] md:leading-5"
 					>
 						{$_(step.title)}
 					</p>

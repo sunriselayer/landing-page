@@ -3,10 +3,10 @@
 	import { check, disable, glassHaru, glassHaruSP } from '../../../consts/images';
 </script>
 
-<main class="xl:w-[1030px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-12">
+<main class="xl:w-[1030px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-24">
 	<section class="">
 		<h2
-			class="flex gap-3 items-center normal-text font-bold md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] mb-6 tracking-wider leading-none"
+			class="flex gap-3 items-center normal-text font-medium md:text-[2.5rem] text-[2rem] text-start md:mb-[3.125rem] mb-6 tracking-wider leading-none"
 		>
 			<img class="hidden md:block" src={glassHaru} alt="" />
 			<img class="block md:hidden" src={glassHaruSP} alt="" />
@@ -15,7 +15,7 @@
 		<div class="flex flex-col md:gap-[3.125rem] gap-6 md:mt-[1.875rem]">
 			<div class="">
 				<h4
-					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-bold rounded-box-custom px-[25px] py-[17px] w-max"
+					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-medium rounded-box-custom px-[25px] py-[17px] w-max"
 				>
 					<b class="highlight-text mr-3 font-eudoxus">1</b>
 					{@html $_('level-1')}
@@ -32,7 +32,7 @@
 			</div>
 			<div class="">
 				<h4
-					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-bold rounded-box-custom px-[25px] py-[17px] w-max"
+					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-medium rounded-box-custom px-[25px] py-[17px] w-max"
 				>
 					<b class="highlight-text mr-3 font-eudoxus">2</b>
 					{@html $_('level-2')}
@@ -49,7 +49,7 @@
 			</div>
 			<div class="">
 				<h4
-					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-bold rounded-box-custom px-[25px] py-[17px] w-max"
+					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-medium rounded-box-custom px-[25px] py-[17px] w-max"
 				>
 					<b class="highlight-text mr-3 font-eudoxus">3</b>
 					{@html $_('level-3')}
@@ -62,7 +62,7 @@
 						<div
 							class="flex flex-col gap-[1.25rem] md:py-10 md:px-[3.125rem] p-6 rounded-box-custom"
 						>
-							<h3 class="normal-text font-bold md:text-[1.625rem] text-lg leading-none">
+							<h3 class="normal-text font-medium md:text-[1.625rem] text-lg leading-none">
 								{@html $_('key-feature')}
 							</h3>
 							<div class="flex flex-col gap-5">
@@ -70,7 +70,7 @@
 									<h4
 										class="normal-text flex gap-[0.625rem] md:gap-3 flex-row items-start md:text-[1.25rem] text-sm md:leading-[1.515rem] leading-5"
 									>
-										<b class="highlight-text font-semibold">{i}</b>
+										<b class="highlight-text font-eudoxus">{i}</b>
 										<p>
 											{@html $_(`key-feature-${i}`)}
 										</p>
@@ -80,7 +80,7 @@
 						</div>
 						<div class="h-auto overflow-clip md:mt-[3.125rem] mb-[1.875rem] mt-6 relative">
 							<h4
-								class="normal-text rounded-[50px] border-[1px] border-[#183973] font-eudoxus uppercase md:text-lg text-xs md:px-7 md:py-5 p-3 md:leading-3 leading-[1.125rem] md:mx-[43px] mx-12 z-20 bg-white relative font-extrabold text-center tracking-normal"
+								class="normal-text rounded-[50px] border-[1px] border-[#183973] font-eudoxus uppercase md:text-lg text-xs md:px-7 md:py-5 p-3 md:leading-[1.2em] leading-[1.1em] md:mx-[43px] mx-12 z-20 bg-white relative font-extrabold text-center tracking-normal"
 							>
 								{@html $_('comparision-title')}
 							</h4>
@@ -91,11 +91,11 @@
 						<div class="flex md:flex-row flex-col md:justify-between px-1 gap-6 md:gap-[2.5rem]">
 							<div class="md:w-[calc(50%-1.25rem)] rounded-box-custom overflow-clip">
 								<p
-									class="text-white font-bold leading-3 text-lg md:text-2xl p-6 text-center bg-gradient-to-r from-[#FF9601] to-[#FFC401]"
+									class="text-white font-medium leading-3 text-lg md:text-2xl p-6 text-center bg-gradient-to-r from-[#FF9601] to-[#FFC401]"
 								>
 									{@html $_('on-chain-title')}
 								</p>
-								<div class="mx-[3.125rem] my-6">
+								<div class="mx-[3.125rem] my-6 font-plus-jakarta-sans">
 									<div class="my-5 flex flex-col gap-5 w-max mx-auto">
 										{#each [1, 2, 3, 4, 5] as i}
 											<p class="flex flex-row gap-3 normal-text items-start">
@@ -117,7 +117,7 @@
 										<b class="text-[#FF7B04] uppercase text-sm">
 											{@html $_('example')}:
 										</b>
-										<div class="flex flex-row items-center normal-text text-sm md:text-base pt-4 pb-5">
+										<div class="flex flex-row items-center normal-text text-sm md:text-base pb-5">
 											{@html $_('celestia')}
 											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
 											{@html $_('avail')}
@@ -129,11 +129,11 @@
 							</div>
 							<div class="md:w-[calc(50%-1.25rem)] rounded-box-custom overflow-clip">
 								<p
-									class="text-white font-bold leading-3 text-lg md:text-2xl p-6 text-center bg-gradient-to-r from-[#FF7B04] to-[#FF9F04]"
+									class="text-white font-medium leading-3 text-lg md:text-2xl p-6 text-center bg-gradient-to-r from-[#FF7B04] to-[#FF9F04]"
 								>
 									{@html $_('off-chain-title')}
 								</p>
-								<div class="mx-[3.125rem] my-6">
+								<div class="mx-[3.125rem] my-6 font-plus-jakarta-sans">
 									<div class="my-5 flex flex-col gap-5 w-max mx-auto">
 										{#each [1, 2, 3, 4, 5] as i}
 											<p class="flex flex-row gap-3 normal-text items-start">
@@ -146,7 +146,7 @@
 										<b class="text-[#FF7B04] uppercase text-sm">
 											{@html $_('example')}:
 										</b>
-										<div class="flex flex-row items-center normal-text text-sm md:text-base pt-4 pb-5">
+										<div class="flex flex-row items-center normal-text text-sm md:text-base pb-5">
 											{@html $_('sunrise')}
 											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
 											{@html $_('walrus')}
@@ -162,12 +162,12 @@
 			</div>
 			<div class="">
 				<h4
-					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-bold rounded-box-custom px-[25px] py-[17px] w-max"
+					class="normal-text md:text-[1.5rem] text-[1.125rem] leading-[0.75rem] md:leading-4 font-medium rounded-box-custom px-[25px] py-[17px] w-max"
 				>
 					<b class="highlight-text mr-3 font-eudoxus">4</b>
 					{@html $_('level-4')}
 				</h4>
-				<div class="md:pl-6  pl-10 flex flex-col md:gap-[1.875rem] gap-4 mt-[1.875rem]">
+				<div class="md:pl-6 pl-10 flex flex-col md:gap-[1.875rem] gap-4 mt-[1.875rem]">
 					<p
 						class="normal-text items-start md:text-[1.25rem] md:leading-[1.58rem] leading-5 text-sm"
 					>

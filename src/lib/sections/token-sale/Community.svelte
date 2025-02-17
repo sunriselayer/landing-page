@@ -7,7 +7,7 @@
 	<section class="flex flex-col gap-10 md:py-[7.5rem] md:px-0 md:w-[600px] mx-auto px-5 py-12">
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<h2
-				class="font-bold text-[#183973] md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none pt-6 md:pb-[0.625rem]"
+				class="font-medium text-[#183973] md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none pt-6 md:pb-[0.625rem]"
 			>
 				{@html $_('community')}
 			</h2>
@@ -49,7 +49,7 @@
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<img class="h-full" src={images.full_logo} alt="sunrise" />
 			<h2
-				class="normal-text font-bold md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none py-6"
+				class="normal-text font-medium md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none py-6"
 			>
 				{@html $_('join-sunrise')}
 			</h2>
@@ -68,7 +68,7 @@
 		class="z-20 mx-auto gap-6 md:py-[7.5rem] md:px-0 text-base-100 lg:w-[852px] w-[calc(100vw-2.5rem)] px-5 py-12"
 	>
 		<h2
-			class="normal-text font-bold md:text-[1.25rem] text-[2rem] md:leading-none leading-[1.3125rem] pb-6"
+			class="normal-text font-medium md:text-[1.25rem] text-[2rem] md:leading-none leading-[1.3125rem] pb-6"
 		>
 			{@html $_('glosarry')}
 		</h2>

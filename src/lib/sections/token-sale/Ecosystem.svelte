@@ -18,13 +18,13 @@
 	<section class="xl:w-[1104px] w-full md:mx-auto">
 		<div class="flex justify-center content-center mx-auto">
 			<div class="flex gap-3 items-center">
-				<img class="md:w-full h-full w-[45px]" src={logo} alt="logo" />
-				<img class="md:w-full h-full w-[106px]" src={sunrise} alt="sunrise" />
+				<img class="w-[45px]" src={logo} alt="logo" />
+				<img class="w-[95px]" src={sunrise} alt="sunrise" />
 			</div>
 		</div>
 		<div class="flex flex-col">
 			<h2
-				class="flex gap-[0.625rem] items-center normal-text font-bold md:text-[3.125rem] text-[2rem] justify-center tracking-wider leading-none pt-6 md:pb-[3.125rem] pb-10"
+				class="flex gap-[0.625rem] items-center normal-text font-medium md:text-[3.125rem] text-[2rem] justify-center tracking-wider leading-none pt-6 md:pb-[3.125rem] pb-10"
 			>
 				{@html $_('ecosystem-title')}
 			</h2>

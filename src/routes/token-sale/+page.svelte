@@ -12,7 +12,7 @@
 <main class="md:mx-auto md:mt-10 mt-0">
 	<section class="z-20 m-auto max-w-[842px] gap-6">
 		<h1
-			class="text-center text-[3.75rem] font-extrabold md:text-[7.5rem] highlight-text tracking-wide md:leading-[6rem] leading-[3rem]"
+			class="text-center text-[3.75rem] font-medium md:text-[7.5rem] highlight-text tracking-wide md:leading-[6rem] leading-[3rem]"
 		>
 			{@html appTitle}
 		</h1>

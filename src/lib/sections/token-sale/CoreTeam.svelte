@@ -32,7 +32,7 @@
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<img class="h-full" src={images.full_logo} alt="sunrise" />
 			<h2
-				class="normal-text font-bold md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none pt-6 md:pb-[0.625rem]"
+				class="normal-text font-medium md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none pt-6 md:pb-[0.625rem]"
 			>
 				{@html $_('coreteam-title')}
 			</h2>

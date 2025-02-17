@@ -8,7 +8,8 @@ export default {
 				overpass: ['Overpass', 'sans-serif'],
 				clash: ['Clash Grotesk', 'sans-serif'],
 				eudoxus: ['Eudoxus Sans', 'sans-serif'],
-				'ibm-plex-sans': ['IBM Plex Sans', 'sans-serif']
+				'ibm-plex-sans': ['IBM Plex Sans', 'sans-serif'],
+				'plus-jakarta-sans': ['Plus Jakarta Sans', 'sans-serif']
 			},
 			colors: {
 				textPrimary: '#181818'

@@ -21,9 +21,15 @@
 }
 
 @layer base {
-  @font-face {
-	font-family: 'Clash Grotesk';
-	src: local('Clash Grotesk'), url('/fonts/ClashGrotesk-Variable.ttf');
-	font-display: swap;
-  }
+	@font-face {
+		font-family: 'Clash Grotesk';
+		src: local('Clash Grotesk'), url('/fonts/ClashGrotesk-Variable.ttf');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Eudoxus Sans';
+		src: local('Eudoxus Sans'), url('/fonts/EudoxusSans-Bold.ttf');
+		font-display: swap;
+	}
 }

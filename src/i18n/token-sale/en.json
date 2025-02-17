@@ -4,23 +4,23 @@
 	"about-1": "We're thrilled to announce our latest public sale of 2025 with Sunrise - The first specialized Data Availability Layer for Proof of Liquidity (PoL).",
 	"about-2": "Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
 	"why-sunrise": "Why <span class='highlight-text'>Sunrise</span> ?",
-	"answer-1": "Sunrise <b>reduces liquidity fragmentation</b> on L2 rollups, while also simultaneously increasing liquidity for their own token.",
-	"answer-2": "Sunrise is the first specialized DA layer to implement native <b>DA Fee Abstraction</b>.",
-	"answer-3": "Sunrise has <b>highly scalable off-chain blob space</b> which enables the creation of new fully on-chain use cases such as Decentralized AI, Gaming, and more.",
-	"answer-4": "Sunrise introduces <b>Extended Proof of Liquidity</b> which enables Sunrise to participate in a mutually beneficial relationship with Berachain’s liquidity environment by extending Berachain’s PoL to the L2 level",
-	"key-matrics": {
+	"answer-1": "Sunrise <span style=\"font-weight: 500;\">reduces liquidity fragmentation</span> on L2 rollups, while also simultaneously increasing liquidity for their own token.",
+	"answer-2": "Sunrise is the first specialized DA layer to implement native <span style=\"font-weight: 500;\">DA Fee Abstraction</span>.",
+	"answer-3": "Sunrise has <span style=\"font-weight: 500;\">highly scalable off-chain blob space</span> which enables the creation of new fully on-chain use cases such as Decentralized AI, Gaming, and more.",
+	"answer-4": "Sunrise introduces <span style=\"font-weight: 500;\">Extended Proof of Liquidity</span> which enables Sunrise to participate in a mutually beneficial relationship with Berachain’s liquidity environment by extending Berachain’s PoL to the L2 level",
+	"key-metrics": {
 		"title": "Key Metrics",
-		"matric-1": {
+		"metric-1": {
 			"title": "300k+",
 			"label": "Active Users",
 			"description": "Growing Community"
 		},
-		"matric-2": {
+		"metric-2": {
 			"title": "5+",
 			"label": "MB/s",
 			"description": "Transaction Speed"
 		},
-		"matric-3": {
+		"metric-3": {
 			"title": "65k+",
 			"label": "Partners",
 			"description": "Investors, Global Partners and Validators"
@@ -28,35 +28,39 @@
 	},
 	"fundamentals": {
 		"title": "Fundamentals",
-		"description":"Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
+		"description": "Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
 		"step-1": {
-			"label": "Ultra Scalable",
+			"label": "ULTRA SCALABLE",
 			"description": "Off-Chain blob data."
 		},
 		"step-2": {
-			"label": "Ultra  Liquidity",
+			"label": "ULTRA LIQIUDITY",
 			"description": "Proof-of-liquidity."
 		},
 		"step-3": {
-			"label": "Ultra fast",
-			"description": "7 Second confirmation time."
+			"label": "ULTRA APPLICATIONS",
+			"description": "Built to support fully onchain AI and Gaming."
 		},
 		"step-4": {
-			"label": "Ultra Sustainable",
+			"label": "ULTRA FAST",
+			"description": "7 Second confirmation time."
+		},
+		"step-5": {
+			"label": "ULTRA SUSTAINABLE",
 			"description": "Triple revenue model."
 		}
 	},
 	"deeper-level": "A deeper dive...",
 	"level-1": "Proof of Liquidity (PoL)",
-	"level-1-desc": "Sunrise uses the <b>PoL consensus model</b> to deepen both security and liquidity for L2 rollups. Sunrise’s DEX and cross-chain infrastructure let the rollup tap into a single, high-throughput marketplace for liquidity. The benefits for rollups include reducing liquidity fragmentation and increasing liquidity for the rollup’s native token.",
+	"level-1-desc": "Sunrise uses the <span style=\"font-weight: 500;\">PoL consensus model</span> to deepen both security and liquidity for L2 rollups. Sunrise’s DEX and cross-chain infrastructure let the rollup tap into a single, high-throughput marketplace for liquidity. The benefits for rollups include reducing liquidity fragmentation and increasing liquidity for the rollup’s native token.",
 	"level-2": "DA Fee Abstraction",
 	"level-2-desc-1": "Sunrise introduces “DA Fee Abstraction,” allowing developers to secure blobspace by providing liquidity rather than paying fees exclusively in a single token. This approach reduces reliance on one asset type, giving projects more economic flexibility and making it easier to manage costs. ",
 	"level-2-desc-2": "By providing assets as liquidity in Sunrise’s pools, liquidity providers align their success with the DA network’s overall health, thus driving a more collaborative ecosystem.",
 	"level-3": "Off-Chain Blob Data",
 	"level-3-desc": "Sunrise is designed for high-throughput data availability, offering enhanced scalability and flexibility for applications even such as gaming. Utilizing decentralized storage solutions such as IPFS and Arweave, data shards are stored externally.",
 	"key-feature": "Key Features",
-	"key-feature-1": "<b>OFF-CHAIN ERASURE ENCODING:</b> Computational and storage load on validators is minimized by having the blob data erasure-coded off-chain.",
-	"key-feature-2": "<b>OFF-CHAIN STORAGE INTEGRATION:</b> On-chain block size requirements for blob transactions are reduced and scalability is enhanced by using off chain blobs powered by IPFS and Arweave.",
+	"key-feature-1": "<span style=\"font-weight: 500;\">OFF-CHAIN ERASURE ENCODING:</span> Computational and storage load on validators is minimized by having the blob data erasure-coded off-chain.",
+	"key-feature-2": "<span style=\"font-weight: 500;\">OFF-CHAIN STORAGE INTEGRATION:</span> On-chain block size requirements for blob transactions are reduced and scalability is enhanced by using off chain blobs powered by IPFS and Arweave.",
 	"comparision-title": "Comparison Between On-Chain DA Attestation & Off-Chain DA Attestation",
 	"on-chain-title": "On-Chain DA Attestation",
 	"off-chain-title": "Off-Chain DA Attestation",
@@ -300,7 +304,7 @@
 		"desc-1": "Integrate Sovereign SDK",
 		"desc-2": "Integrate Based Rollup"
 	},
-	"ecosystem-title": "Sunrise Ecosystem",
+	"ecosystem-title": "Our Ecosystem",
 	"community": "Join Our Community",
 	"twitter": {
 		"title": "80k+",
@@ -316,10 +320,10 @@
 	"join-sunrise-desc": "Be part of the next generation of blockchain infratructure",
 	"join-sunrise-button": "participate in token launch",
 	"glosarry": "Glossary",
-	"glosarry-1": "<b>DA Layer:</b> A Data Availability (DA) layer ensures all transaction data is accessible and verifiable, so chains or rollups can focus on execution without storing everything on-chain. Think of it as the storage backbone that guarantees data can be checked by anyone.",
-	"glosarry-2": "<b>Blob / Blobspace:</b> “Blobs” are large chunks of data handled separately from typical on-chain transactions to reduce congestion. “Blobspace” is the dedicated capacity for these data chunks, allowing for bigger, more flexible data storage.",
-	"glosarry-3": "<b>Liquidity Fragmentation:</b> When crypto assets are split across multiple platforms, access to large, unified liquidity pools becomes difficult, increasing trading costs and complexity.",
-	"glosarry-4": "<b>Proof of Liquidity (PoL):</b> Proof of Liquidity (PoL) is a novel consensus mechanism that strengthens a chain’s security by requiring participants to provide on-chain liquidity.",
-	"glosarry-5": "<b>Fee Abstraction:</b> The ability to pay for network services (like storing data) with multiple kinds of assets, rather than one specific token. It simplifies costs by letting participants contribute liquidity in whatever form suits them best.",
-	"glosarry-6": "<b>Rollup/L2:</b> A second-layer protocol built on top of a main blockchain to handle more transactions at lower costs. Rollups batch or execute transactions off the main chain while still relying on it for security or final settlement. Optimism and Arbitrum are well known examples."
+	"glosarry-1": "<span style=\"font-weight: 500;\">DA Layer:</span> A Data Availability (DA) layer ensures all transaction data is accessible and verifiable, so chains or rollups can focus on execution without storing everything on-chain. Think of it as the storage backbone that guarantees data can be checked by anyone.",
+	"glosarry-2": "<span style=\"font-weight: 500;\">Blob / Blobspace:</span> “Blobs” are large chunks of data handled separately from typical on-chain transactions to reduce congestion. “Blobspace” is the dedicated capacity for these data chunks, allowing for bigger, more flexible data storage.",
+	"glosarry-3": "<span style=\"font-weight: 500;\">Liquidity Fragmentation:</span> When crypto assets are split across multiple platforms, access to large, unified liquidity pools becomes difficult, increasing trading costs and complexity.",
+	"glosarry-4": "<span style=\"font-weight: 500;\">Proof of Liquidity (PoL):</span> Proof of Liquidity (PoL) is a novel consensus mechanism that strengthens a chain’s security by requiring participants to provide on-chain liquidity.",
+	"glosarry-5": "<span style=\"font-weight: 500;\">Fee Abstraction:</span> The ability to pay for network services (like storing data) with multiple kinds of assets, rather than one specific token. It simplifies costs by letting participants contribute liquidity in whatever form suits them best.",
+	"glosarry-6": "<span style=\"font-weight: 500;\">Rollup/L2:</span> A second-layer protocol built on top of a main blockchain to handle more transactions at lower costs. Rollups batch or execute transactions off the main chain while still relying on it for security or final settlement. Optimism and Arbitrum are well known examples."
 }
