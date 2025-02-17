@@ -68,7 +68,7 @@
 								class="flex flex-row items-center justify-between md:p-10 p-3 ease-in-out md:gap-[1.125rem] {activeConcept ===
 									0 || 'pr-0'} {activeConcept === 0 ||
 									activeConcept === 3 ||
-									'md:pb-0'} md:w-[47.5rem] md:min-w-[47.5rem] w-full max-w-[150vw] flex-1 md:[h-450px] md:min-h-[450px] h-[85vw] min-h-[85vw]"
+									'md:pb-0'} md:w-[47.5rem] md:min-w-[47.5rem] w-full max-w-[150vw] flex-1 md:min-h-[450px] min-h-[20rem] md:[h-450px]"
 							>
 								<p class="font-sans text-xs sm:text-sm md:text-[1rem] leading-5">
 									{@html $_(description)}
