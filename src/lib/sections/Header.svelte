@@ -60,8 +60,10 @@
 				{#each menus as menu}
 					<li>
 						<button
-							class={active === menu.key ? 'highlight-text' : ''}
-							on:click={() => openLink(menu.link)}
+							class={active === menu.key
+								? 'highlight-text'
+								: 'hover:text-[#FDA60B] transition-all duration-300'}
+							onclick={() => openLink(menu.link)}
 						>
 							{@html $_(menu.label)}
 						</button>
@@ -83,8 +85,10 @@
 				{#each menus as menu}
 					<li>
 						<button
-							class={active === menu.key ? 'active' : ''}
-							on:click={() => openLink(menu.link)}
+							class={active === menu.key
+								? 'active'
+								: 'hover:text-[#FDA60B] transition-all duration-300'}
+							onclick={() => openLink(menu.link)}
 						>
 							{@html $_(menu.label)}
 						</button>
