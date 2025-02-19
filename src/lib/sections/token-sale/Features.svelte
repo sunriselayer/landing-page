@@ -37,10 +37,12 @@
 					<b class="highlight-text mr-3 font-eudoxus">2</b>
 					{@html $_('level-2')}
 				</h4>
-				<div class="list-disc md:pl-12 pl-10 flex flex-col md:gap-[1.875rem] gap-4 mt-[1.875rem]">
+				<div
+					class="list-disc md:pl-[1.5625rem] pl-10 flex flex-col md:gap-[1.875rem] gap-4 mt-[1.875rem]"
+				>
 					{#each [1, 2] as i}
 						<p
-							class="normal-text items-start md:text-[1.25rem] md:leading-[1.58rem] leading-5 text-sm list-item"
+							class="normal-text items-start md:text-[1.25rem] md:leading-[1.58rem] leading-5 text-sm"
 						>
 							{@html $_(`level-2-desc-${i}`)}
 						</p>
