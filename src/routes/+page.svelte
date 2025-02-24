@@ -3,12 +3,12 @@
 
 	import { appTitle } from '../consts';
 
-	import Header from '$lib/sections/Header.svelte';
-	import Footer from '$lib/sections/Footer.svelte';
-	import Concepts from '$lib/sections/Concepts.svelte';
-	import Features from '$lib/sections/Features.svelte';
-	import Testnet from '$lib/sections/Testnet.svelte';
-	import Top from '$lib/sections/Top.svelte';
+	import Header from '$lib/sections/header.svelte';
+	import Footer from '$lib/sections/footer.svelte';
+	import Concepts from '$lib/sections/concepts.svelte';
+	import Features from '$lib/sections/features.svelte';
+	import Testnet from '$lib/sections/testnet.svelte';
+	import Top from '$lib/sections/top.svelte';
 </script>
 
 <svelte:head>

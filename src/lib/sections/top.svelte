@@ -2,7 +2,7 @@
 	import { _ } from 'svelte-i18n';
 
 	import { appDescription, buildLink, testNetLink } from '../../consts';
-	import LinkButton from '$lib/components/LinkButton.svelte';
+	import LinkButton from '$lib/components/link-button.svelte';
 </script>
 
 <section class="z-20 mx-auto md:pt-[6.25rem] md:pb-[25rem] text-base-100 p-6 pb-20 md:px-0">

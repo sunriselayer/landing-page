@@ -2,10 +2,10 @@
 	import { _, addMessages } from 'svelte-i18n';
 	import en from '../../i18n/build/en.json';
 	import jp from '../../i18n/build/jp.json';
-	import Footer from '$lib/sections/Footer.svelte';
-	import Header from '$lib/sections/Header.svelte';
+	import Footer from '$lib/sections/footer.svelte';
+	import Header from '$lib/sections/header.svelte';
 	import { appTitle, buildLink, testNetLink } from '../../consts';
-	import LinkButton from '$lib/components/LinkButton.svelte';
+	import LinkButton from '$lib/components/link-button.svelte';
 	import {
 		beacon1,
 		beacon2,

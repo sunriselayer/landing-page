@@ -1,10 +1,10 @@
 <script lang="ts">
 	import * as images from '../../consts/images';
 	let isEnglish = true;
-	import { newLocale } from '../../lib/stores/i18nStore';
+	import { newLocale } from '../stores/i18nStore';
 	import { _, locale } from 'svelte-i18n';
 
-	import LinkButton from '$lib/components/LinkButton.svelte';
+	import LinkButton from '$lib/components/link-button.svelte';
 	import { testNetLink } from '../../consts';
 
 	function toggleLanguage() {

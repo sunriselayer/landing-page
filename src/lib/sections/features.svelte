@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	import * as images from '../../consts/images';
-	import LinkButton from '$lib/components/LinkButton.svelte';
+	import LinkButton from '$lib/components/link-button.svelte';
 	import { docsLink } from '../../consts';
 
 	const features = Array.from({ length: 5 }).map((_, i) => {
@@ -30,7 +30,9 @@
 							'md:w-[32.89%] md:pr-10 pr-6'} {feature.index === 2 &&
 							'md:w-[40.375%]'} gap-[0.625rem] flex-auto"
 					>
-						<h2 class="text-[0.875rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white">
+						<h2
+							class="text-[0.875rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white"
+						>
 							{@html $_(feature.label)}
 						</h2>
 						<div
@@ -38,7 +40,9 @@
 								? 'md:flex-row flex-col'
 								: 'flex-col justify-between'}"
 						>
-							<p class="md:text-[1rem] md:leading-5 text-[0.75rem] leading-4 text-white text-opacity-55">
+							<p
+								class="md:text-[1rem] md:leading-5 text-[0.75rem] leading-4 text-white text-opacity-55"
+							>
 								{$_(feature.description)}
 							</p>
 							<img
@@ -60,7 +64,9 @@
 						class="feature-box flex md:pt-10 md:pl-10 pt-6 pl-6 flex-col gap-[0.625rem] flex-1 {feature.index ===
 							3 && 'md:pr-10'}"
 					>
-						<h2 class="text-[0.875rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white">
+						<h2
+							class="text-[0.875rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white"
+						>
 							{@html $_(feature.label)}
 						</h2>
 						<div class="flex flex-auto flex-col justify-between md:items-end">
@@ -81,14 +87,22 @@
 									alt="feature"
 								/>
 							{:else}
-								<img class="h-auto md:mt-4 mt-[1.375rem] md:w-fit w-[85%] self-end " src={feature.imageSrc} alt="feature" />
+								<img
+									class="h-auto md:mt-4 mt-[1.375rem] md:w-fit w-[85%] self-end"
+									src={feature.imageSrc}
+									alt="feature"
+								/>
 							{/if}
 						</div>
 					</div>
 				{/each}
 			</div>
 		</div>
-		<LinkButton text={$_('learn-more')} link={docsLink} className={'md:py-4 md:px-[4.615rem] px-8'} />
+		<LinkButton
+			text={$_('learn-more')}
+			link={docsLink}
+			className={'md:py-4 md:px-[4.615rem] px-8'}
+		/>
 	</section>
 </main>
 

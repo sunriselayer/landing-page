@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Summary from '$lib/components/Summary.svelte';
+	import Summary from '$lib/components/summary.svelte';
 </script>
 
 <main>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Footer from '$lib/sections/Footer.svelte';
-	import Header from '$lib/sections/Header.svelte';
+	import Footer from '$lib/sections/footer.svelte';
+	import Header from '$lib/sections/header.svelte';
 	import { appTitle } from '../../consts';
 	import * as images from '../../consts/images';
 

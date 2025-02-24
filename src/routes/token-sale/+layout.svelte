@@ -6,17 +6,17 @@
 	import { _, init, addMessages } from 'svelte-i18n';
 	import '/node_modules/flag-icons/css/flag-icons.min.css';
 
-	import Header from '$lib/sections/token-sale/Header.svelte';
-	import About from '$lib/sections/token-sale/About.svelte';
-	import Features from '$lib/sections/token-sale/Features.svelte';
-	import Summaries from '$lib/sections/token-sale/Summaries.svelte';
-	import SalesDetails from '$lib/sections/token-sale/SalesDetails.svelte';
-	import Tokenomics from '$lib/sections/token-sale/Tokenomics.svelte';
-	import Schedule from '$lib/sections/token-sale/Schedule.svelte';
-	import Ecosystem from '$lib/sections/token-sale/Ecosystem.svelte';
-	import Roadmap from '$lib/sections/token-sale/Roadmap.svelte';
-	import Timeline from '$lib/sections/token-sale/Timeline.svelte';
-	import Community from '$lib/sections/token-sale/Community.svelte';
+	import Header from '$lib/sections/token-sale/header.svelte';
+	import About from '$lib/sections/token-sale/about.svelte';
+	import Features from '$lib/sections/token-sale/features.svelte';
+	import Summaries from '$lib/sections/token-sale/summaries.svelte';
+	import SalesDetails from '$lib/sections/token-sale/sales-details.svelte';
+	import Tokenomics from '$lib/sections/token-sale/tokenomics.svelte';
+	import Schedule from '$lib/sections/token-sale/schedule.svelte';
+	import Ecosystem from '$lib/sections/token-sale/ecosystem.svelte';
+	import Roadmap from '$lib/sections/token-sale/roadmap.svelte';
+	import Timeline from '$lib/sections/token-sale/timeline.svelte';
+	import Community from '$lib/sections/token-sale/community.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}

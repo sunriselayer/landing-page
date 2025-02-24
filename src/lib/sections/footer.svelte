@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Label from '$lib/components/Label.svelte';
+	import Label from '$lib/components/label.svelte';
 
 	function openDoc() {
 		if (

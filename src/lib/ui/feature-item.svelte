@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Label from '$lib/components/Label.svelte';
+	import Label from '$lib/components/label.svelte';
 	import { newLocale } from '../stores/i18nStore';
 	import { _, locale } from 'svelte-i18n';
 	import { onDestroy } from 'svelte';
