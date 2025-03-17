@@ -48,9 +48,9 @@
 
 <header class="z-50">
 	<div
-		class="navbar sticky min-h-12 top-0 px-6 lg:px-20 md:py-10 xl:px-[7.5rem] md:text-[1.25rem] md:leading-[1.5rem] gap-[0.625rem]"
+		class="navbar sticky min-h-20 top-0 px-6 lg:px-20 md:py-10 xl:px-[7.5rem] md:text-[1.25rem] md:leading-[1.5rem] gap-[0.625rem]"
 	>
-		<a class="flex z-50 gap-4" href="/">
+		<a class="flex z-50 gap-[0.6rem]" href="/">
 			<img class="fill-current filter w-8 md:w-[2.6rem]" src={images.logo} alt="logo" />
 			<img class="filter hidden md:block" src={images.sunriseWhite} alt={$_('app.name')} />
 		</a>

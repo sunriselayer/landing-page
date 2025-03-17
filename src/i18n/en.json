@@ -6,7 +6,7 @@
 	"learn": "Learn",
 	"deploy": "Deploy",
 	"sunrise-question": "Enhanced Liquidity for Everyone",
-	"sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while providing a comprehensive solution for modular blockchain development.",
+	"sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by<br class='hidden md:block'>extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while<br class='hidden md:block'>providing a comprehensive solution for modular blockchain development.",
 	"sunrise-1": {
 		"label": "Modular Blockchain Structures",
 		"description": "A modular blockchain differs from a monolithic chain in that at least one of its four main functions has been offloaded to a separate layer. In the current infrastructure landscape, modular solutions have become the preeminent method for blockchain development.<br><br>Sunrise provides a fast, secure data availability and consensus layer for scalable modular blockchains, while allowing individual networks to determine their own customized execution and settlement layers.<br><br>By using this structure, modular blockchains are more efficient, customizable, scalable, and sovereign."

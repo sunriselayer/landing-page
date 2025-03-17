@@ -19,7 +19,7 @@
 	<div class="flex gap-4 flex-row justify-evenly w-full text-center items-center">
 		<div class="ibm-plex-sans flex flex-col gap-4 flex-1 self-start">
 			<Label
-				className="md:text-base font-bold text-xs text-white text-opacity-20"
+				className="md:text-base font-medium text-xs text-white text-opacity-20"
 				text={$_('header-footer.devs')}
 			/>
 			<div class="flex flex-col gap-[0.625rem] items-center">
@@ -43,7 +43,7 @@
 		</div>
 		<div class="ibm-plex-sans flex flex-col gap-4 flex-1 self-start">
 			<Label
-				className="md:text-base font-bold text-xs text-white text-opacity-20"
+				className="md:text-base font-medium text-xs text-white text-opacity-20"
 				text={$_('header-footer.services')}
 			/>
 			<div class="flex flex-col gap-[0.625rem] items-center">
@@ -71,7 +71,7 @@
 		</div>
 		<div class="ibm-plex-sans flex flex-col gap-4 flex-1 self-start">
 			<Label
-				className="md:text-base font-bold text-xs text-white text-opacity-20"
+				className="md:text-base font-medium text-xs text-white text-opacity-20"
 				text={$_('header-footer.about')}
 			/>
 			<div class="flex flex-col gap-[0.625rem] items-center">

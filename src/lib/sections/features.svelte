@@ -16,9 +16,9 @@
 </script>
 
 <main>
-	<section class="md:gap-[3.75rem] gap-6 xl:w-[1140px] mx-auto md:p-0 p-6">
+	<section class="md:gap-[3.75rem] gap-6 md:max-w-[1200px] mx-auto md:py-0 md:px-[30px] p-6">
 		<h1
-			class="text-[1rem] leading-5 xs:text-base md:text:xl text-center sm:text-lg xl:text-2xl highlight-text md:w-[41.25rem]"
+			class="text-[0.875rem] leading-5 xs:text-base md:text:xl text-center sm:text-lg xl:text-2xl highlight-text md:w-[41.25rem] tracking-wide"
 		>
 			{@html $_('sunrise-features.description')}
 		</h1>
@@ -31,7 +31,7 @@
 							'md:w-[40.375%]'} gap-[0.625rem] flex-auto"
 					>
 						<h2
-							class="text-[0.875rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white"
+							class="text-[0.75rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white"
 						>
 							{@html $_(feature.label)}
 						</h2>

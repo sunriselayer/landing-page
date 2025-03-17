@@ -7,8 +7,8 @@
 </script>
 
 <main>
-	<section class="gap-4 md:pt-[16.875rem] pt-40 text-base-100 md:pb-[13.1215rem] pb-[7.5rem]">
-		<div class="flex gap-4 justify-center">
+	<section class="gap-4 md:pt-[16.875rem] pt-[7.5rem] text-base-100 md:pb-[13.1215rem] pb-[7.5rem]">
+		<div class="flex gap-2 justify-center">
 			<img class="md:w-10 w-[1.65rem]" src={images.color} alt="logo" />
 			<span class="uppercase tracking-wider leading-none self-center md:text-xl text-sm"
 				>sunrise</span
