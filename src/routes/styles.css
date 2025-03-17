@@ -3,6 +3,20 @@ body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-	height: 100%;
 	position: relative;
+	font-family: 'Clash Grotesk' !important;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.highlight-text {
+	background: linear-gradient(180deg, #edbc64 0%, #fda60b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
 }
