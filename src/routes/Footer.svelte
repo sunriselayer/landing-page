@@ -1,5 +1,6 @@
 <script>
 	import Label from '$lib/components/Label.svelte';
+	import DisclaimerPopup from '$lib/components/DisclaimerPopup.svelte';
 	import * as images from '../consts/images';
 
 	function openDoc() {
@@ -81,10 +82,31 @@
 			content of this crypto-asset marketing communication.
 		</p>
 	</aside>
-	<aside>
-		<p>Sunrise © - All rights reserved. 2024</p>
+	<aside class="w-1/2">
+		<div class="flex gap-2 w-full">
+			<div class="flex gap-2">
+				<a
+					href="/docs/Sunrise - Privacy Policy (240815_clean)(GS).pdf"
+					target="_blank"
+					class="text-blue-600 underline-offset-4 hover:underline"
+				>
+					Privacy Policy
+				</a>
+				<span>|</span>
+				<a
+					href="/docs/Sunrise - Terms and Conditions of Use (250314_clean)(GS).pdf"
+					target="_blank"
+					class="text-blue-600 underline-offset-4 hover:underline"
+				>
+					Terms of Service
+				</a>
+			</div>
+			<span class="flex-auto"></span>
+			<p>Sunrise © - All rights reserved. 2024</p>
+		</div>
 	</aside>
 </footer>
+<DisclaimerPopup />
 
 <style>
 	footer {
