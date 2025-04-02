@@ -29,9 +29,9 @@
 					<h3 class="font-bold text-lg">Disclaimer</h3>
 					<p class="text-sm text-gray-700">
 						By viewing, interacting with or otherwise using the Site, you are agreeing to the
-						Privacy Policy and Terms of Service for the Site. <br />Please check below to certify
-						you have read and understood and are agreeing to be bound by the Terms and Conditions in
-						their entirety.
+						Privacy Policy and Terms and Conditions of Use for the Site. <br />Please check below to
+						certify you have read and understood and are agreeing to be bound by the Terms and
+						Conditions in their entirety.
 					</p>
 					<div class="flex gap-2 text-sm">
 						<a
@@ -47,7 +47,7 @@
 							target="_blank"
 							class="text-blue-600 underline-offset-4 hover:underline"
 						>
-							Terms of Service
+							Terms and Conditions of Use
 						</a>
 					</div>
 				</div>

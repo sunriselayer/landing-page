@@ -98,7 +98,7 @@
 					target="_blank"
 					class="text-blue-600 underline-offset-4 hover:underline"
 				>
-					Terms of Service
+					Terms and Conditions of Use
 				</a>
 			</div>
 			<span class="flex-auto"></span>
