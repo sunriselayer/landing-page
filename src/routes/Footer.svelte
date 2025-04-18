@@ -32,6 +32,9 @@
 				<a href="https://github.com/SunriseLayer" target="_blank">
 					<Label className="md:text-base text-xs font-medium" text="GitHub" />
 				</a>
+				<a href="/docs/white_paper_temp.pdf" target="_blank">
+					<Label className="md:text-base text-xs font-medium" text="White Paper to be published" />
+				</a>
 			</div>
 			<div class="ibm-plex-sans flex flex-col gap-1">
 				<Label className="md:text-xl font-bold text-lg text-slate-500" text="Services" />
