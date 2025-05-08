@@ -18,13 +18,6 @@
 			description: Array.from({ length: 4 }, (val, i) => `team-core-member-2.desc-${i + 1}`)
 		}
 	];
-	const members = Array.from({ length: 5 }, (val, i) => {
-		return {
-			name: `team-member-${i + 1}.name`,
-			role: `team-member-${i + 1}.role`,
-			image: (images as Record<string, string>)[`team${i + 1}`]
-		};
-	});
 </script>
 
 <main class="lg:w-[851px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-6">
@@ -64,42 +57,6 @@
 							</div>
 						</div>
 					{/each}
-					<div class="flex md:flex-row flex-col gap-6">
-						<div class="md:w-[calc(50%-0.8rem)] flex flex-col flex-wrap gap-6">
-							{#each members.slice(0, 3) as person}
-								<div
-									class="flex flex-row rounded-xl overflow-clip border border-[#FFC851] bg-[#FFEBA8]"
-								>
-									<img class="h-full" src={person.image} alt={person.name} />
-									<div class="flex flex-col px-4 justify-center">
-										<h5 class="uppercase normal-text font-semibold md:text-xl">
-											{$_(person.name)}
-										</h5>
-										<h6 class="highlight-text font-medium md:text-base">
-											{$_(person.role)}
-										</h6>
-									</div>
-								</div>
-							{/each}
-						</div>
-						<div class="md:w-[calc(50%-0.8rem)] flex flex-col flex-wrap gap-6">
-							{#each members.slice(-2) as person}
-								<div
-									class="flex flex-row rounded-xl overflow-clip border border-[#FFC851] bg-[#FFEBA8]"
-								>
-									<img class="h-full" src={person.image} alt={person.name} />
-									<div class="flex flex-col px-4 justify-center">
-										<h5 class="uppercase normal-text font-semibold md:text-xl">
-											{$_(person.name)}
-										</h5>
-										<h6 class="highlight-text font-medium md:text-base">
-											{$_(person.role)}
-										</h6>
-									</div>
-								</div>
-							{/each}
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

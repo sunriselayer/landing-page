@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { mapHaru, mapHaruSP } from '../../../consts/images';
 
-	const start = '2024';
+	const start = '2025';
 	const end = '2025';
 	const months = [
 		'jan',
@@ -29,34 +29,22 @@
 		{
 			id: 'step3',
 			title: 'step3.title',
-			description: 'step3.desc',
+			description: ['step3.desc-1', 'step3.desc-2'],
 			target: `${months[6]}_${start}`
-		},
-		{
-			id: 'step5',
-			title: 'step5.title',
-			description: ['step5.desc-1', 'step5.desc-2'],
-			target: `${months[0]}_${end}`
 		}
 	];
 	const bottomSteps = [
 		{
 			id: 'step2',
 			title: 'step2.title',
-			description: 'step2.desc',
+			description: ['step2.desc-1', 'step2.desc-2', 'step2.desc-3'],
 			target: `${months[3]}_${start}`
 		},
 		{
 			id: 'step4',
 			title: 'step4.title',
-			description: 'step4.desc',
+			description: ['step4.desc-1', 'step4.desc-2'],
 			target: `${months[9]}_${start}`
-		},
-		{
-			id: 'step6',
-			title: 'step6.title',
-			description: ['step6.desc-1', 'step6.desc-2'],
-			target: `${months[3]}_${end}`
 		}
 	];
 
@@ -118,12 +106,12 @@
 					</p>
 					{#if typeof step.description !== 'string'}
 						{#each step.description as desc}
-							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-12 pr-4">
+							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-6 pr-4">
 								{@html $_(desc)}
 							</p>
 						{/each}
 					{:else}
-						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-12 pr-4">
+						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-6 pr-4">
 							{@html $_(step.description)}
 						</p>
 					{/if}
@@ -142,26 +130,29 @@
 					class="md:text-sm normal-text text-[4.66px] uppercase font-medium">{$_(m)}</span
 				>
 			{/each}
-			<p class="highlight-text md:text-[1.5rem] text-[7.28px] font-medium tracking-wider">
-				{end}
-			</p>
-			{#each months.slice(0, 6) as m}
-				<span id={`${m}_${end}`} class="md:text-sm normal-text text-[4.66px] uppercase font-medium"
-					>{$_(m)}</span
-				>
-			{/each}
+			{#if start < end}
+				<p class="highlight-text md:text-[1.5rem] text-[7.28px] font-medium tracking-wider">
+					{end}
+				</p>
+				{#each months.slice(0, 6) as m}
+					<span
+						id={`${m}_${end}`}
+						class="md:text-sm normal-text text-[4.66px] uppercase font-medium">{$_(m)}</span
+					>
+				{/each}
+			{/if}
 		</div>
 		<div class="relative">
 			{#each bottomSteps as step}
 				<div id={step.id} class="roadmap-steps mt-3 px-[0.3125rem]">
 					{#if typeof step.description !== 'string'}
 						{#each step.description as desc}
-							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-10 pr-4">
+							<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-4 pr-4">
 								{@html $_(desc)}
 							</p>
 						{/each}
 					{:else}
-						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-6 pr-4">
+						<p class="md:text-xs text-[6.14px] normal-text text-opacity-70 md:pr-4 pr-4">
 							{@html $_(step.description)}
 						</p>
 					{/if}
@@ -192,8 +183,8 @@
 	@media screen and (min-width: 768px) {
 		.roadmap-steps {
 			gap: 20px;
-			max-width: 165px;
-			border-left: 0.5rem solid;
+			max-width: 171px;
+			border-left: 0.375rem solid;
 			gap: 12px;
 		}
 	}

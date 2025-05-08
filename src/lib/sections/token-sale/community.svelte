@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	import * as images from '../../../consts/images';
+	import CoreTeam from './core-team.svelte';
 </script>
 
-<main class="lg:w-[851px] w-full md:mx-auto">
-	<section class="flex flex-col gap-10 md:py-[7.5rem] md:px-0 md:w-[600px] mx-auto px-5 py-12">
+<main class="lg:w-[851px] w-full md:mx-auto md:py-[10px]">
+	<section class="flex flex-col gap-10 md:pb-[3.125rem] md:pt-0 md:px-0 md:w-[600px] mx-auto px-5 py-12">
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<h2
-				class="font-medium text-[#183973] md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none pt-6 md:pb-[0.625rem]"
+				class="font-medium text-[#183973] md:text-[3.125rem] text-[2rem] text-center tracking-wider leading-none md:pt-0 pt-6 md:pb-[0.625rem]"
 			>
 				{@html $_('community')}
 			</h2>
@@ -30,22 +31,9 @@
 				{@html $_(`discord.label`)}
 			</p>
 		</div>
-		<div class="flex flex-row justify-center md:gap-[0.8rem] gap-4">
-			<a
-				href="/#"
-				class="uppercase hover:opacity-60 cursor-pointer text-white bg-gradient-to-r py-4 px-5 rounded-2xl from-[#FF9104] to-[#FFAA17] shadow-[0px_4px_5px_0px_#00000026]"
-			>
-				{@html $_(`twitter.btn`)}
-			</a>
-			<a
-				href="/#"
-				class="uppercase hover:opacity-60 cursor-pointer text-white bg-gradient-to-r py-4 px-5 rounded-2xl from-[#FF9104] to-[#FFAA17] shadow-[0px_4px_5px_0px_#00000026]"
-			>
-				{@html $_(`discord.btn`)}
-			</a>
-		</div>
 	</section>
-	<section class="flex flex-col gap-10 md:py-[7.5rem] md:px-0 px-5 py-12">
+	<CoreTeam />
+	<section class="flex flex-col gap-10 md:py-[3.125rem] md:px-0 px-5 py-12">
 		<div class="flex flex-col justify-center items-center mx-auto">
 			<img class="h-full" src={images.full_logo} alt="sunrise" />
 			<h2
@@ -53,15 +41,9 @@
 			>
 				{@html $_('join-sunrise')}
 			</h2>
-			<p class="normal-text md:text-[1.25rem] leading-6 md:pb-[3.125rem] pb-6 text-center">
+			<p class="normal-text md:text-[1.25rem] leading-6 text-center">
 				{@html $_('join-sunrise-desc')}
 			</p>
-			<a
-				href="/#"
-				class="hover:opacity-60 bg-gradient-to-r from-[#003F92] to-[#0163D3] md:from-[#003F92] md:to-[#0163D3] shadow-[#014093] border-[#0162D3] border text-white uppercase tracking-wider md:px-5 md:py-4 rounded-2xl md:text-[1.25rem] text-lg py-3 px-4 leading-6 cursor-pointer shadow-[0px_4px_5px_0px_#00000026]"
-			>
-				{@html $_('join-sunrise-button')}
-			</a>
 		</div>
 	</section>
 	<section

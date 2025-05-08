@@ -13,7 +13,7 @@
 	} from '../../../consts/images';
 </script>
 
-<main class="w-full md:py-[7.5rem] md:p-0 px-5 py-12 relative">
+<main class="w-full md:pb-[3.125rem] md:p-0 px-5 py-12 relative">
 	<img class="absolute left-0 top-0 hidden md:block" src={branchHaru} alt="" />
 	<section class="xl:w-[1104px] w-full md:mx-auto">
 		<div class="flex justify-center content-center mx-auto">

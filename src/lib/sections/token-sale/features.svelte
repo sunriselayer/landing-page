@@ -68,7 +68,7 @@
 								{@html $_('key-feature')}
 							</h3>
 							<div class="flex flex-col gap-5">
-								{#each [1, 2] as i}
+								{#each [1, 2, 3] as i}
 									<h4
 										class="normal-text flex gap-[0.625rem] md:gap-3 flex-row items-start md:text-[1.25rem] text-sm md:leading-[1.515rem] leading-5"
 									>
@@ -143,17 +143,13 @@
 												<span class="md:text-base text-sm">{@html $_(`chain-da-option-${i}`)}</span>
 											</p>
 										{/each}
-									</div>
-									<div class="mx-auto w-max pt-6">
-										<b class="text-[#FF7B04] uppercase text-sm">
-											{@html $_('example')}:
-										</b>
-										<div class="flex flex-row items-center normal-text text-sm md:text-base pb-5">
-											{@html $_('sunrise')}
-											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
-											{@html $_('walrus')}
-											<div class="mx-2 rounded-badge p-[0.15rem] bg-[#FF7B04]"></div>
-											{@html $_('og')}
+										<div class="ml-4 w-max pt-6">
+											<b class="text-[#FF7B04] uppercase text-sm">
+												{@html $_('example')}:
+											</b>
+											<div class="flex normal-text text-sm md:text-base pb-5">
+												{@html $_('sunrise')}
+											</div>
 										</div>
 									</div>
 								</div>

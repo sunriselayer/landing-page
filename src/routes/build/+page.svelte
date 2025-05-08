@@ -29,15 +29,15 @@
 <svelte:head>
 	<title>{appTitle}</title>
 	<meta name="description" content={appTitle} />
-	<meta name="theme-color" content="#010E25" media="(prefers-color-scheme: dark)" />
+	<meta name="theme-color" content="#050F21" media="(prefers-color-scheme: dark)" />
 	<style>
 		body {
-			background-color: #010e25;
+			background-color: #050F21;
 		}
 	</style>
 </svelte:head>
 
-<main class="max-w-[1440px] mx-auto w-full">
+<main class="max-w-[1440px] mx-auto w-full bg-white dark:bg-[#050F21]">
 	<Header active={page} />
 	<div class="flex flex-col md:gap-10">
 		<section
@@ -45,12 +45,12 @@
 		>
 			<div class="flex flex-col">
 				<h1
-					class="font-semibold text-white md:text-[4.375rem] text-[1.5rem] md:leading-[5.385rem] leading-[1.875rem]"
+					class="font-semibold dark:text-white text-[#050F21] md:text-[4.375rem] text-[1.5rem] md:leading-[5.385rem] leading-[1.875rem]"
 				>
 					{@html $_('hero-title')}
 				</h1>
 				<p
-					class="md:text-[1.5rem] text-white text-[0.875rem] md:leading-[1.875rem] leading-[1.125rem] pt-5 md:pb-20 pb-6"
+					class="md:text-[1.5rem] dark:text-white text-[#050F21] text-[0.875rem] md:leading-[1.875rem] leading-[1.125rem] pt-5 md:pb-20 pb-6"
 				>
 					{@html $_('hero-description')}
 				</p>
@@ -70,7 +70,7 @@
 			</div>
 		</section>
 		<section class="z-20 flex flex-col md:px-[9.375rem] md:pt-20 p-6 md:gap-12 gap-6">
-			<h1 class="font-semibold text-white md:text-[3rem] md:leading-[3.75rem]">
+			<h1 class="font-semibold dark:text-white text-[#050F21] md:text-[3rem] md:leading-[3.75rem]">
 				{@html $_('learn-title')}
 			</h1>
 			<div class="md:overflow-clip overflow-auto">
@@ -82,7 +82,7 @@
 							{@html $_('learn-asset-1.title')}
 						</h4>
 						<p
-							class="md:text-[1rem] text-opacity-80 text-white text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
+							class="md:text-[1rem] text-opacity-80 dark:text-white text-[#050F21] text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
 						>
 							{@html $_('learn-asset-1.description')}
 						</p>
@@ -97,7 +97,7 @@
 							{@html $_('learn-asset-2.title')}
 						</h4>
 						<p
-							class="md:text-[1rem] text-opacity-80 text-white text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
+							class="md:text-[1rem] text-opacity-80 dark:text-white text-[#050F21] text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
 						>
 							{@html $_('learn-asset-2.description')}
 						</p>
@@ -109,7 +109,7 @@
 			</div>
 		</section>
 		<section class="z-20 flex flex-col md:px-[9.375rem] md:py-[7.5rem] p-6 md:gap-12 gap-6">
-			<h1 class="font-semibold text-white md:text-[3rem] md:leading-[3.75rem]">
+			<h1 class="font-semibold dark:text-white text-[#050F21] md:text-[3rem] md:leading-[3.75rem]">
 				{@html $_('deploy-title')}
 			</h1>
 			<div class="flex flex-col md:gap-12 gap-6">
@@ -121,7 +121,7 @@
 							{@html $_('deploy-item-1.title')}
 						</h4>
 						<p
-							class="md:text-[1rem] text-white text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
+							class="md:text-[1rem] dark:text-white text-[#050F21] text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
 						>
 							{@html $_('deploy-item-1.description')}
 						</p>
@@ -138,7 +138,7 @@
 							{@html $_('deploy-item-2.title')}
 						</h4>
 						<p
-							class="md:text-[1rem] text-white text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
+							class="md:text-[1rem] dark:text-white text-[#050F21] text-[0.75rem] md:leading-5 leading-[0.9rem] pt-[1.125rem] md:pb-[1.375rem]"
 						>
 							{@html $_('deploy-item-2.description')}
 						</p>
@@ -155,31 +155,31 @@
 							{@html $_('deploy-item-3.title')}
 						</h4>
 						<p
-							class="md:text-[1rem] text-white text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem] py-[1.125rem]"
+							class="md:text-[1rem] dark:text-white text-[#050F21] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem] py-[1.125rem]"
 						>
 							{@html $_('deploy-item-3.description')}
 						</p>
 						<div class="flex flex-col gap-3">
 							<p
-								class="flex text-white gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
+								class="flex dark:text-white text-[#050F21] gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
 							>
 								<img class="h-5" src={beacon1} alt="" />
 								{@html $_('deploy-item-3.item-1')}
 							</p>
 							<p
-								class="flex text-white gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
+								class="flex dark:text-white text-[#050F21] gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
 							>
 								<img class="h-5" src={beacon2} alt="" />
 								{@html $_('deploy-item-3.item-2')}
 							</p>
 							<p
-								class="flex text-white gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
+								class="flex dark:text-white text-[#050F21] gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
 							>
 								<img class="h-5" src={beacon3} alt="" />
 								{@html $_('deploy-item-3.item-3')}
 							</p>
 							<p
-								class="flex text-white gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
+								class="flex dark:text-white text-[#050F21] gap-[0.6125rem] items-center md:text-[1rem] text-opacity-80 text-[0.75rem] md:leading-5 leading-[0.9rem]"
 							>
 								<img class="h-5" src={beacon4} alt="" />
 								{@html $_('deploy-item-3.item-4')}

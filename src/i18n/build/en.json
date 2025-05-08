@@ -3,7 +3,7 @@
 	"hero-description": "Using Sunrise provides the underlying Data Availability (DA) infrastructure you need, complete with PoL-driven fee abstraction, scalable blobspace, and off-chain storage",
 	"learn-title": "Smart Contract Rollup VS. Sovereign",
 	"learn-asset-1": {
-		"title": "Smart Contract Rollup",
+		"title": "L1 Rollup",
 		"description": "L1-settled rollups, such as those built on Ethereum’s OP Stack, rely on a base chain for security, transaction ordering, and final settlement. This approach allows developers and users to benefit from the parent chain’s established network, existing tools, and active liquidity.<br><br>However, using a parent chain’s infrastructure also means following its rules, fee market, and upgrade schedule."
 	},
 	"learn-asset-2": {

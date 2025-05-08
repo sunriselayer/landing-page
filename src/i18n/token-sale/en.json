@@ -1,12 +1,12 @@
 {
-	"app-description": "Sunrise is a specialized Data Availability Layer for Proof of Liquidity (PoL).",
+	"app-description": "Sunrise is the base layer for Interliquid Networks",
 	"about-sunrise": "About Sunrise",
-	"about-1": "We're thrilled to announce our latest public sale of 2025 with Sunrise - The first specialized Data Availability Layer for Proof of Liquidity (PoL).",
-	"about-2": "Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
+	"about-1": "We're thrilled to announce our latest public sale of 2025 with Sunrise - The base layer for Interliquid Networks.",
+	"about-2": "Sunrise integrates Data Availability layer and Liquidity Hub functions into a single platform powered by Proof-of-Liquidity — enabling sovereign rollups and leading L1s like Ethereum and Solana to connect seamlessly through deep, shared liquidity.",
 	"why-sunrise": "Why <span class='highlight-text'>Sunrise</span> ?",
-	"answer-1": "Sunrise <span style=\"font-weight: 500;\">reduces liquidity fragmentation</span> on L2 rollups, while also simultaneously increasing liquidity for their own token.",
-	"answer-2": "Sunrise is the first specialized DA layer to implement native <span style=\"font-weight: 500;\">DA Fee Abstraction</span>.",
-	"answer-3": "Sunrise has <span style=\"font-weight: 500;\">highly scalable off-chain blob space</span> which enables the creation of new fully on-chain use cases such as Decentralized AI, Gaming, and more.",
+	"answer-1": "<span style=\"font-weight: 500;\">Reduces liquidity fragmentation</span> across sovereign rollups and major L1s like Ethereum and Solana.",
+	"answer-2": "First L1 DA layer with native <span style=\"font-weight: 500;\">DA Fee Abstraction</span> — pay gas in any token via on-chain swaps.",
+	"answer-3": "<span style=\"font-weight: 500;\">Scalable off-chain blobspace</span> — handles multi-MB payloads in < 15 s, enabling data-intensive apps like AI pipelines, real-time gaming, and on-chain analytics without bloating the chain.",
 	"answer-4": "Sunrise introduces <span style=\"font-weight: 500;\">Extended Proof of Liquidity</span> which enables Sunrise to participate in a mutually beneficial relationship with Berachain’s liquidity environment by extending Berachain’s PoL to the L2 level",
 	"key-metrics": {
 		"title": "Key Metrics",
@@ -16,9 +16,9 @@
 			"description": "Growing Community"
 		},
 		"metric-2": {
-			"title": "5+",
-			"label": "MB/s",
-			"description": "Transaction Speed"
+			"title": "15",
+			"label": "Minimum Seconds",
+			"description": "Fastest Data Availability"
 		},
 		"metric-3": {
 			"title": "65k+",
@@ -28,7 +28,7 @@
 	},
 	"fundamentals": {
 		"title": "Fundamentals",
-		"description": "Sunrise is an innovative Data Availability Layer that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions without the burden of traditional DA fees.",
+		"description": "Sunrise integrates modular Data Availability layer and Liquidity Hub functions that remodels how developers build and scale applications. By leveraging our unique Proof of Liquidity model and Fee Abstraction capabilities, you can create secure, liquid, and cost-effective rollups and Layer 2 solutions to interact through deep, shared liquidity.",
 		"step-1": {
 			"label": "ULTRA SCALABLE",
 			"description": "Off-Chain blob data."
@@ -39,11 +39,11 @@
 		},
 		"step-3": {
 			"label": "ULTRA APPLICATIONS",
-			"description": "Built to support fully onchain AI and Gaming."
+			"description": "Built to support fully onchain <span style=\"font-weight: 500;\">AI</span> and Gaming."
 		},
 		"step-4": {
 			"label": "ULTRA FAST",
-			"description": "7 Second confirmation time."
+			"description": "Data confirmed in 2 blocks (~14 s)."
 		},
 		"step-5": {
 			"label": "ULTRA SUSTAINABLE",
@@ -51,16 +51,17 @@
 		}
 	},
 	"deeper-level": "A deeper dive...",
-	"level-1": "Proof of Liquidity (PoL)",
-	"level-1-desc": "Sunrise uses the <span style=\"font-weight: 500;\">PoL consensus model</span> to deepen both security and liquidity for L2 rollups. Sunrise’s DEX and cross-chain infrastructure let the rollup tap into a single, high-throughput marketplace for liquidity. The benefits for rollups include reducing liquidity fragmentation and increasing liquidity for the rollup’s native token.",
-	"level-2": "DA Fee Abstraction",
-	"level-2-desc-1": "Sunrise introduces “DA Fee Abstraction,” allowing developers to secure blobspace by providing liquidity rather than paying fees exclusively in a single token. This approach reduces reliance on one asset type, giving projects more economic flexibility and making it easier to manage costs. ",
+	"level-1": "Liquidity Hub powered by Proof of Liquidity",
+	"level-1-desc": "Sunrise is a <span style=\"font-weight: 500;\">liquidity hub</span> that uses the PoL consensus model to deepen both security and liquidity for L2 rollups. Sunrise’s DEX and cross-chain infrastructure let the rollup tap into a single, high-throughput marketplace for liquidity. The benefits for rollups include reducing liquidity fragmentation and increasing liquidity for the rollup’s native token.",
+	"level-2": "Fee Abstraction",
+	"level-2-desc-1": "Sunrise introduces Fee Abstraction: now any transaction, including DA blob publishes—can be paid in the token you already hold. Behind the scenes, Sunrise swaps a small fraction into $RISE to cover gas, so your project’s own token works as the gas coin from day one.",
 	"level-2-desc-2": "By providing assets as liquidity in Sunrise’s pools, liquidity providers align their success with the DA network’s overall health, thus driving a more collaborative ecosystem.",
-	"level-3": "Off-Chain Blob Data",
-	"level-3-desc": "Sunrise is designed for high-throughput data availability, offering enhanced scalability and flexibility for applications even such as gaming. Utilizing decentralized storage solutions such as IPFS and Arweave, data shards are stored externally.",
+	"level-3": "Blazing Fast Data Availability",
+	"level-3-desc": "Sunrise provides high-throughput data availability, offering enhanced scalability and flexibility for applications even such as gaming. Utilizing decentralized storage solutions such as IPFS and Arweave, data shards are stored externally.",
 	"key-feature": "Key Features",
-	"key-feature-1": "<span style=\"font-weight: 500;\">OFF-CHAIN ERASURE ENCODING:</span> Computational and storage load on validators is minimized by having the blob data erasure-coded off-chain.",
-	"key-feature-2": "<span style=\"font-weight: 500;\">OFF-CHAIN STORAGE INTEGRATION:</span> On-chain block size requirements for blob transactions are reduced and scalability is enhanced by using off chain blobs powered by IPFS and Arweave.",
+	"key-feature-1": "<span style=\"font-weight: 500;\">OFF-CHAIN ERASURE ENCODING:</span> Blobs are encoded off-chain; validators store only the Merkle root on-chain, cutting storage and compute overhead.",
+	"key-feature-2": "<span style=\"font-weight: 500;\">OFF-CHAIN BLOB PROPAGATION:</span> Transactions carry only metadata; full payloads travel over a P2P blob network, enabling sub-15-second data availability and a lightweight mempool.",
+	"key-feature-3": "<span style=\"font-weight: 500;\">KZG COMMITMENT:</span> A single on-chain KZG commitment secures each blob, allowing rapid integrity checks and availability challenges",
 	"comparision-title": "Comparison Between On-Chain DA Attestation & Off-Chain DA Attestation",
 	"on-chain-title": "On-Chain DA Attestation",
 	"off-chain-title": "Off-Chain DA Attestation",
@@ -80,7 +81,7 @@
 	"level-4-desc": "The protocol generates revenue through three channels.",
 	"revenue-1": "Transaction fees",
 	"revenue-2": "Swap fees in the liquidity pool",
-	"revenue-3": "MEV captured with Skip Protocol",
+	"revenue-3": "MEV capture",
 	"closer-title": "A closer look into the DA space...",
 	"data-availability": "Data Availability Layers Comparison",
 	"closer-table": {
@@ -189,22 +190,29 @@
 	"tokenomics": "What is RISE?",
 	"dual-token-system": "Dual Token System",
 	"dual-token-system-1": "$vRISE: Non-Transferable token for staking and governance",
-	"dual-token-system-1-desc": "Used for calculating voting power in governance",
+	"dual-token-system-1-desc-1": "Cannot be bought. It is exclusively earned by providing liquidity to pools on Sunrise.",
+	"dual-token-system-1-desc-2": "Can be staked to earn RISE staking rewards.",
+	"dual-token-system-1-desc-3": "Grants governance rights, including participation in gauge voting.",
+	"dual-token-system-1-desc-4": "Can be burned 1:1 to receive RISE.",
 	"dual-token-system-2": "$RISE: Transferable token with fee",
-	"dual-token-system-2-desc-1": "Native token of Sunrise network",
-	"dual-token-system-2-desc-2": "Used for transaction fees",
+	"dual-token-system-2-desc-1": "Native token of Sunrise network.",
+	"dual-token-system-2-desc-2": "All fee abstracted transactions get auto-swapped to RISE under the hood.",
+	"dual-token-system-2-desc-3": "Can be staked to earn rewards.",
+	"dual-token-system-2-desc-4": "Backed by a capped supply and no infinite inflation.",
+	"dual-token-system-2-desc-5": "50% of all RISE used in tx fees is burned.",
+	"dual-token-system-2-desc-6": "Liquidity pools on Sunrise use RISE as the base asset, especially those eligible for bribes.",
 	"token-description": "$RISE token is the native token of Sunrise Network",
 	"ticker": "ticker",
 	"inital-token-supply-label": "initial token supply",
 	"inital-token-supply-value": "92.25M RISE",
 	"token-usecase": "Usecases",
 	"token-usecase-1": "Gas Fee",
-	"token-usecase-1-desc-1": "$RISE token can be used for fees. A portion of transaction fees in $RISE tokens is burned, reducing the circulating supply and adding deflationary pressure to the token. This portion is determined by a percentage of the total gas cost. The burn mechanism aligns with Sunrise Layer's sustainable design and ensures efficient fee management.",
-	"token-usecase-1-desc-2": "The $vRISE token is a non-transferable token for staking. The staked amount will be calculated as a voting power for the governance.",
+	"token-usecase-1-desc": "RISE is used to pay transaction fees on Sunrise, with a portion of each fee burned to reduce circulating supply and introduce deflationary pressure. This burn is based on a percentage of gas costs and supports Sunrise’s sustainable design and efficient fee management. At the same time, Proof of Liquidity (PoL) drives continuous demand for RISE by using it to secure deep, active liquidity across the Sunrise ecosystem.",
 	"token-usecase-2": "Staking",
 	"token-usecase-2-desc": "$vRISE can be staked to the Sunrise network. The staked amount will be calculated as a voting power for the governance. Furthermore, the rewards for stakers will be distributed in proportion to the staked amount.",
 	"token-usecase-3": "Gauge Voting",
-	"token-usecase-3-desc": "A Gauge means our product that issues vRISE. The Gauge’s first product in Sunrise is the Liquidity Pool. vRISE holders use vRISE to vote and determine how much vRISE to allocate to which gauge. More vRISE newly issued will be allocated to the liquidity pool linked to the gauge that has collected more vRISE voting power.",
+	"token-usecase-3-desc-1": "Through vRISE gauge voting, liquidity incentives are allocated to the pools and rollups that drive real usage. Each gauge represents a product, like a liquidity pool and vRISE holders vote to decide how newly issued vRISE is distributed across these gauges.",
+	"token-usecase-3-desc-2": "The more voting power a gauge collects, the more vRISE it receives, aligning rewards with active ecosystems and reinforcing long-term liquidity growth.",
 	"timeline": {
 		"title": "Launch Timeline",
 		"step-1": {
@@ -229,18 +237,18 @@
 		},
 		"row-1": {
 			"1": "Public Sale",
-			"2": "10%",
-			"3": "See sale structure above"
+			"2": "TBA",
+			"3": "TBA"
 		},
 		"row-2": {
 			"1": "Early Backers",
-			"2": "25%",
-			"3": "5% unlocked at launch<br>95% fully locked for 3 months,<br>then unlocks continuously for 12 months"
+			"2": "14.5%",
+			"3": "5% unlocked at launch 95% fully locked for 3 months, then unlocks continuously for 12 months"
 		},
 		"row-3": {
 			"1": "Initial Core<br>Contributors",
 			"2": "20%",
-			"3": "Fully locked for 3 months,<br>unlocks continuously for 24 months"
+			"3": "Fully locked for 6 months, unlocks continuously for 18 months"
 		},
 		"row-4": {
 			"1": "Ecosystem",
@@ -259,7 +267,7 @@
 		},
 		"row-7": {
 			"1": "Community<br>Contributors & Grants",
-			"2": "5%",
+			"2": "15.5%",
 			"3": "Fully locked for 3 months,<br>unlocks continuously for 24 months"
 		}
 	},
@@ -279,32 +287,43 @@
 	"nov": "Nov",
 	"dec": "Dec",
 	"step1": {
-		"title": "Q1 2024",
-		"desc": "Launch private testnet of Sunrise"
+		"title": "Q1 2025",
+		"desc": "Testnet Audit Completed"
 	},
 	"step2": {
-		"title": "Q2 2024",
-		"desc": "Launch public testnet of Sunrise"
+		"title": "Q2 2025",
+		"desc-1": "Mainnet Launch Listing",
+		"desc-2": "Support for bribe function in liquidity pool",
+		"desc-3": "Cross chain swap through Ethereum with IBC Eureka"
 	},
 	"step3": {
-		"title": "Q3 2024",
-		"desc": "Development of Sunrise v2"
+		"title": "Q3 2025",
+		"desc-1": "Integrate Rollup",
+		"desc-2": "Expanding the support for ZK-based IBC Client for L2"
 	},
 	"step4": {
-		"title": "Q4 2024",
-		"desc": "Launch public testnet v2 of Sunrise"
-	},
-	"step5": {
-		"title": "Q1 2025",
-		"desc-1": "Listing token in CEX & DEX",
-		"desc-2": "Launch Mainnet of Sunrise"
-	},
-	"step6": {
-		"title": "Q2 2025",
-		"desc-1": "Integrate Sovereign SDK",
-		"desc-2": "Integrate Based Rollup"
+		"title": "Q4 2025",
+		"desc-1": "Expand the support for L2 development kit",
+		"desc-2": "Supporting Sovereign Fast Finality"
 	},
 	"ecosystem-title": "Our Ecosystem",
+	"coreteam-title": "Co-Founders",
+	"team-core-member-1": {
+	  "name": "Yu Kimura",
+	  "role": "Co-Founder/CEO & CTO",
+	  "desc-1": "Famous developer with deep ties to Japan blockchain ecosystem",
+	  "desc-2": "Previously CEO & CTO at a blockchain startup for 5 years",
+	  "desc-3": "Accomplished white hat hacker & previously rescued $ 5, 000, 000 in stolen funds",
+	  "desc-4": "PHD student (INFO), MBA, & SIC researcher at Kyoto University"
+	},
+	"team-core-member-2": {
+	  "name": "Takeru s.",
+	  "role": "Co-Founder/COO & CFO",
+	  "desc-1": "Business management & operations expert",
+	  "desc-2": "Previously COO & CFO at blockchain startup for 5 years",
+	  "desc-3": "Former strategic consultant at major consulting firm, leading new business through its development & eventual sale",
+	  "desc-4": "BA at Tokyo University of Foreign Studies & SIC researcher at Kyoto University"
+	},
 	"community": "Join Our Community",
 	"twitter": {
 		"title": "80k+",

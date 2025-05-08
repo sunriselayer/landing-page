@@ -46,6 +46,7 @@ export { default as right } from '../lib/images/right.svg';
 export { default as rightwhite } from '../lib/images/right-white.svg';
 export { default as check } from '../lib/images/check.svg';
 export { default as disable } from '../lib/images/disable.svg';
+export { default as diagram } from '../lib/images/diagram.png';
 export { default as flywheel } from '../lib/images/flywheel.svg';
 export { default as flywheelsmall } from '../lib/images/flywheel-small.svg';
 export { default as distribution } from '../lib/images/distribution.png';

@@ -40,9 +40,6 @@
 </main>
 <About />
 <Features />
-<Summaries />
-<SalesDetails />
-<Timeline />
 <Tokenomics />
 <Ecosystem />
 <Schedule />

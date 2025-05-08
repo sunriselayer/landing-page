@@ -4,7 +4,7 @@
 </script>
 
 <main class="xl:w-[1104px] w-full md:py-[7.5rem] md:mx-auto md:p-0 px-5 py-12">
-	<section class="">
+	<section class="md:pb-[7.5rem]">
 		<div class="flex justify-center content-center mx-auto">
 			<div class="flex gap-3 items-center">
 				<img class="w-[45px]" src={logo} alt="logo" />

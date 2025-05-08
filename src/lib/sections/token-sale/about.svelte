@@ -31,44 +31,47 @@
 		>
 			{@html $_('about-sunrise')}
 		</h2>
-		<div class="flex flex-col md:gap-[1.875rem] gap-4 md:mt-[3.125rem] md:mb-[4.375rem] my-6">
-			{#each [1, 2] as i}
-				<h4
-					class="normal-text flex gap-4 flex-row items-start md:text-[1.25rem] leading-5 md:leading-[1.58rem] text-sm"
-				>
-					<img src={images.right} alt="arrow right" />
-					{@html $_(`about-${i}`)}
-				</h4>
-			{/each}
-		</div>
-		<div
-			class="flex flex-col gap-[1.25rem] h-auto md:h-[354px] rounded-box-custom md:py-10 md:px-[3.125rem] p-6 relative"
-		>
-			<h3
-				class="flex gap-3 items-center normal-text font-medium md:text-[1.5625rem] text-lg leading-none"
-			>
-				<img class="block md:hidden" src={images.whyHaruSP} alt="" />
-				<span>
-					{@html $_('why-sunrise')}
-				</span>
-			</h3>
-			<div class="flex flex-col gap-5">
-				{#each [1, 2, 3, 4] as i}
+		<div class="flex flex-col md:gap-[70px] gap-10 md:mt-[3.125rem]">
+			<div class="flex flex-col md:gap-[1.875rem] gap-4 md:my-0 my-6">
+				{#each [1, 2] as i}
 					<h4
-						class="normal-text flex gap-4 md:gap-3 flex-row items-start md:text-[1.25rem] text-sm"
+						class="normal-text flex gap-4 flex-row items-start md:text-[1.25rem] leading-5 md:leading-[1.58rem] text-sm"
 					>
-						<b class="highlight-text">{i}</b>
-						<p>
-							{@html $_(`answer-${i}`)}
-						</p>
+						<img src={images.right} alt="arrow right" />
+						{@html $_(`about-${i}`)}
 					</h4>
 				{/each}
 			</div>
-			<img class="absolute left-0 hidden md:block ml-[-16.375rem]" src={images.whyHaru} alt="" />
+			<div
+				class="flex flex-col gap-[1.25rem] h-auto md:h-[320px] rounded-box-custom md:py-10 md:px-[3.125rem] p-6 relative"
+			>
+				<h3
+					class="flex gap-3 items-center normal-text font-medium md:text-[1.5625rem] text-lg leading-none"
+				>
+					<img class="block md:hidden" src={images.whyHaruSP} alt="" />
+					<span>
+						{@html $_('why-sunrise')}
+					</span>
+				</h3>
+				<div class="flex flex-col gap-5">
+					{#each [1, 2, 3] as i}
+						<h4
+							class="normal-text flex gap-4 md:gap-3 flex-row items-start md:text-[1.25rem] text-sm"
+						>
+							<b class="highlight-text">{i}</b>
+							<p>
+								{@html $_(`answer-${i}`)}
+							</p>
+						</h4>
+					{/each}
+				</div>
+				<img class="absolute left-0 hidden md:block ml-[-16.375rem]" src={images.whyHaru} alt="" />
+			</div>
+			<img class="w-full" src={images.diagram} alt="" />
 		</div>
 	</section>
 	<section
-		class="z-20 mx-auto gap-8 md:pt-[7.5rem] md:pb-0 text-base-100 lg:w-[920px] w-[calc(100vw-2.5rem)] md:my-0 md:px-0 py-12"
+		class="z-20 mx-auto gap-8 md:py-0 text-base-100 lg:w-[920px] w-[calc(100vw-2.5rem)] md:my-0 md:px-0 py-12"
 	>
 		<h2
 			class="normal-text md:text-center font-medium md:text-[3.125rem] text-[2rem] md:leading-none leading-[1.3125rem] md:pt-[7.5rem] md:pb-20 pb-6"
