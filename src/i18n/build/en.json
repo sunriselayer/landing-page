@@ -1,6 +1,6 @@
 {
-	"hero-title": "Build your own rollup on Sunrise",
-	"hero-description": "Using Sunrise provides the underlying Data Availability (DA) infrastructure you need, complete with PoL-driven fee abstraction, scalable blobspace, and off-chain storage",
+	"hero-title": "Make your Rollup Interliquid under 90 seconds",
+	"hero-description": "Sunrise fuses Data Availability + Liquidity Hub so your chain ships with block-space and deep pools from block 1.",
 	"learn-title": "Smart Contract VS. Sovereign",
 	"learn-asset-1": {
 		"title": "Smart Contract",

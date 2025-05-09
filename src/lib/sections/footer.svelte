@@ -14,7 +14,7 @@
 </script>
 
 <footer
-	class="footer md:py-12 px-12 py-6 text-white text-opacity-55 z-30 xl:w-[1140px] flex flex-col mx-auto items-center gap-6"
+	class="footer md:py-20 px-12 py-6 text-white text-opacity-55 z-30 xl:w-[1140px] flex flex-col mx-auto items-center gap-6"
 >
 	<div class="flex gap-4 flex-row justify-evenly w-full text-center items-center">
 		<div class="ibm-plex-sans flex flex-col gap-4 flex-1 self-start">
@@ -108,7 +108,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex flex-row gap-[1.125rem] justify-center md:pt-10 md:pb-20">
+	<div class="flex flex-row gap-[1.125rem] justify-center md:pt-10">
 		<a
 			class="hover:text-[#FDA60B] text-white flex transition-all duration-300"
 			href="https://discord.gg/sunrise"
