@@ -5,13 +5,13 @@
 	import { appTitle } from '../consts';
 
 	function openDoc() {
-		if (
-			confirm(
-				'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
-			)
-		) {
-			open('https://docs.sunriselayer.io/run-a-sunrise-node/networks', '_blank');
-		}
+		// if (
+		// 	confirm(
+		// 		'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
+		// 	)
+		// ) {
+		open('https://docs.sunriselayer.io/run-a-sunrise-node/networks', '_blank');
+		// }
 	}
 </script>
 
