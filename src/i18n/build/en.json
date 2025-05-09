@@ -1,10 +1,10 @@
 {
 	"hero-title": "Build your own rollup on Sunrise",
 	"hero-description": "Using Sunrise provides the underlying Data Availability (DA) infrastructure you need, complete with PoL-driven fee abstraction, scalable blobspace, and off-chain storage",
-	"learn-title": "Smart Contract Rollup VS. Sovereign",
+	"learn-title": "Smart Contract VS. Sovereign",
 	"learn-asset-1": {
-		"title": "L1 Rollup",
-		"description": "L1-settled rollups, such as those built on Ethereum’s OP Stack, rely on a base chain for security, transaction ordering, and final settlement. This approach allows developers and users to benefit from the parent chain’s established network, existing tools, and active liquidity.<br><br>However, using a parent chain’s infrastructure also means following its rules, fee market, and upgrade schedule."
+		"title": "Smart Contract",
+		"description": "Smart contract such as those built on Ethereum’s OP Stack, rely on a base chain for security, transaction ordering, and final settlement. This approach allows developers and users to benefit from the parent chain’s established network, existing tools, and active liquidity.<br><br>However, using a parent chain’s infrastructure also means following its rules, fee market, and upgrade schedule."
 	},
 	"learn-asset-2": {
 		"title": "Sovereign",
@@ -12,11 +12,11 @@
 	},
 	"deploy-title": "Deploy",
 	"deploy-item-1": {
-		"title": "OP Stack (Ethereum-Based Rollups)",
-		"description": "The OP Stack offers a familiar toolkit for developers who value Ethereum’s established security and settlement environment. By connecting Ethereum-based rollups to Sunrise, you gain access to cost-effective blobspace and enhanced liquidity via PoL."
+		"title": "OP Stack",
+		"description": "The OP Stack offers a familiar toolkit for developers who value Ethereum’s established security and settlement environment. By connecting rollups to Sunrise, you gain access to cost-effective blobspace and enhanced liquidity via PoL."
 	},
 	"deploy-item-2": {
-		"title": "Rollkit (Sovereign Rollup)",
+		"title": "Rollkit",
 		"description": "If you prioritize your own execution rules, without needing to adhere to any layer 1 chain’s governance or constraints., consider a sovereign rollup deployed with Rollkit. Instead of relying on an L1 for settlement, a sovereign rollup leverages Sunrise’s DA layer."
 	},
 	"deploy-item-3": {
