@@ -1,19 +1,19 @@
 {
-	"app-description": "Sunrise is a specialized Data Availability Layer for Proof of Liquidity.",
+	"app-description": "Sunrise is the base layer for Interliquid Networks",
 	"try-testnet": "Try our Testnet",
 	"build-sunrise": "Build on Sunrise",
 	"learn-more": "Learn more",
 	"learn": "Learn",
 	"deploy": "Deploy",
 	"sunrise-question": "Enhanced Liquidity for Everyone",
-	"sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by<br class='hidden md:block'>extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while<br class='hidden md:block'>providing a comprehensive solution for modular blockchain development.",
+	"sunrise-definition": "Sunrise integrates Data Availability layer and Liquidity Hub functions into a single platform powered by <br class='hidden md:block'>Proof-of-Liquidity — enabling sovereign rollups and leading L1s like Ethereum and Solana to connect <br class='hidden md:block'>seamlessly through deep, shared liquidity.",
 	"sunrise-1": {
-		"label": "Modular Blockchain Structures",
-		"description": "A modular blockchain differs from a monolithic chain in that at least one of its four main functions has been offloaded to a separate layer. In the current infrastructure landscape, modular solutions have become the preeminent method for blockchain development.<br><br>Sunrise provides a fast, secure data availability and consensus layer for scalable modular blockchains, while allowing individual networks to determine their own customized execution and settlement layers.<br><br>By using this structure, modular blockchains are more efficient, customizable, scalable, and sovereign."
+		"label": "Proof of Liquidity",
+		"description": "Sunrise brings further innovation to modular blockchain structures by directly integrating Proof of Liquidity (PoL), which enables modular liquidity, and resolves the liquidity and security issues faced by new rollup developers.<br><br>Through Sunrise’s native DEX, rollups can immediately tap into deep shared liquidity and route assets across ecosystems without building fragmented infrastructure or bridges.<br><br>This unified model bootstraps both liquidity and security the moment a rollup launches. By driving real trading volume, rollups can grow their native token liquidity and attract vRISE gauge allocations - aligning incentives with real usage and compounding ecosystem value over time."
 	},
 	"sunrise-2": {
-		"label": "Proof of Liquidity",
-		"description": "Sunrise brings further innovation to modular blockchain structures by directly integrating Proof of Liquidity (PoL), which enables modular liquidity, and resolves the liquidity issue faced by new rollup developers.<br><br>Extending & replicating Berachain Proof of Liquidity across the entire DA Layer creates an aligned liquidity & security model similar to Berachain’s PoL flywheel, systematically building liquidity for both Sunrise and its users.<br><br>DA users on Sunrise can now directly engage in PoL on Sunrise to bootstrap liquidity and security for their rollup."
+		"label": "ZKP-based Interoperability",
+		"description": "The era where Web2-like applications seamlessly interact with public blockchains is just around the corner. Powered by rollups built on Sunrise, these apps offer the familiar user experience of traditional web platforms—while behind the scenes they leverage zero-knowledge proofs and IBC to connect trustlessly with ecosystems like Sunrise, Ethereum, and Solana.<br><br>Sunrise is the first blockchain to fuse proven IBC interoperability with ZKP validation, enabling scalable, secure, and interoperable rollups by design."
 	},
 	"sunrise-3": {
 		"label": "Fee Abstraction and LP Benefits",
@@ -21,21 +21,21 @@
 	},
 	"sunrise-4": {
 		"label": "Off-Chain Blobs and Data Storage",
-		"description": "Sunrise has been designed from the ground-up to enable higher throughput data availability through the use of off-chain blobs. Sunrise’s blob module allows for larger block sizes, enabling new experimentation in DA usage such as fully-onchain AI, gaming, and more.<br><br>Off-chain blobs also provide optionality for native data retrievability and controllable retrievability periods, thus ensuring both immediate data availability and permanent storage solutions."
+		"description": "Sunrise keeps full blob data off-chain, anchoring only a Merkle root on-chain to keep blocks lean. Blob payloads travel over a dedicated P2P network and reach full availability in under two blocks (≈14 s), even for multi-MB batches.<br><br>You control retention: nodes can fetch blobs on demand or prune old data, so you balance local storage with your app’s needs—from short-term proofs to long-term audit trails."
 	},
 	"sunrise-features": {
-		"description": "Building blockchains doesn't have to be complicated. Develop intuitively with data availability for the modular future.",
+		"description": "Building blockchains doesn’t have to be complicated. Build intuitively with next generation of liquidity and sovereignty on Sunrise",
 		"feature-1": {
-			"label": "AltDA Fee Abstraction",
+			"label": "Fee Abstraction",
 			"description": "LP to a pool of your choice, engaging in PoL in exchange for blobspace."
 		},
 		"feature-2": {
 			"label": "Interoperable",
-			"description": "Build interoperable rollup."
+			"description": "Building interoperable rollups is no longer a Web3 ambition—it’s the core of Interliquid apps that feel as smooth as Web2. By combining Zero-Knowledge Proofs with IBC, Sunrise rollups connect trustlessly to Ethereum, Solana, and beyond for seamless DeFi integration."
 		},
 		"feature-3": {
-			"label": "Proof of Liquidity",
-			"description": "Bootstrap liquidity and benefit from aligned & enhanced security, using LP tokens of your choice, and the liquidity of many ecosystems to secure your rollup."
+			"label": "Liquidity powered by Proof of Liquidity",
+			"description": "Sunrise enables shared liquidity through its native DEX, secured by Proof of Liquidity. <br><br>Projects can boost token liquidity by driving volume and earning vRISE allocations."
 		},
 		"feature-4": {
 			"label": "Easy to use",
@@ -43,7 +43,7 @@
 		},
 		"feature-5": {
 			"label": "Scalable",
-			"description": "Modular blockchains scale automatically; developers on Sunrise have a worry-free infrastructure experience."
+			"description": "Modular rollups on Sunrise grow without manual sharding or block-size tweaks. <br><br>Our off-chain blob network handles multi-MB payloads in under two blocks, so your chain can scale on demand—no heavy on-chain data bloat, no extra infrastructure to manage."
 		}
 	},
 	"sunrise-products": {

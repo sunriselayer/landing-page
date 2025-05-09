@@ -23,7 +23,7 @@
 
 <main>
 	<section
-		class="z-20 md:max-w-[1200px] md:w-full mx-auto gap-10 text-base-100 flex flex-col justify-center items-center md:px-[30px] md:py-0 p-6"
+		class="z-20 md:max-w-[1200px] md:w-full mx-auto md:gap-20 gap-10 text-base-100 flex flex-col justify-center items-center md:px-[30px] md:py-0 p-6"
 	>
 		<div class="flex flex-col max-w-[100%] text-center gap-[0.75rem]">
 			<h1
@@ -37,9 +37,11 @@
 				{@html $_('sunrise-definition')}
 			</p>
 		</div>
+
+		<img src={images.DiagramBlack} alt="" />
 		<div class="md:overflow-hidden overflow-auto md:w-full w-[calc(100vw-3rem)]">
 			<div
-				class="flex mx-auto md:flex-row flex-col md:gap-[2.25rem] gap-6 items-center md:py-[10rem] md:w-full"
+				class="flex mx-auto md:flex-row flex-col md:gap-[2.25rem] gap-6 items-center md:pb-[10rem] md:w-full"
 			>
 				<div
 					class="md:flex md:flex-col md:flex-0 grid grid-cols-2 md:gap-[2.8125rem] gap-y-5 gap-x-0 md:w-[20rem] w-full"

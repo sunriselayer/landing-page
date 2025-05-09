@@ -27,8 +27,8 @@
 				{#each features.slice(0, 3) as feature}
 					<div
 						class="feature-box md:pt-10 md:pl-10 pt-6 pl-6 flex flex-col {feature.index === 0 &&
-							'md:w-[32.89%] md:pr-10 pr-6'} {feature.index === 2 &&
-							'md:w-[40.375%]'} gap-[0.625rem] flex-auto"
+							'md:w-[32.89%] md:pr-10 pr-6'} {feature.index === 1 &&
+							'md:w-[34%]'} {feature.index === 2 && 'md:w-[40.375%]'} gap-[0.625rem]"
 					>
 						<h2
 							class="text-[0.75rem] leading-[1.125rem] md:text-[1.5rem] md:leading-[1.875rem] tracking-wider text-white"
@@ -43,17 +43,24 @@
 							<p
 								class="md:text-[1rem] md:leading-5 text-[0.75rem] leading-4 text-white text-opacity-55"
 							>
-								{$_(feature.description)}
+								{@html $_(feature.description)}
 							</p>
 							<img
 								class="h-auto {feature.index === 2
 									? 'md:mt-[0.875rem] md:ml-[-1.5rem] self-end md:w-[50%] w-[45%]'
 									: feature.index === 1
-										? 'mt-4 md:w-full w-[50%] self-end'
+										? 'mt-4 w-[80%] self-end md:block hidden'
 										: 'mt-4 md:w-full'}"
 								src={feature.imageSrc}
 								alt="feature"
 							/>
+							{#if feature.index === 1}
+								<img
+									class="h-auto mt-4 w-[50%] self-end md:hidden"
+									src={feature.imageSrcSP}
+									alt="feature"
+								/>
+							{/if}
 						</div>
 					</div>
 				{/each}
@@ -69,30 +76,22 @@
 						>
 							{@html $_(feature.label)}
 						</h2>
-						<div class="flex flex-auto flex-col justify-between md:items-end">
+						<div
+							class="flex flex-auto {feature.index === 4 &&
+								'md:flex-row'} flex-col justify-between {feature.index === 3 && 'md:items-end'}"
+						>
 							<p
-								class="md:text-[1rem] md:leading-5 text-[0.75rem] leading-4 text-white text-opacity-55 lg:pr-[4.5rem] md:pr-16"
+								class="md:text-[1rem] md:leading-5 text-[0.75rem] leading-4 text-white text-opacity-55 {feature.index !==
+									4 && 'lg:pr-[4.5rem] md:pr-16'}"
 							>
-								{$_(feature.description)}
+								{@html $_(feature.description)}
 							</p>
-							{#if feature.index === 3}
-								<img
-									class="h-auto mt-4 w-fit hidden md:block"
-									src={feature.imageSrc}
-									alt="feature"
-								/>
-								<img
-									class="h-auto mt-4 w-fit md:hidden self-center"
-									src={feature.imageSrcSP}
-									alt="feature"
-								/>
-							{:else}
-								<img
-									class="h-auto md:mt-4 mt-[1.375rem] md:w-fit w-[85%] self-end"
-									src={feature.imageSrc}
-									alt="feature"
-								/>
-							{/if}
+							<img class="h-auto mt-4 w-fit hidden md:block" src={feature.imageSrc} alt="feature" />
+							<img
+								class="h-auto mt-4 w-fit md:hidden self-center"
+								src={feature.imageSrcSP}
+								alt="feature"
+							/>
 						</div>
 					</div>
 				{/each}
