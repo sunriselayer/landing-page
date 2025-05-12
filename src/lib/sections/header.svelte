@@ -32,14 +32,6 @@
 	function openLink(link: string) {
 		if (link.startsWith('/')) {
 			open(link, '_self');
-		} else if (link.startsWith('https://docs.sunriselayer.io')) {
-			if (
-				confirm(
-					'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
-				)
-			) {
-				open(link, '_blank');
-			}
 		} else {
 			open(link, '_blank');
 		}
