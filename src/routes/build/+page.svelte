@@ -4,7 +4,7 @@
 	import jp from '../../i18n/build/jp.json';
 	import Footer from '$lib/sections/footer.svelte';
 	import Header from '$lib/sections/header.svelte';
-	import { appTitle, buildLink, testNetLink } from '../../consts';
+	import { appTitle, deployLink, learnLink } from '../../consts';
 	import LinkButton from '$lib/components/link-button.svelte';
 	import {
 		beacon1,
@@ -43,9 +43,7 @@
 <main class="w-full bg-white dark:bg-[#050F21] md:pb-0 pb-6">
 	<Header active={page} />
 	<div class="flex flex-col md:gap-y-0">
-		<section
-			class="z-20 flex flex-row md:max-h-[660px] overflow-clip relative"
-		>
+		<section class="z-20 flex flex-row md:max-h-[660px] overflow-clip relative">
 			<div class="flex flex-col md:pl-[10.4vw] md:pt-[8.333vw] p-6 pr-0">
 				<h1
 					class="font-semibold dark:text-white text-[#050F21] md:text-[4.375rem] text-[1.5rem] md:leading-[5.385rem] leading-[1.875rem]"
@@ -58,11 +56,11 @@
 					{@html $_('hero-description')}
 				</p>
 				<div class="flex gap-[0.8125rem]">
-					<LinkButton className="md:!px-[3.2vw]" text={$_('learn')} link={testNetLink} />
+					<LinkButton className="md:!px-[3.2vw]" text={$_('deploy')} link={deployLink} />
 					<LinkButton
 						className="md:!px-[3.2vw]"
-						text={$_('deploy')}
-						link={buildLink}
+						text={$_('learn')}
+						link={learnLink}
 						transparent={true}
 					/>
 				</div>
@@ -78,9 +76,7 @@
 			</h1>
 			<div class="flex md:flex-row flex-col md:w-full md:gap-10 gap-3">
 				<div class="rounded-content md:flex-[50%] flex-col md:p-10 md:pb-0 p-3 pb-0">
-					<h4
-						class="text-[#FDA60B] md:text-[2rem] text-[0.875rem] md:leading-10 leading-[1.1rem]"
-					>
+					<h4 class="text-[#FDA60B] md:text-[2rem] text-[0.875rem] md:leading-10 leading-[1.1rem]">
 						{@html $_('learn-asset-1.title')}
 					</h4>
 					<p
@@ -93,9 +89,7 @@
 					</div>
 				</div>
 				<div class="rounded-content md:flex-[50%] flex-col md:p-10 md:pb-0 p-3 pb-0">
-					<h4
-						class="text-[#FDA60B] md:text-[2rem] text-[0.875rem] md:leading-10 leading-[1.1rem]"
-					>
+					<h4 class="text-[#FDA60B] md:text-[2rem] text-[0.875rem] md:leading-10 leading-[1.1rem]">
 						{@html $_('learn-asset-2.title')}
 					</h4>
 					<p
@@ -129,8 +123,16 @@
 							</p>
 						</div>
 						<div class="flex md:w-[55%] md:h-auto h-28 w-2/5 md:self-start self-end relative">
-							<img class="self-end absolute md:block hidden top-6 -right-10" src={deployRollkit} alt="" />
-							<img class="self-end absolute top-0 -right-6 md:hidden" src={deployRollkitSP} alt="" />
+							<img
+								class="self-end absolute md:block hidden top-6 -right-10"
+								src={deployRollkit}
+								alt=""
+							/>
+							<img
+								class="self-end absolute top-0 -right-6 md:hidden"
+								src={deployRollkitSP}
+								alt=""
+							/>
 						</div>
 					</div>
 					<div
