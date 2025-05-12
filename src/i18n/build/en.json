@@ -1,0 +1,30 @@
+{
+	"hero-title": "Make your Rollup Interliquid under 90 seconds",
+	"hero-description": "Sunrise fuses Data Availability + Liquidity Hub so your chain ships with block-space and deep pools from block 1.",
+	"learn-title": "Smart Contract VS. Sovereign",
+	"learn-asset-1": {
+		"title": "Smart Contract",
+		"description": "Smart contract such as those built on Ethereum’s OP Stack, rely on a base chain for security, transaction ordering, and final settlement. This approach allows developers and users to benefit from the parent chain’s established network, existing tools, and active liquidity.<br><br>However, using a parent chain’s infrastructure also means following its rules, fee market, and upgrade schedule."
+	},
+	"learn-asset-2": {
+		"title": "Sovereign",
+		"description": "Sovereign rollups depend only on a data availability layer, like Sunrise, and do not settle on an L1. Without an external chain’s constraints, developers gain more freedom to define their own rules, fee models, and governance processes.<br><br>Sovereign rollups can adopt advanced features—like custom consensus or execution layers, novel consensus mechanisms (e.g., Proof of Liquidity), privacy through zero-knowledge proofs, and even AI-driven automation."
+	},
+	"deploy-title": "Deploy",
+	"deploy-item-1": {
+		"title": "OP Stack",
+		"description": "The OP Stack offers a familiar toolkit for developers who value Ethereum’s established security and settlement environment. By connecting rollups to Sunrise, you gain access to cost-effective blobspace and enhanced liquidity via PoL."
+	},
+	"deploy-item-2": {
+		"title": "Rollkit",
+		"description": "If you prioritize your own execution rules, without needing to adhere to any layer 1 chain’s governance or constraints., consider a sovereign rollup deployed with Rollkit. Instead of relying on an L1 for settlement, a sovereign rollup leverages Sunrise’s DA layer."
+	},
+	"deploy-item-3": {
+		"title": "BeaconKit",
+		"description": "By combining Rollkit and Beaconkit, you can create your own customizable rollup chain using the Ethereum Virtual Machine (EVM).<br><br>Running a BeaconKit-based chain provides several advantages (assuming the default configuration of pairing with an EVM execution client):",
+		"item-1": "Single slot finality (compared to Ethereum's ~13 minutes)",
+		"item-2": "Optimistic payload building (executing block proposal in parallel with voting) reduces block times by up to 40%",
+		"item-3": "Conformity to Eth2 modularity",
+		"item-4": "Full EIP compatibility"
+	}
+}

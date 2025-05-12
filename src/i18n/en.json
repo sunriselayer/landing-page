@@ -1,65 +1,98 @@
 {
-  "app-description": "<b>Sunrise</b> is a specialized Data Availability Layer for Proof of Liquidity.",
-  "sunrise-question": "Enhanced Liquidity for Everyone",
-  "sunrise-definition": "Building with Sunrise enables the advantages & benefits of an aligned liquidity & security model by extending the Proof of Liquidity flywheel to the DA level. This bootstraps liquidity for rollups, while providing a comprehensive solution for modular blockchain development.",
-  "sunrise-01": {
-    "label": "Monolithic blockchains can’t scale.",
-    "description": "<div class='flex flex-col gap-2'><span>Monolithic chains are generalist blockchains that perform all tasks themselves. The monolithic approach is to “do everything yourself”.</span><span>This approach is expensive, not customizable, and not scalable. It’s extremely slow to build and deploy modern applications directly on monolithic chains. It’s an outdated formula, ready for disruption.</span></div>"
-  },
-  "sunrise-02": {
-    "label": "The modular paradigm is already here.",
-    "description": "<div class='flex flex-col gap-2'><span>A modular blockchain differs from a monolithic chain in that its four main functions can each be offloaded to a separate layer.</span><span>Sunrise is an example of a blockchain that specializes in fulfilling the function of data availability (“DA”) and consensus, while offloading the responsibility of execution and settlement to individual networks.</span><span>By using this structure, Modular Blockchains are more efficient, customizable, scalable, sovereign...</span></div>"
-  },
-  "sunrise-03": {
-    "label": "Proof of Liquidity",
-    "description": "<div class='flex flex-col gap-2'><span>Sunrise provides a fast and secure data and consensus layer that gives you all you need to launch a sustainable modular blockchain.</span><span>Sunrise brings further innovation to the modular paradigm by integrating a novel mechanism: <b>Proof of Liquidity (PoL)</b>.</span><span>PoL on Sunrise is Modular Liquidity, resolving the liquidity issue faced by pre-existing modular infrastructure. Extending & replicating Berachain Proof of Liquidity across the entire DA Layer creates an aligned liquidity & security model identical to Berachain’s PoL flywheel, systematically building liquidity for both Sunrise and its users.</span><span>DA users on Sunrise can now directly engage in PoL on Sunrise to bootstrap liquidity and security for their rollup.</span></div>"
-  },
-  "sunrise-04": {
-    "label": "DA Fee Abstraction",
-    "description": "<div class='flex flex-col gap-2'><span>Integrating PoL at the DA Layer also enables <b>Fee Abstraction</b> on Sunrise.</span><span>While other DA layers charge fees in their native tokens, leading to a net-value extract to rollup developers, Sunrise instead can utilize any token.</span><span>Sunrise resolves singular token dependency by allowing anyone to engage in PoL in exchange for blobspace. Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems.</span><span>Together, these unique functions supercharge Data Availability for developers.</span></div>"
-  },
-  "sunrise-features": {
-    "label": "Build better blockchains, more easily and efficiently than ever before.",
-    "description": "Building blockchains doesn't have to be complicated. Develop intuitively with data availability for the modular future.",
-    "feature-1": {
-      "label": "Easy to use",
-      "description": "No need to bootstrap your own validator set, deploy easily onto Sunrise and benefit from shared security + PoL flywheel."
-    },
-    "feature-2": {
-      "label": "Scalable",
-      "description": "Modular blockchains scale automatically; developers on Sunrise have a worry-free infrastructure experience."
-    },
-    "feature-3": {
-      "label": "Interoperable",
-      "description": "Build interoperable rollup."
-    },
-    "feature-4": {
-      "label": "AltDA Fee Abstraction",
-      "description": "LP to a pool of your choice, engaging in PoL in exchange for blobspace."
-    },
-    "feature-5": {
-      "label": "Proof of Liquidity",
-      "description": "Bootstrap liquidity and benefit from aligned & enhanced security, using LP tokens of your choice, and the liquidity of many ecosystems to secure your rollup."
-    }
-  },
-  "sunrise-products": {
-    "label": "What you can build with Sunrise",
-    "description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
-    "product-validiums": {
-      "label": "Optimium / Validium",
-      "description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment where data is posted is a separate chain, such as Sunrise. These rollups save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can engage in PoL to use Sunrise DA Layer."
-    },
-    "product-rollups": {
-      "label": "Sovereign Rollups",
-      "description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and <a href='https://celestia.org/glossary/data-availability' target='_blank'><u>data availability</u></a>, but handles its own <a href='https://celestia.org/learn/modular-settlement-layers/settlement-in-the-modular-stack' target='_blank'><u>settlement</u></a>.<br />Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
-    },
-    "product-pol": {
-      "label": "Sovereign Proof of Liquidity",
-      "description": "Sunrise supports minting LP shares from its various liqudity pools.  The LST of the LP share of the Sovereign Rollup’s native tokens and the Sunrise token can be staked to the Sovereign Rollup for governance and reward distribution."
-    }
-  },
-  "sunrise-mission": {
-    "label": "Mission",
-    "description": "Realizing the next generation of web applications by enhancing liquidity and sovereignty for developers."
-  }
+	"app-description": "Sunrise is the base layer for Interliquid Networks",
+	"try-testnet": "Try our Testnet",
+	"build-sunrise": "Build on Sunrise",
+	"learn-more": "Learn more",
+	"learn": "Learn",
+	"deploy": "Deploy",
+	"sunrise-question": "Enhanced Liquidity for Everyone",
+	"sunrise-definition": "Sunrise integrates Data Availability layer and Liquidity Hub functions into a single platform powered by <br class='hidden md:block'>Proof-of-Liquidity — enabling sovereign rollups and leading L1s like Ethereum and Solana to connect <br class='hidden md:block'>seamlessly through deep, shared liquidity.",
+	"sunrise-1": {
+		"label": "Proof of Liquidity",
+		"description": "Sunrise brings further innovation to modular blockchain structures by directly integrating Proof of Liquidity (PoL), which enables modular liquidity, and resolves the liquidity and security issues faced by new rollup developers.<br><br>Through Sunrise’s native DEX, rollups can immediately tap into deep shared liquidity and route assets across ecosystems without building fragmented infrastructure or bridges.<br><br>This unified model bootstraps both liquidity and security the moment a rollup launches. By driving real trading volume, rollups can grow their native token liquidity and attract vRISE gauge allocations - aligning incentives with real usage and compounding ecosystem value over time."
+	},
+	"sunrise-2": {
+		"label": "ZKP-based Interoperability",
+		"description": "The era where Web2-like applications seamlessly interact with public blockchains is just around the corner. Powered by rollups built on Sunrise, these apps offer the familiar user experience of traditional web platforms—while behind the scenes they leverage zero-knowledge proofs and IBC to connect trustlessly with ecosystems like Sunrise, Ethereum, and Solana.<br><br>Sunrise is the first blockchain to fuse proven IBC interoperability with ZKP validation, enabling scalable, secure, and interoperable rollups by design."
+	},
+	"sunrise-3": {
+		"label": "Fee Abstraction and LP Benefits",
+		"description": "Integrating PoL at the DA Layer also enables Fee Abstraction on Sunrise. While other DA layers charge fees in their native tokens, leading to a net-value extract to rollup developers, Sunrise instead rewards liquidity provision with blobspace. <br><br>Sunrise resolves singular token dependency by allowing any liquidity pool to apply to become whitelisted for PoL emissions; such that any token with a rich, deep liquidity pool will automatically earn more rewards and more blobspace. <br><br>Users can LP to any pool of their choice, including stable pools, settlement layer tokens, and bridged tokens through our cross-chain integrations. This allows Sunrise and Sunrise’s users to become secured by liquidity from many various ecosystems. Together, these unique functions supercharge Data Availability for developers."
+	},
+	"sunrise-4": {
+		"label": "Off-Chain Blobs and Data Storage",
+		"description": "Sunrise keeps full blob data off-chain, anchoring only a Merkle root on-chain to keep blocks lean. Blob payloads travel over a dedicated P2P network and reach full availability in under two blocks (≈14 s), even for multi-MB batches.<br><br>You control retention: nodes can fetch blobs on demand or prune old data, so you balance local storage with your app’s needs—from short-term proofs to long-term audit trails."
+	},
+	"sunrise-features": {
+		"description": "Building blockchains doesn’t have to be complicated. Build intuitively with next generation of liquidity and sovereignty on Sunrise",
+		"feature-1": {
+			"label": "Fee Abstraction",
+			"description": "LP to a pool of your choice, engaging in PoL in exchange for blobspace."
+		},
+		"feature-2": {
+			"label": "Interoperable",
+			"description": "Building interoperable rollups is no longer a Web3 ambition—it’s the core of Interliquid apps that feel as smooth as Web2. By combining Zero-Knowledge Proofs with IBC, Sunrise rollups connect trustlessly to Ethereum, Solana, and beyond for seamless DeFi integration."
+		},
+		"feature-3": {
+			"label": "Liquidity powered by Proof of Liquidity",
+			"description": "Sunrise enables shared liquidity through its native DEX, secured by Proof of Liquidity. <br><br>Projects can boost token liquidity by driving volume and earning vRISE allocations."
+		},
+		"feature-4": {
+			"label": "Easy to use",
+			"description": "No need to bootstrap your own validator set, deploy easily onto Sunrise and benefit from shared security + PoL flywheel."
+		},
+		"feature-5": {
+			"label": "Scalable",
+			"description": "Modular rollups on Sunrise grow without manual sharding or block-size tweaks. <br><br>Our off-chain blob network handles multi-MB payloads in under two blocks, so your chain can scale on demand—no heavy on-chain data bloat, no extra infrastructure to manage."
+		}
+	},
+	"sunrise-products": {
+		"label": "What you can build with Sunrise",
+		"description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+		"product-validiums": {
+			"label": "Optimium / Validium",
+			"description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment where data is posted is a separate chain, such as Sunrise. These rollups save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can engage in PoL to use Sunrise DA Layer."
+		},
+		"product-rollups": {
+			"label": "Sovereign Rollups",
+			"description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and <a href='https://celestia.org/glossary/data-availability' target='_blank'><u>data availability</u></a>, but handles its own <a href='https://celestia.org/learn/modular-settlement-layers/settlement-in-the-modular-stack' target='_blank'><u>settlement</u></a>.<br />Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+		},
+		"product-pol": {
+			"label": "Sovereign Proof of Liquidity",
+			"description": "Sunrise supports minting LP shares from its various liqudity pools.  The LST of the LP share of the Sovereign Rollup’s native tokens and the Sunrise token can be staked to the Sovereign Rollup for governance and reward distribution."
+		}
+	},
+	"sunrise-mission": {
+		"label": "Mission",
+		"description": "Realizing the next generation of web applications by enhancing liquidity and sovereignty for developers."
+	},
+	"build": {
+		"question": "What you can build with Sunrise",
+		"question-description": "Sunrise is the comprehensive solution to problems faced in modern blockchain development.",
+		"build-1": {
+			"title": "Optimium / Validium",
+			"description": "A type of zero-knowledge rollup that posts its data off-chain rather than to its parent chain. The off-chain environment where data is posted is a separate chain, such as Sunrise. These rollups save up to 90% of gas fees when compared to rollups that post data directly to Ethereum and they can engage in PoL to use Sunrise DA Layer."
+		},
+		"build-2": {
+			"title": "Sovereign Rollups",
+			"description": "A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and <a style='text-decoration: underline' href='https://celestia.org/glossary/data-availability'>data availability</a>, but handles its own <a style='text-decoration: underline' href='https://celestia.org/learn/modular-settlement-layers/settlement-in-the-modular-stack'>settlement</a>.<br><br>Sovereign rollups are responsible for execution and settlement, while the DA layer handles consensus and data availability."
+		},
+		"build-3": {
+			"title": "Sovereign Proof of Liquidity",
+			"description": "Sunrise supports minting LP shares from its various liqudity pools. The LST of the LP share of the Sovereign Rollup’s native tokens and the Sunrise token can be staked to the Sovereign Rollup for governance and reward distribution."
+		}
+	},
+	"header-footer": {
+		"build": "Build",
+		"devs": "Developers",
+		"services": "Services",
+		"about": "About",
+		"docs": "Docs",
+		"git": "GitHub",
+		"app": "App (Testnet)",
+		"explorer": "Explorer",
+		"blog": "Blog",
+		"jobs": "Jobs",
+		"press-kit": "Press Kit"
+	}
 }

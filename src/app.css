@@ -4,14 +4,32 @@
 
 /* In your CSS or SCSS file */
 :root {
-	--Light: (linear-gradient(to bottom right, #FCECCF 0%, #D7E5FB 50%) bottom right / 50% 50% no-repeat,
-			linear-gradient(to bottom left, #FCECCF 0%, #D7E5FB 50%) bottom left / 50% 50% no-repeat,
-			linear-gradient(to top left, #FCECCF 0%, #D7E5FB 50%) top left / 50% 50% no-repeat,
-			linear-gradient(to top right, #FCECCF 0%, #D7E5FB 50%) top right / 50% 50% no-repeat);
-	--Dark: linear-gradient(180deg, rgba(15, 28, 54, 0.30) 0%, #0A204A 100%);
+	--Light: (
+		linear-gradient(to bottom right, #fceccf 0%, #d7e5fb 50%) bottom right / 50% 50% no-repeat,
+		linear-gradient(to bottom left, #fceccf 0%, #d7e5fb 50%) bottom left / 50% 50% no-repeat,
+		linear-gradient(to top left, #fceccf 0%, #d7e5fb 50%) top left / 50% 50% no-repeat,
+		linear-gradient(to top right, #fceccf 0%, #d7e5fb 50%) top right / 50% 50% no-repeat
+	);
+	--Dark: linear-gradient(180deg, rgba(15, 28, 54, 0.3) 0%, #0a204a 100%);
 	--Sunrise: radial-gradient(360deg, #ffc75f, #4988ff);
 	--Sunrise-Degragee: linear-gradient(180deg, #edbc64 0%, #6495ed 100%);
-	--PURPLE-LINEAR: linear-gradient(174deg, #71AFFB 0%, #A134F9 100%);
-	--BLUE-LINEAR: linear-gradient(174deg, #71AFFB 0%, #3E34F9 100%);
-	--Main-Yellow: #FFC75F;
+	--PURPLE-LINEAR: linear-gradient(174deg, #71affb 0%, #a134f9 100%);
+	--BLUE-LINEAR: linear-gradient(174deg, #71affb 0%, #3e34f9 100%);
+	--Main-Yellow: #ffc75f;
+	--font-color: #183973;
+	letter-spacing: 0.03em;
+}
+
+@layer base {
+	@font-face {
+		font-family: 'Clash Grotesk';
+		src: local('Clash Grotesk'), url('/fonts/ClashGrotesk-Variable.ttf');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Eudoxus Sans';
+		src: local('Eudoxus Sans'), url('/fonts/EudoxusSans-Bold.ttf');
+		font-display: swap;
+	}
 }

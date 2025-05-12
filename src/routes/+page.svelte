@@ -1,67 +1,98 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	import { appDescription } from '../consts';
 	import { appTitle } from '../consts';
 
-	function openDoc() {
-		// if (
-		// 	confirm(
-		// 		'This crypto-asset marketing communication has not been reviewed or approved by any competent authority in any Member State of the European Union. The person seeking admission to trading of the crypto-asset is solely responsible for the content of this crypto-asset marketing communication.\r\n\r\n Do you acknowledge and agree to the above disclaimer?'
-		// 	)
-		// ) {
-		open('https://docs.sunriselayer.io/run-a-sunrise-node/networks', '_blank');
-		// }
-	}
+	import Header from '$lib/sections/header.svelte';
+	import Footer from '$lib/sections/footer.svelte';
+	import Concepts from '$lib/sections/concepts.svelte';
+	import Features from '$lib/sections/features.svelte';
+	import Testnet from '$lib/sections/testnet.svelte';
+	import Top from '$lib/sections/top.svelte';
 </script>
 
 <svelte:head>
 	<title>{appTitle}</title>
-	<meta name="description" content="Sunrise" />
+	<meta name="description" content={$_('app.name')} />
+	<meta name="theme-color" content="#050f21" media="(prefers-color-scheme: dark)" />
+	<style>
+		.app {
+			background-color: #050f21;
+		}
+	</style>
 </svelte:head>
 
-<main>
-	<section class="z-20 mx-auto max-w-screen-xl gap-8 md:my-20 text-base-100">
-		<h1 class="text-center font-orbitron text-4xl font-extrabold md:text-5xl xl:text-6xl">
-			{@html appDescription}
-		</h1>
-		<h2 class="md:text:xl text-center font-overpass sm:text-lg xl:text-2xl">
-			{@html $_('app-description')}
-		</h2>
-		<div class="flex gap-4 my-8">
-			<button class="btn btn-sm md:btn-md lg:btn-lg font-overpass text-blue-600 lg:text-xl">
-				<a href="https://testnet.app.sunriselayer.io" target="_blank">Try our Testnet</a>
-			</button>
-			<button
-				class="btn btn-sm md:btn-md lg:btn-lg btn-outline font-overpass text-base-100 lg:text-xl"
-				on:click={openDoc}
-			>
-				Build on Sunrise
-			</button>
-		</div>
-	</section>
+<main class="w-full md:gap-0 gap-6">
+	<first>
+		<Header />
+		<Top />
+	</first>
+	<second>
+		<Concepts />
+	</second>
+	<third>
+		<Features />
+	</third>
+	<fourth>
+		<Testnet />
+	</fourth>
+	<Footer />
 </main>
 
 <style>
-	main {
+	first {
+		background-image: url(../lib/images/main-dark_sp.svg),
+			linear-gradient(to bottom, transparent 40%, rgba(1, 14, 37, 1) 90%),
+			linear-gradient(to bottom, transparent 0%, transparent 70%, rgba(1, 14, 37, 0.103) 100%);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: top;
+		background-size: cover;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+		gap: 24px;
 	}
 
-	h1 {
-		width: 100%;
+	@media (min-width: 768px) {
+		first {
+			background-image: url(../lib/images/main-dark.svg);
+			background-position-x: center;
+			background-position-y: top;
+			background-size: cover;
+			gap: 0px;
+		}
+	}
+
+	fourth {
+		background-image: url(../lib/images/bg-testnet.png);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: 112%;
+		background-size: cover;
+	}
+
+	@media (max-width: 768px) {
+		fourth {
+			background-size: 167vw 206vw;
+			background-position-y: 113%;
+		}
+	}
+	main {
+		background-image: url(../lib/images/footer-overlay.png);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: bottom;
+		background-size: 100% 45%;
+	}
+
+	@media (max-width: 768px) {
+		main {
+			background-size: 200% 20%;
+		}
 	}
 </style>
