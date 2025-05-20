@@ -17,7 +17,7 @@
 		<h1
 			class="text-center text-[2rem] leading-10 font-semibold md:text-6xl xl:text-[6rem] xl:leading-[7.375rem] md:leading-[6rem] tracking-wide"
 		>
-			Testnet is live
+			Testnet is Ended
 		</h1>
 		<LinkButton text={$_('try-testnet')} link={testNetLink} className="px-8" />
 	</section>

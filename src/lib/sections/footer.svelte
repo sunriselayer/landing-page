@@ -43,8 +43,9 @@
 			<div class="flex flex-col gap-[0.625rem] items-center">
 				<a
 					class="hover:text-[#FDA60B] flex transition-all duration-300"
-					href="https://testnet.app.sunriselayer.io"
+					href="https://app.sunriselayer.io"
 					target="_blank"
+					disabled
 				>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
@@ -53,8 +54,9 @@
 				</a>
 				<a
 					class="hover:text-[#FDA60B] flex transition-all duration-300"
-					href="https://testnet.risescan.sunriselayer.io/"
+					href="https://risescan.sunriselayer.io/"
 					target="_blank"
+					disabled
 				>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
