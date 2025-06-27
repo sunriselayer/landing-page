@@ -1,0 +1,47 @@
+.button-border {
+	border-radius: 999px;
+	border: 2px solid transparent;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	background:
+		linear-gradient(#191837, #191837) padding-box,
+		linear-gradient(90deg, #1abcdb, #9b59b6) border-box;
+}
+
+.hover-button-border:hover {
+	border-radius: 999px;
+	border: 2px solid transparent;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+
+	background:
+		linear-gradient(#191837, #191837) padding-box,
+		linear-gradient(90deg, #1abcdb, #9b59b6) border-box;
+}
+
+.button-border-blue {
+	border-radius: 999px;
+	border: 2px solid transparent;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	background:
+		linear-gradient(#0d1a38, #25205e) padding-box,
+		linear-gradient(90deg, #1abcdb, #9b59b6) border-box;
+}
+
+.gradient-text {
+	letter-spacing: -5%;
+	background: linear-gradient(91.59deg, #00f7ff 67.17%, #837dff 84.82%, #c36fff 91.65%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
