@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	import { appDescription, buildLink, testNetLink } from '../../consts';
+	import { appDescription, buildLink, appLink } from '../../consts';
 	import LinkButton from '$lib/components/link-button.svelte';
 </script>
 
@@ -15,14 +15,14 @@
 		{@html $_('app-description')}
 	</h2>
 	<div class="flex gap-4 md:pt-20 pt-6 justify-center">
-		<LinkButton className="md:block hidden" text={$_('try-testnet')} link={testNetLink} />
+		<LinkButton className="md:block hidden" text={$_('open-app')} link={appLink} />
 		<LinkButton
 			className="md:block hidden"
 			text={$_('build-sunrise')}
 			link={buildLink}
 			transparent={true}
 		/>
-		<LinkButton className="md:hidden block" text={$_('learn')} link={testNetLink} />
+		<LinkButton className="md:hidden block" text={$_('learn')} link={appLink} />
 		<LinkButton
 			className="md:hidden block"
 			text={$_('deploy')}

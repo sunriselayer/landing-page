@@ -2,7 +2,7 @@
 	import { _ } from 'svelte-i18n';
 
 	import LinkButton from '$lib/components/link-button.svelte';
-	import { testNetLink } from '../../consts';
+	import { appLink } from '../../consts';
 	import * as images from '../../consts/images';
 </script>
 
@@ -17,9 +17,9 @@
 		<h1
 			class="text-center text-[2rem] leading-10 font-semibold md:text-6xl xl:text-[6rem] xl:leading-[7.375rem] md:leading-[6rem] tracking-wide"
 		>
-			Testnet Ended
+			Mainnet Live Now
 		</h1>
-		<LinkButton text={$_('try-testnet')} link={testNetLink} className="px-8" />
+		<LinkButton text={$_('open-app')} link={appLink} className="px-8" />
 	</section>
 </main>
 

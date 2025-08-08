@@ -45,7 +45,6 @@
 					class="hover:text-[#FDA60B] flex transition-all duration-300"
 					href="https://app.sunriselayer.io"
 					target="_blank"
-					disabled
 				>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
@@ -54,9 +53,8 @@
 				</a>
 				<a
 					class="hover:text-[#FDA60B] flex transition-all duration-300"
-					href="https://risescan.sunriselayer.io/"
+					href="https://risescan.sunriselayer.io"
 					target="_blank"
-					disabled
 				>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
