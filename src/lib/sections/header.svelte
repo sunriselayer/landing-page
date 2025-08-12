@@ -5,7 +5,7 @@
 	import { _, locale } from 'svelte-i18n';
 
 	import LinkButton from '$lib/components/link-button.svelte';
-	import { testNetLink } from '../../consts';
+	import { appLink } from '../../consts';
 
 	function toggleLanguage() {
 		isEnglish = !isEnglish;
@@ -23,7 +23,7 @@
 		{
 			key: 'explorer',
 			label: 'header-footer.explorer',
-			link: 'https://testnet.risescan.sunriselayer.io/'
+			link: 'https://risescan.sunriselayer.io'
 		},
 		{ key: 'docs', label: 'header-footer.docs', link: 'https://docs.sunriselayer.io' },
 		{ key: 'git', label: 'header-footer.git', link: 'https://github.com/SunriseLayer' }
@@ -64,7 +64,7 @@
 			</ul>
 		</div>
 
-		<LinkButton text={$_('try-testnet')} link={testNetLink} />
+		<LinkButton text={$_('open-app')} link={appLink} />
 
 		<details class="dropdown dropdown-end md:hidden">
 			<summary

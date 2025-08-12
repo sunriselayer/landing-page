@@ -1,6 +1,6 @@
 {
 	"app-description": "Sunrise is the base layer for Interliquid Networks",
-	"try-testnet": "Follow us for latest updates",
+	"open-app": "Get started",
 	"build-sunrise": "Build on Sunrise",
 	"learn-more": "Learn more",
 	"learn": "Learn",
@@ -89,8 +89,8 @@
 		"about": "About",
 		"docs": "Docs",
 		"git": "GitHub",
-		"app": "App (Coming Soon)",
-		"explorer": "Explorer (Coming Soon)",
+		"app": "App ",
+		"explorer": "Explorer",
 		"blog": "Blog",
 		"jobs": "Jobs",
 		"press-kit": "Press Kit"
