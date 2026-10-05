@@ -18,12 +18,13 @@
 
 	let { active }: Props = $props();
 
-	const menus = [
+	const menus: { key: string; label: string; link: string; disabled?: boolean }[] = [
 		{ key: 'build', label: 'header-footer.build', link: '/build' },
 		{
 			key: 'explorer',
 			label: 'header-footer.explorer',
-			link: 'https://risescan.sunriselayer.io'
+			link: 'https://risescan.sunriselayer.io',
+			disabled: true
 		},
 		{ key: 'docs', label: 'header-footer.docs', link: 'https://docs.sunriselayer.io' },
 		{ key: 'git', label: 'header-footer.git', link: 'https://github.com/SunriseLayer' }
@@ -54,8 +55,10 @@
 						<button
 							class={active === menu.key
 								? 'highlight-text'
-								: 'hover:text-[#FDA60B] transition-all duration-300'}
+								: 'hover:text-[#FDA60B] transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:text-white'}
 							onclick={() => openLink(menu.link)}
+							disabled={menu.disabled}
+							title={menu.disabled ? 'Cosmos Sunrise has ended' : undefined}
 						>
 							{@html $_(menu.label)}
 						</button>
@@ -64,7 +67,7 @@
 			</ul>
 		</div>
 
-		<LinkButton text={$_('open-app')} link={appLink} />
+		<LinkButton text={$_('open-app')} link={appLink} disabled={true} />
 
 		<details class="dropdown dropdown-end md:hidden">
 			<summary
@@ -79,8 +82,10 @@
 						<button
 							class={active === menu.key
 								? 'active'
-								: 'hover:text-[#FDA60B] transition-all duration-300'}
+								: 'hover:text-[#FDA60B] transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-40'}
 							onclick={() => openLink(menu.link)}
+							disabled={menu.disabled}
+							title={menu.disabled ? 'Cosmos Sunrise has ended' : undefined}
 						>
 							{@html $_(menu.label)}
 						</button>

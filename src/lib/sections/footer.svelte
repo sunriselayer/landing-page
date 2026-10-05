@@ -41,26 +41,26 @@
 				text={$_('header-footer.services')}
 			/>
 			<div class="flex flex-col gap-[0.625rem] items-center">
-				<a
-					class="hover:text-[#FDA60B] flex transition-all duration-300"
-					href="https://app.sunriselayer.io"
-					target="_blank"
+				<span
+					class="flex cursor-not-allowed opacity-40"
+					aria-disabled="true"
+					title="Cosmos Sunrise has ended"
 				>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
 						text={$_('header-footer.app')}
 					/>
-				</a>
-				<a
-					class="hover:text-[#FDA60B] flex transition-all duration-300"
-					href="https://risescan.sunriselayer.io"
-					target="_blank"
+				</span>
+				<span
+					class="flex cursor-not-allowed opacity-40"
+					aria-disabled="true"
+					title="Cosmos Sunrise has ended"
 				>
 					<Label
 						className="md:text-base text-xs text-opacity-60 font-medium"
 						text={$_('header-footer.explorer')}
 					/>
-				</a>
+				</span>
 			</div>
 		</div>
 		<div class="ibm-plex-sans flex flex-col gap-4 flex-1 self-start">
