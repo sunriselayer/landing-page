@@ -15,14 +15,14 @@
 		{@html $_('app-description')}
 	</h2>
 	<div class="flex gap-4 md:pt-20 pt-6 justify-center">
-		<LinkButton className="md:block hidden" text={$_('open-app')} link={appLink} />
+		<LinkButton className="md:block hidden" text={$_('open-app')} link={appLink} disabled={true} />
 		<LinkButton
 			className="md:block hidden"
 			text={$_('build-sunrise')}
 			link={buildLink}
 			transparent={true}
 		/>
-		<LinkButton className="md:hidden block" text={$_('learn')} link={appLink} />
+		<LinkButton className="md:hidden block" text={$_('learn')} link={appLink} disabled={true} />
 		<LinkButton
 			className="md:hidden block"
 			text={$_('deploy')}

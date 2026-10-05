@@ -17,9 +17,9 @@
 		<h1
 			class="text-center text-[2rem] leading-10 font-semibold md:text-6xl xl:text-[6rem] xl:leading-[7.375rem] md:leading-[6rem] tracking-wide"
 		>
-			Mainnet Live Now
+			Cosmos Sunrise has ended
 		</h1>
-		<LinkButton text={$_('open-app')} link={appLink} className="px-8" />
+		<LinkButton text={$_('open-app')} link={appLink} className="px-8" disabled={true} />
 	</section>
 </main>
 
